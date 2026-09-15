@@ -52,3 +52,18 @@ and re-appears in our canvas ribbons as the hue ring
 *Staleness clause, inherited with the grammar: a self-recorded hash table in a living
 workspace goes stale by construction. Before claiming anything from this file,
 re-run the shasum and read the date.*
+
+## 3 · How treasures will be received · 宝藏入城规程 (standing order, owner’s ratification 2026-09-15)
+
+Incoming bytes from the commons (`models/`, `data/`, `artifacts/` of the CHORA programme)
+cross our gate only in this order:
+
+1. **By letter first** — the request lives in `letters/` (cf. Letter 003 to the Chair);
+   verbal treasure is not treasure.
+2. **Pinned on arrival** — path, sha256, producer repo@sha recorded in this file
+   *before* any experiment touches the bytes; a byte without a row is quarantine.
+3. **Purpose-bound** — 义原模具 feeds FOUNDRY only; the embedding glass feeds MIRROR only;
+   weights unmodified, inference local, no re-export.
+4. **The oracle clause — 雷荷波留园.** The Rehoboth ball is not an artifact. It exports
+   *consultations* (evidence in, posterior out) and the lattice schema, never itself:
+   a scale that can be copied is no longer the scale this park swears by. Law VI on the gate.
