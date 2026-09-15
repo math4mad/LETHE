@@ -1,0 +1,860 @@
+/* ============================================================
+   CHORA Apple-Style Enhancement Pack
+   ============================================================
+   目标：让主页拥有 Apple 级别的精致感
+   - 呼吸感排版
+   - 丝滑动画
+   - 玻璃拟态
+   - 多端适配
+   ============================================================ */
+
+/* --------------------------------------------------
+   0. CSS 变量系统（Apple 调色板）
+   -------------------------------------------------- */
+:root {
+  /* 品牌色 — 克制、有深度 */
+  --apple-blue:        #0071E3;
+  --apple-blue-hover:  #0077ED;
+  --apple-indigo:      #5856D6;
+  --apple-purple:      #AF52DE;
+  --apple-magenta:     #FF2D55;
+  --apple-teal:        #64D2FF;
+
+  /* 中性色 — Apple 的灰不是灰，是带温度的灰 */
+  --apple-black:       #1D1D1F;
+  --apple-dark-gray:   #333336;
+  --apple-mid-gray:    #6E6E73;
+  --apple-light-gray:  #F5F5F7;
+  --apple-border:      rgba(0, 0, 0, 0.08);
+  --apple-glass-bg:    rgba(255, 255, 255, 0.72);
+  --apple-glass-border: rgba(255, 255, 255, 0.3);
+
+  /* 字体栈 — 接近 SF Pro */
+  --font-primary: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
+                  'Helvetica Neue', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+
+  /* 动画曲线 — Apple 的 buttery smooth */
+  --ease-apple: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+  --ease-apple-decel: cubic-bezier(0.19, 1.0, 0.22, 1.0);
+  --ease-apple-spring: cubic-bezier(0.34, 1.56, 0.64, 1.0);
+  --duration-apple: 0.5s;
+  --duration-apple-fast: 0.3s;
+  --duration-apple-slow: 0.8s;
+
+  /* 间距系统 — 8pt grid */
+  --space-xs: 0.5rem;   /* 8px */
+  --space-sm: 1rem;     /* 16px */
+  --space-md: 1.5rem;   /* 24px */
+  --space-lg: 2.5rem;   /* 40px */
+  --space-xl: 4rem;     /* 64px */
+  --space-2xl: 6rem;    /* 96px */
+  --space-3xl: 8rem;    /* 128px */
+
+  /* 圆角 — Apple 风格 */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* 阴影 — 只有一层柔和的 */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 24px 80px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* --------------------------------------------------
+   1. 全局重置与基础排版
+   -------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--apple-black);
+  background: #FFFFFF;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 选中文本 — Apple 蓝 */
+::selection {
+  background: rgba(0, 113, 227, 0.2);
+  color: var(--apple-black);
+}
+
+/* --------------------------------------------------
+   2. 排版层级 — Apple 的字体节奏
+   -------------------------------------------------- */
+
+/* 超大标题 — 像 Apple 产品页那样震撼 */
+h1, .hero-title {
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-md);
+  color: var(--apple-black);
+}
+
+/* 副标题 */
+h2, .section-title {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-md);
+  color: var(--apple-black);
+}
+
+/* 段落 */
+p, .body-text {
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.7;
+  color: var(--apple-dark-gray);
+  max-width: 65ch;
+}
+
+/* 小字/说明 */
+small, .caption {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--apple-mid-gray);
+  letter-spacing: 0.02em;
+}
+
+/* 代码/等宽 */
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: -0.01em;
+}
+
+/* 链接 — Apple 蓝，hover 有下划线动画 */
+a {
+  color: var(--apple-blue);
+  text-decoration: none;
+  transition: color var(--duration-apple-fast) var(--ease-apple);
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--apple-blue);
+  transition: width var(--duration-apple) var(--ease-apple-decel);
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:hover {
+  color: var(--apple-blue-hover);
+}
+
+/* --------------------------------------------------
+   3. 布局容器 — Apple 的 max-width + 居中
+   -------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.container--narrow {
+  max-width: 680px;
+}
+
+.container--wide {
+  max-width: 1200px;
+}
+
+/* --------------------------------------------------
+   4. 章节间距 — 呼吸感
+   -------------------------------------------------- */
+section {
+  padding: var(--space-2xl) 0;
+  position: relative;
+}
+
+section + section {
+  border-top: 1px solid var(--apple-border);
+}
+
+/* --------------------------------------------------
+   5. 玻璃拟态导航栏（如果有的话）
+   -------------------------------------------------- */
+.nav-glass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--apple-glass-bg);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--apple-glass-border);
+  padding: var(--space-sm) 0;
+  transition: all var(--duration-apple) var(--ease-apple);
+}
+
+/* 滚动后导航栏收紧 */
+.nav-glass.scrolled {
+  padding: calc(var(--space-sm) * 0.6) 0;
+  box-shadow: var(--shadow-sm);
+}
+
+/* --------------------------------------------------
+   6. 卡片组件 — Apple Card 风格
+   -------------------------------------------------- */
+.apple-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--apple-border);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-lg);
+  transition: all var(--duration-apple) var(--ease-apple);
+  position: relative;
+  overflow: hidden;
+}
+
+.apple-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity var(--duration-apple) var(--ease-apple);
+}
+
+.apple-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(0, 113, 227, 0.15);
+}
+
+.apple-card:hover::before {
+  opacity: 1;
+}
+
+/* --------------------------------------------------
+   7. 按钮 — Apple 风格
+   -------------------------------------------------- */
+.apple-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.75rem;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  transition: all var(--duration-apple) var(--ease-apple);
+  position: relative;
+  overflow: hidden;
+}
+
+.apple-btn--primary {
+  background: var(--apple-blue);
+  color: #FFFFFF;
+}
+
+.apple-btn--primary:hover {
+  background: var(--apple-blue-hover);
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0, 113, 227, 0.3);
+}
+
+.apple-btn--primary:active {
+  transform: scale(0.98);
+}
+
+.apple-btn--secondary {
+  background: transparent;
+  color: var(--apple-blue);
+  border: 1px solid var(--apple-blue);
+}
+
+.apple-btn--secondary:hover {
+  background: rgba(0, 113, 227, 0.06);
+}
+
+/* --------------------------------------------------
+   8. 表格 — Apple 风格表格
+   -------------------------------------------------- */
+.apple-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.apple-table thead th {
+  font-weight: 600;
+  color: var(--apple-mid-gray);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 2px solid var(--apple-border);
+  text-align: left;
+}
+
+.apple-table tbody td {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--apple-border);
+  color: var(--apple-dark-gray);
+  vertical-align: top;
+}
+
+.apple-table tbody tr {
+  transition: background var(--duration-apple-fast) var(--ease-apple);
+}
+
+.apple-table tbody tr:hover {
+  background: var(--apple-light-gray);
+}
+
+.apple-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* --------------------------------------------------
+   9. Siri Glob 增强 — Apple 质感拉满
+   -------------------------------------------------- */
+.siri-glob-container {
+  position: relative;
+  width: var(--glob-size, 120px);
+  height: var(--glob-size, 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--space-xl) auto;
+}
+
+.siri-glob-ripple {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1.5px solid rgba(100, 160, 255, 0.25);
+  opacity: 0;
+  transform: scale(1);
+  pointer-events: none;
+  filter: blur(1px);
+}
+
+.siri-glob {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 35%,
+    var(--glob-color-highlight, rgba(160, 200, 255, 0.92)),
+    var(--glob-color-mid, rgba(80, 120, 255, 0.6)) 50%,
+    var(--glob-color-deep, rgba(40, 60, 180, 0.3)) 100%
+  );
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform var(--duration-apple) var(--ease-apple),
+              box-shadow var(--duration-apple) var(--ease-apple);
+  box-shadow:
+    /* 内发光 — 球体内部有光源 */
+    inset 0 -6px 16px rgba(255, 255, 255, 0.3),
+    /* 接触阴影 — 贴合感 */
+    0 6px 10px rgba(60, 100, 220, 0.15),
+    /* 弥散光晕 */
+    0 16px 50px rgba(80, 130, 255, 0.12),
+    /* 环境光 */
+    0 0 100px rgba(100, 160, 255, 0.06);
+  /* 玻璃质感 */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 球体表面高光 */
+.siri-glob::after {
+  content: '';
+  position: absolute;
+  top: 12%;
+  left: 20%;
+  width: 35%;
+  height: 20%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: rotate(-20deg);
+  pointer-events: none;
+}
+
+.siri-glob-container:hover .siri-glob {
+  transform: scale(1.08);
+  box-shadow:
+    inset 0 -8px 20px rgba(255, 255, 255, 0.4),
+    0 8px 16px rgba(60, 100, 220, 0.2),
+    0 20px 70px rgba(80, 130, 255, 0.2),
+    0 0 120px rgba(100, 160, 255, 0.12);
+}
+
+.siri-glob-container:hover .siri-glob-ripple {
+  animation: siri-ripple-breathe 2.5s var(--ease-apple) infinite;
+}
+
+.siri-glob-container:active .siri-glob {
+  transform: scale(0.95);
+  transition-duration: 0.1s;
+}
+
+.siri-glob-container:active .siri-glob-ripple {
+  animation: siri-ripple-burst 0.6s var(--ease-apple-decel) forwards;
+}
+
+/* 波纹动画 */
+@keyframes siri-ripple-breathe {
+  0%   { transform: scale(1);    opacity: 0.3; }
+  50%  { transform: scale(1.2);  opacity: 0.1; }
+  100% { transform: scale(1);    opacity: 0.3; }
+}
+
+@keyframes siri-ripple-burst {
+  0%   { transform: scale(1);   opacity: 0.5; }
+  100% { transform: scale(2);   opacity: 0; }
+}
+
+/* --------------------------------------------------
+   10. 滚动入场动画 — Apple 风格 fade-up
+   -------------------------------------------------- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--duration-apple-slow) var(--ease-apple-decel),
+              transform var(--duration-apple-slow) var(--ease-apple-decel);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 延迟入场 — 让元素依次出现 */
+.animate-on-scroll:nth-child(1) { transition-delay: 0s; }
+.animate-on-scroll:nth-child(2) { transition-delay: 0.08s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.16s; }
+.animate-on-scroll:nth-child(4) { transition-delay: 0.24s; }
+.animate-on-scroll:nth-child(5) { transition-delay: 0.32s; }
+
+/* --------------------------------------------------
+   11. 背景渐变 — Apple 风格的 mesh gradient
+   -------------------------------------------------- */
+.mesh-gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 80% 60% at 10% 20%, rgba(90, 120, 255, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 90% 80%, rgba(175, 82, 222, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(100, 210, 255, 0.03) 0%, transparent 70%),
+    #FFFFFF;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------
+   12. 响应式适配
+   -------------------------------------------------- */
+
+/* --- iPad / 平板竖屏 (768px - 1024px) --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container {
+    max-width: 768px;
+    padding: 0 var(--space-md);
+  }
+
+  h1, .hero-title {
+    font-size: clamp(2.25rem, 6vw, 4rem);
+  }
+
+  h2, .section-title {
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  }
+
+  section {
+    padding: var(--space-xl) 0;
+  }
+
+  /* 表格横向滚动 */
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: var(--space-md) 0;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--apple-border);
+  }
+
+  .apple-table {
+    min-width: 600px;
+  }
+}
+
+/* --- 手机横屏 / 小平板 (481px - 768px) --- */
+@media (max-width: 768px) and (min-width: 481px) {
+  .container {
+    max-width: 100%;
+    padding: 0 var(--space-sm);
+  }
+
+  h1, .hero-title {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+  }
+
+  h2, .section-title {
+    font-size: clamp(1.375rem, 4vw, 2.25rem);
+  }
+
+  p, .body-text {
+    font-size: clamp(0.9375rem, 2.5vw, 1.0625rem);
+  }
+
+  section {
+    padding: var(--space-lg) 0;
+  }
+
+  .apple-card {
+    padding: var(--space-md);
+  }
+
+  /* 卡片变全宽 */
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
+
+/* --- 手机竖屏 (< 480px) --- */
+@media (max-width: 480px) {
+  :root {
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    --space-3xl: 5rem;
+  }
+
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 0 var(--space-sm);
+  }
+
+  h1, .hero-title {
+    font-size: clamp(1.75rem, 8vw, 2.75rem);
+    letter-spacing: -0.02em;
+  }
+
+  h2, .section-title {
+    font-size: clamp(1.25rem, 5vw, 1.875rem);
+  }
+
+  p, .body-text {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+
+  section {
+    padding: var(--space-md) 0;
+  }
+
+  section + section {
+    padding-top: var(--space-md);
+  }
+
+  .apple-card {
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+  }
+
+  .apple-btn {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  /* Siri Glob 缩小 */
+  .siri-glob-container {
+    --glob-size: 80px;
+    margin: var(--space-lg) auto;
+  }
+
+  /* 表格在小屏下更紧凑 */
+  .apple-table {
+    font-size: 0.8125rem;
+  }
+
+  .apple-table thead th {
+    font-size: 0.6875rem;
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  .apple-table tbody td {
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  /* 代码块在小屏下允许横向滚动 */
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.75rem;
+  }
+
+  /* 导航栏更紧凑 */
+  .nav-glass {
+    padding: calc(var(--space-sm) * 0.5) 0;
+  }
+}
+
+/* --- 大屏桌面 (> 1440px) --- */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1120px;
+  }
+
+  h1, .hero-title {
+    font-size: clamp(3rem, 7vw, 6rem);
+  }
+
+  h2, .section-title {
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+  }
+
+  p, .body-text {
+    font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
+  }
+
+  section {
+    padding: var(--space-3xl) 0;
+  }
+}
+
+/* --- 超大屏 (> 2560px) --- */
+@media (min-width: 2560px) {
+  html {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* ---  prefers-reduced-motion — 尊重用户动画偏好 --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* --- 打印样式 --- */
+@media print {
+  .nav-glass,
+  .siri-glob-container,
+  .mesh-gradient-bg {
+    display: none !important;
+  }
+
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    color: #000;
+  }
+
+  a::after {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------
+   13. 暗色模式支持（Apple 风格的 dark mode）
+   -------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --apple-black:       #F5F5F7;
+    --apple-dark-gray:   #D1D1D6;
+    --apple-mid-gray:    #86868B;
+    --apple-light-gray:  #1C1C1E;
+    --apple-border:      rgba(255, 255, 255, 0.1);
+    --apple-glass-bg:    rgba(28, 28, 30, 0.72);
+    --apple-glass-border: rgba(255, 255, 255, 0.08);
+  }
+
+  body {
+    background: #000000;
+    color: var(--apple-black);
+  }
+
+  .apple-card {
+    background: var(--apple-light-gray);
+    border-color: var(--apple-border);
+  }
+
+  .apple-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .mesh-gradient-bg {
+    background:
+      radial-gradient(ellipse 80% 60% at 10% 20%, rgba(90, 120, 255, 0.1) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 90% 80%, rgba(175, 82, 222, 0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 50% at 50% 50%, rgba(100, 210, 255, 0.05) 0%, transparent 70%),
+      #000000;
+  }
+
+  .siri-glob {
+    box-shadow:
+      inset 0 -6px 16px rgba(255, 255, 255, 0.15),
+      0 6px 10px rgba(60, 100, 220, 0.2),
+      0 16px 50px rgba(80, 130, 255, 0.15),
+      0 0 100px rgba(100, 160, 255, 0.08);
+  }
+
+  .siri-glob-container:hover .siri-glob {
+    box-shadow:
+      inset 0 -8px 20px rgba(255, 255, 255, 0.2),
+      0 8px 16px rgba(60, 100, 220, 0.25),
+      0 20px 70px rgba(80, 130, 255, 0.25),
+      0 0 120px rgba(100, 160, 255, 0.15);
+  }
+}
+
+/* --------------------------------------------------
+   14. Utility Classes
+   -------------------------------------------------- */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+
+/* 文字渐变色 — Apple 发布会风格 */
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--apple-blue) 0%,
+    var(--apple-indigo) 50%,
+    var(--apple-purple) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 分隔线 — Apple 风格 */
+.divider {
+  height: 1px;
+  background: var(--apple-border);
+  margin: var(--space-lg) 0;
+  border: none;
+}
+
+/* 标签/徽章 */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-full);
+  background: rgba(0, 113, 227, 0.1);
+  color: var(--apple-blue);
+}
+
+.badge--success {
+  background: rgba(52, 199, 89, 0.1);
+  color: #34C759;
+}
+
+.badge--warning {
+  background: rgba(255, 149, 0, 0.1);
+  color: #FF9500;
+}
+
+.badge--danger {
+  background: rgba(255, 45, 85, 0.1);
+  color: #FF2D55;
+}
+
+/* 骨架屏 loading */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--apple-light-gray) 25%,
+    rgba(255, 255, 255, 0.5) 50%,
+    var(--apple-light-gray) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s ease-in-out infinite;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

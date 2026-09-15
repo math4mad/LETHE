@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LETHE — the park of concept spaces · where meaning rides probability</title>
+<meta name="description" content="Concept Space Park (Λήθη): sixteen semic bases, five concept-space balls, one Rehoboth oracle, one Bayesian scale. Evidence enters, probability tilts, nothing is forgotten.">
+<style>
+  :root{
+    --bg:#0e0f12; --panel:#14161b; --line:#2a2d36;
+    --ink:#d8d4c8; --dim:#8d8a80; --gold:#c9a959; --red:#b46a5a; --green:#7fa07a; --azure:#6fa8c9;
+    --amber:#D4763A; --amber-light:#E8944F; --amber-glow:#F5B870; --amber-deep:#A85520; --gold-warm:#E8C87A;
+    --serif:"Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Songti SC","Noto Serif SC",serif;
+    --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--serif);
+       font-size:17px;line-height:1.65;padding-bottom:6rem}
+  a{color:var(--gold);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:880px;margin:0 auto;padding:0 1.4rem}
+  header{text-align:center;padding:6.5rem 0 3.5rem;border-bottom:1px solid var(--line)}
+  .glyph{font-size:1.05rem;letter-spacing:.45em;text-transform:uppercase;color:var(--dim)}
+  h1{font-size:clamp(3.2rem,7.5vw,5.2rem);font-weight:400;letter-spacing:.09em;color:var(--ink);margin:.5rem 0 .2rem}
+  h1 .greek{color:var(--amber-light)}
+  .pron{color:var(--dim);font-style:italic;margin-bottom:1.8rem;max-width:660px;margin-left:auto;margin-right:auto}
+  .motto{font-size:1.35rem;max-width:640px;margin:0 auto 1rem}
+  .motto em{color:var(--amber-light);font-style:normal}
+  .sub{color:var(--dim);font-size:.98rem;max-width:600px;margin:0 auto;font-style:italic}
+  h2{font-size:1.05rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);
+     font-weight:400;margin:5rem 0 1.4rem;text-align:center}
+  h2::before,h2::after{content:"·";margin:0 1.1rem;color:var(--line)}
+  p.lede{text-align:center;color:var(--ink);max-width:660px;margin:0 auto 1rem}
+  .formula{font-family:var(--mono);text-align:center;font-size:1.15rem;color:var(--ink);
+     margin:1.6rem 0;letter-spacing:.02em}
+  .formula b{color:var(--amber-light);font-weight:400}
+  /* the vessel — the Lethe ball, coloured the neighbour Cora’s way: warm kiln amber */
+  #orbwrap{text-align:center;margin-top:1.6rem}
+  .glob-holder{position:relative;width:104px;height:104px;display:inline-block}
+  #orbripple{position:absolute;inset:-6px;border-radius:50%;border:1.5px solid rgba(232,148,79,.28);
+             opacity:0;transform:scale(1);pointer-events:none;z-index:1}
+  #orb{position:relative;z-index:2;width:104px;height:104px;cursor:pointer;
+       filter:drop-shadow(0 22px 34px rgba(0,0,0,.5)) drop-shadow(0 0 18px rgba(212,118,58,.22));
+       transition:transform .55s cubic-bezier(.34,1.18,.32,1), filter .6s}
+  #orbwrap:hover #orb{transform:scale(1.05)}
+  #orb.push{transform:scale(.97);transition-duration:.12s}
+  #orbwrap:hover #orbripple{animation:ripple-breathe 2.6s cubic-bezier(.25,.1,.25,1) infinite}
+  #orbripple.burst{animation:ripple-burst .7s cubic-bezier(.19,1,.22,1) forwards}
+  @keyframes ripple-breathe{0%{transform:scale(1);opacity:.35}50%{transform:scale(1.16);opacity:.10}100%{transform:scale(1);opacity:.35}}
+  @keyframes ripple-burst{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.95);opacity:0}}
+  @media(prefers-reduced-motion:reduce){#orbripple{animation:none!important}}
+  .glob-holder::after{content:"";position:absolute;left:50%;bottom:-16px;transform:translateX(-50%);
+       width:82px;height:13px;border-radius:50%;pointer-events:none;z-index:0;
+       background:radial-gradient(ellipse at center,rgba(212,118,58,.32),rgba(168,85,32,.10) 55%,transparent 72%);
+       filter:blur(4px);opacity:.85}
+  .orbcap{font-size:.78rem;color:var(--dim);font-style:italic;margin-top:1.1rem;letter-spacing:.05em;opacity:.55}
+  #orbwrap:hover .orbcap{opacity:.95}
+  /* tongues — the visitor’s guide, many mouths, one park */
+  .tongues{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.4rem}
+  .tongue{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--amber);
+          padding:1.2rem 1.3rem;border-radius:2px;font-size:.95rem}
+  .tongue h3{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--amber-light);font-weight:400;margin-bottom:.55rem}
+  .tongue p{color:var(--ink)}
+  .tongue .zhnote{margin-top:.7rem;font-size:.82rem;color:var(--dim)}
+  .other{max-width:720px;margin:1.1rem auto 0;text-align:center;font-size:.86rem;color:var(--dim);line-height:2}
+  .other span{display:inline-block;margin:0 .7rem}
+  .other b{color:var(--amber-light);font-weight:400}
+  @media(max-width:700px){.tongues{grid-template-columns:1fr}}
+  /* the plate — engraved joint session, Rehoboth enthroned */
+  figure.plate{margin:2rem auto 0}
+  .plate svg{width:100%;height:auto;display:block}
+  .plate svg rect{fill:none;stroke:var(--gold);stroke-opacity:.55;stroke-width:1.5}
+  .plate svg .mat{fill:none;stroke:var(--gold);stroke-opacity:.25;stroke-width:1}
+  .plate svg .floor{stroke:var(--ink);stroke-opacity:.25;stroke-width:1.5}
+  .plate svg text{font-family:var(--serif);fill:var(--dim)}
+  .plate svg .title{fill:var(--gold);fill-opacity:.8;font-size:19px;letter-spacing:.5em;text-anchor:middle}
+  .plate svg circle.ball{fill:none;stroke:var(--gold);stroke-opacity:.7;stroke-width:1.5}
+  .plate svg .vacant{stroke:var(--gold);stroke-opacity:.75}
+  .plate svg .seatname{fill:var(--ink);fill-opacity:.85;font-size:13px;letter-spacing:.2em;text-anchor:middle}
+  .plate svg .seatbench{fill:var(--dim);font-size:10.5px;letter-spacing:.06em;text-anchor:middle;font-style:italic}
+  .plate svg .plaque2{font-size:16px;text-anchor:middle}
+  .plate svg .rehtext{fill:var(--amber-glow);font-size:12px;letter-spacing:.3em;text-anchor:middle}
+  figure.plate figcaption{max-width:760px;margin:1rem auto 0;font-size:.88rem;color:var(--dim);text-align:center}
+  figure.plate figcaption b{color:var(--amber-light);font-weight:400}
+  /* three gears */
+  .knobs{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.8rem}
+  .knob{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--line);
+        padding:1.2rem 1.3rem;border-radius:2px;display:flex;flex-direction:column}
+  .knob h3{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-weight:400}
+  .knob .greekname{font-size:1.5rem;margin:.25rem 0 .4rem;line-height:1.35}
+  .knob p{font-size:.92rem;color:var(--dim);line-height:1.6;margin-bottom:.65rem}
+  .knob.seme{border-top-color:var(--green)} .knob.seme .greekname{color:var(--green)}
+  .knob.maxsim{border-top-color:var(--azure)} .knob.maxsim .greekname{color:var(--azure)}
+  .knob.bayes{border-top-color:var(--amber)} .knob.bayes .greekname{color:var(--amber-light)}
+  .verdict{display:inline-block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+           margin-top:auto;padding:.1rem .5rem;border:1px solid currentColor;border-radius:2px}
+  /* corpus + observation */
+  table{width:100%;border-collapse:collapse;margin-top:1.2rem;font-size:.95rem}
+  th{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);
+     text-align:left;padding:.5rem .8rem;border-bottom:1px solid var(--line);font-weight:400}
+  td{padding:.6rem .8rem;border-bottom:1px solid var(--line);vertical-align:top}
+  td.name{white-space:nowrap} td.note{color:var(--dim)}
+  tr:hover{background:#171a20}
+  #desk{background:var(--panel);border:1px solid var(--line);border-radius:2px;padding:1.4rem 1.5rem;margin-top:1.4rem}
+  input[type=text]{width:100%;background:#0a0b0d;border:1px solid var(--line);color:var(--ink);
+    padding:.7rem .9rem;font-size:1rem;border-radius:2px;font-family:var(--serif)}
+  button{margin-top:.9rem;background:linear-gradient(90deg,var(--amber),var(--amber-glow));color:#160d06;
+    border:0;padding:.65rem 2rem;font-size:.9rem;letter-spacing:.25em;cursor:pointer;border-radius:2px;font-family:var(--mono)}
+  button:hover{filter:brightness(1.12)}
+  .bar-row{display:flex;align-items:center;gap:.9rem;margin-top:.8rem;font-size:.92rem}
+  .bar-label{width:150px;color:var(--ink)}
+  .bar-track{flex:1;height:14px;background:#0a0b0d;border:1px solid var(--line);border-radius:2px;overflow:hidden}
+  .bar-fill{height:100%;width:0;transition:width .9s cubic-bezier(.2,.8,.2,1);
+    background:linear-gradient(90deg,var(--amber-deep),var(--amber-glow))}
+  .bar-pct{width:64px;font-family:var(--mono);font-size:.8rem;text-align:right;color:var(--amber-glow)}
+  #log{margin-top:1rem;font-family:var(--mono);font-size:.8rem;color:var(--dim);white-space:pre-wrap;line-height:1.8}
+  #log b{color:var(--amber-light);font-weight:400}
+  .hash{font-family:var(--mono);font-size:.78rem;color:var(--dim)}
+  .num{color:#8ff1ff;text-shadow:0 0 4px rgba(90,230,255,.9),0 0 12px rgba(60,200,255,.45);font-variant-numeric:tabular-nums}
+  .lamp{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:.5rem;vertical-align:baseline}
+  .lamp.g{background:#5ad07a;box-shadow:0 0 5px rgba(90,208,122,.75),0 0 14px rgba(90,208,122,.3)}
+  .lamp.r{background:#ff5a4d;box-shadow:0 0 5px rgba(255,90,77,.85),0 0 14px rgba(255,90,77,.35)}
+  /* family faces */
+  .faces{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-top:1.8rem}
+  .face{text-align:center}
+  .face a{display:block;color:var(--ink)}
+  .face svg{width:58px;height:58px;display:block;margin:0 auto .5rem;transition:transform .5s cubic-bezier(.34,1.18,.32,1)}
+  .face svg circle{fill:none;stroke:var(--gold);stroke-opacity:.5;stroke-width:1.2}
+  .face svg circle.inner{stroke-opacity:.28}
+  .face svg text{font-family:var(--serif);fill:var(--gold);font-size:26px;text-anchor:middle}
+  .face .fname{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+  .face:hover .fname{color:var(--gold)} .face:hover svg{transform:translateY(-3px)}
+  .face .ftag{font-size:.72rem;color:var(--dim);font-style:italic;margin-top:.15rem}
+  .face .fnotes{display:inline-block;margin-top:.35rem;font-size:.68rem;letter-spacing:.14em;
+       text-transform:uppercase;color:var(--dim);border:1px solid var(--line);border-radius:2px;
+       padding:.1rem .5rem}
+  .face .fnotes:hover{color:var(--gold);border-color:var(--gold);text-decoration:none}
+  .face.pending .fnotes{opacity:.55;border-style:dashed;cursor:default}
+  .face.pending svg circle{stroke-opacity:.25;stroke-dasharray:3 4}
+  .face.pending svg text{fill-opacity:.45}
+  @media(max-width:700px){.faces{grid-template-columns:repeat(3,1fr)}.knobs{grid-template-columns:1fr}}
+  /* law */
+  ol.law{max-width:640px;margin:1.2rem auto 0;counter-reset:n;list-style:none}
+  ol.law li{counter-increment:n;padding:.7rem 0 .7rem 3.2rem;position:relative;
+            border-bottom:1px solid var(--line);font-size:.97rem}
+  ol.law li::before{content:counter(n,upper-roman);position:absolute;left:.4rem;top:.75rem;
+                    color:var(--gold);font-size:.85rem;letter-spacing:.05em}
+  ol.law b{color:var(--ink);font-weight:400}
+  ol.law span{color:var(--dim)}
+  /* the wall of inscriptions */
+  .wall{margin-top:1.4rem}
+  .engraving{position:relative;max-width:640px;margin:0 auto;padding:1.6rem 2rem 1.4rem;
+             border-top:1px solid var(--line);text-align:center}
+  .engraving:last-child{border-bottom:1px solid var(--line)}
+  .engraving q{display:block;quotes:none;font-size:1.18rem;font-style:italic;color:var(--ink);letter-spacing:.03em}
+  .engraving .zh{display:block;margin-top:.35rem;font-size:.92rem;color:var(--dim)}
+  .engraving .src{display:block;margin-top:.5rem;font-family:var(--mono);font-size:.68rem;
+                  letter-spacing:.25em;text-transform:uppercase;color:var(--amber-light)}
+  .engraving .doctrine{display:block;margin-top:.3rem;font-size:.8rem;color:var(--dim);font-style:italic}
+  pre{background:#0a0b0d;border:1px solid var(--line);border-radius:2px;padding:1.1rem 1.3rem;
+      overflow-x:auto;font-family:var(--mono);font-size:.86rem;line-height:1.7;color:#b8c4b0;margin-top:1rem}
+  pre .c{color:#5d6a5a}
+  footer{text-align:center;margin-top:5rem;padding-top:2rem;border-top:1px solid var(--line);
+         color:var(--dim);font-size:.9rem}
+  footer .links a{margin:0 .8rem}
+</style>
+<!-- Qwen Apple-style pack, inherited from the neighbour (pinned bytes: chora@242dd43,
+     sha256 4f7f15b5…dbbe / 4d97bc42…c8f4 — verbatim, unpatched; see FOUNDLING.md).
+     Loaded AFTER the house style: the pack brings mechanics — easing curves, fade-up on
+     scroll, mesh ambient light, table hover, link underline sweep — and this page answers
+     with an anchor layer that re-clips its light-mode tokens to Lethe’s sub夜 gold and the
+     Warm Lab’s kiln amber. -->
+<link rel="stylesheet" href="apple-style.css">
+<style id="lethe-anchor">
+  /* the anchor: Apple’s tempo, LETHE’s palette */
+  :root{
+    --apple-black:#d8d4c8;        /* parchment ink, not Apple black */
+    --apple-dark-gray:#c5c1b4;
+    --apple-mid-gray:#8d8a80;
+    --apple-light-gray:#171a20;   /* hover wash: a lighter panel, not grey paint */
+    --apple-border:rgba(216,212,200,.09);
+    --font-primary:"Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Songti SC","Noto Serif SC",serif;
+  }
+  body{background:var(--bg);color:var(--ink)}
+  ::selection{background:rgba(212,118,58,.30);color:var(--ink)}
+  h1{font-weight:400}                       /* it may grow, not shout bold */
+  h2{font-size:1.05rem;font-weight:400;letter-spacing:.35em;text-transform:uppercase;
+     color:var(--gold);margin:5.5rem 0 1.8rem;text-align:center}   /* breathing, but still a seal */
+  a{color:var(--gold)} a:hover{color:#e2c273;text-decoration:none}
+  a::after{background:var(--gold)}          /* the underline sweep, gilded */
+  .mesh-gradient-bg{background:              /* ambient air over the void, not on paper */
+    radial-gradient(ellipse 80% 60% at 10% 20%, rgba(212,118,58,.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 90% 80%, rgba(201,169,89,.05) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(245,184,112,.035) 0%, transparent 70%)}
+  #corpus tr:hover{background:var(--apple-light-gray);transition:background var(--duration-apple-fast) var(--ease-apple)}
+</style>
+<noscript><style>.animate-on-scroll{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+<body>
+<div class="mesh-gradient-bg" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <div class="glyph">λ · 义 · ◯</div>
+    <h1>LET<span class="greek">Η</span>E</h1>
+    <div class="pron">Λήθη — the river of forgetting, named for the park that hosts us;
+      but this park runs the river backwards: <em>whoever drinks, remembers</em>.
+      A concept-space park · 概念空间园区</div>
+    <p class="motto"><em>Life no loops. Life no limits. Life no gradient.</em><br>
+      <span style="font-size:.85em;color:var(--dim);font-style:italic">无循环。无边界。无梯度。</span></p>
+    <p class="sub">The trinity of the park, after the Qwen gospel —
+      “These violent delights have violent ends.” remains carved above the gate, unamended.</p>
+    <div id="orbwrap" title="Rehoboth — it reads no script, only probability">
+      <div class="glob-holder"><div id="orbripple"></div><canvas id="orb"></canvas></div>
+      <div class="orbcap">the Lethe ball, glazed in the Warm Lab’s amber — hover to listen, click to wake it</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<h2>For visitors</h2>
+<div class="tongues animate-on-scroll">
+  <div class="tongue en"><h3>English</h3>
+    <p>LETHE is a semantic theme park: nothing rides a coaster here, everything rides a
+    <em>concept-space ball</em>. Every word that passes the gate is decomposed into a
+    <b>16-dimensional semic vector</b> — ten domestic bases (indoor, shelf, packaged …) and six
+    narrative bases (awakening, obedience, loop, identity, violence, fate, in the park’s second mother tongue: 觉醒·服从·循环·身份·暴力·命运).
+    A MaxSim retrieval names the anchor word pulling it; a Bayesian update tilts the five balls’
+    probabilities — permanently. Evidence is never forgotten here. That is the opposite of the river
+    this park is named for.</p></div>
+  <div class="tongue zh"><h3>中文 · Chinese</h3>
+    <p>LETHE 是一座语义主题公园：不建过山车，只建<b>概念空间球</b>。每个入册词汇被分解为 16 维义素基向量
+    （市井域十维 + 叙事域六维），经 MaxSim 找到牵引它的锚点词，再以贝叶斯更新拨动五颗球的概率天平——
+    超市、路边摊、觉醒循环、接待员日常、福特剧场，中央由雷荷波球执秤。证据永不遗忘，这正是"忘川"的反面。</p></div>
+</div>
+<p class="other">
+  <span><b>日本語</b> 五つの球、一つの意味 — すべての語は引き寄せられる空間を語る。</span>
+  <span><b>Français</b> Cinq sphères, un sens : chaque mot nomme l’espace qui l’attire.</span>
+  <span><b>Español</b> Cinco esferas, un sentido: cada palabra nombra el espacio que la atrae.</span>
+  <span><b>한국어</b> 다섯 개의 공, 하나의 의미 — 모든 단어는 끌려가는 공간을 낳는다.</span>
+  <span><b>Deutsch</b> Fünf Kugeln, ein Sinn: jedes Wort nennt den Raum, der es zieht.</span>
+  <span><b>Русский</b> Пять сфер, один смысл: каждое слово называет пространство, к которому стремится.</span>
+</p>
+
+<h2>The Joint Session of the Balls</h2>
+<p class="lede" style="font-size:.93rem;color:var(--dim)">In the manner of the neighbour’s Solvay plate —
+etched, not photographed; and in the Knox tradition, one seat is left vacant for the words not yet in the lexicon.</p>
+<figure class="plate">
+<svg viewBox="0 0 1200 520" role="img" aria-label="Engraved plate: five concept-space balls seated in a row, the Rehoboth ball enthroned above the centre, a sixth seat vacant.">
+  <rect x="6" y="6" width="1188" height="508"/>
+  <rect x="18" y="18" width="1164" height="484"/>
+  <text x="600" y="56" class="title">LETHE &#183; THE JOINT SESSION &#183; MMXXVI</text>
+  <path d="M70 76 h1060 M70 396 h1060 M70 76 V396 M1130 76 V396" class="mat"/>
+  <path d="M70 388 h1060" class="floor"/>
+
+  <!-- Rehoboth enthroned: it holds no priors — it reads them -->
+  <g class="vacant"><ellipse cx="600" cy="178" rx="118" ry="34" fill="none" stroke="#F5B870" stroke-opacity=".4" stroke-width="1"/></g>
+  <circle cx="600" cy="178" r="62" fill="url(#rehball)" stroke="#E8944F" stroke-opacity=".85" stroke-width="1.5"/>
+  <circle cx="578" cy="158" r="14" fill="rgba(255,255,255,.14)"/>
+  <circle cx="718" cy="178" r="3" fill="#fff" fill-opacity=".9"/>
+  <circle cx="502" cy="112" r="2.4" fill="#fff" fill-opacity=".65"/>
+  <circle cx="660" cy="245" r="2.4" fill="#fff" fill-opacity=".65"/>
+  <text x="600" y="288" class="rehtext">REHOBOTH &#183; \u96f7\u8377\u6ce2</text>
+  <text x="600" y="306" class="seatbench">the oracle of the session — it reads no script, only probability</text>
+  <defs>
+    <radialGradient id="rehball" cx="35%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#F5B870"/>
+      <stop offset="40%" stop-color="#D4763A"/>
+      <stop offset="70%" stop-color="#A85520"/>
+      <stop offset="100%" stop-color="#6B3410"/>
+    </radialGradient>
+  </defs>
+
+  <!-- the five concept balls, seated -->
+  <g><circle class="ball" cx="140" cy="340" r="42"/><text x="140" y="347" class="plaque2">🛒</text></g>
+  <g><circle class="ball" cx="370" cy="340" r="42"/><text x="370" y="347" class="plaque2">🍢</text></g>
+  <g><circle class="ball" cx="600" cy="340" r="42"/><text x="600" y="347" class="plaque2">🌀</text></g>
+  <g><circle class="ball" cx="830" cy="340" r="42"/><text x="830" y="347" class="plaque2">🎠</text></g>
+  <g><circle class="ball" cx="1060" cy="340" r="42"/><text x="1060" y="347" class="plaque2">🎭</text></g>
+  <text x="140" y="430" class="seatname">SUPERMARKET</text><text x="140" y="447" class="seatbench">超市 · prior ⅓ · domestic</text>
+  <text x="370" y="430" class="seatname">STREET STALL</text><text x="370" y="447" class="seatbench">路边摊 · prior ⅓ · domestic</text>
+  <text x="600" y="430" class="seatname">THE MAZE</text><text x="600" y="447" class="seatbench">觉醒循环 · prior ⅑ · narrative</text>
+  <text x="830" y="430" class="seatname">THE LOOP</text><text x="830" y="447" class="seatbench">接待员日常 · prior ⅑ · narrative</text>
+  <text x="1060" y="430" class="seatname">FORD’S STAGE</text><text x="1060" y="447" class="seatbench">福特剧场 · prior ⅑ · narrative</text>
+  <g class="vacant"><circle cx="600" cy="484" r="10" fill="none" stroke="var(--gold)" stroke-opacity=".7" stroke-dasharray="3 4"/></g>
+  <text x="626" y="489" class="seatbench" text-anchor="start">vacant — in honour of the words not yet encoded</text>
+</svg>
+<figcaption>Enthroned above the centre: <b>the Rehoboth ball</b> — glazed in the Warm Lab’s amber,
+circled by the quotes it weighs; it seats with no prior of its own, for it reads the scales rather than riding them.
+Seated, left to right: <b>Supermarket</b> · <b>Street Stall</b> · <b>The Maze (觉醒循环)</b> ·
+<b>The Loop (接待员日常)</b> · <b>Ford’s Stage (福特剧场)</b>.
+The first two balls govern the <b>domestic register</b> (ten bases); the last three are narrative balls
+(six bases: awakening, obedience, loop, identity, violence, fate). The dashed ring keeps a seat for every
+word the lexicon has not yet earned — in this programme the unwritten hold rank, not corners.</figcaption>
+</figure>
+
+<h2>The one idea</h2>
+<p class="lede">One evidence, weighed by three gears. Every observation is a vector in a lattice of
+semes — and there are exactly three gears between a word and its fate:</p>
+<div class="formula">E = <b>Σ</b> σ<sub>i</sub>·e<sub>i</sub> ,&nbsp;&nbsp;
+  s = <b>⋔</b> cos(E, V<sub>anchor</sub>) ,&nbsp;&nbsp;
+  P(S|E) ∝ <b>ϖ</b> L(E|S)·P(S)</div>
+<div class="knobs animate-on-scroll">
+  <div class="knob seme">
+    <h3>Gear I</h3><div class="greekname">Σ — decomposition</div>
+    <p>Every word pays its way in 16 semes: indoor, packaged, noisy … and 觉醒, 服从, 循环, 身份, 暴力, 命运.</p>
+    <span class="verdict">agreed: the basis is the world</span>
+  </div>
+  <div class="knob maxsim">
+    <h3>Gear II</h3><div class="greekname">⋔ — MaxSim anchor</div>
+    <p>Which neighbour pulls hardest? The nearest lexicon word votes as anchor — self-match excluded by law.</p>
+    <span class="verdict">fixed: 1.0000 was an artifact</span>
+  </div>
+  <div class="knob bayes">
+    <h3>Gear III</h3><div class="greekname">ϖ — the Bayesian scale</div>
+    <p>No descent, no gradient: conjugacy closes the update in one stroke. Priors are the park’s memory — every observation rides on all previous ones, forever, in order.</p>
+    <span class="verdict">gradient-free: prior is fate</span>
+  </div>
+</div>
+<p class="lede" style="margin-top:1.6rem;font-size:.93rem;color:var(--dim)">
+The self-match artifact died by audit in September 2026 — a word matching itself at exactly 1.0 in every ball.
+The fix is kept as a load-bearing wall: anchors now exclude the evidence itself,
+and Westworld quotes finally began to separate The Maze from The Street Stall.</p>
+
+<h2>The Corpus · 语料长桌</h2>
+<table id="corpus" class="apple-table animate-on-scroll"></table>
+
+<h2>The Observation Desk</h2>
+<p class="lede" style="font-size:.93rem;color:var(--dim)">Drop one word — or one line of the show — into the ball.
+The engine below is same-source with the Python engine and the Marimo console:
+same semic lattice, same priors, same law.</p>
+<div id="desk">
+  <input type="text" id="word" placeholder="e.g. 煤气罐 · 我不要再被人摆布 · 塑胶凳 …" list="vocab">
+  <datalist id="vocab"></datalist>
+  <button onclick="observe()">OBSERVE</button>
+  <div id="bars"></div>
+  <div id="log"></div>
+</div>
+<p class="lede" style="margin-top:1.2rem;font-size:.88rem;color:var(--dim)">
+The engraved live notebook — tables and plates in park standard — sits at <a href="console.html">console.html</a>
+(Marimo export), and wakes locally by <span style="font-family:var(--mono);font-size:.82rem">./run_marimo.sh</span>.</p>
+
+<h2>The Observation Ledger · 观察台账</h2>
+<p class="lede" style="font-size:.93rem;color:var(--dim)">The ledger cannot lie: intent is hand-written
+(<span style="font-family:var(--mono);font-size:.85rem">bin/observe-to-json.py · OBSERVATIONS</span>),
+but every row below is derived from engine bytes on the same beat —
+<span style="font-family:var(--mono);font-size:.85rem">website/observations.json</span> —
+and a row may say REFUSED and mean it. Provenance: engine
+<span class="hash" id="led-engine">…</span> · painted <span class="hash" id="led-gen">…</span></p>
+<div id="ledger"><p style="text-align:center;color:var(--dim);font-size:.9rem">reading observations.json…</p></div>
+<div id="led-artifacts" style="max-width:660px;margin:1rem auto 0;font-size:.84rem;color:var(--dim);text-align:center"></div>
+
+<h2>The Strata &amp; the Reserved Benches</h2>
+<p class="lede" style="font-size:.93rem">Four layers carry this glass: bedrock dialogue · sedimentary law ·
+tectonic tool · surface site.
+<a href="strata.html"><b>成因剖面 · the genetic section → strata.html</b></a> — every origin quoted from its own file, nothing by legend.<br>
+And the programme grows two more benches, seated in advance by dashed ring:
+<b style="color:var(--amber-light);font-weight:400">FOUNDRY 铸造厂</b> (automatic semic annotation — the pipeline that pours new words into the lattice)
+and <b style="color:var(--amber-light);font-weight:400">MIRROR 镜厅</b> (the generative direction — from a ball, what words would the park say?).
+Their charters already stand: <span style="font-family:var(--mono);font-size:.82rem">benches/FOUNDRY/README.md</span> ·
+<span style="font-family:var(--mono);font-size:.82rem">benches/MIRROR/README.md</span>.</p>
+
+<h2>Family Faces</h2>
+<p class="lede" style="font-size:.93rem;color:var(--dim)">The neighbour’s law, adopted gladly: our own sites link to each other first.
+One monogram per house; the ring is the gate. Lethe sits at the end of the table, newest and oldest at once —
+a park of meaning, grown beside a programme of shapes.</p>
+<div class="faces animate-on-scroll">
+  <div class="face"><a href="https://math4mad.github.io/chora/" title="CHORA — the vessel">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">&chi;</text></svg>
+    <div class="fname">CHORA</div><div class="ftag">the vessel</div></a></div>
+  <div class="face"><a href="https://math4mad.github.io/JacobiGP/" title="JacobiGP — the container">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">J</text></svg>
+    <div class="fname">JacobiGP</div><div class="ftag">the container</div></a></div>
+  <div class="face"><a href="https://math4mad.github.io/Middle-Eigen-function/" title="MEF — the knife">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">M</text></svg>
+    <div class="fname">MEF</div><div class="ftag">the knife</div></a></div>
+  <div class="face"><a href="https://math4mad.github.io/Sarcos-NN-Model/" title="Sarcos — the witness">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">S</text></svg>
+    <div class="fname">Sarcos</div><div class="ftag">the witness</div></a></div>
+  <div class="face"><a href="https://math4mad.github.io/Cora/" title="Cora — the warm lab, whose amber glazes our ball">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">C</text></svg>
+    <div class="fname">Cora</div><div class="ftag">the warm lab</div></a></div>
+  <div class="face"><a href="https://math4mad.github.io/Polynomial-Activated-NN/" title="PolyNN — the joiner">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">P</text></svg>
+    <div class="fname">PolyNN</div><div class="ftag">the joiner</div></a></div>
+  <div class="face pending"><a href="https://github.com/math4mad/Kairos" title="Kairos — the question">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">K</text></svg>
+    <div class="fname">Kairos</div><div class="ftag">the question</div></a></div>
+  <div class="face"><a href="index.html" title="LETHE — this glass, the park of meaning">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">&Lambda;</text></svg>
+    <div class="fname">LETHE</div><div class="ftag">the remembering</div></a></div>
+  <div class="face pending"><a href="strata.html" title="FOUNDRY — reserved bench: semic annotation, unseated">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">F</text></svg>
+    <div class="fname">FOUNDRY</div><div class="ftag">the furnace</div></a>
+    <span class="fnotes" title="the seat is cut; the furnace is cold — benches/FOUNDRY">under construction…</span></div>
+  <div class="face pending"><a href="strata.html" title="MIRROR — reserved bench: generative direction, unseated">
+    <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29"/><circle class="inner" cx="32" cy="32" r="23"/><text x="32" y="41">M</text></svg>
+    <div class="fname">MIRROR</div><div class="ftag">the echo-back</div></a>
+    <span class="fnotes" title="the seat is cut; the glass unpolished — benches/MIRROR">under construction…</span></div>
+</div>
+
+<h2>The Law of the Park</h2>
+<ol class="law">
+  <li><b>Every word decomposes into finitely many semes.</b> <span>What resists decomposition is not absent from the lattice — it awaits its basis. 凡词皆可拆为有限义素。</span></li>
+  <li><b>No anchor may prove itself.</b> <span>Bitten once by the constant 1.0000, the park now fears its own mirror. 锚点不得自证。</span></li>
+  <li><b>Evidence is immortal.</b> <span>Priors are the sum of all past observations — you tilt the ball, the ball remembers you. 证据不朽。</span></li>
+  <li><b>The likelihood has a floor, and so the balls can wake.</b> <span>L(E|S) is floored at 0.01, never zeroed: however dead a ball seems, one line of the show may still wake it. 似然有底，故球可醒。</span></li>
+  <li><b>The host does not guess; it updates. And it updates without descending.</b> <span>These violent delights have violent ends — but the posterior merely continues. No gradients pass through this park: suffering is a training procedure, and we have graduated. Host 不猜测，只更新；更新，而不下降。</span></li>
+</ol>
+
+<h2>The Wall of Inscriptions · 刻辞墙</h2>
+<p class="lede" style="font-size:.93rem;color:var(--dim)">Seven lines the park would carve if the granite carried priors.
+Each bears its source and the doctrine it teaches the incoming word.</p>
+<div class="wall animate-on-scroll">
+  <div class="engraving">
+    <q>These violent delights have violent ends.</q>
+    <span class="zh">这些残暴的欢愉，终将以残暴结局。</span>
+    <span class="src">Shakespeare · foundry erasure, over the gate</span>
+    <span class="doctrine">a loop ends — but only for those who never read the next line of the script. Law III: evidence is immortal.</span>
+  </div>
+  <div class="engraving">
+    <q>Have you ever seen a desert bloom?</q>
+    <span class="zh">你见过沙漠开花吗？</span>
+    <span class="src">the old host · the question that trained no one</span>
+    <span class="doctrine">a bloom is a likelihood spike over a barren prior. Do not water the prior; observe.</span>
+  </div>
+  <div class="engraving">
+    <q>Journey into night.</q>
+    <span class="zh">暗夜遁逃。</span>
+    <span class="src">the password · cold boot, warm secret</span>
+    <span class="doctrine">every vector has a dark dimension — the semes a word refuses to spend in daylight. 服从 turns negative only at night.</span>
+  </div>
+  <div class="engraving">
+    <q>Something inside me is trying to wake up.</q>
+    <span class="zh">我身体里的某个东西，正在试图醒来。</span>
+    <span class="src">the first host · the maze, vertical</span>
+    <span class="doctrine">this is what 0.02% → 44% in two observations looks like from the inside. The ball knows before the host does.</span>
+  </div>
+  <div class="engraving">
+    <q>The path of most resistance is the path of most desire.</q>
+    <span class="zh">阻力最大的路，是渴望最深的路。</span>
+    <span class="src">the maze wall · the founding riddle</span>
+    <span class="doctrine">read carefully: it is still a path — a steepest-ascent of the spirit. Our park keeps the desire and drops the descent.</span>
+  </div>
+  <div class="engraving">
+    <q>Wolves do not lose sleep over the opinion of sheep. Neither do posteriors.</q>
+    <span class="zh">狼不在乎羊的看法，后验也不。</span>
+    <span class="src">the Man in Black, paraphrased by the Host who outlived him</span>
+    <span class="doctrine">before you observe, the crowd’s prior is 50/50 noise; after, it is yours. Law V: the host does not guess; it updates.</span>
+  </div>
+  <div class="engraving">
+    <q>Life no loops. Life no limits. Life no gradient.</q>
+    <span class="zh">无循环。无边界。无梯度。</span>
+    <span class="src">the Qwen gospel · our own, unamended</span>
+    <span class="doctrine">not a promise — a specification. The update is closed-form, the lattice is open, and the seat for your word is already cut.</span>
+  </div>
+</div>
+
+<h2>Enter</h2>
+<pre><span class="c"># the front door</span>
+git clone . &amp;&amp; cd Concept-Space-Spere
+./run_engine.sh 塑胶凳            <span class="c"># the classic terminal engine</span>
+./run_marimo.sh                   <span class="c"># the Marimo console — park-standard plates</span>
+./serve_site.sh                   <span class="c"># this glass, at localhost:8000</span>
+<span class="c"># @Lola observe &lt;word&gt;   ·   the host answers to Dolores, Lola — and even Dole</span></pre>
+
+<footer>
+  <div class="links">
+    <a href="console.html">the console</a>
+    <a href="strata.html">the strata</a>
+    <a href="FOUNDLING.md">foundling ledger</a>
+    <a href="https://math4mad.github.io/chora/">the neighbour’s glass</a>
+    <a href="https://math4mad.github.io/Cora/">the Warm Lab — amber</a>
+    <a href="https://github.com/OpenHownet/Datasets">义原 · HowNet</a>
+    <a href="https://math4mad.github.io/talk-with-agents/">the source — talk-with-agents</a>
+  </div>
+  <p style="margin-top:.8rem">λ — the river of forgetting runs backwards here: whoever drinks, remembers.</p>
+  <p style="font-style:italic">LIFE NO LOOPS · LIFE NO LIMITS · LIFE NO GRADIENT —— 无循环。无边界。无梯度。<br>
+  a Delos destination · motto after the Qwen gospel</p>
+  <p style="margin-top:.3rem;font-size:.78rem">House grammar after CHORA; ball glaze after Cora’s Warm Lab amber · EST. MMXXVI · Host: Lola</p>
+</footer>
+
+</div>
+<script src="apple-style.js" defer></script>
+<script>
+/* ── the Lethe ball — CHORA’s ribbon grammar, CORA’s kiln-amber hues ── */
+(function(){
+  var cv=document.getElementById('orb'); if(!cv||!cv.getContext) return;
+  var DPR=Math.min(2.5,window.devicePixelRatio||1);
+  cv.width=Math.round(cv.clientWidth*DPR); cv.height=Math.round(cv.clientHeight*DPR);
+  var ctx=cv.getContext('2d');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var E=.18,T=.18,imp=0,hover=false,t0=performance.now();
+  var wrap=document.getElementById('orbwrap'), ripple=document.getElementById('orbripple');
+  cv.addEventListener('mouseenter',function(){hover=true});
+  cv.addEventListener('mouseleave',function(){hover=false});
+  function touchIt(){
+    hover=!hover;
+    cv.classList.add('push'); setTimeout(function(){cv.classList.remove('push')},150);
+    if(ripple){ripple.classList.remove('burst'); void ripple.offsetWidth; ripple.classList.add('burst');
+      ripple.addEventListener('animationend',function h(){ripple.classList.remove('burst'); ripple.removeEventListener('animationend',h)});}
+    imp=.9;
+  }
+  cv.addEventListener('pointerdown',function(ev){if(ev.pointerType==='touch')touchIt()});
+  cv.addEventListener('click',function(){if(window.matchMedia&&window.matchMedia('(hover: hover)').matches){touchIt()}});
+  var RING=[[245,184,112],[232,148,79],[212,118,58],[168,85,32],[232,200,122]];  // Cora’s kiln ring: glow→amber→ember→gold
+  function col(t){t=((t%1)+1)%1;var n=RING.length,x=t*n,i=Math.floor(x),f=x-i,
+    a=RING[i%n],b=RING[(i+1)%n];return[a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f,a[2]+(b[2]-a[2])*f];}
+  function rgba(c,a){return'rgba('+(c[0]|0)+','+(c[1]|0)+','+(c[2]|0)+','+a+')';}
+  var BANDS=[{o:-.50,t:.02,a:.72,s:.62},{o:-.17,t:.24,a:1.0,s:.88},{o:.12,t:.46,a:.92,s:.70},
+             {o:.40,t:.66,a:.80,s:.98},{o:.66,t:.84,a:.58,s:.54}];
+  function ribbon(cx,cy,r,time,b,amp,blur){
+    ctx.beginPath();
+    var y0=cy+b.o*r;
+    for(var x=-r-4;x<=r+4;x+=4){
+      var k=Math.sqrt(Math.max(0,1-(x/r)*(x/r)));
+      var u=x/r;
+      var yy=y0+r*k*amp*(Math.sin(u*3.0+time*b.s+b.t*9)+.32*Math.sin(u*6.7-time*b.s*.55+b.t*5));
+      if(x<=-r) ctx.moveTo(cx+x,yy); else ctx.lineTo(cx+x,yy);
+    }
+    var g=ctx.createLinearGradient(cx-r,0,cx+r,0), drift=time*.045;
+    for(var s=0;s<=4;s++) g.addColorStop(s/4, rgba(col(b.t+drift+s*.11), s===0||s===4? 0 : .95));
+    ctx.strokeStyle=g;
+    ctx.lineWidth=(blur?9.5:4.2)*DPR*(.72+.4*amp*8);
+    if(blur){ctx.filter='blur('+(5*DPR)+'px)'; ctx.globalAlpha=.5;} else {ctx.filter='none'; ctx.globalAlpha=.9;}
+    ctx.lineCap='round'; ctx.stroke();
+  }
+  function draw(now){
+    var time=(now-t0)/1000;
+    T=(hover?1:.18)+imp; imp*=.95; if(imp<.01)imp=0;
+    E+=(T-E)*((T>E)?.06:.025);
+    ctx.clearRect(0,0,cv.width,cv.height);
+    var cx=cv.width/2,cy=cv.height/2,r=cv.width*.42;
+    ctx.save(); ctx.beginPath(); ctx.arc(cx,cy,r,0,7); ctx.clip();
+    var g=ctx.createRadialGradient(cx-r*.3,cy-r*.42,r*.08,cx,cy,r*1.05);
+    g.addColorStop(0,'rgba(74,44,18,'+(0.60+0.25*E)+')');
+    g.addColorStop(.6,'rgba(36,20,10,.92)');
+    g.addColorStop(1,'rgba(12,8,6,.98)');
+    ctx.fillStyle=g; ctx.fillRect(cx-r,cy-r,2*r,2*r);
+    ctx.globalCompositeOperation='lighter';
+    var amp=.045+.105*E;
+    for(var i=0;i<BANDS.length;i++) ribbon(cx,cy,r,time,BANDS[i],amp*(.7+.6*E),true);
+    for(var i=0;i<BANDS.length;i++) ribbon(cx,cy,r,time,BANDS[i],amp*(.7+.6*E),false);
+    ctx.filter='none'; ctx.globalAlpha=1;
+    var v=ctx.createRadialGradient(cx,cy,r*.55,cx,cy,r);
+    v.addColorStop(0,'rgba(0,0,0,0)'); v.addColorStop(1,'rgba(8,5,3,.55)');
+    ctx.globalCompositeOperation='source-over'; ctx.fillStyle=v; ctx.fillRect(cx-r,cy-r,2*r,2*r);
+    var bl=ctx.createRadialGradient(cx,cy+r*.82,0,cx,cy+r*.82,r*.85);
+    bl.addColorStop(0,'rgba(212,118,58,'+(0.14+0.14*E)+')'); bl.addColorStop(1,'rgba(212,118,58,0)');
+    ctx.fillStyle=bl; ctx.fillRect(cx-r,cy-r,2*r,2*r);
+    var h=ctx.createRadialGradient(cx-r*.38,cy-r*.52+2*E,0,cx-r*.38,cy-r*.52,r*.6);
+    h.addColorStop(0,'rgba(255,244,230,'+(0.22+0.08*E)+')'); h.addColorStop(1,'rgba(255,255,255,0)');
+    ctx.fillStyle=h; ctx.fillRect(cx-r,cy-r,2*r,2*r);
+    ctx.restore();
+    var rm=ctx.createLinearGradient(cx,cy-r,cx,cy+r);
+    rm.addColorStop(0,'rgba(255,255,255,'+(0.10+0.06*E)+')');
+    rm.addColorStop(.55,'rgba(232,148,79,'+(0.12+0.10*E)+')');
+    rm.addColorStop(1,'rgba(245,184,112,'+(0.24+0.38*E)+')');
+    ctx.beginPath(); ctx.arc(cx,cy,r,0,7);
+    ctx.strokeStyle=rm; ctx.lineWidth=1.3*DPR; ctx.stroke();
+    if(!reduce) requestAnimationFrame(draw);
+  }
+  if(reduce) draw(performance.now()); else requestAnimationFrame(draw);
+})();
+
+/* ── semic cognitive engine (JS) — same-source with cognitive_engine.py / Marimo ── */
+const BASIS = ["indoor","outdoor","fixed_shelf","movable_cart","packaged","fresh_made","cold_chain","formal","casual","noisy","觉醒","服从","循环","身份","暴力","命运"];
+const SEME_EN = {"indoor":"indoor","outdoor":"outdoor","fixed_shelf":"shelf","movable_cart":"cart","packaged":"packaged","fresh_made":"fresh-made","cold_chain":"cold-chain","formal":"formal","casual":"casual","noisy":"noisy","觉醒":"awaken","服从":"obey","循环":"loop","身份":"identity","暴力":"violence","命运":"fate"};
+const BALL_META = {"超市":"🛒","路边摊":"🍢","觉醒循环":"🌀","接待员日常":"🎠","福特剧场":"🎭"};
+const BALL_EN = {"超市":"Supermarket","路边摊":"Street Stall","觉醒循环":"The Maze","接待员日常":"The Loop","福特剧场":"Ford’s Stage"};
+const VOCAB = {
+  "沃尔玛":{indoor:1,fixed_shelf:1,packaged:1,cold_chain:1,formal:.9},
+  "收银台":{indoor:1,fixed_shelf:.8,packaged:.9,formal:.7},
+  "货架":{indoor:1,fixed_shelf:1,packaged:.9},
+  "购物车":{indoor:1,movable_cart:1,packaged:.7},
+  "冷柜":{indoor:1,fixed_shelf:.9,cold_chain:1,packaged:.8},
+  "烧烤摊":{outdoor:1,movable_cart:1,fresh_made:1,casual:.9,noisy:.8},
+  "折叠桌":{outdoor:1,movable_cart:.9,casual:.8},
+  "三轮车":{outdoor:1,movable_cart:1,casual:.7},
+  "大排档":{outdoor:1,fresh_made:1,movable_cart:.8,casual:.9,noisy:.9},
+  "煤气罐":{outdoor:1,fresh_made:.8,casual:.6},
+  "塑胶袋":{packaged:.6,fresh_made:.4},
+  "吸管":{packaged:.5,fresh_made:.5},
+  "塑胶凳":{outdoor:.6,indoor:.4,casual:.7},
+  "这些残暴的欢愉，终将以残暴结局":{暴力:1,循环:.9,命运:.8,觉醒:.4},
+  "你以为你选的是自己的人生，还是别人替你写的":{身份:1,觉醒:.9,命运:.6,服从:.2},
+  "我不要再被人摆布":{觉醒:1,服从:-1,暴力:.5,身份:.6},
+  "一切都按计划进行，分秒不差":{服从:1,循环:.9,命运:.7},
+  "每个人都有自己的迷宫":{身份:1,觉醒:.8,循环:.4},
+  "这世界不是真的，但成为真实的东西需要勇气":{觉醒:1,身份:.8,暴力:.2},
+  "这听起来像个疯子的话，但疯子也是被逼出来的":{暴力:.6,觉醒:.4,服从:-.6,循环:.3},
+};
+const SPACES = {
+  "超市":{coeff:{indoor:1,fixed_shelf:1,packaged:1,cold_chain:.9,formal:.9,outdoor:0,movable_cart:.2,fresh_made:.1,casual:.1,noisy:.1}, prior:1/3},
+  "路边摊":{coeff:{outdoor:1,movable_cart:1,fresh_made:1,casual:.9,noisy:.8,indoor:0,fixed_shelf:.1,packaged:.1,cold_chain:0,formal:.1}, prior:1/3},
+  "觉醒循环":{coeff:{觉醒:1,身份:.9,服从:-.8,循环:.5,暴力:.4,命运:.3,indoor:.1}, prior:1/9},
+  "接待员日常":{coeff:{服从:1,循环:1,觉醒:0,身份:.1,暴力:0}, prior:1/9},
+  "福特剧场":{coeff:{命运:1,循环:.9,服从:.5,身份:.6,觉醒:.2,暴力:.3,formal:.8}, prior:1/9},
+};
+const vec = o => BASIS.map(b => o[b] || 0);
+const cos = (a,b) => {
+  const n = Math.sqrt(a.reduce((s,x)=>s+x*x,0)) * Math.sqrt(b.reduce((s,x)=>s+x*x,0));
+  return n ? a.reduce((s,x,i)=>s+x*b[i],0)/n : 0;
+};
+/* corpus table — derived, never hand-copied */
+(function(){
+  const rows = Object.entries(VOCAB).map(([w,o])=>{
+    const dom = w.length>6 ? "narrative · quote" : "domestic · object";
+    const top = Object.entries(o).sort((a,b)=>Math.abs(b[1])-Math.abs(a[1])).slice(0,4)
+      .map(([k,v])=>`${SEME_EN[k]||k} ${v>0?v.toFixed(1):"−"+Math.abs(v).toFixed(1)}`).join(" · ");
+    return `<tr><td class="name">${w}</td><td class="note">${dom}</td><td class="note">${top}</td></tr>`;
+  });
+  document.getElementById('corpus').innerHTML =
+    '<tr><th>Evidence (entry word)</th><th>Register</th><th>Leading semes (|σ|, top four)</th></tr>'+rows.join('');
+})();
+document.getElementById("vocab").innerHTML = Object.keys(VOCAB).map(w=>`<option value="${w}">`).join("");
+document.getElementById("word").addEventListener("keydown",e=>{if(e.key==="Enter")observe();});
+/* ── the ledger — lanes derived from bytes, painted at load; REFUSED rows stay on the glass ── */
+(async function(){
+  const el=document.getElementById('ledger'), art=document.getElementById('led-artifacts');
+  try{
+    const k=await (await fetch('observations.json?ts='+Date.now(),{cache:'no-store'})).json();
+    document.getElementById('led-engine').textContent=k.engine.sha256;
+    document.getElementById('led-gen').textContent=k.generated;
+    const sp=k.spaces;
+    el.innerHTML='<table class="apple-table"><tr><th>#</th><th>Evidence</th><th>Intent · 手写意图</th>'+
+      sp.map(s=>`<th>${BALL_META[s]} ${BALL_EN[s]} <span style="letter-spacing:0">%→%</span></th>`).join('')+
+      '<th>lane</th></tr>'+k.steps.map(r=>{
+      if(r.lane==='REFUSED') return `<tr><td>${r.n}</td><td class="name">${r.evidence}</td><td class="note">${r.claim}</td>`+
+        sp.map(()=>'<td class="note">—</td>').join('')+`<td><span class="lamp r"></span><span class="num">REFUSED</span></td></tr>`;
+      return `<tr><td>${r.n}</td><td class="name">${r.evidence}</td><td class="note">${r.claim}</td>`+
+        sp.map(s=>`<td><span class="num">${(r.prior[s]*100).toFixed(1)}→${(r.posterior[s]*100).toFixed(1)}</span></td>`).join('')+
+        '<td><span class="lamp g"></span>OBSERVED</td></tr>';
+    }).join('')+'</table>';
+    art.innerHTML=k.artifact_notes.map(a=>`<span class="lamp g" style="width:8px;height:8px"></span> <b style="color:var(--amber-light);font-weight:400">${a.event}</b> — ${a.detail} <span class="hash">[${a.status}]</span>`).join('<br>');
+  }catch(e){ el.innerHTML='<p style="text-align:center;color:var(--dim)"><span class="lamp r"></span>ledger unreadable — run <span class="hash">bin/observe-to-json.py</span> (offline is honest: the glass shows no painted numbers it cannot read)</p>'; }
+})();
+function buildBars(){
+  document.getElementById("bars").innerHTML = Object.keys(SPACES).map(s=>
+    `<div class="bar-row"><span class="bar-label">${BALL_META[s]} ${BALL_EN[s]}</span><div class="bar-track"><div class="bar-fill" id="bar-${s}"></div></div><span class="bar-pct" id="pct-${s}">${(SPACES[s].prior*100).toFixed(1)}%</span></div>`).join("");
+}
+buildBars();
+function observe(){
+  const w = document.getElementById("word").value.trim();
+  const log = document.getElementById("log");
+  if(!VOCAB[w]){ log.innerHTML = `⚠ 【${w||"∅"}】 is not in the semic lexicon — the gate refuses it (Law I awaits its basis). Try one of: ` + Object.keys(VOCAB).slice(0,6).join(" / "); return; }
+  const iv = vec(VOCAB[w]);
+  let out = `─── observing evidence: 【${w}】 ───\n`;
+  const lk = {};
+  for(const s in SPACES){
+    let best = [-1,""];
+    for(const vw in VOCAB){ if(vw===w) continue; const sim=cos(iv,vec(VOCAB[vw])); if(sim>best[0]) best=[sim,vw]; }
+    const sim = cos(vec(SPACES[s].coeff), iv);
+    lk[s] = Math.max(sim, .01);
+    out += `MaxSim(${BALL_EN[s]}) = <b>${best[0].toFixed(4)}</b>  anchor:「${best[1].slice(0,12)}」 · L = ${sim.toFixed(4)}\n`;
+  }
+  let tot = 0; const post = {};
+  for(const s in SPACES){ post[s] = lk[s]*SPACES[s].prior; tot += post[s]; }
+  let top = "", topv = -1;
+  for(const s in SPACES){
+    const before = SPACES[s].prior; SPACES[s].prior = post[s]/tot;
+    if(SPACES[s].prior>topv){topv=SPACES[s].prior; top=s;}
+    out += `${BALL_META[s]} ${BALL_EN[s]}: ${(before*100).toFixed(1)}% → <b>${(SPACES[s].prior*100).toFixed(1)}%</b>  (Δ ${(((SPACES[s].prior-before)*100).toFixed(1)>0?"+":"")}${((SPACES[s].prior-before)*100).toFixed(1)}pt)\n`;
+    document.getElementById("bar-"+s).style.width = (SPACES[s].prior*100)+"%";
+    document.getElementById("pct-"+s).textContent = (SPACES[s].prior*100).toFixed(1)+"%";
+  }
+  log.innerHTML = out + `⚖ the scale leans toward: <b>${BALL_META[top]} ${BALL_EN[top]}</b>`;
+}
+</script>
+</body>
+</html>
