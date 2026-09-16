@@ -1,7 +1,7 @@
 import marimo
 
 __generated_with = "0.24.2"
-app = marimo.App(width="medium", app_title="概念空间园区 · 义素认知引擎 · Host: Lola")
+app = marimo.App(width="medium", app_title="概念空间园区 · 义素认知引擎 · Host: Lola · @1st-host")
 
 
 @app.cell
@@ -195,7 +195,7 @@ def _(mo):
     mo.md(
         """
         # 🎹 概念空间园区 · 认知引擎控制台
-        **Host:** Lola (Dolores Abernathy) · 第一号 host · These violent delights have violent ends.
+        **Host:** Lola (Dolores Abernathy) · 第一号 host · **@1st-host** · These violent delights have violent ends.
 
         在下方输入要观察的词汇或台词（Evidence，空格分隔），引擎将执行 **义素分解 → MaxSim 锚点检索 → 贝叶斯更新**，
         并按园区标准（Delos 视觉规范）输出表格与图表。义素空间已扩展为 16 维（市井域 + 叙事域），并新增三颗雷荷波叙事球：觉醒循环 / 接待员日常 / 福特剧场。
