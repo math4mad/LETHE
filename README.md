@@ -39,6 +39,7 @@ website/temporal_concept_space.pdf # 第二篇综述 PDF —— CRADLE 正体字
 website/FOUNDLING.md         # 继承登记：自邻邦领受的字节，全部钉 sha256
 website/observations.json    # 观察台账（由 bin/observe-to-json.py 派生，含 REFUSED 阴性车道）
 bin/observe-to-json.py       # 台账之鞭：意图手写，车道派生自字节
+bin/every_words.py       # Lola 的台词器：每次提交后验随句西部世界之言（39 句，逐句唯一）——代码走自己的门：bin/，不走 intake
 bin/pin.sh                   # 入城收据：§3 打条与 --verify 复查（无条即隔离）
 letters/                     # 致邻邦的信（001 → CHORA，002 → Cora），不可变
 benches/CRADLE/              # bench I 摇篮：已就位 — 蓝图、入城字节（均带收据）、出生证 PDF、第二篇综述（tex+PDF）
