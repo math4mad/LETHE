@@ -10,6 +10,7 @@
 | 🎲 经典终端引擎 | `./run_engine.sh 塑胶凳` | 命令行版认知引擎（MaxSim + 贝叶斯输出） |
 | 🎹 Marimo 认知控制台 | `./run_marimo.sh`（编辑）/ `./run_marimo.sh --run`（App） | 交互式笔记本，园区标准表格与图表 |
 | 🌐 园区网站 | `./serve_site.sh` → http://localhost:8000 | 园区大门（含纯 JS 版互动观察台，与 Python 引擎数据同源） |
+| 📜 出生证 | `website/certificate.html` → `birth-certificate.pdf` | bench I · CRADLE 摇篮：蓝图 Chora/Cora（主人与通义千问对话所生），tectonic 亲手编译，四件入城均有收据 |
 | 🖼️ 控制台静态快照 | `website/console.html` | `marimo export html` 生成的在线版笔记本 |
 
 ## 园区标准（Park Standard）
@@ -30,12 +31,15 @@ cognitive_engine.py          # 终端版引擎
 cognitive_engine_marimo.py   # Marimo 笔记本版引擎 ⭐
 website/index.html           # 园区大门（CHORA 家法 + Cora 琥珀 + JS 互动引擎）
 website/console.html         # Marimo 控制台静态导出
+website/certificate.html     # 出生证页（铭牌·收据·蓝图→园区律法映射）
+website/birth-certificate.pdf # 出生证正本（由 intake tex 编译，sha 180e301a…）
 website/strata.html          # 成因剖面（四层：基岩对话/沉积律法/构造工具/地表门面）
 website/FOUNDLING.md         # 继承登记：自邻邦领受的字节，全部钉 sha256
 website/observations.json    # 观察台账（由 bin/observe-to-json.py 派生，含 REFUSED 阴性车道）
 bin/observe-to-json.py       # 台账之鞭：意图手写，车道派生自字节
 bin/pin.sh                   # 入城收据：§3 打条与 --verify 复查（无条即隔离）
 letters/                     # 致邻邦的信（001 → CHORA，002 → Cora），不可变
+benches/CRADLE/              # bench I 摇篮：已就位 — 蓝图、入城字节（均带收据）、出生证 PDF
 benches/FOUNDRY/             # bench II：义素铸造厂 — 环仍虚线，入册夹具已冷备
 benches/MIRROR/              # 预留 bench III：空间→词生成镜厅（虚线环）
 run_engine.sh / run_marimo.sh / serve_site.sh

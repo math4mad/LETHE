@@ -1,0 +1,8 @@
+{
+  "path": "benches/CRADLE/birth-certificate.pdf",
+  "sha256": "180e301aca164c07fb06291183d19dd55bcf2d7574bca2a9dd26f3b982bf4472",
+  "producer": "lethe@3e955c6 · tectonic-0.17.0",
+  "purpose": "park birth certificate — compiled from intake tex, unmodified source",
+  "received": "2026-09-16T01:58:41+00:00",
+  "law": "FOUNDLING §3 — hash before we announce; no re-export"
+}

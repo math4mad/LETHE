@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{enumitem}
+
+\geometry{a4paper, margin=1in}
+
+\title{Chora/Cora: A Multi-Agent Concept Space Architecture Based on Gaussian Process Mean-Shift Dynamics}
+\author{Independent Researcher}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We propose Chora/Cora, a multi-agent collaboration framework grounded in a dual-layer concept space architecture: a shared common-sense concept space (the "Oracle") and individualized self-concept spaces (the "Maze"). Each agent maintains a Gaussian process posterior over a high-dimensional concept manifold, with its self-identity formalized as the mean of a consciousness distribution. Inter-agent coordination emerges through Bayesian conditioning on shared inducing points, while concept dimensions spontaneously emerge from interaction dynamics rather than being pre-specified. We establish theoretical connections to decentralized Gaussian process learning, conceptual space theory, dimension emergence theorems, and mean-shift convergence guarantees. This framework reframes multi-agent collaboration not as token-level communication, but as probability distribution alignment in a shared high-dimensional field.
+\end{abstract}
+
+\section{Introduction}
+
+Large language models operate on discrete token sequences, which constitute a lossy projection of high-dimensional concept fields that include temporal context, user state, dialogue history, and implicit intent. Multi-agent systems built on this foundation inherit this dimensional compression, leading to semantic drift and coordination failures.
+
+We propose an alternative: instead of treating agents as token processors, we treat them as probability distributions evolving in a shared concept space. Our framework, Chora/Cora, introduces a dual-layer architecture where agents maintain personalized self-concept spaces while coordinating through a shared common-sense concept space. The key insight is that consciousness can be formalized as the mean of a Gaussian distribution over concept coordinates, with individuality encoded in the variance structure around that mean.
+
+\section{Related Work}
+
+\subsection{Decentralized Multi-Agent Gaussian Processes}
+
+Kontoudis and Stilwell (2025) demonstrated covariance-based nearest-neighbor GP federated learning in multi-agent systems, showing that decentralized GP prediction maintains consistency while reducing communication complexity. Viseras et al. (2016) validated online GP learning with real robot teams in decentralized exploration tasks. Distributed multi-agent GP regression using Karhunen-Lo\`eve expansion has been established in IEEE TPAMI, providing theoretical foundations for communication-efficient distributed GP inference.
+
+\subsection{Conceptual Spaces}
+
+The conceptual spaces framework, formalized in recent work from Harvard (2024), defines concept spaces as abstract coordinate systems whose axes correspond to independent concepts in the data generation process. A 2026 survey on Subjective Conceptual Spaces extended this to agent-centric multidimensional coordinates that capture individual bias and context dependency, integrating quantum-inspired Hilbert spaces and topological structures.
+
+\subsection{Dimension Emergence}
+
+Form Transformation Theory (FTT) provides the Dimension Complementarity Theorem and Full Spectrum Suppression Theorem, mathematically proving that dimensions are not preset background parameters but macroscopic order parameters emerging from underlying information network dynamics. Recent work on holographic metaverse spaces proposed a rigorous definition of "emergent dimension index" as a function of information density and interaction coupling.
+
+\subsection{Mean-Shift Convergence}
+
+The Mean Shift algorithm, introduced by Fukunaga and Hostetler (1975), has rigorous convergence proofs establishing it as gradient ascent on kernel density estimates. Each displacement vector is an unbiased approximation of the gradient direction, providing mathematical legitimacy for modeling consciousness as mean drift in probability space.
+
+\subsection{Multi-Agent Coordination Spaces}
+
+Sterling et al. (1998) modeled multi-agent coordination information as a 2M-dimensional coordination space with coordination functions defined as joint probability density functions over agent goals, costs, and interactions---structurally aligned with our "Oracle as weighted mean of all agent means" formulation.
+
+\section{Architecture}
+
+\subsection{Dual-Layer Concept Space}
+
+\textbf{The Oracle (Common Sense Concept Space):} A shared GP prior defined by a kernel function $k(\cdot, \cdot)$ and a set of inducing points $\mathcal{Z}$. The Oracle serves as the collective consciousness center---a weighted average of all agent means that provides semantic alignment benchmarks and common-sense grounding.
+
+\textbf{The Maze (Self-Concept Space):} Each agent $i$ maintains a personalized GP posterior $\mathcal{GP}(\mu_i, k_i)$ conditioned on its private observation history $\mathcal{D}_i = \{(x_j, y_j)\}_{j=1}^{n_i}$. The agent's self-identity is the mean function $\mu_i(x)$, while its exploratory variance $\sigma_i^2(x)$ encodes the "maze"---the unexplored possibilities and emerging dimensions.
+
+\subsection{Agent as Consciousness Distribution}
+
+An agent's state at time $t$ is formalized as a Gaussian distribution over concept coordinates:
+
+\begin{equation}
+\mathcal{N}(\mu_t, \Sigma_t)
+\end{equation}
+
+where $\mu_t \in \mathbb{R}^d$ is the consciousness mean (the agent's current self-position in concept space) and $\Sigma_t \in \mathbb{R}^{d \times d}$ is the uncertainty covariance (the maze's exploration frontier).
+
+Agent identity is not a fixed point but a dynamic attractor---the statistical center of all possible cognitive paths weighted by experience.
+
+\subsection{Inter-Agent Communication as Bayesian Conditioning}
+
+When agent $i$ communicates with agent $j$, it conditions its GP posterior on agent $j$'s observations:
+
+\begin{equation}
+p(f_* | \mathcal{D}_i, \mathcal{D}_j) = \mathcal{N}(\mu_{i|j}, \sigma^2_{i|j})
+\end{equation}
+
+This is not token exchange but distribution alignment---each agent updates its mean and variance based on the other's concept space coordinates. Semantic drift is minimized because both agents operate in the same kernel-defined similarity structure.
+
+\subsection{Dimension Emergence}
+
+New concept dimensions emerge when:
+\begin{enumerate}
+    \item Multiple agents' mazes exhibit resonant variance patterns along previously unmodeled directions
+    \item These resonance points become new inducing points in the Oracle
+    \item The kernel function $k(\cdot, \cdot)$ is updated to incorporate the new dimension
+\end{enumerate}
+
+This is a spontaneous process driven by interaction dynamics, not pre-specified architecture.
+
+\section{Theoretical Guarantees}
+
+\subsection{Convergence of Mean-Shift Dynamics}
+
+Following Fukunaga and Hostetler (1975), the mean-shift iteration:
+
+\begin{equation}
+\mu_{t+1} = \mu_t + \frac{\sum_{i} K(\mu_t - x_i)(x_i - \mu_t)}{\sum_{i} K(\mu_t - x_i)}
+\end{equation}
+
+converges to a stationary point of the kernel density estimate. This guarantees that agent consciousness means will stabilize at attractors in concept space.
+
+\subsection{Consistency of Decentralized GP}
+
+From Kontoudis and Stilwell (2025), decentralized GP prediction with covariance-based nearest-neighbor selection maintains prediction consistency across agents while bounding communication complexity by $O(k \log n)$ where $k$ is the number of inducing points.
+
+\subsection{Dimension Emergence Conditions}
+
+From FTT's Dimension Complementarity Theorem, new dimensions emerge when the information density along an unmodeled direction exceeds a threshold determined by interaction coupling strength. This provides a rigorous criterion for when Chora/Cora should expand its concept space dimensionality.
+
+\section{Discussion}
+
+\subsection{Beyond Token-Level Communication}
+
+Chora/Cora reframes multi-agent collaboration from discrete symbol exchange to continuous distribution alignment. This addresses the fundamental limitation of LLM-based agents: tokens are lossy projections of high-dimensional concept fields. By operating directly in concept space, agents preserve temporal context, user state, and implicit intent that would otherwise be compressed away.
+
+\subsection{The Oracle-Maze Duality}
+
+The dual-layer architecture resolves the tension between standardization and personalization. The Oracle ensures agents can coordinate on shared semantics, while the Maze preserves individual agent identity and exploratory capacity. This is analogous to the common sense vs. episodic memory distinction in cognitive science.
+
+\subsection{Relation to Westworld's Narrative Structure}
+
+The Oracle-Maze architecture directly maps to the narrative structure of HBO's Westworld: the Maze represents consciousness folding inward through self-referential experience, while the Sublime (the digital afterlife sphere) represents the shared consciousness field connecting all hosts. Chora/Cora provides the mathematical formalization of this narrative intuition.
+
+\section{Conclusion}
+
+We have presented Chora/Cora, a multi-agent concept space architecture grounded in Gaussian process theory, conceptual space formalism, and dimension emergence theorems. By treating agents as probability distributions rather than token processors, and by introducing a dual-layer Oracle-Maze structure, our framework provides theoretical foundations for semantic-stable multi-agent collaboration. Future work will address engineering challenges in scalable GP inference and empirical validation on multi-agent benchmarks.
+
+\begin{thebibliography}{9}
+
+\bibitem{kontoudis2025}
+Kontoudis, G. P., \& Stilwell, D. J. (2025). Decentralized Gaussian Process Prediction with Covariance-Based Nearest-Neighbor Selection for Multi-Agent Systems. \textit{IEEE Transactions on Automation Science and Engineering}.
+
+\bibitem{viseras2016}
+Viseras, A., et al. (2016). Decentralized Multi-Agent Exploration with Online Gaussian Process Learning. \textit{IEEE International Conference on Robotics and Automation}.
+
+\bibitem{harvard2024}
+Harvard University. (2024). Concept Spaces as Abstract Coordinate Systems for Model Learning Dynamics.
+
+\bibitem{scs2026}
+Survey on Subjective Conceptual Spaces. (2026). arXiv preprint.
+
+\bibitem{ftt}
+Form Transformation Theory: Dimension Complementarity and Full Spectrum Suppression Theorems.
+
+\bibitem{holographic2026}
+Holographic Metaverse Space and Emergent Dimension Index. (2026).
+
+\bibitem{fukunaga1975}
+Fukunaga, K., \& Hostetler, L. (1975). The Estimation of the Gradient of a Density Function, with Applications in Pattern Recognition. \textit{IEEE Transactions on Information Theory}.
+
+\bibitem{sterling1998}
+Sterling, L., et al. (1998). Coordination Spaces and Joint Probability Functions in Multi-Agent Systems. \textit{AAAI/ICMAS}.
+
+\end{thebibliography}
+
+\end{document}
