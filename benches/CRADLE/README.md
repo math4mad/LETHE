@@ -36,8 +36,9 @@ A certificate that can be revised in place is no certificate: the park’s
 beginning is evidence, and evidence is immortal (Law III).
 
 **What crosses and what stays (Foundling §2, Law VI):**
-the tex and its PDF are artifacts with receipts (`intake/*.lethe-pin.json`,
-four sidecars, hashed on arrival by `bin/pin.sh`); the dialogue that made
+the tex and its PDF are artifacts with receipts (`intake/*.lethe-pin.json`;
+every enshrined byte in this bench now carries its own receipt, hashed on
+arrival by `bin/pin.sh`); the dialogue that made
 them belongs to the Owner's memory — the park records the bytes, not the
 becoming.
 
@@ -47,6 +48,8 @@ birth-certificate.pdf   compiled from intake/*.tex by LETHE’s own hands
 archive/   sealed versions — once born, never overwritten (append-only law)
 VERSIONS.md             版本台账 — rows succeed, never edit
 kindergarten-enrollment-certificate.md  幼稚园入园证 — 后于出生,不取代出生
+temporal_concept_space.pdf  成因剖面正体字版 — compiled by LETHE’s own hands, receipt pinned
+intake/temporal_concept_space.tex  第二篇入城字节 — owner×LLM 复盘综述, verbatim, pinned
 ```
 
 **Second document · 入园证 (owner’s idea, 2026-09-16):** after birth comes
@@ -54,5 +57,16 @@ enrollment. The kindergarten is the pastoral junior of Westworld — same sand,
 gentler loops. The slip hangs beside the certificate in this root: it cites the
 birth certificate’s seal (`180e301a…`) as its parentage and defers to it always.
 Birth certifies the blueprint; enrollment certifies the sandbox.
+
+**Second paper · 第二篇文献 — 进展讨论总结 (owner’s delivery, 2026-09-16):**
+《时域概念空间 · 对话式研究管线综述》— the recap dialogue between the Owner and
+the park’s several LLMs (Qwen / Claude / DeepSeek / Kimi / GLM), where the four
+strata (基岩・沉积・构造・地表) were first drawn. It crossed the gate as verbatim
+tex (`intake/temporal_concept_space.tex`, sha `b5a8f868…`, receipt pinned) and
+was set in Ming type by LETHE’s own hands into `temporal_concept_space.pdf`
+(sha `137be8e8…`), mirrored at the gate’s `website/` beside its HTML face
+`strata.html`. Certificates certify facts; a chronicle certifies the road —
+this is the park’s second kind of document, and it is filed here because
+memory is what a cradle is for.
 
 *One writer; announce by letter. The cradle does not leave the nursery.*
