@@ -13,6 +13,7 @@
 | 📜 出生证 | `website/certificate.html` → `birth-certificate.pdf` | bench I · CRADLE 摇篮：蓝图 Chora/Cora（主人与通义千问对话所生），tectonic 亲手编译，四件入城均有收据 |
 | 🪨 成因综述（第二篇） | `website/strata.html` → `temporal_concept_space.pdf` | bench I · CRADLE：主人 × 多家 LLM 复盘综述（时域概念空间·四成因层），逐字入城打条，LETHE 亲手排明体正体字版 |
 | 🗄️ 档房 Archiver | `website/archiver.html` ← `archive.json` | 诸版与收据：逐文件修改史·添加册目·收据簿·编年流水 — 全由 `bin/archive-to-json.py` 派生自 git 与 sidecar，新内容入库后重跑即自动上榜 |
+| 🔥 锻房钩 build_latex | `.github/workflows/build_latex.yml` | CI 炉子：intake/*.tex 变动即先对条（pin.sh --verify，无条拒锻）后开炉，tectonic 0.17.0 钉版与本地同手；PDF 只呈堂（artifact 30 天），入册仍须人手 pin+commit |
 | 🖼️ 控制台静态快照 | `website/console.html` | `marimo export html` 生成的在线版笔记本 |
 
 ## 园区标准（Park Standard）

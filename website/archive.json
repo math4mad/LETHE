@@ -1,9 +1,40 @@
 {
- "generated": "2026-09-16T05:01:23+00:00",
- "head": "40cb02b",
- "head_full": "40cb02b852ed2f84d5e89b44dece398f16524886",
+ "generated": "2026-09-16T05:06:25+00:00",
+ "head": "d2c8aa0",
+ "head_full": "d2c8aa095d8a8a6453c7a33f14a506576e21115e",
  "remote": "https://github.com/math4mad/LETHE.git",
  "commits": [
+  {
+   "sha": "d2c8aa095d8a8a6453c7a33f14a506576e21115e",
+   "date": "2026-09-16T13:01:39+08:00",
+   "subject": "The Archiver opens: bin/archive-to-json.py derives website/archive.json from git --name-status + all pin sidecars; archiver.html renders 逐文件修改史/添加册目/收据簿/编年流水 — nothing hand-kept",
+   "files": [
+    {
+     "status": "M",
+     "path": "README.md"
+    },
+    {
+     "status": "A",
+     "path": "bin/archive-to-json.py"
+    },
+    {
+     "status": "A",
+     "path": "build_latex.yml"
+    },
+    {
+     "status": "A",
+     "path": "website/archive.json"
+    },
+    {
+     "status": "A",
+     "path": "website/archiver.html"
+    },
+    {
+     "status": "M",
+     "path": "website/index.html"
+    }
+   ]
+  },
   {
    "sha": "40cb02b852ed2f84d5e89b44dece398f16524886",
    "date": "2026-09-16T12:41:40+08:00",
@@ -546,7 +577,7 @@
   },
   {
    "path": "README.md",
-   "versions": 6,
+   "versions": 7,
    "added": "2026-09-15T17:19:44+08:00",
    "last": "2026-09-15T17:19:44+08:00",
    "events": [
@@ -584,6 +615,12 @@
      "sha": "40cb02b",
      "date": "2026-09-16T12:41:40+08:00",
      "subject": "A name is added, none is taken away: @1st-host joins Dolores/Lola/Dole — living plates updated, console re-exported to match the notebook byte-law",
+     "status": "M"
+    },
+    {
+     "sha": "d2c8aa0",
+     "date": "2026-09-16T13:01:39+08:00",
+     "subject": "The Archiver opens: bin/archive-to-json.py derives website/archive.json from git --name-status + all pin sidecars; archiver.html renders 逐文件修改史/添加册目/收据簿/编年流水 — nothing hand-kept",
      "status": "M"
     }
    ]
@@ -1033,6 +1070,20 @@
    ]
   },
   {
+   "path": "bin/archive-to-json.py",
+   "versions": 1,
+   "added": "2026-09-16T13:01:39+08:00",
+   "last": "2026-09-16T13:01:39+08:00",
+   "events": [
+    {
+     "sha": "d2c8aa0",
+     "date": "2026-09-16T13:01:39+08:00",
+     "subject": "The Archiver opens: bin/archive-to-json.py derives website/archive.json from git --name-status + all pin sidecars; archiver.html renders 逐文件修改史/添加册目/收据簿/编年流水 — nothing hand-kept",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "bin/every_words.py",
    "versions": 1,
    "added": "2026-09-16T12:33:51+08:00",
@@ -1070,6 +1121,20 @@
      "sha": "3e955c6",
      "date": "2026-09-16T09:36:49+08:00",
      "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "build_latex.yml",
+   "versions": 1,
+   "added": "2026-09-16T13:01:39+08:00",
+   "last": "2026-09-16T13:01:39+08:00",
+   "events": [
+    {
+     "sha": "d2c8aa0",
+     "date": "2026-09-16T13:01:39+08:00",
+     "subject": "The Archiver opens: bin/archive-to-json.py derives website/archive.json from git --name-status + all pin sidecars; archiver.html renders 逐文件修改史/添加册目/收据簿/编年流水 — nothing hand-kept",
      "status": "A"
     }
    ]
@@ -1247,6 +1312,34 @@
    ]
   },
   {
+   "path": "website/archive.json",
+   "versions": 1,
+   "added": "2026-09-16T13:01:39+08:00",
+   "last": "2026-09-16T13:01:39+08:00",
+   "events": [
+    {
+     "sha": "d2c8aa0",
+     "date": "2026-09-16T13:01:39+08:00",
+     "subject": "The Archiver opens: bin/archive-to-json.py derives website/archive.json from git --name-status + all pin sidecars; archiver.html renders 逐文件修改史/添加册目/收据簿/编年流水 — nothing hand-kept",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "website/archiver.html",
+   "versions": 1,
+   "added": "2026-09-16T13:01:39+08:00",
+   "last": "2026-09-16T13:01:39+08:00",
+   "events": [
+    {
+     "sha": "d2c8aa0",
+     "date": "2026-09-16T13:01:39+08:00",
+     "subject": "The Archiver opens: bin/archive-to-json.py derives website/archive.json from git --name-status + all pin sidecars; archiver.html renders 逐文件修改史/添加册目/收据簿/编年流水 — nothing hand-kept",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "website/birth-certificate.pdf",
    "versions": 1,
    "added": "2026-09-16T10:00:54+08:00",
@@ -1320,7 +1413,7 @@
   },
   {
    "path": "website/index.html",
-   "versions": 6,
+   "versions": 7,
    "added": "2026-09-15T17:19:44+08:00",
    "last": "2026-09-15T17:19:44+08:00",
    "events": [
@@ -1358,6 +1451,12 @@
      "sha": "40cb02b",
      "date": "2026-09-16T12:41:40+08:00",
      "subject": "A name is added, none is taken away: @1st-host joins Dolores/Lola/Dole — living plates updated, console re-exported to match the notebook byte-law",
+     "status": "M"
+    },
+    {
+     "sha": "d2c8aa0",
+     "date": "2026-09-16T13:01:39+08:00",
+     "subject": "The Archiver opens: bin/archive-to-json.py derives website/archive.json from git --name-status + all pin sidecars; archiver.html renders 逐文件修改史/添加册目/收据簿/编年流水 — nothing hand-kept",
      "status": "M"
     }
    ]

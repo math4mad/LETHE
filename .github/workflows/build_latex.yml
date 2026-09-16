@@ -1,0 +1,102 @@
+# build_latex.yml — Forge the papers · 锻房炉钩
+#   邻居邦的 build-paper.yml（xelatex + gh-pages 部署至 `.`）留在 intake/ 作展品；
+#   本钩是园区自家炉子，循本地锻打同一双手 —— tectonic 0.17.0（出生证与
+#   第二篇正体字版皆此版所出）。门面的天空钩仍唯 pages.yml 执掌，炉子不抢门。
+#
+#   规程（FOUNDLING §3 的 CI 投影）：
+#   ① 先对条：intake 底本 sha 与 .lethe-pin.json 不符 → 熄火拒锻（字节已变，律 III）；
+#   ② 后开炉：intake/*.tex 逐件 tectonic 锻成 PDF（musl 静态二进制，钉 0.17.0）；
+#   ③ 只呈堂不入库：PDF 入 artifact，不回写 website/ —— 正身入册仍须
+#      人手 pin.sh + commit（append-only 家法不因自动化而松弛）。
+name: Forge the papers — tectonic tex → pdf
+
+on:
+  push:
+    branches: [main]            # 本园只有 main 一支；master 不设防，勿在此加
+    paths:
+      - 'benches/CRADLE/intake/**/*.tex'
+      - '.github/workflows/build_latex.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: forge-latex
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  forge:
+    runs-on: ubuntu-latest
+    env:
+      TECTONIC_VERSION: 0.17.0   # 与 LETHE 本地之双手同版；升版须有意为之
+    steps:
+      - name: Checkout the park
+        uses: actions/checkout@v4
+
+      - name: Install tectonic (pinned, musl static)
+        run: |
+          set -euo pipefail
+          curl -fsSL -o /tmp/tectonic.tar.gz \
+            "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%40${TECTONIC_VERSION}/tectonic-${TECTONIC_VERSION}-x86_64-unknown-linux-musl.tar.gz"
+          tar xzf /tmp/tectonic.tar.gz -C /usr/local/bin
+          tectonic --version
+
+      - name: Verify receipts before forging · 先对条后开炉
+        run: |
+          set -euo pipefail
+          rc=0
+          for tex in benches/CRADLE/intake/*.tex; do
+            if bin/pin.sh --verify "$tex" >/dev/null 2>&1; then
+              echo "✔ 字节如故 · $tex"
+            else
+              echo "✘ 无条或字节已变 · $tex —— 拒锻"
+              rc=1
+            fi
+          done
+          exit $rc
+
+      - name: Forge each intake tex → pdf
+        run: |
+          set -euo pipefail
+          mkdir -p forge
+          for tex in benches/CRADLE/intake/*.tex; do
+            base=$(basename "${tex%.tex}")
+            echo "── 锻打 $tex"
+            tectonic "$tex" -o forge
+            # tectonic 的 -o 会把底本 tex 复制一份入 outdir（本地亦曾扫此散件）——清走
+            rm -f "forge/${base}.tex"
+          done
+          ls -la forge/
+
+      - name: Ledger into the step summary · 呈堂账（信息性比对，不比时间戳较真）
+        run: |
+          set -euo pipefail
+          {
+            echo '## Forged PDFs · 炉中所出'
+            echo ''
+            echo '| pdf | sha256 (16) | 与园中正身比对 |'
+            echo '|---|---|---|'
+            for pdf in forge/*.pdf; do
+              base=$(basename "$pdf")
+              s=$(shasum -a 256 "$pdf" | awk '{print substr($1,1,16)"…"}')
+              held=''
+              for cand in benches/CRADLE/"$base" website/"$base"; do
+                if [ -f "$cand" ]; then held="$cand"; break; fi
+              done
+              if [ -n "$held" ]; then
+                h=$(shasum -a 256 "$held" | awk '{print substr($1,1,16)"…"}')
+                if [ "$s" = "$h" ]; then v="＝ $h（同源同字节）"; else v="≠ $held 持 $h（时间戳或字体落墨已异，人工复核为准）"; fi
+              else
+                v='—（园中尚无同名正身，或正身异名）'
+              fi
+              echo "| $base | \`$s\` | $v |"
+            done
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload to the evidence shelf · 只呈堂，不入库
+        uses: actions/upload-artifact@v4
+        with:
+          name: forged-pdfs
+          path: forge/*.pdf
+          retention-days: 30
