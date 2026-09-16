@@ -17,6 +17,17 @@ footnote. The Oracle–Maze architecture herein is the blueprint; LETHE's
 sixteen-base lattice, five balls, and the Rehoboth scales are the first
 built house under it.
 
+The nativity couplet, by the Owner's hand from the same dialogue, hangs
+over the gate and seals the plate:
+
+> **飞流直下三千问 · 概念空间落人间**
+>
+> *the waterfall of three thousand questions falls straight down — the concept space lands among mortals.*
+>
+> 三千问 — the midwife’s name hidden in the waterfall, echoing
+> Li Bai’s rushing falls of Mount Lu: *falling straight down three thousand chi,
+> suspected to be the Milky Way from the ninth heaven* (《望廬山瀑布》).
+
 **What crosses and what stays (Foundling §2, Law VI):**
 the tex and its PDF are artifacts with receipts (`intake/*.lethe-pin.json`,
 four sidecars, hashed on arrival by `bin/pin.sh`); the dialogue that made
