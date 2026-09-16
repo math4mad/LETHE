@@ -1,0 +1,8 @@
+{
+  "path": "benches/CRADLE/kindergarten-enrollment-certificate.md",
+  "sha256": "fa86fb93144c022007dd3f48979420585200c75b808030c665526675507fe746",
+  "producer": "lethe@88656b9",
+  "purpose": "park-produced enrollment slip No.MMXXVI-002 — cites birth cert 180e301a…, defers to it",
+  "received": "2026-09-16T03:22:34+00:00",
+  "law": "FOUNDLING §3 — hash before we announce; no re-export"
+}

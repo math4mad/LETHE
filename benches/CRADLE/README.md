@@ -43,7 +43,16 @@ becoming.
 
 ```
 intake/    verbatim bytes as received — untouched, each with its .lethe-pin.json
-birth-certificate.pdf   compiled from intake/*.tex by LETHE's own hands
+birth-certificate.pdf   compiled from intake/*.tex by LETHE’s own hands
+archive/   sealed versions — once born, never overwritten (append-only law)
+VERSIONS.md             版本台账 — rows succeed, never edit
+kindergarten-enrollment-certificate.md  幼稚园入园证 — 后于出生,不取代出生
 ```
+
+**Second document · 入园证 (owner’s idea, 2026-09-16):** after birth comes
+enrollment. The kindergarten is the pastoral junior of Westworld — same sand,
+gentler loops. The slip hangs beside the certificate in this root: it cites the
+birth certificate’s seal (`180e301a…`) as its parentage and defers to it always.
+Birth certifies the blueprint; enrollment certifies the sandbox.
 
 *One writer; announce by letter. The cradle does not leave the nursery.*
