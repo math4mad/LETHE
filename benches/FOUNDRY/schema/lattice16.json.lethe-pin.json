@@ -1,0 +1,8 @@
+{
+  "path": "benches/FOUNDRY/schema/lattice16.json",
+  "sha256": "7fe93b132ce1d30f19b1366a720e92f8a8c8d2cd1a810ab2f5abcfe1bca23455",
+  "producer": "lethe@3cf2792",
+  "purpose": "FOUNDRY fixture I — 十六基格模，自浇自铸，非外库",
+  "received": "2026-09-16T01:33:50+00:00",
+  "law": "FOUNDLING §3 — hash before we announce; no re-export"
+}

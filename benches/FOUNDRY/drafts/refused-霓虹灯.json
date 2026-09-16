@@ -1,0 +1,4 @@
+{ "word": "霓虹灯",
+  "vector": { "shiny": 1.2, "noisy": 0.5 },
+  "source": "故意留错 · 门禁样板负例",
+  "annotator": "lethe@fixture" }

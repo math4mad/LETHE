@@ -1,0 +1,4 @@
+{ "word": "保温箱",
+  "vector": { "cold_chain": 0.7, "fresh_made": 0.5, "movable_cart": 0.6, "packaged": 0.4, "indoor": 0.3 },
+  "source": "人工冷铸 · 待义原模具到场后复标",
+  "annotator": "lethe@fixture" }

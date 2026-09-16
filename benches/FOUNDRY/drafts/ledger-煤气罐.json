@@ -1,0 +1,4 @@
+{ "word": "煤气罐",
+  "vector": { "outdoor": 1.0, "fresh_made": 0.8, "casual": 0.6 },
+  "source": "在账复现 · 铸入新注释前必须重说一遍旧账",
+  "annotator": "lethe@fixture" }

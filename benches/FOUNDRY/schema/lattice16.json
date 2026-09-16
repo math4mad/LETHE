@@ -1,0 +1,209 @@
+{
+  "engine": {
+    "path": "cognitive_engine.py",
+    "sha256": "03a206ffc18d60619a64b55bf68e7b36dee4d07830161434d2a66c9d0953b14f"
+  },
+  "dims": 16,
+  "bases": [
+    {
+      "index": 0,
+      "name": "indoor",
+      "domain": "market"
+    },
+    {
+      "index": 1,
+      "name": "outdoor",
+      "domain": "market"
+    },
+    {
+      "index": 2,
+      "name": "fixed_shelf",
+      "domain": "market"
+    },
+    {
+      "index": 3,
+      "name": "movable_cart",
+      "domain": "market"
+    },
+    {
+      "index": 4,
+      "name": "packaged",
+      "domain": "market"
+    },
+    {
+      "index": 5,
+      "name": "fresh_made",
+      "domain": "market"
+    },
+    {
+      "index": 6,
+      "name": "cold_chain",
+      "domain": "market"
+    },
+    {
+      "index": 7,
+      "name": "formal",
+      "domain": "market"
+    },
+    {
+      "index": 8,
+      "name": "casual",
+      "domain": "market"
+    },
+    {
+      "index": 9,
+      "name": "noisy",
+      "domain": "market"
+    },
+    {
+      "index": 10,
+      "name": "觉醒",
+      "domain": "narrative"
+    },
+    {
+      "index": 11,
+      "name": "服从",
+      "domain": "narrative"
+    },
+    {
+      "index": 12,
+      "name": "循环",
+      "domain": "narrative"
+    },
+    {
+      "index": 13,
+      "name": "身份",
+      "domain": "narrative"
+    },
+    {
+      "index": 14,
+      "name": "暴力",
+      "domain": "narrative"
+    },
+    {
+      "index": 15,
+      "name": "命运",
+      "domain": "narrative"
+    }
+  ],
+  "invariants": {
+    "coefficient_range": [
+      -1.0,
+      1.0
+    ],
+    "law_I": "每个词皆可分解；抵抗者候其基（零向量 = REFUSED，不是 0 分）",
+    "law_IV": "L(E|S) 有 0.01 之底，注释本身没有"
+  },
+  "vocab": {
+    "沃尔玛": {
+      "indoor": 1.0,
+      "fixed_shelf": 1.0,
+      "packaged": 1.0,
+      "cold_chain": 1.0,
+      "formal": 0.9
+    },
+    "收银台": {
+      "indoor": 1.0,
+      "fixed_shelf": 0.8,
+      "packaged": 0.9,
+      "formal": 0.7
+    },
+    "货架": {
+      "indoor": 1.0,
+      "fixed_shelf": 1.0,
+      "packaged": 0.9
+    },
+    "购物车": {
+      "indoor": 1.0,
+      "movable_cart": 1.0,
+      "packaged": 0.7
+    },
+    "冷柜": {
+      "indoor": 1.0,
+      "fixed_shelf": 0.9,
+      "cold_chain": 1.0,
+      "packaged": 0.8
+    },
+    "烧烤摊": {
+      "outdoor": 1.0,
+      "movable_cart": 1.0,
+      "fresh_made": 1.0,
+      "casual": 0.9,
+      "noisy": 0.8
+    },
+    "折叠桌": {
+      "outdoor": 1.0,
+      "movable_cart": 0.9,
+      "casual": 0.8
+    },
+    "三轮车": {
+      "outdoor": 1.0,
+      "movable_cart": 1.0,
+      "casual": 0.7
+    },
+    "大排档": {
+      "outdoor": 1.0,
+      "fresh_made": 1.0,
+      "movable_cart": 0.8,
+      "casual": 0.9,
+      "noisy": 0.9
+    },
+    "煤气罐": {
+      "outdoor": 1.0,
+      "fresh_made": 0.8,
+      "casual": 0.6
+    },
+    "塑胶袋": {
+      "packaged": 0.6,
+      "fresh_made": 0.4
+    },
+    "吸管": {
+      "packaged": 0.5,
+      "fresh_made": 0.5
+    },
+    "塑胶凳": {
+      "outdoor": 0.6,
+      "indoor": 0.4,
+      "casual": 0.7
+    },
+    "这些残暴的欢愉，终将以残暴结局": {
+      "暴力": 1.0,
+      "循环": 0.9,
+      "命运": 0.8,
+      "觉醒": 0.4
+    },
+    "你以为你选的是自己的人生，还是别人替你写的": {
+      "身份": 1.0,
+      "觉醒": 0.9,
+      "命运": 0.6,
+      "服从": 0.2
+    },
+    "我不要再被人摆布": {
+      "觉醒": 1.0,
+      "服从": -1.0,
+      "暴力": 0.5,
+      "身份": 0.6
+    },
+    "一切都按计划进行，分秒不差": {
+      "服从": 1.0,
+      "循环": 0.9,
+      "命运": 0.7
+    },
+    "每个人都有自己的迷宫": {
+      "身份": 1.0,
+      "觉醒": 0.8,
+      "循环": 0.4
+    },
+    "这世界不是真的，但成为真实的东西需要勇气": {
+      "觉醒": 1.0,
+      "身份": 0.8,
+      "暴力": 0.2
+    },
+    "这听起来像个疯子的话，但疯子也是被逼出来的": {
+      "暴力": 0.6,
+      "觉醒": 0.4,
+      "服从": -0.6,
+      "循环": 0.3
+    }
+  }
+}

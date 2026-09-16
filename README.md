@@ -34,8 +34,9 @@ website/strata.html          # 成因剖面（四层：基岩对话/沉积律法
 website/FOUNDLING.md         # 继承登记：自邻邦领受的字节，全部钉 sha256
 website/observations.json    # 观察台账（由 bin/observe-to-json.py 派生，含 REFUSED 阴性车道）
 bin/observe-to-json.py       # 台账之鞭：意图手写，车道派生自字节
+bin/pin.sh                   # 入城收据：§3 打条与 --verify 复查（无条即隔离）
 letters/                     # 致邻邦的信（001 → CHORA，002 → Cora），不可变
-benches/FOUNDRY/             # 预留 bench II：义素自动标注铸造厂（虚线环）
+benches/FOUNDRY/             # bench II：义素铸造厂 — 环仍虚线，入册夹具已冷备
 benches/MIRROR/              # 预留 bench III：空间→词生成镜厅（虚线环）
 run_engine.sh / run_marimo.sh / serve_site.sh
 ```
