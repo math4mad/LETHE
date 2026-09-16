@@ -67,3 +67,8 @@ cross our gate only in this order:
 4. **The oracle clause — 雷荷波留园.** The Rehoboth ball is not an artifact. It exports
    *consultations* (evidence in, posterior out) and the lattice schema, never itself:
    a scale that can be copied is no longer the scale this park swears by. Law VI on the gate.
+5. **Certificates are append-only — 出生证只增不覆** (owner’s standing order, 2026-09-16).
+   Amending the birth certificate means *sealing the old first*: copy to
+   `benches/CRADLE/archive/`, pin it, register it in `benches/CRADLE/VERSIONS.md`,
+   and only then recompile. Historical versions are never overwritten — the park’s
+   beginning is evidence, and evidence is immortal (Law III).

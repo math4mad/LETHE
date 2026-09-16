@@ -28,6 +28,13 @@ over the gate and seals the plate:
 > Li Bai’s rushing falls of Mount Lu: *falling straight down three thousand chi,
 > suspected to be the Milky Way from the ninth heaven* (《望廬山瀑布》).
 
+**Append-only clause · 只增不覆 (owner’s standing law, 2026-09-16):**
+If the birth certificate is ever amended, the original historical versions are
+kept — never overwritten. v1.0 is sealed in `archive/` with its own receipt;
+the register of versions lives in `VERSIONS.md` (append-only, newest first).
+A certificate that can be revised in place is no certificate: the park’s
+beginning is evidence, and evidence is immortal (Law III).
+
 **What crosses and what stays (Foundling §2, Law VI):**
 the tex and its PDF are artifacts with receipts (`intake/*.lethe-pin.json`,
 four sidecars, hashed on arrival by `bin/pin.sh`); the dialogue that made
