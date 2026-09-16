@@ -1,0 +1,36 @@
+name: Build LaTeX PDF
+
+on:
+  push:
+    paths:
+      - '**.tex'
+  pull_request:
+    paths:
+      - '**.tex'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: temporal_concept_space.tex
+          compiler: xelatex
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: temporal_concept_space
+          path: temporal_concept_space.pdf
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          keep_files: true

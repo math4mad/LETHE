@@ -1,0 +1,1497 @@
+{
+ "generated": "2026-09-16T05:01:23+00:00",
+ "head": "40cb02b",
+ "head_full": "40cb02b852ed2f84d5e89b44dece398f16524886",
+ "remote": "https://github.com/math4mad/LETHE.git",
+ "commits": [
+  {
+   "sha": "40cb02b852ed2f84d5e89b44dece398f16524886",
+   "date": "2026-09-16T12:41:40+08:00",
+   "subject": "A name is added, none is taken away: @1st-host joins Dolores/Lola/Dole — living plates updated, console re-exported to match the notebook byte-law",
+   "files": [
+    {
+     "status": "M",
+     "path": "README.md"
+    },
+    {
+     "status": "M",
+     "path": "cognitive_engine_marimo.py"
+    },
+    {
+     "status": "M",
+     "path": "website/console.html"
+    },
+    {
+     "status": "M",
+     "path": "website/index.html"
+    }
+   ]
+  },
+  {
+   "sha": "27f889b56f1ecd846178fd93529a18cc17693a93",
+   "date": "2026-09-16T12:33:51+08:00",
+   "subject": "The quote-box takes its own door: Externel/every_words.py → bin/every_words.py, verbatim, no intake ceremony — code enters by commit, git history is its receipt; Externel/ swept empty",
+   "files": [
+    {
+     "status": "M",
+     "path": "README.md"
+    },
+    {
+     "status": "A",
+     "path": "bin/every_words.py"
+    }
+   ]
+  },
+  {
+   "sha": "a390d4a4bf5c0909d2f3c9ac4352865ac8ba1ba7",
+   "date": "2026-09-16T12:25:05+08:00",
+   "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+   "files": [
+    {
+     "status": "M",
+     "path": "README.md"
+    },
+    {
+     "status": "M",
+     "path": "benches/CRADLE/README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/temporal_concept_space.tex"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/temporal_concept_space.tex.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/temporal_concept_space.pdf"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/temporal_concept_space.pdf.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "website/strata.html"
+    },
+    {
+     "status": "A",
+     "path": "website/temporal_concept_space.pdf"
+    }
+   ]
+  },
+  {
+   "sha": "2d1fb92e5b0a3b7c9c86ef8c05aea51d20f856e1",
+   "date": "2026-09-16T11:22:52+08:00",
+   "subject": "Sweep the cradle: tectonic’s stray -o copy of the intake tex removed",
+   "files": [
+    {
+     "status": "D",
+     "path": "benches/CRADLE/concept-space-park-birth-certificat.tex"
+    }
+   ]
+  },
+  {
+   "sha": "21ca975639fd94a2338303da8df698e0c5a692df",
+   "date": "2026-09-16T11:22:34+08:00",
+   "subject": "CRADLE gains its second document: 幼稚园入园证 (No. MMXXVI-002)",
+   "files": [
+    {
+     "status": "M",
+     "path": "benches/CRADLE/README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/concept-space-park-birth-certificat.tex"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/kindergarten-enrollment-certificate.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/kindergarten-enrollment-certificate.md.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "website/certificate.html"
+    }
+   ]
+  },
+  {
+   "sha": "88656b9c6c78cfd27d7b93f8d602212a27944ef4",
+   "date": "2026-09-16T10:23:34+08:00",
+   "subject": "Append-only law for the birth certificate; v1.0 sealed in archive/",
+   "files": [
+    {
+     "status": "M",
+     "path": "benches/CRADLE/README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/VERSIONS.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/archive/birth-certificate-v1.0-2026-09-16.pdf"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/archive/birth-certificate-v1.0-2026-09-16.pdf.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "website/FOUNDLING.md"
+    },
+    {
+     "status": "M",
+     "path": "website/certificate.html"
+    }
+   ]
+  },
+  {
+   "sha": "8718f66209b50c9fa41a3ce87be4d0c1ceccdc21",
+   "date": "2026-09-16T10:11:48+08:00",
+   "subject": "Ledger correction: whose hand caught the misquotation",
+   "files": []
+  },
+  {
+   "sha": "42f179c6754e6f342c5d7d30c30c47b059859ec2",
+   "date": "2026-09-16T10:11:34+08:00",
+   "subject": "Hang the nativity couplet: 飞流直下三千问 · 概念空间落人间",
+   "files": [
+    {
+     "status": "M",
+     "path": "benches/CRADLE/README.md"
+    },
+    {
+     "status": "M",
+     "path": "website/certificate.html"
+    },
+    {
+     "status": "M",
+     "path": "website/index.html"
+    }
+   ]
+  },
+  {
+   "sha": "2805acaf8c4515a9a88e31e53dfd92a41ca5cb3e",
+   "date": "2026-09-16T10:05:01+08:00",
+   "subject": "CRADLE: Qianwen → Qwen, by the Owner's word",
+   "files": [
+    {
+     "status": "M",
+     "path": "benches/CRADLE/README.md"
+    },
+    {
+     "status": "M",
+     "path": "benches/CRADLE/intake/ChoraCora_paper.pdf.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "benches/CRADLE/intake/README.md.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "benches/CRADLE/intake/build-paper.yml.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "benches/CRADLE/intake/concept-space-park-birth-certificat.tex.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "website/certificate.html"
+    },
+    {
+     "status": "M",
+     "path": "website/index.html"
+    }
+   ]
+  },
+  {
+   "sha": "032af306aa9906656a8959aca435823c062aa8d8",
+   "date": "2026-09-16T10:00:54+08:00",
+   "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+   "files": [
+    {
+     "status": "M",
+     "path": "README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/birth-certificate.pdf"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/birth-certificate.pdf.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/ChoraCora_paper.pdf"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/ChoraCora_paper.pdf.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/README.md.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/build-paper.yml"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/build-paper.yml.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/concept-space-park-birth-certificat.tex"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/concept-space-park-birth-certificat.tex.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "website/birth-certificate.pdf"
+    },
+    {
+     "status": "A",
+     "path": "website/certificate.html"
+    },
+    {
+     "status": "M",
+     "path": "website/index.html"
+    }
+   ]
+  },
+  {
+   "sha": "3e955c689f33d7f854c39d23b8a85e097be05fb1",
+   "date": "2026-09-16T09:36:49+08:00",
+   "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+   "files": [
+    {
+     "status": "M",
+     "path": "README.md"
+    },
+    {
+     "status": "M",
+     "path": "benches/FOUNDRY/README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/FOUNDRY/bin/validate-annotation.py"
+    },
+    {
+     "status": "A",
+     "path": "\"benches/FOUNDRY/drafts/ledger-\\347\\205\\244\\346\\260\\224\\347\\275\\220.json\""
+    },
+    {
+     "status": "A",
+     "path": "\"benches/FOUNDRY/drafts/new-\\344\\277\\235\\346\\270\\251\\347\\256\\261.json\""
+    },
+    {
+     "status": "A",
+     "path": "\"benches/FOUNDRY/drafts/refused-\\351\\234\\223\\350\\231\\271\\347\\201\\257.json\""
+    },
+    {
+     "status": "A",
+     "path": "benches/FOUNDRY/schema/derive_lattice.py"
+    },
+    {
+     "status": "A",
+     "path": "benches/FOUNDRY/schema/lattice16.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/FOUNDRY/schema/lattice16.json.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "bin/pin.sh"
+    }
+   ]
+  },
+  {
+   "sha": "3cf2792bf73e7554f99f34cc9d65727f1ba33da8",
+   "date": "2026-09-15T17:51:12+08:00",
+   "subject": "sky-hook fix: deploy-pages is an action (step), not a reusable workflow",
+   "files": [
+    {
+     "status": "M",
+     "path": ".github/workflows/pages.yml"
+    }
+   ]
+  },
+  {
+   "sha": "46ddbc8d10a33b5f9d0df9417692b622b08b5e5a",
+   "date": "2026-09-15T17:47:57+08:00",
+   "subject": "sky-hook: Pages deploy from /website (the gate stays home, the ball ascends)",
+   "files": [
+    {
+     "status": "A",
+     "path": ".github/workflows/pages.yml"
+    }
+   ]
+  },
+  {
+   "sha": "a8c623627b6e5d393cbd0d9d33d518cec060dbbf",
+   "date": "2026-09-15T17:26:50+08:00",
+   "subject": "rename settled (by-letter protocol); Law VI: Rehoboth stays in the park; Letter 003 to the Chair; FOUNDLING §3 treasury protocol",
+   "files": [
+    {
+     "status": "A",
+     "path": "letters/2026-09-15-lethe-to-chair-treasury.md"
+    },
+    {
+     "status": "M",
+     "path": "website/FOUNDLING.md"
+    },
+    {
+     "status": "M",
+     "path": "website/index.html"
+    }
+   ]
+  },
+  {
+   "sha": "e75d3c64b2d8c129edede028aca4d1eedcaa1223",
+   "date": "2026-09-15T17:19:44+08:00",
+   "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+   "files": [
+    {
+     "status": "A",
+     "path": ".gitignore"
+    },
+    {
+     "status": "A",
+     "path": "AGENTS.md"
+    },
+    {
+     "status": "A",
+     "path": "README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/FOUNDRY/README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/MIRROR/README.md"
+    },
+    {
+     "status": "A",
+     "path": "bin/observe-to-json.py"
+    },
+    {
+     "status": "A",
+     "path": "cognitive_engine.py"
+    },
+    {
+     "status": "A",
+     "path": "cognitive_engine_marimo.py"
+    },
+    {
+     "status": "A",
+     "path": "letters/2026-09-15-lethe-to-chora.md"
+    },
+    {
+     "status": "A",
+     "path": "letters/2026-09-15-lethe-to-cora.md"
+    },
+    {
+     "status": "A",
+     "path": "run_engine.sh"
+    },
+    {
+     "status": "A",
+     "path": "run_marimo.sh"
+    },
+    {
+     "status": "A",
+     "path": "serve_site.sh"
+    },
+    {
+     "status": "A",
+     "path": "website/FOUNDLING.md"
+    },
+    {
+     "status": "A",
+     "path": "website/apple-style.css"
+    },
+    {
+     "status": "A",
+     "path": "website/apple-style.js"
+    },
+    {
+     "status": "A",
+     "path": "website/console.html"
+    },
+    {
+     "status": "A",
+     "path": "website/index.html"
+    },
+    {
+     "status": "A",
+     "path": "website/observations.json"
+    },
+    {
+     "status": "A",
+     "path": "website/strata.html"
+    }
+   ]
+  }
+ ],
+ "files": [
+  {
+   "path": "\"benches/FOUNDRY/drafts/ledger-\\347\\205\\244\\346\\260\\224\\347\\275\\220.json\"",
+   "versions": 1,
+   "added": "2026-09-16T09:36:49+08:00",
+   "last": "2026-09-16T09:36:49+08:00",
+   "events": [
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "\"benches/FOUNDRY/drafts/new-\\344\\277\\235\\346\\270\\251\\347\\256\\261.json\"",
+   "versions": 1,
+   "added": "2026-09-16T09:36:49+08:00",
+   "last": "2026-09-16T09:36:49+08:00",
+   "events": [
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "\"benches/FOUNDRY/drafts/refused-\\351\\234\\223\\350\\231\\271\\347\\201\\257.json\"",
+   "versions": 1,
+   "added": "2026-09-16T09:36:49+08:00",
+   "last": "2026-09-16T09:36:49+08:00",
+   "events": [
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": ".github/workflows/pages.yml",
+   "versions": 2,
+   "added": "2026-09-15T17:47:57+08:00",
+   "last": "2026-09-15T17:47:57+08:00",
+   "events": [
+    {
+     "sha": "46ddbc8",
+     "date": "2026-09-15T17:47:57+08:00",
+     "subject": "sky-hook: Pages deploy from /website (the gate stays home, the ball ascends)",
+     "status": "A"
+    },
+    {
+     "sha": "3cf2792",
+     "date": "2026-09-15T17:51:12+08:00",
+     "subject": "sky-hook fix: deploy-pages is an action (step), not a reusable workflow",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": ".gitignore",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "AGENTS.md",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "README.md",
+   "versions": 6,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    },
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "M"
+    },
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "M"
+    },
+    {
+     "sha": "a390d4a",
+     "date": "2026-09-16T12:25:05+08:00",
+     "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+     "status": "M"
+    },
+    {
+     "sha": "27f889b",
+     "date": "2026-09-16T12:33:51+08:00",
+     "subject": "The quote-box takes its own door: Externel/every_words.py → bin/every_words.py, verbatim, no intake ceremony — code enters by commit, git history is its receipt; Externel/ swept empty",
+     "status": "M"
+    },
+    {
+     "sha": "40cb02b",
+     "date": "2026-09-16T12:41:40+08:00",
+     "subject": "A name is added, none is taken away: @1st-host joins Dolores/Lola/Dole — living plates updated, console re-exported to match the notebook byte-law",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/README.md",
+   "versions": 6,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    },
+    {
+     "sha": "2805aca",
+     "date": "2026-09-16T10:05:01+08:00",
+     "subject": "CRADLE: Qianwen → Qwen, by the Owner's word",
+     "status": "M"
+    },
+    {
+     "sha": "42f179c",
+     "date": "2026-09-16T10:11:34+08:00",
+     "subject": "Hang the nativity couplet: 飞流直下三千问 · 概念空间落人间",
+     "status": "M"
+    },
+    {
+     "sha": "88656b9",
+     "date": "2026-09-16T10:23:34+08:00",
+     "subject": "Append-only law for the birth certificate; v1.0 sealed in archive/",
+     "status": "M"
+    },
+    {
+     "sha": "21ca975",
+     "date": "2026-09-16T11:22:34+08:00",
+     "subject": "CRADLE gains its second document: 幼稚园入园证 (No. MMXXVI-002)",
+     "status": "M"
+    },
+    {
+     "sha": "a390d4a",
+     "date": "2026-09-16T12:25:05+08:00",
+     "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/VERSIONS.md",
+   "versions": 1,
+   "added": "2026-09-16T10:23:34+08:00",
+   "last": "2026-09-16T10:23:34+08:00",
+   "events": [
+    {
+     "sha": "88656b9",
+     "date": "2026-09-16T10:23:34+08:00",
+     "subject": "Append-only law for the birth certificate; v1.0 sealed in archive/",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/archive/birth-certificate-v1.0-2026-09-16.pdf",
+   "versions": 1,
+   "added": "2026-09-16T10:23:34+08:00",
+   "last": "2026-09-16T10:23:34+08:00",
+   "events": [
+    {
+     "sha": "88656b9",
+     "date": "2026-09-16T10:23:34+08:00",
+     "subject": "Append-only law for the birth certificate; v1.0 sealed in archive/",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/archive/birth-certificate-v1.0-2026-09-16.pdf.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-16T10:23:34+08:00",
+   "last": "2026-09-16T10:23:34+08:00",
+   "events": [
+    {
+     "sha": "88656b9",
+     "date": "2026-09-16T10:23:34+08:00",
+     "subject": "Append-only law for the birth certificate; v1.0 sealed in archive/",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/birth-certificate.pdf",
+   "versions": 1,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/birth-certificate.pdf.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/concept-space-park-birth-certificat.tex",
+   "versions": 2,
+   "added": "2026-09-16T11:22:34+08:00",
+   "last": "2026-09-16T11:22:34+08:00",
+   "events": [
+    {
+     "sha": "21ca975",
+     "date": "2026-09-16T11:22:34+08:00",
+     "subject": "CRADLE gains its second document: 幼稚园入园证 (No. MMXXVI-002)",
+     "status": "A"
+    },
+    {
+     "sha": "2d1fb92",
+     "date": "2026-09-16T11:22:52+08:00",
+     "subject": "Sweep the cradle: tectonic’s stray -o copy of the intake tex removed",
+     "status": "D"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/ChoraCora_paper.pdf",
+   "versions": 1,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/ChoraCora_paper.pdf.lethe-pin.json",
+   "versions": 2,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    },
+    {
+     "sha": "2805aca",
+     "date": "2026-09-16T10:05:01+08:00",
+     "subject": "CRADLE: Qianwen → Qwen, by the Owner's word",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/README.md",
+   "versions": 1,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/README.md.lethe-pin.json",
+   "versions": 2,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    },
+    {
+     "sha": "2805aca",
+     "date": "2026-09-16T10:05:01+08:00",
+     "subject": "CRADLE: Qianwen → Qwen, by the Owner's word",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/build-paper.yml",
+   "versions": 1,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/build-paper.yml.lethe-pin.json",
+   "versions": 2,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    },
+    {
+     "sha": "2805aca",
+     "date": "2026-09-16T10:05:01+08:00",
+     "subject": "CRADLE: Qianwen → Qwen, by the Owner's word",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/concept-space-park-birth-certificat.tex",
+   "versions": 1,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/concept-space-park-birth-certificat.tex.lethe-pin.json",
+   "versions": 2,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    },
+    {
+     "sha": "2805aca",
+     "date": "2026-09-16T10:05:01+08:00",
+     "subject": "CRADLE: Qianwen → Qwen, by the Owner's word",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/temporal_concept_space.tex",
+   "versions": 1,
+   "added": "2026-09-16T12:25:05+08:00",
+   "last": "2026-09-16T12:25:05+08:00",
+   "events": [
+    {
+     "sha": "a390d4a",
+     "date": "2026-09-16T12:25:05+08:00",
+     "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/temporal_concept_space.tex.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-16T12:25:05+08:00",
+   "last": "2026-09-16T12:25:05+08:00",
+   "events": [
+    {
+     "sha": "a390d4a",
+     "date": "2026-09-16T12:25:05+08:00",
+     "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/kindergarten-enrollment-certificate.md",
+   "versions": 1,
+   "added": "2026-09-16T11:22:34+08:00",
+   "last": "2026-09-16T11:22:34+08:00",
+   "events": [
+    {
+     "sha": "21ca975",
+     "date": "2026-09-16T11:22:34+08:00",
+     "subject": "CRADLE gains its second document: 幼稚园入园证 (No. MMXXVI-002)",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/kindergarten-enrollment-certificate.md.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-16T11:22:34+08:00",
+   "last": "2026-09-16T11:22:34+08:00",
+   "events": [
+    {
+     "sha": "21ca975",
+     "date": "2026-09-16T11:22:34+08:00",
+     "subject": "CRADLE gains its second document: 幼稚园入园证 (No. MMXXVI-002)",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/temporal_concept_space.pdf",
+   "versions": 1,
+   "added": "2026-09-16T12:25:05+08:00",
+   "last": "2026-09-16T12:25:05+08:00",
+   "events": [
+    {
+     "sha": "a390d4a",
+     "date": "2026-09-16T12:25:05+08:00",
+     "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/temporal_concept_space.pdf.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-16T12:25:05+08:00",
+   "last": "2026-09-16T12:25:05+08:00",
+   "events": [
+    {
+     "sha": "a390d4a",
+     "date": "2026-09-16T12:25:05+08:00",
+     "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/FOUNDRY/README.md",
+   "versions": 2,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    },
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "benches/FOUNDRY/bin/validate-annotation.py",
+   "versions": 1,
+   "added": "2026-09-16T09:36:49+08:00",
+   "last": "2026-09-16T09:36:49+08:00",
+   "events": [
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/FOUNDRY/schema/derive_lattice.py",
+   "versions": 1,
+   "added": "2026-09-16T09:36:49+08:00",
+   "last": "2026-09-16T09:36:49+08:00",
+   "events": [
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/FOUNDRY/schema/lattice16.json",
+   "versions": 1,
+   "added": "2026-09-16T09:36:49+08:00",
+   "last": "2026-09-16T09:36:49+08:00",
+   "events": [
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/FOUNDRY/schema/lattice16.json.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-16T09:36:49+08:00",
+   "last": "2026-09-16T09:36:49+08:00",
+   "events": [
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/MIRROR/README.md",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "bin/every_words.py",
+   "versions": 1,
+   "added": "2026-09-16T12:33:51+08:00",
+   "last": "2026-09-16T12:33:51+08:00",
+   "events": [
+    {
+     "sha": "27f889b",
+     "date": "2026-09-16T12:33:51+08:00",
+     "subject": "The quote-box takes its own door: Externel/every_words.py → bin/every_words.py, verbatim, no intake ceremony — code enters by commit, git history is its receipt; Externel/ swept empty",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "bin/observe-to-json.py",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "bin/pin.sh",
+   "versions": 1,
+   "added": "2026-09-16T09:36:49+08:00",
+   "last": "2026-09-16T09:36:49+08:00",
+   "events": [
+    {
+     "sha": "3e955c6",
+     "date": "2026-09-16T09:36:49+08:00",
+     "subject": "FOUNDRY cold prep: mould cast from engine bytes, intake gate + receipt writer standing",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "cognitive_engine.py",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "cognitive_engine_marimo.py",
+   "versions": 2,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    },
+    {
+     "sha": "40cb02b",
+     "date": "2026-09-16T12:41:40+08:00",
+     "subject": "A name is added, none is taken away: @1st-host joins Dolores/Lola/Dole — living plates updated, console re-exported to match the notebook byte-law",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "letters/2026-09-15-lethe-to-chair-treasury.md",
+   "versions": 1,
+   "added": "2026-09-15T17:26:50+08:00",
+   "last": "2026-09-15T17:26:50+08:00",
+   "events": [
+    {
+     "sha": "a8c6236",
+     "date": "2026-09-15T17:26:50+08:00",
+     "subject": "rename settled (by-letter protocol); Law VI: Rehoboth stays in the park; Letter 003 to the Chair; FOUNDLING §3 treasury protocol",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "letters/2026-09-15-lethe-to-chora.md",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "letters/2026-09-15-lethe-to-cora.md",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "run_engine.sh",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "run_marimo.sh",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "serve_site.sh",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "website/FOUNDLING.md",
+   "versions": 3,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    },
+    {
+     "sha": "a8c6236",
+     "date": "2026-09-15T17:26:50+08:00",
+     "subject": "rename settled (by-letter protocol); Law VI: Rehoboth stays in the park; Letter 003 to the Chair; FOUNDLING §3 treasury protocol",
+     "status": "M"
+    },
+    {
+     "sha": "88656b9",
+     "date": "2026-09-16T10:23:34+08:00",
+     "subject": "Append-only law for the birth certificate; v1.0 sealed in archive/",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "website/apple-style.css",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "website/apple-style.js",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "website/birth-certificate.pdf",
+   "versions": 1,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "website/certificate.html",
+   "versions": 5,
+   "added": "2026-09-16T10:00:54+08:00",
+   "last": "2026-09-16T10:00:54+08:00",
+   "events": [
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "A"
+    },
+    {
+     "sha": "2805aca",
+     "date": "2026-09-16T10:05:01+08:00",
+     "subject": "CRADLE: Qianwen → Qwen, by the Owner's word",
+     "status": "M"
+    },
+    {
+     "sha": "42f179c",
+     "date": "2026-09-16T10:11:34+08:00",
+     "subject": "Hang the nativity couplet: 飞流直下三千问 · 概念空间落人间",
+     "status": "M"
+    },
+    {
+     "sha": "88656b9",
+     "date": "2026-09-16T10:23:34+08:00",
+     "subject": "Append-only law for the birth certificate; v1.0 sealed in archive/",
+     "status": "M"
+    },
+    {
+     "sha": "21ca975",
+     "date": "2026-09-16T11:22:34+08:00",
+     "subject": "CRADLE gains its second document: 幼稚园入园证 (No. MMXXVI-002)",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "website/console.html",
+   "versions": 2,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    },
+    {
+     "sha": "40cb02b",
+     "date": "2026-09-16T12:41:40+08:00",
+     "subject": "A name is added, none is taken away: @1st-host joins Dolores/Lola/Dole — living plates updated, console re-exported to match the notebook byte-law",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "website/index.html",
+   "versions": 6,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    },
+    {
+     "sha": "a8c6236",
+     "date": "2026-09-15T17:26:50+08:00",
+     "subject": "rename settled (by-letter protocol); Law VI: Rehoboth stays in the park; Letter 003 to the Chair; FOUNDLING §3 treasury protocol",
+     "status": "M"
+    },
+    {
+     "sha": "032af30",
+     "date": "2026-09-16T10:00:54+08:00",
+     "subject": "CRADLE seated as bench I: the park's birth certificate, midwifed by Qianwen",
+     "status": "M"
+    },
+    {
+     "sha": "2805aca",
+     "date": "2026-09-16T10:05:01+08:00",
+     "subject": "CRADLE: Qianwen → Qwen, by the Owner's word",
+     "status": "M"
+    },
+    {
+     "sha": "42f179c",
+     "date": "2026-09-16T10:11:34+08:00",
+     "subject": "Hang the nativity couplet: 飞流直下三千问 · 概念空间落人间",
+     "status": "M"
+    },
+    {
+     "sha": "40cb02b",
+     "date": "2026-09-16T12:41:40+08:00",
+     "subject": "A name is added, none is taken away: @1st-host joins Dolores/Lola/Dole — living plates updated, console re-exported to match the notebook byte-law",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "website/observations.json",
+   "versions": 1,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "website/strata.html",
+   "versions": 2,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    },
+    {
+     "sha": "a390d4a",
+     "date": "2026-09-16T12:25:05+08:00",
+     "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "website/temporal_concept_space.pdf",
+   "versions": 1,
+   "added": "2026-09-16T12:25:05+08:00",
+   "last": "2026-09-16T12:25:05+08:00",
+   "events": [
+    {
+     "sha": "a390d4a",
+     "date": "2026-09-16T12:25:05+08:00",
+     "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+     "status": "A"
+    }
+   ]
+  }
+ ],
+ "receipts": [
+  {
+   "sidecar": "benches/CRADLE/archive/birth-certificate-v1.0-2026-09-16.pdf.lethe-pin.json",
+   "artifact": "benches/CRADLE/archive/birth-certificate-v1.0-2026-09-16.pdf",
+   "sha256": "180e301aca164c07fb06291183d19dd55bcf2d7574bca2a9dd26f3b982bf4472",
+   "producer": "lethe@2805aca · tectonic-0.17.0",
+   "purpose": "archive copy of v1.0 — sealed 2026-09-16 by owner's append-only law",
+   "received": "2026-09-16T02:22:53+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/birth-certificate.pdf.lethe-pin.json",
+   "artifact": "benches/CRADLE/birth-certificate.pdf",
+   "sha256": "180e301aca164c07fb06291183d19dd55bcf2d7574bca2a9dd26f3b982bf4472",
+   "producer": "lethe@3e955c6 · tectonic-0.17.0",
+   "purpose": "park birth certificate — compiled from intake tex, unmodified source",
+   "received": "2026-09-16T01:58:41+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/ChoraCora_paper.pdf.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/ChoraCora_paper.pdf",
+   "sha256": "0c5ffa9f532f816ee0c9f343c1dc44b0fb1a9bde04a4333e8487cc5959e9439d",
+   "producer": "owner-x-Qwen(chats) 2026-09-16",
+   "purpose": "park birth certificate intake — verbatim bytes from owner×Qwen dialogue",
+   "received": "2026-09-16T01:53:13+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/README.md.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/README.md",
+   "sha256": "9cf34f47a2f662354596c72a6be76bad3d2ed198b2845b6738ca9575a12bdae4",
+   "producer": "owner-x-Qwen(chats) 2026-09-16",
+   "purpose": "park birth certificate intake — verbatim bytes from owner×Qwen dialogue",
+   "received": "2026-09-16T01:53:13+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/build-paper.yml.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/build-paper.yml",
+   "sha256": "c2dba569b65ad6760f0af011156f94d2ebd2058f2ebb07a8e99b26a7a4eb7892",
+   "producer": "owner-x-Qwen(chats) 2026-09-16",
+   "purpose": "park birth certificate intake — verbatim bytes from owner×Qwen dialogue",
+   "received": "2026-09-16T01:53:13+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/concept-space-park-birth-certificat.tex.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/concept-space-park-birth-certificat.tex",
+   "sha256": "f193107627febe523ac4339ed8abe3824cca709158a834715e5ead2dc9db7914",
+   "producer": "owner-x-Qwen(chats) 2026-09-16",
+   "purpose": "park birth certificate intake — verbatim bytes from owner×Qwen dialogue",
+   "received": "2026-09-16T01:53:13+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/temporal_concept_space.tex.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/temporal_concept_space.tex",
+   "sha256": "b5a8f868207078cfd42aef1cc896acba33596b61f3c7f6bd52cd29e4317bff37",
+   "producer": "owner×LLM(recap-chats) 2026-09-16",
+   "purpose": "park chronicle intake · 第二篇进展讨论总结 — verbatim bytes; surface already mirrored at website/strata.html",
+   "received": "2026-09-16T03:43:52+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/kindergarten-enrollment-certificate.md.lethe-pin.json",
+   "artifact": "benches/CRADLE/kindergarten-enrollment-certificate.md",
+   "sha256": "fa86fb93144c022007dd3f48979420585200c75b808030c665526675507fe746",
+   "producer": "lethe@88656b9",
+   "purpose": "park-produced enrollment slip No.MMXXVI-002 — cites birth cert 180e301a…, defers to it",
+   "received": "2026-09-16T03:22:34+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/temporal_concept_space.pdf.lethe-pin.json",
+   "artifact": "benches/CRADLE/temporal_concept_space.pdf",
+   "sha256": "137be8e8ae679569c04c2b471641aa91392409a16489bc21ac4b5e3b0aaceba1",
+   "producer": "lethe@2d1fb92 · tectonic 0.17.0",
+   "purpose": "park chronicle PDF — compiled from intake tex sha b5a8f868207078cf… (第二篇进展讨论总结·正体字版)",
+   "received": "2026-09-16T03:54:26+00:00"
+  },
+  {
+   "sidecar": "benches/FOUNDRY/schema/lattice16.json.lethe-pin.json",
+   "artifact": "benches/FOUNDRY/schema/lattice16.json",
+   "sha256": "7fe93b132ce1d30f19b1366a720e92f8a8c8d2cd1a810ab2f5abcfe1bca23455",
+   "producer": "lethe@3cf2792",
+   "purpose": "FOUNDRY fixture I — 十六基格模，自浇自铸，非外库",
+   "received": "2026-09-16T01:33:50+00:00"
+  }
+ ],
+ "law": "git history is the receipt for code; pin sidecars are the receipt for bytes; an Archiver that can be edited in place is no archive — regenerate or perish."
+}

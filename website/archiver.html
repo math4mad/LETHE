@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LETHE — The Archiver · 档房：诸版与收据</title>
+<style>
+  :root{
+    --bg:#0e0f12; --panel:#14161b; --line:#2a2d36;
+    --ink:#d8d4c8; --dim:#8d8a80; --gold:#c9a959; --amber:#D4763A; --amber-light:#E8944F; --amber-glow:#F5B870;
+    --serif:"Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Songti SC","Noto Serif SC",serif;
+    --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.65;padding-bottom:6rem}
+  a{color:var(--gold);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:980px;margin:0 auto;padding:0 1.4rem}
+  header{text-align:center;padding:5rem 0 3rem;border-bottom:1px solid var(--line)}
+  h1{font-size:2.6rem;font-weight:400;letter-spacing:.09em;margin:.4rem 0}
+  h1 .greek{color:var(--amber-light)}
+  .pron{color:var(--dim);font-size:.95rem}
+  h2{margin:3.5rem 0 1rem;font-weight:400;letter-spacing:.08em;color:var(--gold)}
+  .lede{color:var(--dim);margin-bottom:1.4rem}
+  .stats{display:flex;gap:2.5rem;justify-content:center;flex-wrap:wrap;margin:2rem 0 0}
+  .stat{text-align:center}
+  .stat b{display:block;font-size:1.9rem;font-weight:400;color:var(--amber-glow);font-family:var(--mono)}
+  .stat span{font-size:.72rem;letter-spacing:.2em;color:var(--dim);font-family:var(--mono)}
+  table{width:100%;border-collapse:collapse;font-size:.86rem;margin:1rem 0 2rem}
+  th{font-family:var(--mono);font-size:.66rem;letter-spacing:.22em;color:var(--dim);
+     text-align:left;padding:.5rem .7rem;border-bottom:1px solid var(--line)}
+  td{padding:.45rem .7rem;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:hover td{background:var(--panel)}
+  .mono{font-family:var(--mono);font-size:.78rem}
+  .sha{color:var(--amber-light);font-family:var(--mono);font-size:.74rem}
+  .st-A{color:#7fb37f}.st-M{color:var(--amber-glow)}.st-D{color:#c96a5a}.st-R{color:#6fa8c9}
+  details summary{cursor:pointer;color:var(--ink);padding:.3rem 0;font-family:var(--mono);font-size:.8rem}
+  details summary:hover{color:var(--amber-glow)}
+  input[type=search]{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--ink);
+    padding:.6rem .9rem;font-family:var(--mono);font-size:.85rem;border-radius:2px;margin:1rem 0}
+  footer{text-align:center;margin-top:5rem;padding-top:2rem;border-top:1px solid var(--line);color:var(--dim);font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>THE <span class="greek">Α</span>RCHIVER</h1>
+  <div class="pron">档房 · every file's versions, every byte's receipt — derived from git &amp; sidecars, never hand-kept</div>
+  <p style="text-align:center;margin-top:1rem"><a href="index.html">← back to the gate</a></p>
+</header>
+<div class="wrap">
+
+<h2>The Standing Data · 本页不手写</h2>
+<p class="lede">此页无一条手写账：全部车道派生自 <span class="mono">git log --name-status</span> 与
+<span class="mono">*.lethe-pin.json</span> 收据（鞭：<span class="mono">bin/archive-to-json.py → website/archive.json</span>）。
+可复查，故可信；能擅改的账本不是账本（律 III）。<span class="mono" id="stamp"></span></p>
+<div class="stats" id="stats"></div>
+
+<h2>I · File Histories · 逐文件修改史（新者在前）</h2>
+<input type="search" id="q" placeholder="grep a path… 例如 CRADLE / every_words / strata">
+<div id="files"></div>
+
+<h2>II · Additions Only · 所有添加版本（入册之日）</h2>
+<table id="added"><thead><tr><th>file · 入册之物</th><th>added</th><th>cast by · commit</th></tr></thead><tbody></tbody></table>
+
+<h2>III · The Receipt Book · 收据簿</h2>
+<table id="pins"><thead><tr><th>artifact</th><th>sha256 (16)</th><th>producer · hand</th><th>purpose · 用途</th><th>received</th></tr></thead><tbody></tbody></table>
+<p class="lede">复查任一收据：<span class="mono">bin/pin.sh --verify &lt;path&gt;</span> —— 字节如故则 ✔，字节已变则 ✘ 并指出金库与格模谁改了。</p>
+
+<h2>IV · Commit Chronicle · 编年流水</h2>
+<table id="log"><thead><tr><th>sha</th><th>date</th><th>subject</th><th>Δfiles</th></tr></thead><tbody></tbody></table>
+
+<footer id="law">…</footer>
+</div>
+<script>
+fetch('archive.json').then(r=>r.json()).then(d=>{
+  document.getElementById('stamp').textContent =
+    ' · derived '+d.generated+' · HEAD '+d.head+' · '+ (d.remote||'local');
+
+  const nEv = d.commits.reduce((s,c)=>s+c.files.length,0);
+  document.getElementById('stats').innerHTML =
+    [[d.commits.length,'COMMITS'],[d.files.length,'FILES'],
+     [d.files.filter(f=>f.versions>1).length,'MULTI-VERSION'],
+     [d.receipts.length,'RECEIPTS']].map(([n,l])=>
+      `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join('');
+
+  function render(filter){
+    const rows = d.files.filter(f=>!filter||f.path.toLowerCase().includes(filter));
+    document.getElementById('files').innerHTML = rows.map(f=>`
+      <details ${rows.length<15?'open':''}>
+        <summary><span class="st-${f.events[0].status}">[${f.events[0].status}]</span>
+          &nbsp;${f.path} &nbsp;<span class="sha">${f.versions} version${f.versions>1?'s':''}</span></summary>
+        <table><tbody>${f.events.map(e=>`
+          <tr><td class="st-${e.status}" style="width:2.5rem">${e.status}</td>
+              <td class="sha" style="width:5rem">${e.sha}</td>
+              <td class="mono" style="width:13rem">${e.date}</td>
+              <td>${e.subject}</td></tr>`).join('')}</tbody></table>
+      </details>`).join('') || '<p class="lede">空 —— 无此路径，或其尚未出生。</p>';
+  }
+  render('');
+  document.getElementById('q').addEventListener('input',e=>render(e.target.value.toLowerCase()));
+
+  document.querySelector('#added tbody').innerHTML =
+    d.files.flatMap(f=>f.events.filter(e=>e.status==='A')
+      .map(e=>`<tr><td>${f.path}</td><td class="mono">${e.date}</td><td class="sha">${e.sha} · ${e.subject}</td></tr>`))
+      .join('');
+
+  document.querySelector('#pins tbody').innerHTML = d.receipts.map(r=>`
+    <tr><td class="mono">${r.artifact}</td>
+        <td class="sha">${(r.sha256||'—').slice(0,16)}…</td>
+        <td>${r.producer||''}</td>
+        <td style="font-size:.8rem">${r.purpose||''}</td>
+        <td class="mono">${r.received||''}</td></tr>`).join('');
+
+  document.querySelector('#log tbody').innerHTML = d.commits.map(c=>`
+    <tr><td class="sha">${c.sha.slice(0,7)}</td>
+        <td class="mono">${c.date}</td>
+        <td>${c.subject}</td>
+        <td class="mono">${c.files.length}</td></tr>`).join('');
+
+  document.getElementById('law').innerHTML =
+    `<p class="mono" style="font-size:.72rem">${d.law}</p>
+     <p style="font-style:italic;margin-top:1rem">LIFE NO LOOPS · LIFE NO LIMITS · LIFE NO GRADIENT</p>`;
+});
+</script>
+</body>
+</html>

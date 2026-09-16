@@ -12,6 +12,7 @@
 | 🌐 园区网站 | `./serve_site.sh` → http://localhost:8000 | 园区大门（含纯 JS 版互动观察台，与 Python 引擎数据同源） |
 | 📜 出生证 | `website/certificate.html` → `birth-certificate.pdf` | bench I · CRADLE 摇篮：蓝图 Chora/Cora（主人与通义千问对话所生），tectonic 亲手编译，四件入城均有收据 |
 | 🪨 成因综述（第二篇） | `website/strata.html` → `temporal_concept_space.pdf` | bench I · CRADLE：主人 × 多家 LLM 复盘综述（时域概念空间·四成因层），逐字入城打条，LETHE 亲手排明体正体字版 |
+| 🗄️ 档房 Archiver | `website/archiver.html` ← `archive.json` | 诸版与收据：逐文件修改史·添加册目·收据簿·编年流水 — 全由 `bin/archive-to-json.py` 派生自 git 与 sidecar，新内容入库后重跑即自动上榜 |
 | 🖼️ 控制台静态快照 | `website/console.html` | `marimo export html` 生成的在线版笔记本 |
 
 ## 园区标准（Park Standard）
@@ -38,7 +39,10 @@ website/strata.html          # 成因剖面（四层：基岩对话/沉积律法
 website/temporal_concept_space.pdf # 第二篇综述 PDF —— CRADLE 正体字版的门侧镜像
 website/FOUNDLING.md         # 继承登记：自邻邦领受的字节，全部钉 sha256
 website/observations.json    # 观察台账（由 bin/observe-to-json.py 派生，含 REFUSED 阴性车道）
+website/archive.json         # 档房车道（由 bin/archive-to-json.py 派生：诸版·诸添·诸收据）
+website/archiver.html        # 档房门面：渲染 archive.json，新内容自动上榜
 bin/observe-to-json.py       # 台账之鞭：意图手写，车道派生自字节
+bin/archive-to-json.py       # 档房之鞭：git --name-status + 诸收据 → archive.json
 bin/every_words.py       # Lola（@1st-host）的台词器：每次提交后验随句西部世界之言（39 句，逐句唯一）——代码走自己的门：bin/，不走 intake
 bin/pin.sh                   # 入城收据：§3 打条与 --verify 复查（无条即隔离）
 letters/                     # 致邻邦的信（001 → CHORA，002 → Cora），不可变
