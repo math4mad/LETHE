@@ -1,9 +1,52 @@
 {
- "generated": "2026-09-18T00:07:05+00:00",
- "head": "660fa74",
- "head_full": "660fa74e6dc0addd9f5cbb749b971eb8a41848eb",
+ "generated": "2026-09-18T01:19:56+00:00",
+ "head": "77af7ca",
+ "head_full": "77af7caa33cc39b2529cccff09cb31c9d1a154e5",
  "remote": "https://github.com/math4mad/LETHE.git",
  "commits": [
+  {
+   "sha": "77af7caa33cc39b2529cccff09cb31c9d1a154e5",
+   "date": "2026-09-18T08:07:08+08:00",
+   "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+   "files": [
+    {
+     "status": "A",
+     "path": "benches/CRADLE/context_dependent_lora.pdf"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/context_dependent_lora.pdf.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/context_dependent_lora.docx"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/context_dependent_lora.docx.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/context_dependent_lora.tex"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/context_dependent_lora.tex.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "website/archive.json"
+    },
+    {
+     "status": "A",
+     "path": "website/context_dependent_lora.pdf"
+    },
+    {
+     "status": "M",
+     "path": "website/strata.html"
+    }
+   ]
+  },
   {
    "sha": "660fa74e6dc0addd9f5cbb749b971eb8a41848eb",
    "date": "2026-09-16T13:06:25+08:00",
@@ -799,6 +842,34 @@
    ]
   },
   {
+   "path": "benches/CRADLE/context_dependent_lora.pdf",
+   "versions": 1,
+   "added": "2026-09-18T08:07:08+08:00",
+   "last": "2026-09-18T08:07:08+08:00",
+   "events": [
+    {
+     "sha": "77af7ca",
+     "date": "2026-09-18T08:07:08+08:00",
+     "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/context_dependent_lora.pdf.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-18T08:07:08+08:00",
+   "last": "2026-09-18T08:07:08+08:00",
+   "events": [
+    {
+     "sha": "77af7ca",
+     "date": "2026-09-18T08:07:08+08:00",
+     "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "benches/CRADLE/intake/ChoraCora_paper.pdf",
    "versions": 1,
    "added": "2026-09-16T10:00:54+08:00",
@@ -931,6 +1002,62 @@
      "date": "2026-09-16T10:05:01+08:00",
      "subject": "CRADLE: Qianwen → Qwen, by the Owner's word",
      "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/context_dependent_lora.docx",
+   "versions": 1,
+   "added": "2026-09-18T08:07:08+08:00",
+   "last": "2026-09-18T08:07:08+08:00",
+   "events": [
+    {
+     "sha": "77af7ca",
+     "date": "2026-09-18T08:07:08+08:00",
+     "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/context_dependent_lora.docx.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-18T08:07:08+08:00",
+   "last": "2026-09-18T08:07:08+08:00",
+   "events": [
+    {
+     "sha": "77af7ca",
+     "date": "2026-09-18T08:07:08+08:00",
+     "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/context_dependent_lora.tex",
+   "versions": 1,
+   "added": "2026-09-18T08:07:08+08:00",
+   "last": "2026-09-18T08:07:08+08:00",
+   "events": [
+    {
+     "sha": "77af7ca",
+     "date": "2026-09-18T08:07:08+08:00",
+     "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/context_dependent_lora.tex.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-18T08:07:08+08:00",
+   "last": "2026-09-18T08:07:08+08:00",
+   "events": [
+    {
+     "sha": "77af7ca",
+     "date": "2026-09-18T08:07:08+08:00",
+     "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+     "status": "A"
     }
    ]
   },
@@ -1352,7 +1479,7 @@
   },
   {
    "path": "website/archive.json",
-   "versions": 2,
+   "versions": 3,
    "added": "2026-09-16T13:01:39+08:00",
    "last": "2026-09-16T13:01:39+08:00",
    "events": [
@@ -1366,6 +1493,12 @@
      "sha": "660fa74",
      "date": "2026-09-16T13:06:25+08:00",
      "subject": "The forge hook is hung: .github/workflows/build_latex.yml — pinned tectonic 0.17.0 (same hand as local), receipts verified before firing (no bar = refuse to forge), PDFs to the evidence shelf only; enshrinement stays a human act",
+     "status": "M"
+    },
+    {
+     "sha": "77af7ca",
+     "date": "2026-09-18T08:07:08+08:00",
+     "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
      "status": "M"
     }
    ]
@@ -1457,6 +1590,20 @@
    ]
   },
   {
+   "path": "website/context_dependent_lora.pdf",
+   "versions": 1,
+   "added": "2026-09-18T08:07:08+08:00",
+   "last": "2026-09-18T08:07:08+08:00",
+   "events": [
+    {
+     "sha": "77af7ca",
+     "date": "2026-09-18T08:07:08+08:00",
+     "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "website/index.html",
    "versions": 7,
    "added": "2026-09-15T17:19:44+08:00",
@@ -1522,7 +1669,7 @@
   },
   {
    "path": "website/strata.html",
-   "versions": 2,
+   "versions": 3,
    "added": "2026-09-15T17:19:44+08:00",
    "last": "2026-09-15T17:19:44+08:00",
    "events": [
@@ -1536,6 +1683,12 @@
      "sha": "a390d4a",
      "date": "2026-09-16T12:25:05+08:00",
      "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
+     "status": "M"
+    },
+    {
+     "sha": "77af7ca",
+     "date": "2026-09-18T08:07:08+08:00",
+     "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
      "status": "M"
     }
    ]
@@ -1627,6 +1780,14 @@
    "producer": "lethe@660fa74 · typeset of owner×Qwen docx sha e4dc7ffb…",
    "purpose": "framework candidate tex — body of CDLoRA paper typeset from intake docx; trailing chat lines excluded",
    "received": "2026-09-18T00:03:19+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/prior_pointer.docx.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/prior_pointer.docx",
+   "sha256": "9cb8de70b17025ebaede0eccdb190125e6e53a3af354d8b5c3e6e8113b57c466",
+   "producer": "owner×Qwen(chats) 2026-09-18",
+   "purpose": "prior-pointer article intake — 时间轴指针=先验指针, verbatim docx bytes; surface implemented at prior_pointer_marimo.py",
+   "received": "2026-09-18T01:19:56+00:00"
   },
   {
    "sidecar": "benches/CRADLE/intake/temporal_concept_space.tex.lethe-pin.json",
