@@ -1,0 +1,8 @@
+{
+  "path": "benches/CRADLE/intake/context_dependent_lora.tex",
+  "sha256": "ee4299a25aea783da1df42e4ae260799d0f5f6ed82a10e96231ac4c6a1200ac8",
+  "producer": "lethe@660fa74 · typeset of owner×Qwen docx sha e4dc7ffb…",
+  "purpose": "framework candidate tex — body of CDLoRA paper typeset from intake docx; trailing chat lines excluded",
+  "received": "2026-09-18T00:03:19+00:00",
+  "law": "FOUNDLING §3 — hash before we announce; no re-export"
+}

@@ -1,0 +1,8 @@
+{
+  "path": "benches/CRADLE/context_dependent_lora.pdf",
+  "sha256": "8640e7ab576b56ebd029a711d22ad7c8ec8105f9999b730a932a5ca7257572f8",
+  "producer": "lethe@660fa74 · tectonic 0.17.0",
+  "purpose": "framework candidate PDF — context-dependent LoRA topological framework, compiled from intake tex sha ee4299a2… (docx source sha e4dc7ffb…)",
+  "received": "2026-09-18T00:03:43+00:00",
+  "law": "FOUNDLING §3 — hash before we announce; no re-export"
+}

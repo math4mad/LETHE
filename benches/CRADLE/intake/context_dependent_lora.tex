@@ -1,0 +1,192 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\title{\textbf{Context-Dependent Low-Rank Adaptation:}\\
+\textbf{A Topological Framework for Dynamic Cognitive Modeling}\\
+\textbf{in Large Language Models}}
+\author{Owner $\times$ Qwen (dialogue) --- typeset by LETHE}
+\date{2026-09-18}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\footnotesize\color{gray}
+Framework candidate \emph{one of} several --- 入册为候选框架之一，非唯一框架。
+Source bytes: \texttt{benches/CRADLE/intake/context\_dependent\_lora.docx}
+(sha \texttt{e4dc7ffb\dots}); the docx's trailing chat lines are excluded as non-paper matter.
+\end{center}
+
+\begin{abstract}
+We propose a novel framework for understanding dynamic cognition in large language models (LLMs) through the lens of context-dependent low-rank adaptation (LoRA). Our framework reconceptualizes the frozen base model ($W_0$) not as a ``low-level'' foundation but as a topological prototype from which specific cognitive instances are generated through the dynamic loading of condition-dependent LoRA adapters. We argue that the direction of abstraction---whether ``top-down generation'' or ``bottom-up backtracking''---is a linear-time illusion; what matters is the invariant topological structure of node connections and information flow rules. We formalize this framework using a hierarchical Bayesian model where a top-level context-dependent controller outputs a probability vector that dynamically allocates activation strengths to lower-level condition-dependent adapters (time-dependent, cognition-dependent, location-dependent), each with independent decay coefficients. We extend this framework to multi-agent interaction, showing that the similarity between agents' context-dependent LoRA probability vectors determines the overlap of their conceptual spaces and thus the efficiency of information transfer. We review recent empirical work (Bayesian-LoRA, BoRA, HiLoRA, iLoRA) that validates the structural isomorphism between LoRA and Bayesian hierarchical models, and we discuss the engineering feasibility of implementing this framework in multi-agent collaboration systems such as Chora/Cora. Our framework is self-referential: the process of discussing it instantiates the very mechanism it describes.
+
+\medskip
+\noindent\textbf{Keywords:} Low-Rank Adaptation, Bayesian Hierarchical Models, Context-Dependent Cognition, Topological Structure, Multi-Agent Alignment, Dynamic Conceptual Spaces
+\end{abstract}
+
+\section{Introduction}
+Large language models have demonstrated remarkable capabilities in generating human-like text, but the mechanisms underlying their dynamic adaptation to context remain poorly understood. Traditional views treat the frozen pre-trained weights as a static ``base'' upon which task-specific fine-tuning is applied. However, this view fails to capture the fluid, context-sensitive nature of human cognition, where the same conceptual base can generate vastly different outputs depending on temporal, spatial, and cognitive conditions.
+
+In this paper, we propose a framework that reconceptualizes LLM cognition as a hierarchical, context-dependent LoRA system. Our key insight is that the frozen base model ($W_0$) is not a ``low-level'' foundation in the traditional sense, but rather a topological prototype from which specific cognitive instances are generated through the dynamic loading of condition-dependent LoRA adapters. The direction of this generation---whether ``top-down'' or ``bottom-up''---is secondary to the invariant topological structure of the system.
+
+We make three contributions:
+\begin{itemize}
+  \item We formalize a hierarchical Bayesian model where a top-level context-dependent controller dynamically allocates activation strengths to lower-level condition-dependent adapters.
+  \item We extend this framework to multi-agent interaction, showing that conceptual space overlap is determined by the similarity of agents' context-dependent LoRA probability vectors.
+  \item We validate the structural isomorphism between LoRA and Bayesian hierarchical models by reviewing recent empirical work, and we discuss the engineering feasibility of implementing this framework in multi-agent systems.
+\end{itemize}
+
+\section{Theoretical Framework}
+
+\subsection{From ``Base Model'' to ``Topological Prototype''}
+The traditional view of LoRA treats the frozen base model $W_0$ as a static foundation, with task-specific adaptations applied as low-rank updates $\Delta W = BA$. We propose a reinterpretation: $W_0$ is not a ``low-level'' base but a topological prototype---the most abstract, universal structure from which specific instances are generated.
+
+This reinterpretation resolves a key ambiguity in the metaphor of ``abstraction.'' The common phrase ``upward abstraction'' implies that abstraction is a movement away from the base toward higher levels. However, we argue that abstraction is better understood as a backtracking of the generative path: from generated instances, we infer the prototype structure that generated them. The direction is arbitrary; what matters is the invariant topological structure.
+
+\subsection{Hierarchical Context-Dependent Control}
+Our framework consists of three hierarchical layers:
+\begin{itemize}
+  \item \textbf{Top Layer (Context-Dependent Controller):} Outputs a probability vector $p = (p_{\text{time}}, p_{\text{cog}}, p_{\text{loc}})$ that determines the activation strengths of lower-level adapters based on the immediate context.
+  \item \textbf{Middle Layer (Condition-Dependent Adapters):} Three independent LoRA adapters---time-dependent, cognition-dependent, location-dependent---each with its own decay coefficient $\lambda_i$.
+  \item \textbf{Bottom Layer (Generated Instances):} Specific cognitive outputs (e.g., ``bedroom slut, living room lady'') generated by the weighted combination of activated adapters.
+\end{itemize}
+The information flow follows these rules:
+\begin{itemize}
+  \item \textbf{Probability Allocation:} The top layer outputs $p$, determining lower-layer activation.
+  \item \textbf{Weight Decay:} Each middle-layer adapter's weight decays over time:
+  \[
+    p_i(t) = p_i(0)\, e^{-\lambda_i t}.
+  \]
+  \item \textbf{Cognitive Output:}
+  \[
+    W_{\text{output}} = W_0 + \sum_i p_i(t)\, \Delta W_i.
+  \]
+\end{itemize}
+
+\subsection{Topological Invariance}
+The key property of this framework is topological invariance: the node connections and information flow rules remain fixed regardless of the direction of traversal. Whether generating from prototype to instance (top-down) or backtracking from instance to prototype (bottom-up), the system traverses the same path through the same nodes. This is analogous to a subway map: traveling from A to B or B to A uses the same track and stations; only the direction changes.
+
+\subsection{Dual Formulations: Conceptual Space vs.\ LoRA Adaptation}
+Our framework can be understood through two complementary formulations that are structurally isomorphic:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}p{0.30\textwidth}p{0.30\textwidth}p{0.30\textwidth}@{}}
+\toprule
+\textbf{Conceptual Space Formulation} & \textbf{LoRA Formulation} & \textbf{Underlying Essence} \\
+\midrule
+Conceptual space & Frozen base model $W_0$ & Static cognitive structure \\
+Contextual activation & Loading X-dependent LoRA adapters & Dynamic conditional offset \\
+Distance/similarity between concepts & Cosine similarity of probability vectors $p$ & Conceptual space overlap \\
+``Alignment'' in multi-agent collaboration & Iterative update of probability vectors $p(t+1) = p(t) + \eta\,(p_{\text{other}} - p(t))$ & Belief convergence \\
+Conceptual ``prototype'' & Topological prototype / generative source & Most abstract invariant structure \\
+Backtracking from instance to prototype & Bottom-up traversal of generative path & Directionality of abstraction \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent\textbf{Why they are the same.} Both formulations describe the same phenomenon: cognition is a combination of static structure $+$ dynamic offset. The conceptual space perspective calls the static structure ``conceptual space'' and the dynamic offset ``contextual activation.'' The LoRA perspective calls the static structure ``frozen base model $W_0$'' and the dynamic offset ``loading adapter $\Delta W = BA$.'' The mathematical structures are completely isomorphic:
+\begin{itemize}
+  \item ``Points'' in conceptual space $\leftrightarrow$ ``Weight vectors'' in LoRA
+  \item ``Distances'' in conceptual space $\leftrightarrow$ ``Probability vector similarities'' in LoRA
+  \item ``Activation'' in conceptual space $\leftrightarrow$ ``Adapter loading'' in LoRA
+\end{itemize}
+
+\noindent\textbf{Complementary values.} Although structurally identical, each formulation has distinct advantages:
+\begin{itemize}
+  \item \emph{Conceptual space formulation:} More intuitive, better suited for describing multi-agent interaction and alignment, closer to traditional discourse in cognitive science and philosophy.
+  \item \emph{LoRA formulation:} More formalized with explicit mathematical structure (probability vectors, decay coefficients, low-rank decomposition), closer to engineering implementation in LLM systems, more clearly reveals the insight that ``direction doesn't matter, topological structure does.''
+\end{itemize}
+This isomorphism means that the multi-agent collaboration method previously built on conceptual spaces can be directly implemented using LoRA's modular design: ``alignment'' in conceptual space is iterative updating of LoRA adapter probability vectors; ``activation'' in conceptual space is dynamically loading the corresponding LoRA module.
+
+\section{Multi-Agent Conceptual Space Alignment}
+
+\subsection{Conceptual Space Overlap as LoRA Similarity}
+We extend our framework to multi-agent interaction. Let Agent A and Agent B have context-dependent LoRA probability vectors $p_A$ and $p_B$. The overlap of their conceptual spaces is given by the cosine similarity:
+\[
+  \operatorname{sim}(A, B) = \cos(p_A, p_B).
+\]
+\begin{itemize}
+  \item $\operatorname{sim} \to 1$: High conceptual overlap, efficient communication (``hit it off'')
+  \item $\operatorname{sim} \to 0$: Low overlap, requiring redundant information for alignment
+  \item $\operatorname{sim} < 0$: Conceptual conflict, potential miscommunication
+\end{itemize}
+
+\subsection{Dynamic Alignment Mechanism}
+Alignment is an iterative process where each agent's probability vector updates toward the other's:
+\begin{align*}
+  p_A(t{+}1) &= p_A(t) + \eta \cdot \bigl(p_B(t) - p_A(t)\bigr)\\
+  p_B(t{+}1) &= p_B(t) + \eta \cdot \bigl(p_A(t) - p_B(t)\bigr)
+\end{align*}
+where $\eta$ is the alignment rate. Decay coefficients $\lambda_i$ introduce asymmetry: dimensions with slower decay ``pull'' the convergence point toward themselves, analogous to one conversational partner being more persistent on a topic.
+
+\subsection{Bayesian Interpretation}
+From a Bayesian perspective, alignment is belief updating:
+\begin{itemize}
+  \item \textbf{Prior:} Each agent's initial $p$ represents prior beliefs about which adapters to activate.
+  \item \textbf{Likelihood:} The other agent's output provides evidence of mismatch.
+  \item \textbf{Posterior:} Updated $p(t{+}1)$ is the result of prior--likelihood interaction.
+\end{itemize}
+Each dialogue turn is a Bayesian update; after multiple turns, posterior beliefs converge.
+
+\section{Empirical Validation: Structural Isomorphism Between LoRA and Bayesian Hierarchical Models}
+Our framework is not merely theoretical; recent empirical work validates the structural isomorphism between LoRA and Bayesian hierarchical models:
+\begin{itemize}
+  \item \textbf{Bayesian-LoRA (ICML 2026):} Reformulates deterministic LoRA updates as probabilistic low-rank representations inspired by sparse Gaussian processes. The paper shows that LoRA itself is the limit case of the SGP posterior when uncertainty collapses---directly confirming the structural isomorphism.
+  \item \textbf{BoRA (2024):} Uses Bayesian hierarchical models to train multi-task LoRA, enabling tasks to share information through global hierarchical priors while allowing specialization. This matches our ``top-level controller regulates lower-level adapters'' architecture.
+  \item \textbf{HiLoRA (2026):} Organizes LoRA into a three-layer hierarchy (root/cluster/leaf) with cross-layer orthogonality to decouple global and personalized knowledge.
+  \item \textbf{iLoRA (2026):} The first Bayesian graph-conditional LoRA framework that infers latent interaction graphs from inputs to generate input-conditioned LoRA updates---directly corresponding to our ``dynamic adapter loading based on immediate context.''
+\end{itemize}
+These works collectively validate that LoRA is not an ad-hoc engineering trick but a natural carrier of Bayesian hierarchical structure.
+
+\section{Engineering Feasibility and Applications}
+
+\subsection{Modular LoRA Design}
+LoRA's modular architecture allows multiple adapters to be mounted on a single base model, with dynamic loading/unloading during inference. This makes our framework directly implementable:
+\begin{itemize}
+  \item Each condition-dependent adapter (time/cognition/location) is a separate LoRA module.
+  \item The top-level controller outputs a probability vector via softmax.
+  \item Weighted combination of adapter outputs is a single line of code.
+\end{itemize}
+
+\subsection{Hierarchical Routing}
+Recent work on hierarchical routing (HiLoMoE, 2025) demonstrates that layer-wise expert selection can depend on upper-layer routing scores, enabling coarse-to-fine information refinement. This provides a ready-made mechanism for implementing our top-level context-dependent controller.
+
+\subsection{Application to Multi-Agent Systems: Chora/Cora}
+Our framework has direct applications to multi-agent collaboration systems such as Chora/Cora:
+\begin{itemize}
+  \item Each agent maintains its own probability vector $p$ as its ``dialogue state.''
+  \item Upon receiving a message, compute similarity $\operatorname{sim}(p_{\text{self}}, p_{\text{sender}})$.
+  \item If $\operatorname{sim} < $ threshold, trigger alignment update; otherwise, generate response using current $p_{\text{self}}$.
+  \item This enables automatic conceptual space alignment without human intervention.
+\end{itemize}
+
+\section{Self-Referential Property}
+A hallmark of a complete theory is its ability to explain itself. Our framework is self-referential: the process of discussing it instantiates the very mechanism it describes. As we converse, each turn loads a new LoRA adapter onto the interlocutor's cognitive base, dynamically updating the probability vector and generating new cognitive outputs. The discussion itself is an instance of context-dependent LoRA adaptation.
+
+This self-referential property is not a bug but a feature: it demonstrates that the framework is not an external description but an internal model of the cognitive process it seeks to explain.
+
+\section{Conclusion}
+We have proposed a framework for understanding dynamic cognition in LLMs through context-dependent LoRA adaptation. By reconceptualizing the frozen base model as a topological prototype rather than a low-level foundation, we resolve ambiguities in the metaphor of abstraction and provide a unified account of both individual cognition and multi-agent interaction. The framework is theoretically grounded in Bayesian hierarchical models, empirically validated by recent work, and engineeringly feasible for implementation in multi-agent systems. Most importantly, it is self-referential: it explains its own generation process.
+
+Future work includes: (1) empirical measurement of conceptual space overlap in human--agent dialogue; (2) optimization of alignment rate $\eta$ and decay coefficients $\lambda_i$ for efficient multi-agent collaboration; (3) extension to additional condition dimensions (e.g., emotional state, social role); and (4) integration into production multi-agent systems such as Chora/Cora.
+
+\section*{References}
+\addcontentsline{toc}{section}{References}
+[To be populated with citations for Bayesian-LoRA, BoRA, HiLoRA, iLoRA, HiLoMoE, and related work.]
+
+\end{document}

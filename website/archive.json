@@ -1,9 +1,28 @@
 {
- "generated": "2026-09-16T05:06:25+00:00",
- "head": "d2c8aa0",
- "head_full": "d2c8aa095d8a8a6453c7a33f14a506576e21115e",
+ "generated": "2026-09-18T00:07:05+00:00",
+ "head": "660fa74",
+ "head_full": "660fa74e6dc0addd9f5cbb749b971eb8a41848eb",
  "remote": "https://github.com/math4mad/LETHE.git",
  "commits": [
+  {
+   "sha": "660fa74e6dc0addd9f5cbb749b971eb8a41848eb",
+   "date": "2026-09-16T13:06:25+08:00",
+   "subject": "The forge hook is hung: .github/workflows/build_latex.yml — pinned tectonic 0.17.0 (same hand as local), receipts verified before firing (no bar = refuse to forge), PDFs to the evidence shelf only; enshrinement stays a human act",
+   "files": [
+    {
+     "status": "A",
+     "path": ".github/workflows/build_latex.yml"
+    },
+    {
+     "status": "M",
+     "path": "README.md"
+    },
+    {
+     "status": "M",
+     "path": "website/archive.json"
+    }
+   ]
+  },
   {
    "sha": "d2c8aa095d8a8a6453c7a33f14a506576e21115e",
    "date": "2026-09-16T13:01:39+08:00",
@@ -528,6 +547,20 @@
    ]
   },
   {
+   "path": ".github/workflows/build_latex.yml",
+   "versions": 1,
+   "added": "2026-09-16T13:06:25+08:00",
+   "last": "2026-09-16T13:06:25+08:00",
+   "events": [
+    {
+     "sha": "660fa74",
+     "date": "2026-09-16T13:06:25+08:00",
+     "subject": "The forge hook is hung: .github/workflows/build_latex.yml — pinned tectonic 0.17.0 (same hand as local), receipts verified before firing (no bar = refuse to forge), PDFs to the evidence shelf only; enshrinement stays a human act",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": ".github/workflows/pages.yml",
    "versions": 2,
    "added": "2026-09-15T17:47:57+08:00",
@@ -577,7 +610,7 @@
   },
   {
    "path": "README.md",
-   "versions": 7,
+   "versions": 8,
    "added": "2026-09-15T17:19:44+08:00",
    "last": "2026-09-15T17:19:44+08:00",
    "events": [
@@ -621,6 +654,12 @@
      "sha": "d2c8aa0",
      "date": "2026-09-16T13:01:39+08:00",
      "subject": "The Archiver opens: bin/archive-to-json.py derives website/archive.json from git --name-status + all pin sidecars; archiver.html renders 逐文件修改史/添加册目/收据簿/编年流水 — nothing hand-kept",
+     "status": "M"
+    },
+    {
+     "sha": "660fa74",
+     "date": "2026-09-16T13:06:25+08:00",
+     "subject": "The forge hook is hung: .github/workflows/build_latex.yml — pinned tectonic 0.17.0 (same hand as local), receipts verified before firing (no bar = refuse to forge), PDFs to the evidence shelf only; enshrinement stays a human act",
      "status": "M"
     }
    ]
@@ -1313,7 +1352,7 @@
   },
   {
    "path": "website/archive.json",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-16T13:01:39+08:00",
    "last": "2026-09-16T13:01:39+08:00",
    "events": [
@@ -1322,6 +1361,12 @@
      "date": "2026-09-16T13:01:39+08:00",
      "subject": "The Archiver opens: bin/archive-to-json.py derives website/archive.json from git --name-status + all pin sidecars; archiver.html renders 逐文件修改史/添加册目/收据簿/编年流水 — nothing hand-kept",
      "status": "A"
+    },
+    {
+     "sha": "660fa74",
+     "date": "2026-09-16T13:06:25+08:00",
+     "subject": "The forge hook is hung: .github/workflows/build_latex.yml — pinned tectonic 0.17.0 (same hand as local), receipts verified before firing (no bar = refuse to forge), PDFs to the evidence shelf only; enshrinement stays a human act",
+     "status": "M"
     }
    ]
   },
@@ -1528,6 +1573,14 @@
    "received": "2026-09-16T01:58:41+00:00"
   },
   {
+   "sidecar": "benches/CRADLE/context_dependent_lora.pdf.lethe-pin.json",
+   "artifact": "benches/CRADLE/context_dependent_lora.pdf",
+   "sha256": "8640e7ab576b56ebd029a711d22ad7c8ec8105f9999b730a932a5ca7257572f8",
+   "producer": "lethe@660fa74 · tectonic 0.17.0",
+   "purpose": "framework candidate PDF — context-dependent LoRA topological framework, compiled from intake tex sha ee4299a2… (docx source sha e4dc7ffb…)",
+   "received": "2026-09-18T00:03:43+00:00"
+  },
+  {
    "sidecar": "benches/CRADLE/intake/ChoraCora_paper.pdf.lethe-pin.json",
    "artifact": "benches/CRADLE/intake/ChoraCora_paper.pdf",
    "sha256": "0c5ffa9f532f816ee0c9f343c1dc44b0fb1a9bde04a4333e8487cc5959e9439d",
@@ -1558,6 +1611,22 @@
    "producer": "owner-x-Qwen(chats) 2026-09-16",
    "purpose": "park birth certificate intake — verbatim bytes from owner×Qwen dialogue",
    "received": "2026-09-16T01:53:13+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/context_dependent_lora.docx.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/context_dependent_lora.docx",
+   "sha256": "e4dc7ffba9ce34ee157843e08ed352a42c43a671cdf07bda346e6b5fb1fadb42",
+   "producer": "owner×Qwen(chats) 2026-09-18",
+   "purpose": "framework candidate intake — context-dependent LoRA topological framework, verbatim docx bytes from owner's external folder",
+   "received": "2026-09-18T00:02:38+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/context_dependent_lora.tex.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/context_dependent_lora.tex",
+   "sha256": "ee4299a25aea783da1df42e4ae260799d0f5f6ed82a10e96231ac4c6a1200ac8",
+   "producer": "lethe@660fa74 · typeset of owner×Qwen docx sha e4dc7ffb…",
+   "purpose": "framework candidate tex — body of CDLoRA paper typeset from intake docx; trailing chat lines excluded",
+   "received": "2026-09-18T00:03:19+00:00"
   },
   {
    "sidecar": "benches/CRADLE/intake/temporal_concept_space.tex.lethe-pin.json",
