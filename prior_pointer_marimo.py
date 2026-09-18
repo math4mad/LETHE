@@ -84,11 +84,11 @@ def _(amp_slider, lam_slider, np, omega_slider):
 
     def alpha_of(t):
         """平滑先验的浓度：低频/聚类方向。"""
-        return float((1.0 + A * np.cos(OMEGA * t)) * np.exp(-LAM * t / 8.0) + 0.05)
+        return float(max(0.05, (1.0 + A * np.cos(OMEGA * t)) * np.exp(-LAM * t / 8.0) + 0.05))  # 正值地板：A>1 时振荡会跌破零，浓度参数不得为负（C3 首跑揭出）
 
     def beta_of(t):
         """锐化先验的浓度：高频/区分方向，与 α 反相。"""
-        return float((1.0 - A * np.cos(OMEGA * t)) * np.exp(-LAM * t / 8.0) + 0.05)
+        return float(max(0.05, (1.0 - A * np.cos(OMEGA * t)) * np.exp(-LAM * t / 8.0) + 0.05))
 
     return OMEGA, alpha_of, beta_of
 
@@ -277,7 +277,7 @@ def _(SPACE_EMOJI, SPACE_EN, alpha_of, beta_of, engine, mo, np, plt, w1_en):
             cv = engine.get_concept_vector(cname)
             c = float(np.dot(word_v, cv) / (np.linalg.norm(word_v) * np.linalg.norm(cv) + 1e-8))
             # 平滑先验: 缩小 logit(向均值回归)；锐化先验: 放大 logit(边界自信)
-            temp = 0.25 + 1.5 * b / (a + b)          # 温度: sharp→低温→极化, smooth→高温→趋同
+            temp = 0.25 + 1.5 * a / (a + b)          # 温度: sharp→低温→极化, smooth→高温→趋同（2026-09-18 纠正：初版误写成 b/(a+b)，极性倒置，C3 首跑当场揭穿）
             logit = (c - 0.5) / temp
             scores[cname] = sp["prior_prob"] * np.exp(10 * logit)
         z = sum(scores.values())

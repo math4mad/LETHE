@@ -1,9 +1,36 @@
 {
- "generated": "2026-09-18T01:19:56+00:00",
- "head": "77af7ca",
- "head_full": "77af7caa33cc39b2529cccff09cb31c9d1a154e5",
+ "generated": "2026-09-18T03:07:35+00:00",
+ "head": "fe21e1e",
+ "head_full": "fe21e1e215371d487c3296fc9741e8dd7222c6c9",
  "remote": "https://github.com/math4mad/LETHE.git",
  "commits": [
+  {
+   "sha": "fe21e1e215371d487c3296fc9741e8dd7222c6c9",
+   "date": "2026-09-18T10:38:47+08:00",
+   "subject": "The prior pointer gets its dial: 时间轴的指针 marimo console (five panels, engine-canonical bytes only, plots in ASCII-English, plates bilingual with emoji confined to the HTML layer) + the source docx pinned 9cb8de70… per FOUNDLING §3",
+   "files": [
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/prior_pointer.docx"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/prior_pointer.docx.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "prior_pointer_marimo.py"
+    },
+    {
+     "status": "A",
+     "path": "run_prior_marimo.sh"
+    },
+    {
+     "status": "M",
+     "path": "website/archive.json"
+    }
+   ]
+  },
   {
    "sha": "77af7caa33cc39b2529cccff09cb31c9d1a154e5",
    "date": "2026-09-18T08:07:08+08:00",
@@ -1062,6 +1089,34 @@
    ]
   },
   {
+   "path": "benches/CRADLE/intake/prior_pointer.docx",
+   "versions": 1,
+   "added": "2026-09-18T10:38:47+08:00",
+   "last": "2026-09-18T10:38:47+08:00",
+   "events": [
+    {
+     "sha": "fe21e1e",
+     "date": "2026-09-18T10:38:47+08:00",
+     "subject": "The prior pointer gets its dial: 时间轴的指针 marimo console (five panels, engine-canonical bytes only, plots in ASCII-English, plates bilingual with emoji confined to the HTML layer) + the source docx pinned 9cb8de70… per FOUNDLING §3",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/prior_pointer.docx.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-18T10:38:47+08:00",
+   "last": "2026-09-18T10:38:47+08:00",
+   "events": [
+    {
+     "sha": "fe21e1e",
+     "date": "2026-09-18T10:38:47+08:00",
+     "subject": "The prior pointer gets its dial: 时间轴的指针 marimo console (five panels, engine-canonical bytes only, plots in ASCII-English, plates bilingual with emoji confined to the HTML layer) + the source docx pinned 9cb8de70… per FOUNDLING §3",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "benches/CRADLE/intake/temporal_concept_space.tex",
    "versions": 1,
    "added": "2026-09-16T12:25:05+08:00",
@@ -1382,6 +1437,20 @@
    ]
   },
   {
+   "path": "prior_pointer_marimo.py",
+   "versions": 1,
+   "added": "2026-09-18T10:38:47+08:00",
+   "last": "2026-09-18T10:38:47+08:00",
+   "events": [
+    {
+     "sha": "fe21e1e",
+     "date": "2026-09-18T10:38:47+08:00",
+     "subject": "The prior pointer gets its dial: 时间轴的指针 marimo console (five panels, engine-canonical bytes only, plots in ASCII-English, plates bilingual with emoji confined to the HTML layer) + the source docx pinned 9cb8de70… per FOUNDLING §3",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "run_engine.sh",
    "versions": 1,
    "added": "2026-09-15T17:19:44+08:00",
@@ -1405,6 +1474,20 @@
      "sha": "e75d3c6",
      "date": "2026-09-15T17:19:44+08:00",
      "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "run_prior_marimo.sh",
+   "versions": 1,
+   "added": "2026-09-18T10:38:47+08:00",
+   "last": "2026-09-18T10:38:47+08:00",
+   "events": [
+    {
+     "sha": "fe21e1e",
+     "date": "2026-09-18T10:38:47+08:00",
+     "subject": "The prior pointer gets its dial: 时间轴的指针 marimo console (five panels, engine-canonical bytes only, plots in ASCII-English, plates bilingual with emoji confined to the HTML layer) + the source docx pinned 9cb8de70… per FOUNDLING §3",
      "status": "A"
     }
    ]
@@ -1479,7 +1562,7 @@
   },
   {
    "path": "website/archive.json",
-   "versions": 3,
+   "versions": 4,
    "added": "2026-09-16T13:01:39+08:00",
    "last": "2026-09-16T13:01:39+08:00",
    "events": [
@@ -1499,6 +1582,12 @@
      "sha": "77af7ca",
      "date": "2026-09-18T08:07:08+08:00",
      "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+     "status": "M"
+    },
+    {
+     "sha": "fe21e1e",
+     "date": "2026-09-18T10:38:47+08:00",
+     "subject": "The prior pointer gets its dial: 时间轴的指针 marimo console (five panels, engine-canonical bytes only, plots in ASCII-English, plates bilingual with emoji confined to the HTML layer) + the source docx pinned 9cb8de70… per FOUNDLING §3",
      "status": "M"
     }
    ]
