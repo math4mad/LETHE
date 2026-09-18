@@ -1,0 +1,8 @@
+{
+  "path": "benches/CRADLE/intake/orthogonality_plan.docx",
+  "sha256": "9da1a33ac77b4d026553ac43bdecc5f6564a229bf6181360802ede8ccd049091",
+  "producer": "owner×Qwen 2026-09-18 (v1.0 plan)",
+  "purpose": "report+afternoon implementation plan; §8 expectation tested & disconfirmed by 10c_grouped",
+  "received": "2026-09-18T03:58:28+00:00",
+  "law": "FOUNDLING §3 — hash before we announce; no re-export"
+}

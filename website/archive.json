@@ -1,9 +1,36 @@
 {
- "generated": "2026-09-18T03:07:35+00:00",
- "head": "fe21e1e",
- "head_full": "fe21e1e215371d487c3296fc9741e8dd7222c6c9",
+ "generated": "2026-09-18T03:58:28+00:00",
+ "head": "7b2c4e9",
+ "head_full": "7b2c4e9379a9c738b0c7f2b7a8d6cf1ec29bce8a",
  "remote": "https://github.com/math4mad/LETHE.git",
  "commits": [
+  {
+   "sha": "7b2c4e9379a9c738b0c7f2b7a8d6cf1ec29bce8a",
+   "date": "2026-09-18T11:07:35+08:00",
+   "subject": "C3 呼吸实验过门 (Qwen 下午单之外、与 10c 无重叠的独立一役): 真引擎三种子问题 — Q1 熵在指针驱动下呼吸 ✔ (0↔0.57), Q2 argmax 球全程不翻 = 雷荷波稳定性为正证据, Q3 锚点几何呼吸 ✔ (超市球 折叠桌→煤气罐, 路边摊球不动); 首跑揭出两伤并双园同治: 温度极性倒置 & 振幅>1 跌破零浓度 (marimo 面板同方修正), 球门控 g=β/(α+β) 让先验真正选择容器",
+   "files": [
+    {
+     "status": "A",
+     "path": "benches/PRIOR_POINTER/experiment_c3.py"
+    },
+    {
+     "status": "A",
+     "path": "benches/PRIOR_POINTER/fig_c3_breath.png"
+    },
+    {
+     "status": "A",
+     "path": "benches/PRIOR_POINTER/report_c3_breath.json"
+    },
+    {
+     "status": "M",
+     "path": "prior_pointer_marimo.py"
+    },
+    {
+     "status": "M",
+     "path": "website/archive.json"
+    }
+   ]
+  },
   {
    "sha": "fe21e1e215371d487c3296fc9741e8dd7222c6c9",
    "date": "2026-09-18T10:38:47+08:00",
@@ -1291,6 +1318,48 @@
    ]
   },
   {
+   "path": "benches/PRIOR_POINTER/experiment_c3.py",
+   "versions": 1,
+   "added": "2026-09-18T11:07:35+08:00",
+   "last": "2026-09-18T11:07:35+08:00",
+   "events": [
+    {
+     "sha": "7b2c4e9",
+     "date": "2026-09-18T11:07:35+08:00",
+     "subject": "C3 呼吸实验过门 (Qwen 下午单之外、与 10c 无重叠的独立一役): 真引擎三种子问题 — Q1 熵在指针驱动下呼吸 ✔ (0↔0.57), Q2 argmax 球全程不翻 = 雷荷波稳定性为正证据, Q3 锚点几何呼吸 ✔ (超市球 折叠桌→煤气罐, 路边摊球不动); 首跑揭出两伤并双园同治: 温度极性倒置 & 振幅>1 跌破零浓度 (marimo 面板同方修正), 球门控 g=β/(α+β) 让先验真正选择容器",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/PRIOR_POINTER/fig_c3_breath.png",
+   "versions": 1,
+   "added": "2026-09-18T11:07:35+08:00",
+   "last": "2026-09-18T11:07:35+08:00",
+   "events": [
+    {
+     "sha": "7b2c4e9",
+     "date": "2026-09-18T11:07:35+08:00",
+     "subject": "C3 呼吸实验过门 (Qwen 下午单之外、与 10c 无重叠的独立一役): 真引擎三种子问题 — Q1 熵在指针驱动下呼吸 ✔ (0↔0.57), Q2 argmax 球全程不翻 = 雷荷波稳定性为正证据, Q3 锚点几何呼吸 ✔ (超市球 折叠桌→煤气罐, 路边摊球不动); 首跑揭出两伤并双园同治: 温度极性倒置 & 振幅>1 跌破零浓度 (marimo 面板同方修正), 球门控 g=β/(α+β) 让先验真正选择容器",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/PRIOR_POINTER/report_c3_breath.json",
+   "versions": 1,
+   "added": "2026-09-18T11:07:35+08:00",
+   "last": "2026-09-18T11:07:35+08:00",
+   "events": [
+    {
+     "sha": "7b2c4e9",
+     "date": "2026-09-18T11:07:35+08:00",
+     "subject": "C3 呼吸实验过门 (Qwen 下午单之外、与 10c 无重叠的独立一役): 真引擎三种子问题 — Q1 熵在指针驱动下呼吸 ✔ (0↔0.57), Q2 argmax 球全程不翻 = 雷荷波稳定性为正证据, Q3 锚点几何呼吸 ✔ (超市球 折叠桌→煤气罐, 路边摊球不动); 首跑揭出两伤并双园同治: 温度极性倒置 & 振幅>1 跌破零浓度 (marimo 面板同方修正), 球门控 g=β/(α+β) 让先验真正选择容器",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "bin/archive-to-json.py",
    "versions": 1,
    "added": "2026-09-16T13:01:39+08:00",
@@ -1438,7 +1507,7 @@
   },
   {
    "path": "prior_pointer_marimo.py",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T10:38:47+08:00",
    "last": "2026-09-18T10:38:47+08:00",
    "events": [
@@ -1447,6 +1516,12 @@
      "date": "2026-09-18T10:38:47+08:00",
      "subject": "The prior pointer gets its dial: 时间轴的指针 marimo console (five panels, engine-canonical bytes only, plots in ASCII-English, plates bilingual with emoji confined to the HTML layer) + the source docx pinned 9cb8de70… per FOUNDLING §3",
      "status": "A"
+    },
+    {
+     "sha": "7b2c4e9",
+     "date": "2026-09-18T11:07:35+08:00",
+     "subject": "C3 呼吸实验过门 (Qwen 下午单之外、与 10c 无重叠的独立一役): 真引擎三种子问题 — Q1 熵在指针驱动下呼吸 ✔ (0↔0.57), Q2 argmax 球全程不翻 = 雷荷波稳定性为正证据, Q3 锚点几何呼吸 ✔ (超市球 折叠桌→煤气罐, 路边摊球不动); 首跑揭出两伤并双园同治: 温度极性倒置 & 振幅>1 跌破零浓度 (marimo 面板同方修正), 球门控 g=β/(α+β) 让先验真正选择容器",
+     "status": "M"
     }
    ]
   },
@@ -1562,7 +1637,7 @@
   },
   {
    "path": "website/archive.json",
-   "versions": 4,
+   "versions": 5,
    "added": "2026-09-16T13:01:39+08:00",
    "last": "2026-09-16T13:01:39+08:00",
    "events": [
@@ -1588,6 +1663,12 @@
      "sha": "fe21e1e",
      "date": "2026-09-18T10:38:47+08:00",
      "subject": "The prior pointer gets its dial: 时间轴的指针 marimo console (five panels, engine-canonical bytes only, plots in ASCII-English, plates bilingual with emoji confined to the HTML layer) + the source docx pinned 9cb8de70… per FOUNDLING §3",
+     "status": "M"
+    },
+    {
+     "sha": "7b2c4e9",
+     "date": "2026-09-18T11:07:35+08:00",
+     "subject": "C3 呼吸实验过门 (Qwen 下午单之外、与 10c 无重叠的独立一役): 真引擎三种子问题 — Q1 熵在指针驱动下呼吸 ✔ (0↔0.57), Q2 argmax 球全程不翻 = 雷荷波稳定性为正证据, Q3 锚点几何呼吸 ✔ (超市球 折叠桌→煤气罐, 路边摊球不动); 首跑揭出两伤并双园同治: 温度极性倒置 & 振幅>1 跌破零浓度 (marimo 面板同方修正), 球门控 g=β/(α+β) 让先验真正选择容器",
      "status": "M"
     }
    ]
@@ -1839,6 +1920,14 @@
    "received": "2026-09-16T01:53:13+00:00"
   },
   {
+   "sidecar": "benches/CRADLE/intake/afternoon_exp.docx.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/afternoon_exp.docx",
+   "sha256": "64e8bf2a0a4f0db30efb1b8c175d8a9b1b2f5a371199a07d17528cda230aed41",
+   "producer": "owner×Qwen 2026-09-18",
+   "purpose": "afternoon plan v0.1 → 10c/10d/GGUF executed same day",
+   "received": "2026-09-18T03:58:28+00:00"
+  },
+  {
    "sidecar": "benches/CRADLE/intake/build-paper.yml.lethe-pin.json",
    "artifact": "benches/CRADLE/intake/build-paper.yml",
    "sha256": "c2dba569b65ad6760f0af011156f94d2ebd2058f2ebb07a8e99b26a7a4eb7892",
@@ -1869,6 +1958,30 @@
    "producer": "lethe@660fa74 · typeset of owner×Qwen docx sha e4dc7ffb…",
    "purpose": "framework candidate tex — body of CDLoRA paper typeset from intake docx; trailing chat lines excluded",
    "received": "2026-09-18T00:03:19+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/exp1_brief.md.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/exp1_brief.md",
+   "sha256": "cf2d9ce35537d02504d6c2c6f939dd409c1c7eaed5f0fb511216466a80b8dc73",
+   "producer": "owner×Qwen 2026-09-18",
+   "purpose": "exp1 brief → executed as chora exp10a (13:xx 09-18)",
+   "received": "2026-09-18T03:58:28+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/exp2_brief.md.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/exp2_brief.md",
+   "sha256": "8653904b0e2486ae80d2cf26354ce074d027b7efbf4032319224e401c92b09ed",
+   "producer": "owner×Qwen 2026-09-18",
+   "purpose": "exp2 brief → executed as chora exp10b (+3-seed hardening)",
+   "received": "2026-09-18T03:58:28+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/orthogonality_plan.docx.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/orthogonality_plan.docx",
+   "sha256": "9da1a33ac77b4d026553ac43bdecc5f6564a229bf6181360802ede8ccd049091",
+   "producer": "owner×Qwen 2026-09-18 (v1.0 plan)",
+   "purpose": "report+afternoon implementation plan; §8 expectation tested & disconfirmed by 10c_grouped",
+   "received": "2026-09-18T03:58:28+00:00"
   },
   {
    "sidecar": "benches/CRADLE/intake/prior_pointer.docx.lethe-pin.json",
