@@ -1,9 +1,153 @@
 {
- "generated": "2026-09-18T03:58:28+00:00",
- "head": "7b2c4e9",
- "head_full": "7b2c4e9379a9c738b0c7f2b7a8d6cf1ec29bce8a",
+ "generated": "2026-09-19T04:37:56+00:00",
+ "head": "4ba4372",
+ "head_full": "4ba437241542e8e48555f8c1c88254e82fa1f153",
  "remote": "https://github.com/math4mad/LETHE.git",
  "commits": [
+  {
+   "sha": "4ba437241542e8e48555f8c1c88254e82fa1f153",
+   "date": "2026-09-18T19:39:59+08:00",
+   "subject": "园区 ⇄ 主人提醒事项正式联动: bin/remind.sh (add/read/done/purge, 「园区·GRAPHIA」列表 iCloud 直达 iPhone) + follow 协议入 AGENTS 律 — ☑即批复⌚即戳、备注即回复、开场必 read; 两场 locale 灾现场留档 (AppleScript 日期字面量在 zh 系统读作 2025年3月 — 偏移量方案是唯一正解); 明晨两条已挂: 08:30 圈号单 + 09:00 announced 裁决候",
+   "files": [
+    {
+     "status": "M",
+     "path": "AGENTS.md"
+    },
+    {
+     "status": "A",
+     "path": "bin/remind.sh"
+    }
+   ]
+  },
+  {
+   "sha": "9830b3efd687246c236d53b7bfc9aab310dad69e",
+   "date": "2026-09-18T15:46:45+08:00",
+   "subject": "DIAGNOSTICA 全部上架 (bench IV 终成完整案头): v1 化石对自 root 迁入并按案头律改名 (gp_diagnostica_v1.py; marimo 原版随迁), 图档退役 figures/, v2 CLI 于新位重跑 smoke 通过; run_gp_marimo.sh 改指案头路径; Cora 突变点方案 docx 打条入 CRADLE intake (charter, sha 5cdbe9b6…) — 案头自此有宪有器有化石有图, 根目录净身",
+   "files": [
+    {
+     "status": "R",
+     "path": "benches/DIAGNOSTICA/gp_diagnostica_v1.py"
+    }
+   ]
+  },
+  {
+   "sha": "e83c5a52c6b84bd1b53bca0199ecf62eecec2373",
+   "date": "2026-09-18T14:46:53+08:00",
+   "subject": "manullay submit morning working",
+   "files": [
+    {
+     "status": "A",
+     "path": ".continue/agents/new-config.yaml"
+    },
+    {
+     "status": "A",
+     "path": "benches/DIAGNOSTICA/README.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/DIAGNOSTICA/gp-diagnoistoc_v2.py"
+    },
+    {
+     "status": "A",
+     "path": "benches/DIAGNOSTICA/gp_diagnoistoc_v2_marimo.py"
+    },
+    {
+     "status": "A",
+     "path": "external/Title Context-Dependent Low-Rank Adaptation A Topological Framework for Dynamic Cognitive Modeling in Large Language Models.docx"
+    },
+    {
+     "status": "A",
+     "path": "external/afternoon-exp.docx"
+    },
+    {
+     "status": "A",
+     "path": "\"external/\\345\\256\\236\\351\\252\\214\\344\\270\\200-\\351\\252\\214\\350\\257\\201\\347\\246\\273\\346\\225\\243adapter\\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\345\\267\\256\\345\\274\\202.md\""
+    },
+    {
+     "status": "A",
+     "path": "\"external/\\345\\256\\236\\351\\252\\214\\344\\272\\214-\\350\\256\\255\\347\\273\\203\\344\\270\\255\\351\\227\\264\\345\\236\\213LoRA\\345\\271\\266\\345\\201\\232SVD\\345\\210\\206\\346\\236\\220.md\""
+    },
+    {
+     "status": "A",
+     "path": "\"external/\\346\\227\\266\\351\\227\\264\\350\\275\\264\\347\\232\\204\\346\\214\\207\\351\\222\\210 = \\346\\246\\202\\345\\277\\265\\346\\246\\202\\347\\216\\207\\347\\251\\272\\351\\227\\264\\347\\232\\204\\345\\205\\210\\351\\252\\214\\346\\214\\207\\351\\222\\210\\343\\200\\202.docx\""
+    },
+    {
+     "status": "A",
+     "path": "\"external/\\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\346\\255\\243\\344\\272\\244\\346\\200\\247\\344\\270\\216\\345\\217\\257\\347\\273\\204\\345\\220\\210Adapter\\346\\236\\266\\346\\236\\204_\\345\\256\\236\\351\\252\\214\\346\\212\\245\\345\\221\\212\\344\\270\\216\\345\\256\\236\\346\\226\\275\\350\\256\\241\\345\\210\\222.docx\""
+    },
+    {
+     "status": "A",
+     "path": "full_pipeline_with_truncation.png"
+    },
+    {
+     "status": "A",
+     "path": "gp-diagnoistoc.py"
+    },
+    {
+     "status": "A",
+     "path": "gp-diagnoistoc_v2.py"
+    },
+    {
+     "status": "A",
+     "path": "gp_diag_v2.png"
+    },
+    {
+     "status": "A",
+     "path": "gp_diagnoistoc_marimo.py"
+    },
+    {
+     "status": "A",
+     "path": "gp_diagnoistoc_v2_marimo.py"
+    },
+    {
+     "status": "A",
+     "path": "run_gp_marimo.sh"
+    }
+   ]
+  },
+  {
+   "sha": "db741fe3afffae43798555e9353dd1bcfb1746ad",
+   "date": "2026-09-18T11:58:28+08:00",
+   "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+   "files": [
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/afternoon_exp.docx"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/afternoon_exp.docx.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/exp1_brief.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/exp1_brief.md.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/exp2_brief.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/exp2_brief.md.lethe-pin.json"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/orthogonality_plan.docx"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/orthogonality_plan.docx.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "website/archive.json"
+    }
+   ]
+  },
   {
    "sha": "7b2c4e9379a9c738b0c7f2b7a8d6cf1ec29bce8a",
    "date": "2026-09-18T11:07:35+08:00",
@@ -644,6 +788,76 @@
    ]
   },
   {
+   "path": "\"external/\\345\\256\\236\\351\\252\\214\\344\\270\\200-\\351\\252\\214\\350\\257\\201\\347\\246\\273\\346\\225\\243adapter\\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\345\\267\\256\\345\\274\\202.md\"",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "\"external/\\345\\256\\236\\351\\252\\214\\344\\272\\214-\\350\\256\\255\\347\\273\\203\\344\\270\\255\\351\\227\\264\\345\\236\\213LoRA\\345\\271\\266\\345\\201\\232SVD\\345\\210\\206\\346\\236\\220.md\"",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "\"external/\\346\\227\\266\\351\\227\\264\\350\\275\\264\\347\\232\\204\\346\\214\\207\\351\\222\\210 = \\346\\246\\202\\345\\277\\265\\346\\246\\202\\347\\216\\207\\347\\251\\272\\351\\227\\264\\347\\232\\204\\345\\205\\210\\351\\252\\214\\346\\214\\207\\351\\222\\210\\343\\200\\202.docx\"",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "\"external/\\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\346\\255\\243\\344\\272\\244\\346\\200\\247\\344\\270\\216\\345\\217\\257\\347\\273\\204\\345\\220\\210Adapter\\346\\236\\266\\346\\236\\204_\\345\\256\\236\\351\\252\\214\\346\\212\\245\\345\\221\\212\\344\\270\\216\\345\\256\\236\\346\\226\\275\\350\\256\\241\\345\\210\\222.docx\"",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": ".continue/agents/new-config.yaml",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": ".github/workflows/build_latex.yml",
    "versions": 1,
    "added": "2026-09-16T13:06:25+08:00",
@@ -693,7 +907,7 @@
   },
   {
    "path": "AGENTS.md",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-15T17:19:44+08:00",
    "last": "2026-09-15T17:19:44+08:00",
    "events": [
@@ -702,6 +916,12 @@
      "date": "2026-09-15T17:19:44+08:00",
      "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
      "status": "A"
+    },
+    {
+     "sha": "4ba4372",
+     "date": "2026-09-18T19:39:59+08:00",
+     "subject": "园区 ⇄ 主人提醒事项正式联动: bin/remind.sh (add/read/done/purge, 「园区·GRAPHIA」列表 iCloud 直达 iPhone) + follow 协议入 AGENTS 律 — ☑即批复⌚即戳、备注即回复、开场必 read; 两场 locale 灾现场留档 (AppleScript 日期字面量在 zh 系统读作 2025年3月 — 偏移量方案是唯一正解); 明晨两条已挂: 08:30 圈号单 + 09:00 announced 裁决候",
+     "status": "M"
     }
    ]
   },
@@ -992,6 +1212,34 @@
    ]
   },
   {
+   "path": "benches/CRADLE/intake/afternoon_exp.docx",
+   "versions": 1,
+   "added": "2026-09-18T11:58:28+08:00",
+   "last": "2026-09-18T11:58:28+08:00",
+   "events": [
+    {
+     "sha": "db741fe",
+     "date": "2026-09-18T11:58:28+08:00",
+     "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/afternoon_exp.docx.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-18T11:58:28+08:00",
+   "last": "2026-09-18T11:58:28+08:00",
+   "events": [
+    {
+     "sha": "db741fe",
+     "date": "2026-09-18T11:58:28+08:00",
+     "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "benches/CRADLE/intake/build-paper.yml",
    "versions": 1,
    "added": "2026-09-16T10:00:54+08:00",
@@ -1116,6 +1364,90 @@
    ]
   },
   {
+   "path": "benches/CRADLE/intake/exp1_brief.md",
+   "versions": 1,
+   "added": "2026-09-18T11:58:28+08:00",
+   "last": "2026-09-18T11:58:28+08:00",
+   "events": [
+    {
+     "sha": "db741fe",
+     "date": "2026-09-18T11:58:28+08:00",
+     "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/exp1_brief.md.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-18T11:58:28+08:00",
+   "last": "2026-09-18T11:58:28+08:00",
+   "events": [
+    {
+     "sha": "db741fe",
+     "date": "2026-09-18T11:58:28+08:00",
+     "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/exp2_brief.md",
+   "versions": 1,
+   "added": "2026-09-18T11:58:28+08:00",
+   "last": "2026-09-18T11:58:28+08:00",
+   "events": [
+    {
+     "sha": "db741fe",
+     "date": "2026-09-18T11:58:28+08:00",
+     "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/exp2_brief.md.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-18T11:58:28+08:00",
+   "last": "2026-09-18T11:58:28+08:00",
+   "events": [
+    {
+     "sha": "db741fe",
+     "date": "2026-09-18T11:58:28+08:00",
+     "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/orthogonality_plan.docx",
+   "versions": 1,
+   "added": "2026-09-18T11:58:28+08:00",
+   "last": "2026-09-18T11:58:28+08:00",
+   "events": [
+    {
+     "sha": "db741fe",
+     "date": "2026-09-18T11:58:28+08:00",
+     "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/orthogonality_plan.docx.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-18T11:58:28+08:00",
+   "last": "2026-09-18T11:58:28+08:00",
+   "events": [
+    {
+     "sha": "db741fe",
+     "date": "2026-09-18T11:58:28+08:00",
+     "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "benches/CRADLE/intake/prior_pointer.docx",
    "versions": 1,
    "added": "2026-09-18T10:38:47+08:00",
@@ -1224,6 +1556,62 @@
      "date": "2026-09-16T12:25:05+08:00",
      "subject": "Second paper seated in CRADLE: chronicle tex crossed the gate pinned, set in Ming by LETHE's own hands (tectonic 0.17.0), PDF mirrored at the strata",
      "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/DIAGNOSTICA/README.md",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/DIAGNOSTICA/gp-diagnoistoc_v2.py",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/DIAGNOSTICA/gp_diagnoistoc_v2_marimo.py",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/DIAGNOSTICA/gp_diagnostica_v1.py",
+   "versions": 1,
+   "added": null,
+   "last": "2026-09-18T15:46:45+08:00",
+   "events": [
+    {
+     "sha": "9830b3e",
+     "date": "2026-09-18T15:46:45+08:00",
+     "subject": "DIAGNOSTICA 全部上架 (bench IV 终成完整案头): v1 化石对自 root 迁入并按案头律改名 (gp_diagnostica_v1.py; marimo 原版随迁), 图档退役 figures/, v2 CLI 于新位重跑 smoke 通过; run_gp_marimo.sh 改指案头路径; Cora 突变点方案 docx 打条入 CRADLE intake (charter, sha 5cdbe9b6…) — 案头自此有宪有器有化石有图, 根目录净身",
+     "status": "R"
     }
    ]
   },
@@ -1416,6 +1804,20 @@
    ]
   },
   {
+   "path": "bin/remind.sh",
+   "versions": 1,
+   "added": "2026-09-18T19:39:59+08:00",
+   "last": "2026-09-18T19:39:59+08:00",
+   "events": [
+    {
+     "sha": "4ba4372",
+     "date": "2026-09-18T19:39:59+08:00",
+     "subject": "园区 ⇄ 主人提醒事项正式联动: bin/remind.sh (add/read/done/purge, 「园区·GRAPHIA」列表 iCloud 直达 iPhone) + follow 协议入 AGENTS 律 — ☑即批复⌚即戳、备注即回复、开场必 read; 两场 locale 灾现场留档 (AppleScript 日期字面量在 zh 系统读作 2025年3月 — 偏移量方案是唯一正解); 明晨两条已挂: 08:30 圈号单 + 09:00 announced 裁决候",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "build_latex.yml",
    "versions": 1,
    "added": "2026-09-16T13:01:39+08:00",
@@ -1460,6 +1862,118 @@
      "date": "2026-09-16T12:41:40+08:00",
      "subject": "A name is added, none is taken away: @1st-host joins Dolores/Lola/Dole — living plates updated, console re-exported to match the notebook byte-law",
      "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "external/Title Context-Dependent Low-Rank Adaptation A Topological Framework for Dynamic Cognitive Modeling in Large Language Models.docx",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "external/afternoon-exp.docx",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "full_pipeline_with_truncation.png",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "gp-diagnoistoc.py",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "gp-diagnoistoc_v2.py",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "gp_diag_v2.png",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "gp_diagnoistoc_marimo.py",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "gp_diagnoistoc_v2_marimo.py",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
+     "status": "A"
     }
    ]
   },
@@ -1535,6 +2049,20 @@
      "sha": "e75d3c6",
      "date": "2026-09-15T17:19:44+08:00",
      "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "run_gp_marimo.sh",
+   "versions": 1,
+   "added": "2026-09-18T14:46:53+08:00",
+   "last": "2026-09-18T14:46:53+08:00",
+   "events": [
+    {
+     "sha": "e83c5a5",
+     "date": "2026-09-18T14:46:53+08:00",
+     "subject": "manullay submit morning working",
      "status": "A"
     }
    ]
@@ -1637,7 +2165,7 @@
   },
   {
    "path": "website/archive.json",
-   "versions": 5,
+   "versions": 6,
    "added": "2026-09-16T13:01:39+08:00",
    "last": "2026-09-16T13:01:39+08:00",
    "events": [
@@ -1669,6 +2197,12 @@
      "sha": "7b2c4e9",
      "date": "2026-09-18T11:07:35+08:00",
      "subject": "C3 呼吸实验过门 (Qwen 下午单之外、与 10c 无重叠的独立一役): 真引擎三种子问题 — Q1 熵在指针驱动下呼吸 ✔ (0↔0.57), Q2 argmax 球全程不翻 = 雷荷波稳定性为正证据, Q3 锚点几何呼吸 ✔ (超市球 折叠桌→煤气罐, 路边摊球不动); 首跑揭出两伤并双园同治: 温度极性倒置 & 振幅>1 跌破零浓度 (marimo 面板同方修正), 球门控 g=β/(α+β) 让先验真正选择容器",
+     "status": "M"
+    },
+    {
+     "sha": "db741fe",
+     "date": "2026-09-18T11:58:28+08:00",
+     "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
      "status": "M"
     }
    ]
@@ -1928,6 +2462,14 @@
    "received": "2026-09-18T03:58:28+00:00"
   },
   {
+   "sidecar": "benches/CRADLE/intake/atlas_module1.docx.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/atlas_module1.docx",
+   "sha256": "61e175919dd87bdc309fc5242e8b55ff91c463e4adb71dd1d465aaa1ee84ba84",
+   "producer": "owner×Qwen 2026-09-19",
+   "purpose": "五模块概念空间注意力链之模块一 (50-100 组分类语言集合) — verbatim intake; M1 今备夜跑, 链后续候排期",
+   "received": "2026-09-19T04:32:06+00:00"
+  },
+  {
    "sidecar": "benches/CRADLE/intake/build-paper.yml.lethe-pin.json",
    "artifact": "benches/CRADLE/intake/build-paper.yml",
    "sha256": "c2dba569b65ad6760f0af011156f94d2ebd2058f2ebb07a8e99b26a7a4eb7892",
@@ -1958,6 +2500,14 @@
    "producer": "lethe@660fa74 · typeset of owner×Qwen docx sha e4dc7ffb…",
    "purpose": "framework candidate tex — body of CDLoRA paper typeset from intake docx; trailing chat lines excluded",
    "received": "2026-09-18T00:03:19+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/diagnostica_charter.docx.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/diagnostica_charter.docx",
+   "sha256": "5cdbe9b64136c6fb7445a485fc227a57bce822f1cbe76b6495803b06a5397240",
+   "producer": "owner×Qwen (Cora项目实验方案)",
+   "purpose": "DIAGNOSTICA charter intake — 突变点定位方案 verbatim; instrument at benches/DIAGNOSTICA/",
+   "received": "2026-09-18T07:45:57+00:00"
   },
   {
    "sidecar": "benches/CRADLE/intake/exp1_brief.md.lethe-pin.json",
