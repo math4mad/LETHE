@@ -1,9 +1,24 @@
 {
- "generated": "2026-09-19T07:40:52+00:00",
- "head": "02f508b",
- "head_full": "02f508bb3079f7121051001dfb226835d99e1ed3",
+ "generated": "2026-09-19T09:12:37+00:00",
+ "head": "34ed8d6",
+ "head_full": "34ed8d684db4a9ac24c4feae7279354e531b884e",
  "remote": "https://github.com/math4mad/LETHE.git",
  "commits": [
+  {
+   "sha": "34ed8d684db4a9ac24c4feae7279354e531b884e",
+   "date": "2026-09-19T15:40:52+08:00",
+   "subject": "三屏一统: 提醒列表更名 Concept-Space (原 园区·GRAPHIA, 条目随迁), AGENTS 名录同步; remind.sh 认新名 + To Do 冒烟",
+   "files": [
+    {
+     "status": "M",
+     "path": "bin/remind.sh"
+    },
+    {
+     "status": "M",
+     "path": "website/archive.json"
+    }
+   ]
+  },
   {
    "sha": "02f508bb3079f7121051001dfb226835d99e1ed3",
    "date": "2026-09-19T12:39:41+08:00",
@@ -2212,7 +2227,7 @@
   },
   {
    "path": "bin/remind.sh",
-   "versions": 2,
+   "versions": 3,
    "added": "2026-09-18T19:41:44+08:00",
    "last": "2026-09-18T19:41:44+08:00",
    "events": [
@@ -2226,6 +2241,12 @@
      "sha": "9111ef0",
      "date": "2026-09-18T19:39:59+08:00",
      "subject": "园区 ⇄ 主人提醒事项正式联动: bin/remind.sh (add/read/done/purge, 「园区·GRAPHIA」列表 iCloud 直达 iPhone) + follow 协议入 AGENTS 律 — ☑即批复⌚即戳、备注即回复、开场必 read; 两场 locale 灾现场留档 (AppleScript 日期字面量在 zh 系统读作 2025年3月 — 偏移量方案是唯一正解); 明晨两条已挂: 08:30 圈号单 + 09:00 announced 裁决候",
+     "status": "M"
+    },
+    {
+     "sha": "34ed8d6",
+     "date": "2026-09-19T15:40:52+08:00",
+     "subject": "三屏一统: 提醒列表更名 Concept-Space (原 园区·GRAPHIA, 条目随迁), AGENTS 名录同步; remind.sh 认新名 + To Do 冒烟",
      "status": "M"
     }
    ]
@@ -2608,7 +2629,7 @@
   },
   {
    "path": "website/archive.json",
-   "versions": 7,
+   "versions": 8,
    "added": "2026-09-16T13:01:39+08:00",
    "last": "2026-09-16T13:01:39+08:00",
    "events": [
@@ -2652,6 +2673,12 @@
      "sha": "93fffee",
      "date": "2026-09-19T12:37:56+08:00",
      "subject": "模块一委托书过门: atlas_module1.docx pin 61e17591… (LETHE intake), 图谱本体外建于 chora@17b821f",
+     "status": "M"
+    },
+    {
+     "sha": "34ed8d6",
+     "date": "2026-09-19T15:40:52+08:00",
+     "subject": "三屏一统: 提醒列表更名 Concept-Space (原 园区·GRAPHIA, 条目随迁), AGENTS 名录同步; remind.sh 认新名 + To Do 冒烟",
      "status": "M"
     }
    ]
