@@ -13,7 +13,7 @@
 #   bin/remind.sh done   "标题片段"                             # agent 侧销账(实验完成后勾掉)
 #   bin/remind.sh purge  "标题片段"                             # 删除(慎用;销账优先用 done)
 set -euo pipefail
-LIST="园区·GRAPHIA"
+LIST="Concept-Space"
 
 osa() { osascript -e "tell application \"Reminders\" to $1" ; }
 

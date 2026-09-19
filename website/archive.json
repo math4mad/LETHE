@@ -1,18 +1,177 @@
 {
- "generated": "2026-09-19T04:37:56+00:00",
- "head": "4ba4372",
- "head_full": "4ba437241542e8e48555f8c1c88254e82fa1f153",
+ "generated": "2026-09-19T07:40:52+00:00",
+ "head": "02f508b",
+ "head_full": "02f508bb3079f7121051001dfb226835d99e1ed3",
  "remote": "https://github.com/math4mad/LETHE.git",
  "commits": [
   {
-   "sha": "4ba437241542e8e48555f8c1c88254e82fa1f153",
+   "sha": "02f508bb3079f7121051001dfb226835d99e1ed3",
+   "date": "2026-09-19T12:39:41+08:00",
+   "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+   "files": [
+    {
+     "status": "M",
+     "path": ".gitignore"
+    },
+    {
+     "status": "D",
+     "path": ".pending-push"
+    },
+    {
+     "status": "D",
+     "path": "\"external/Exp10 \\345\\256\\236\\351\\252\\214\\347\\254\\224\\350\\256\\260 \\302\\267 \\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\346\\255\\243\\344\\272\\244\\346\\200\\247\\351\\252\\214\\350\\257\\201\\347\\254\\224\\350\\256\\260\\346\\212\\245\\345\\221\\212\\346\\241\\206\\346\\236\\266.docx\""
+    },
+    {
+     "status": "D",
+     "path": "external/Title Context-Dependent Low-Rank Adaptation A Topological Framework for Dynamic Cognitive Modeling in Large Language Models.docx"
+    },
+    {
+     "status": "D",
+     "path": "external/afternoon-exp.docx"
+    },
+    {
+     "status": "D",
+     "path": "\"external/\\345\\237\\272\\344\\272\\216Redux-ReduxSaga\\347\\232\\204\\345\\217\\214Agent\\345\\244\\232\\346\\231\\272\\350\\203\\275\\344\\275\\223\\347\\263\\273\\347\\273\\237\\350\\256\\276\\350\\256\\241-\\346\\233\\264\\346\\226\\260_202609190950.md\""
+    },
+    {
+     "status": "D",
+     "path": "\"external/\\345\\256\\236\\351\\252\\214\\344\\270\\200-\\351\\252\\214\\350\\257\\201\\347\\246\\273\\346\\225\\243adapter\\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\345\\267\\256\\345\\274\\202.md\""
+    },
+    {
+     "status": "D",
+     "path": "\"external/\\345\\256\\236\\351\\252\\214\\344\\272\\214-\\350\\256\\255\\347\\273\\203\\344\\270\\255\\351\\227\\264\\345\\236\\213LoRA\\345\\271\\266\\345\\201\\232SVD\\345\\210\\206\\346\\236\\220.md\""
+    },
+    {
+     "status": "D",
+     "path": "\"external/\\346\\227\\266\\351\\227\\264\\350\\275\\264\\347\\232\\204\\346\\214\\207\\351\\222\\210 = \\346\\246\\202\\345\\277\\265\\346\\246\\202\\347\\216\\207\\347\\251\\272\\351\\227\\264\\347\\232\\204\\345\\205\\210\\351\\252\\214\\346\\214\\207\\351\\222\\210\\343\\200\\202.docx\""
+    },
+    {
+     "status": "D",
+     "path": "\"external/\\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\346\\255\\243\\344\\272\\244\\346\\200\\247\\344\\270\\216\\345\\217\\257\\347\\273\\204\\345\\220\\210Adapter\\346\\236\\266\\346\\236\\204_\\345\\256\\236\\351\\252\\214\\346\\212\\245\\345\\221\\212\\344\\270\\216\\345\\256\\236\\346\\226\\275\\350\\256\\241\\345\\210\\222.docx\""
+    },
+    {
+     "status": "D",
+     "path": "\"external/\\346\\250\\241\\345\\235\\227\\344\\270\\200\\357\\274\\23250-100 \\347\\273\\204\\345\\210\\206\\347\\261\\273\\350\\257\\255\\350\\250\\200\\351\\233\\206\\345\\220\\210\\347\\232\\204\\346\\236\\204\\351\\200\\240.docx\""
+    }
+   ]
+  },
+  {
+   "sha": "bb2cd5b2e92652fbaac0e908538422dea42ed1e4",
+   "date": "2026-09-19T12:39:12+08:00",
+   "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+   "files": [
+    {
+     "status": "A",
+     "path": ".pending-push"
+    },
+    {
+     "status": "M",
+     "path": "AGENTS.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/agentspd_design_20260919.md"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/diagnostica_charter.docx"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/diagnostica_charter.docx.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "benches/DIAGNOSTICA/README.md"
+    },
+    {
+     "status": "R",
+     "path": "benches/DIAGNOSTICA/figures/full_pipeline_with_truncation.png"
+    },
+    {
+     "status": "R",
+     "path": "benches/DIAGNOSTICA/figures/gp_diag_v2.png"
+    },
+    {
+     "status": "R",
+     "path": "benches/DIAGNOSTICA/gp_diagnoistoc_marimo.py"
+    },
+    {
+     "status": "A",
+     "path": "bin/git-push-patient.sh"
+    },
+    {
+     "status": "A",
+     "path": "\"external/Exp10 \\345\\256\\236\\351\\252\\214\\347\\254\\224\\350\\256\\260 \\302\\267 \\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\346\\255\\243\\344\\272\\244\\346\\200\\247\\351\\252\\214\\350\\257\\201\\347\\254\\224\\350\\256\\260\\346\\212\\245\\345\\221\\212\\346\\241\\206\\346\\236\\266.docx\""
+    },
+    {
+     "status": "A",
+     "path": "\"external/\\345\\237\\272\\344\\272\\216Redux-ReduxSaga\\347\\232\\204\\345\\217\\214Agent\\345\\244\\232\\346\\231\\272\\350\\203\\275\\344\\275\\223\\347\\263\\273\\347\\273\\237\\350\\256\\276\\350\\256\\241-\\346\\233\\264\\346\\226\\260_202609190950.md\""
+    },
+    {
+     "status": "A",
+     "path": "\"external/\\346\\250\\241\\345\\235\\227\\344\\270\\200\\357\\274\\23250-100 \\347\\273\\204\\345\\210\\206\\347\\261\\273\\350\\257\\255\\350\\250\\200\\351\\233\\206\\345\\220\\210\\347\\232\\204\\346\\236\\204\\351\\200\\240.docx\""
+    },
+    {
+     "status": "D",
+     "path": "gp-diagnoistoc_v2.py"
+    },
+    {
+     "status": "D",
+     "path": "gp_diagnoistoc_v2_marimo.py"
+    },
+    {
+     "status": "M",
+     "path": "run_gp_marimo.sh"
+    }
+   ]
+  },
+  {
+   "sha": "93fffeed512e9ede856e90060c6691120af1e2a0",
+   "date": "2026-09-19T12:37:56+08:00",
+   "subject": "模块一委托书过门: atlas_module1.docx pin 61e17591… (LETHE intake), 图谱本体外建于 chora@17b821f",
+   "files": [
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/atlas_module1.docx"
+    },
+    {
+     "status": "A",
+     "path": "benches/CRADLE/intake/atlas_module1.docx.lethe-pin.json"
+    },
+    {
+     "status": "M",
+     "path": "website/archive.json"
+    }
+   ]
+  },
+  {
+   "sha": "9111ef05383024f50138c903fdf701315d271786",
    "date": "2026-09-18T19:39:59+08:00",
    "subject": "园区 ⇄ 主人提醒事项正式联动: bin/remind.sh (add/read/done/purge, 「园区·GRAPHIA」列表 iCloud 直达 iPhone) + follow 协议入 AGENTS 律 — ☑即批复⌚即戳、备注即回复、开场必 read; 两场 locale 灾现场留档 (AppleScript 日期字面量在 zh 系统读作 2025年3月 — 偏移量方案是唯一正解); 明晨两条已挂: 08:30 圈号单 + 09:00 announced 裁决候",
    "files": [
     {
      "status": "M",
+     "path": "bin/remind.sh"
+    }
+   ]
+  },
+  {
+   "sha": "10957b659ae8d01ed467e834d24a547d8eb0ddb5",
+   "date": "2026-09-18T19:41:45+08:00",
+   "subject": "AGENTS 入律: 提醒联动协议 (开场必 read; 日期只走偏移量, zh-locale 灾留档)",
+   "files": [
+    {
+     "status": "M",
      "path": "AGENTS.md"
-    },
+    }
+   ]
+  },
+  {
+   "sha": "ee1d6212adca9ea8558a36bfae7b684a459ab00b",
+   "date": "2026-09-18T19:41:44+08:00",
+   "subject": "the follow protocol tool: park ⇄ owner's Apple Reminders (iCloud to iPhone) — add/read/done, ☑=ratification stamp",
+   "files": [
     {
      "status": "A",
      "path": "bin/remind.sh"
@@ -788,8 +947,48 @@
    ]
   },
   {
+   "path": "\"external/Exp10 \\345\\256\\236\\351\\252\\214\\347\\254\\224\\350\\256\\260 \\302\\267 \\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\346\\255\\243\\344\\272\\244\\346\\200\\247\\351\\252\\214\\350\\257\\201\\347\\254\\224\\350\\256\\260\\346\\212\\245\\345\\221\\212\\346\\241\\206\\346\\236\\266.docx\"",
+   "versions": 2,
+   "added": "2026-09-19T12:39:12+08:00",
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
+    }
+   ]
+  },
+  {
+   "path": "\"external/\\345\\237\\272\\344\\272\\216Redux-ReduxSaga\\347\\232\\204\\345\\217\\214Agent\\345\\244\\232\\346\\231\\272\\350\\203\\275\\344\\275\\223\\347\\263\\273\\347\\273\\237\\350\\256\\276\\350\\256\\241-\\346\\233\\264\\346\\226\\260_202609190950.md\"",
+   "versions": 2,
+   "added": "2026-09-19T12:39:12+08:00",
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
+    }
+   ]
+  },
+  {
    "path": "\"external/\\345\\256\\236\\351\\252\\214\\344\\270\\200-\\351\\252\\214\\350\\257\\201\\347\\246\\273\\346\\225\\243adapter\\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\345\\267\\256\\345\\274\\202.md\"",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -798,12 +997,18 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
     }
    ]
   },
   {
    "path": "\"external/\\345\\256\\236\\351\\252\\214\\344\\272\\214-\\350\\256\\255\\347\\273\\203\\344\\270\\255\\351\\227\\264\\345\\236\\213LoRA\\345\\271\\266\\345\\201\\232SVD\\345\\210\\206\\346\\236\\220.md\"",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -812,12 +1017,18 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
     }
    ]
   },
   {
    "path": "\"external/\\346\\227\\266\\351\\227\\264\\350\\275\\264\\347\\232\\204\\346\\214\\207\\351\\222\\210 = \\346\\246\\202\\345\\277\\265\\346\\246\\202\\347\\216\\207\\347\\251\\272\\351\\227\\264\\347\\232\\204\\345\\205\\210\\351\\252\\214\\346\\214\\207\\351\\222\\210\\343\\200\\202.docx\"",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -826,12 +1037,18 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
     }
    ]
   },
   {
    "path": "\"external/\\346\\246\\202\\345\\277\\265\\347\\251\\272\\351\\227\\264\\346\\255\\243\\344\\272\\244\\346\\200\\247\\344\\270\\216\\345\\217\\257\\347\\273\\204\\345\\220\\210Adapter\\346\\236\\266\\346\\236\\204_\\345\\256\\236\\351\\252\\214\\346\\212\\245\\345\\221\\212\\344\\270\\216\\345\\256\\236\\346\\226\\275\\350\\256\\241\\345\\210\\222.docx\"",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -840,6 +1057,32 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
+    }
+   ]
+  },
+  {
+   "path": "\"external/\\346\\250\\241\\345\\235\\227\\344\\270\\200\\357\\274\\23250-100 \\347\\273\\204\\345\\210\\206\\347\\261\\273\\350\\257\\255\\350\\250\\200\\351\\233\\206\\345\\220\\210\\347\\232\\204\\346\\236\\204\\351\\200\\240.docx\"",
+   "versions": 2,
+   "added": "2026-09-19T12:39:12+08:00",
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
     }
    ]
   },
@@ -893,20 +1136,6 @@
   },
   {
    "path": ".gitignore",
-   "versions": 1,
-   "added": "2026-09-15T17:19:44+08:00",
-   "last": "2026-09-15T17:19:44+08:00",
-   "events": [
-    {
-     "sha": "e75d3c6",
-     "date": "2026-09-15T17:19:44+08:00",
-     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
-     "status": "A"
-    }
-   ]
-  },
-  {
-   "path": "AGENTS.md",
    "versions": 2,
    "added": "2026-09-15T17:19:44+08:00",
    "last": "2026-09-15T17:19:44+08:00",
@@ -918,9 +1147,55 @@
      "status": "A"
     },
     {
-     "sha": "4ba4372",
-     "date": "2026-09-18T19:39:59+08:00",
-     "subject": "园区 ⇄ 主人提醒事项正式联动: bin/remind.sh (add/read/done/purge, 「园区·GRAPHIA」列表 iCloud 直达 iPhone) + follow 协议入 AGENTS 律 — ☑即批复⌚即戳、备注即回复、开场必 read; 两场 locale 灾现场留档 (AppleScript 日期字面量在 zh 系统读作 2025年3月 — 偏移量方案是唯一正解); 明晨两条已挂: 08:30 圈号单 + 09:00 announced 裁决候",
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": ".pending-push",
+   "versions": 2,
+   "added": "2026-09-19T12:39:12+08:00",
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
+    }
+   ]
+  },
+  {
+   "path": "AGENTS.md",
+   "versions": 3,
+   "added": "2026-09-15T17:19:44+08:00",
+   "last": "2026-09-15T17:19:44+08:00",
+   "events": [
+    {
+     "sha": "e75d3c6",
+     "date": "2026-09-15T17:19:44+08:00",
+     "subject": "LETHE daughter-city: marimo console, Rehoboth plate, chora-grammar gate",
+     "status": "A"
+    },
+    {
+     "sha": "10957b6",
+     "date": "2026-09-18T19:41:45+08:00",
+     "subject": "AGENTS 入律: 提醒联动协议 (开场必 read; 日期只走偏移量, zh-locale 灾留档)",
+     "status": "M"
+    },
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
      "status": "M"
     }
    ]
@@ -1240,6 +1515,48 @@
    ]
   },
   {
+   "path": "benches/CRADLE/intake/agentspd_design_20260919.md",
+   "versions": 1,
+   "added": "2026-09-19T12:39:12+08:00",
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/atlas_module1.docx",
+   "versions": 1,
+   "added": "2026-09-19T12:37:56+08:00",
+   "last": "2026-09-19T12:37:56+08:00",
+   "events": [
+    {
+     "sha": "93fffee",
+     "date": "2026-09-19T12:37:56+08:00",
+     "subject": "模块一委托书过门: atlas_module1.docx pin 61e17591… (LETHE intake), 图谱本体外建于 chora@17b821f",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/atlas_module1.docx.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-19T12:37:56+08:00",
+   "last": "2026-09-19T12:37:56+08:00",
+   "events": [
+    {
+     "sha": "93fffee",
+     "date": "2026-09-19T12:37:56+08:00",
+     "subject": "模块一委托书过门: atlas_module1.docx pin 61e17591… (LETHE intake), 图谱本体外建于 chora@17b821f",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "benches/CRADLE/intake/build-paper.yml",
    "versions": 1,
    "added": "2026-09-16T10:00:54+08:00",
@@ -1359,6 +1676,34 @@
      "sha": "77af7ca",
      "date": "2026-09-18T08:07:08+08:00",
      "subject": "Third sheet seated, as one of many: context-dependent LoRA framework crossed the gate from owner×Qwen docx (e4dc7ffb…), typeset and compiled by LETHE's own hands (tectonic 0.17.0, 8640e7ab…), mirrored at the strata — the same multi-dimensional dynamic conceptual space entered from the weight side; direction arbitrary, topology invariant; 只是框架之一，不是唯一",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/diagnostica_charter.docx",
+   "versions": 1,
+   "added": "2026-09-19T12:39:12+08:00",
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/CRADLE/intake/diagnostica_charter.docx.lethe-pin.json",
+   "versions": 1,
+   "added": "2026-09-19T12:39:12+08:00",
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
      "status": "A"
     }
    ]
@@ -1561,7 +1906,7 @@
   },
   {
    "path": "benches/DIAGNOSTICA/README.md",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -1570,6 +1915,40 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "M"
+    }
+   ]
+  },
+  {
+   "path": "benches/DIAGNOSTICA/figures/full_pipeline_with_truncation.png",
+   "versions": 1,
+   "added": null,
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "R"
+    }
+   ]
+  },
+  {
+   "path": "benches/DIAGNOSTICA/figures/gp_diag_v2.png",
+   "versions": 1,
+   "added": null,
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "R"
     }
    ]
   },
@@ -1584,6 +1963,20 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    }
+   ]
+  },
+  {
+   "path": "benches/DIAGNOSTICA/gp_diagnoistoc_marimo.py",
+   "versions": 1,
+   "added": null,
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "R"
     }
    ]
   },
@@ -1776,6 +2169,20 @@
    ]
   },
   {
+   "path": "bin/git-push-patient.sh",
+   "versions": 1,
+   "added": "2026-09-19T12:39:12+08:00",
+   "last": "2026-09-19T12:39:12+08:00",
+   "events": [
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "A"
+    }
+   ]
+  },
+  {
    "path": "bin/observe-to-json.py",
    "versions": 1,
    "added": "2026-09-15T17:19:44+08:00",
@@ -1805,15 +2212,21 @@
   },
   {
    "path": "bin/remind.sh",
-   "versions": 1,
-   "added": "2026-09-18T19:39:59+08:00",
-   "last": "2026-09-18T19:39:59+08:00",
+   "versions": 2,
+   "added": "2026-09-18T19:41:44+08:00",
+   "last": "2026-09-18T19:41:44+08:00",
    "events": [
     {
-     "sha": "4ba4372",
+     "sha": "ee1d621",
+     "date": "2026-09-18T19:41:44+08:00",
+     "subject": "the follow protocol tool: park ⇄ owner's Apple Reminders (iCloud to iPhone) — add/read/done, ☑=ratification stamp",
+     "status": "A"
+    },
+    {
+     "sha": "9111ef0",
      "date": "2026-09-18T19:39:59+08:00",
      "subject": "园区 ⇄ 主人提醒事项正式联动: bin/remind.sh (add/read/done/purge, 「园区·GRAPHIA」列表 iCloud 直达 iPhone) + follow 协议入 AGENTS 律 — ☑即批复⌚即戳、备注即回复、开场必 read; 两场 locale 灾现场留档 (AppleScript 日期字面量在 zh 系统读作 2025年3月 — 偏移量方案是唯一正解); 明晨两条已挂: 08:30 圈号单 + 09:00 announced 裁决候",
-     "status": "A"
+     "status": "M"
     }
    ]
   },
@@ -1867,7 +2280,7 @@
   },
   {
    "path": "external/Title Context-Dependent Low-Rank Adaptation A Topological Framework for Dynamic Cognitive Modeling in Large Language Models.docx",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -1876,12 +2289,18 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
     }
    ]
   },
   {
    "path": "external/afternoon-exp.docx",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -1890,6 +2309,12 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "02f508b",
+     "date": "2026-09-19T12:39:41+08:00",
+     "subject": "净身补课: external/ 是检疫暂存区不入 git (入库之物皆已过 intake 门有收据), .pending-push 为值守者草稿痕 — 皆逐出并入忽略",
+     "status": "D"
     }
    ]
   },
@@ -1923,7 +2348,7 @@
   },
   {
    "path": "gp-diagnoistoc_v2.py",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -1932,6 +2357,12 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "D"
     }
    ]
   },
@@ -1965,7 +2396,7 @@
   },
   {
    "path": "gp_diagnoistoc_v2_marimo.py",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -1974,6 +2405,12 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "D"
     }
    ]
   },
@@ -2055,7 +2492,7 @@
   },
   {
    "path": "run_gp_marimo.sh",
-   "versions": 1,
+   "versions": 2,
    "added": "2026-09-18T14:46:53+08:00",
    "last": "2026-09-18T14:46:53+08:00",
    "events": [
@@ -2064,6 +2501,12 @@
      "date": "2026-09-18T14:46:53+08:00",
      "subject": "manullay submit morning working",
      "status": "A"
+    },
+    {
+     "sha": "bb2cd5b",
+     "date": "2026-09-19T12:39:12+08:00",
+     "subject": "搬迁扫尾 + GitHub 重试律入典: 大搬迁遗留的 root 化石删除与 README/runner 尾差补齐, AGENTS 追加通讯障碍六试挂账律 (owner 09-19 钦定)",
+     "status": "M"
     }
    ]
   },
@@ -2165,7 +2608,7 @@
   },
   {
    "path": "website/archive.json",
-   "versions": 6,
+   "versions": 7,
    "added": "2026-09-16T13:01:39+08:00",
    "last": "2026-09-16T13:01:39+08:00",
    "events": [
@@ -2203,6 +2646,12 @@
      "sha": "db741fe",
      "date": "2026-09-18T11:58:28+08:00",
      "subject": "Four commission slips crossed and receipted (exp1/exp2 briefs, afternoon plan v0.1+v1.0) — the external/ intake ledger now mirrors everything this park ran today for Chora; the results themselves live at chora@0de9489 with pins, per share-inputs-never-histories",
+     "status": "M"
+    },
+    {
+     "sha": "93fffee",
+     "date": "2026-09-19T12:37:56+08:00",
+     "subject": "模块一委托书过门: atlas_module1.docx pin 61e17591… (LETHE intake), 图谱本体外建于 chora@17b821f",
      "status": "M"
     }
    ]
@@ -2468,6 +2917,14 @@
    "producer": "owner×Qwen 2026-09-19",
    "purpose": "五模块概念空间注意力链之模块一 (50-100 组分类语言集合) — verbatim intake; M1 今备夜跑, 链后续候排期",
    "received": "2026-09-19T04:32:06+00:00"
+  },
+  {
+   "sidecar": "benches/CRADLE/intake/atlas_xdom_probes.docx.lethe-pin.json",
+   "artifact": "benches/CRADLE/intake/atlas_xdom_probes.docx",
+   "sha256": "0935d630d237fda2c214973fe5a6301915e16ba8294e316ecc697963d2f137a6",
+   "producer": "owner×Qwen 2026-09-19",
+   "purpose": "Atlas 模块三验收考卷 (跨域歧义探针 50 组) — verbatim intake; 三轮执行法+τ校准请求在册",
+   "received": "2026-09-19T05:11:40+00:00"
   },
   {
    "sidecar": "benches/CRADLE/intake/build-paper.yml.lethe-pin.json",
