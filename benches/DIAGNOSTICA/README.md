@@ -15,14 +15,17 @@ signal.
 | `gp-diagnoistoc_v2.py` | CLI edition. Bayesian model comparison (log marginal likelihood, P(abrupt\|D)) replaces v1's ad-hoc mean+2σ threshold; three ground-truth regimes (gradual / step / ramp) make the detector falsifiable; spectral truncation is scored by measured reconstruction RMSE. |
 | `gp_diagnoistoc_v2_marimo.py` | Reactive edition. Same pipeline with live controls: regime dropdown, noise σ, H_smooth / H_abrupt length scales, expansion order, truncation tolerance. Verified via `marimo export html` (all cells execute, zero errors). |
 
-The ancestral v1 pair (`gp-diagnoistoc.py`, `gp_diagnoistoc_marimo.py`)
-remains at the repo root for reference — the constant-signal truncation
-tautology is preserved there as a cautionary fossil.
+The ancestral v1 pair crossed from the root on 2026-09-18 (owner's order:
+"gp 诊断器那批文件要放到合适的地方"): `gp_diagnostica_v1.py` (was
+`gp-diagnoistoc.py` at root) and `gp_diagnoistoc_marimo.py` — the
+constant-signal truncation tautology is preserved here as a cautionary
+fossil, renamed to bench convention. Figures retired to `figures/`
+(`full_pipeline_with_truncation.png`, `gp_diag_v2.png`).
 
 ## Run
 
 ```bash
-python3 gp-diagnoistoc_v2.py                 # CLI
+python3 gp-diagnoistoc_v2.py                 # CLI (from this directory)
 ../run_gp_marimo.sh --run v2                 # dashboard (from repo root)
 # or directly:
 python3 -m marimo run gp_diagnoistoc_v2_marimo.py
