@@ -4,3 +4,4 @@ __pycache__/
 external/
 .pending-push
 cora-atlas
+pi-session-*.html
