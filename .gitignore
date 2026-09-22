@@ -6,3 +6,4 @@ external/
 cora-atlas
 pi-session-*.html
 chora
+.queue/
