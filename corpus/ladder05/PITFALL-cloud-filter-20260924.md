@@ -1,0 +1,19 @@
+# 坑志 · 云端内容过滤器与园务 (2026-09-24, VSCode 事故诊断)
+
+**现象**: VSCode Copilot Chat 报 `Error: Output data may contain inappropriate content.`
+**定性**: 非本机故障 —— OpenAI/Azure 后端 **输出** 过滤器 (content_filter) 整段丢弃回复。
+
+三个已确诊触发源:
+1. 幼儿语料工作本身: "儿童 + 身体/医疗词"组合是自动审查最严区, 内容无辜照触发;
+2. **编辑器打开的文件自动进上下文**: CHILDES 日记原件 (Stern 1900s 德语儿科术语,
+   Julia.txt 死亡个案, Bowerman PDF) 开着即中招;
+3. 园黑话 (裸探针/擦边/过审/舞谱) 集中住在 pi-session-*.html 会话导出 ——
+   让模型读全会话 ≈ 必触发。**讨论审查的词表是审查的头号触发物** (衔尾蛇)。
+
+绕法 (按省力序): 只贴节选不贴全文 → 换 gpt-5.3-codex 试另一滤径 →
+敏感原件走本地: chatLanguageModels.json 已配 MLX Qwen3.5 9B @ localhost:8080
+(无云端过滤; 用前自起服务, 平时 8080 被 VSCode 占用属正常)。
+
+**枪口纪律增款**: "此口只吃非敏感活"自即日起**明文涵盖幼儿语料原件** ——
+ diary 层任何原文引用不进云模型, 派生统计可进。
+ (memory_add 管道当夜故障: better-sqlite3 dlopen 签名拒 — 教训暂以本文件为账。)
