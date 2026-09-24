@@ -1,0 +1,108 @@
+{
+ "S": [
+  {
+   "checkpoint": "L0末",
+   "moon_members": [],
+   "moon_m_life": null,
+   "priors": {
+    "球·peekaboo": 0.895,
+    "球·ball": 0.105
+   }
+  },
+  {
+   "checkpoint": "L1末",
+   "moon_members": [
+    "球·peekaboo"
+   ],
+   "moon_m_life": 0.9833639191723726,
+   "priors": {
+    "球·peekaboo": 1.0,
+    "球·ball": 0.0
+   }
+  },
+  {
+   "checkpoint": "L2末",
+   "moon_members": [
+    "球·star"
+   ],
+   "moon_m_life": 0.009365968407667399,
+   "priors": {
+    "球·star": 1.0,
+    "球·sun": 0.0,
+    "球·peekaboo": 0.0,
+    "球·ball": 0.0
+   }
+  },
+  {
+   "checkpoint": "回灌12×后",
+   "moon_members": [
+    "球·peekaboo",
+    "球·star"
+   ],
+   "moon_m_life": 0.8385209043251951,
+   "priors": {
+    "球·star": 1.0,
+    "球·peekaboo": 0.0,
+    "球·sun": 0.0,
+    "球·ball": 0.0
+   }
+  }
+ ],
+ "M": {
+  "hump_ratios": [
+   0.0,
+   0.8507462686567164,
+   0.0,
+   0.013157894736842105,
+   0.7246376811594203,
+   0.6857142857142857,
+   0.6410256410256411,
+   0.6455696202531646,
+   0.723404255319149,
+   0.8148148148148148,
+   0.0,
+   0.13924050632911392,
+   0.625,
+   0.0,
+   0.11594202898550725,
+   0.0,
+   0.0,
+   0.5063291139240507,
+   0.7540983606557377,
+   0.0
+  ],
+  "seeds_over_25pct": 10
+ },
+ "final": {
+  "球·ball": [
+   "ball",
+   "rattle",
+   "tap",
+   "teddy"
+  ],
+  "球·peekaboo": [
+   "baby",
+   "birdie",
+   "doggy",
+   "duckie",
+   "fishy",
+   "kitty",
+   "moon",
+   "mummy",
+   "peekaboo",
+   "splash"
+  ],
+  "球·sun": [
+   "sun"
+  ],
+  "球·star": [
+   "earth",
+   "moon",
+   "mountain",
+   "planet",
+   "star",
+   "stone",
+   "tree"
+  ]
+ }
+}
