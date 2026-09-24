@@ -7,3 +7,9 @@ cora-atlas
 pi-session-*.html
 chora
 .queue/
+
+# CHILDES 日记库原件: 第三方数据不入 git, sha 钉在 layers/childes/diaries/PROVENANCE.md (chora/data 例)
+corpus/ladder05/layers/childes/diaries/*.zip
+corpus/ladder05/layers/childes/diaries/*.txt
+corpus/ladder05/layers/childes/diaries/Bowerman/
+corpus/ladder05/layers/childes/diaries/Stern&Stern/
