@@ -14,11 +14,28 @@ F_LAT, F_LAT_S, F_CN, F_TTL, F_SUB = G(26), G(19), S(20), G(34), S(21)
 INK = (47, 42, 36); RED = (140, 47, 47); GOLD = (176, 118, 42); TEAL = (46, 143, 163); GRAY = (150, 142, 125); MUT = (110, 100, 85)
 def center(t, x, y, f, c):
     w = d.textlength(t, font=f); d.text((x - w/2, y), t, font=f, fill=c)
-for k, (x, y, cn, latin, kind) in lab.items():
+CEN = (800, 545)
+NUDGE = {"ACADEMY": (-150, -18), "ARCHIVE": (95, -30), "CodeOfLaw": (-70, 12), "CouriersQueue": (30, 46), "Ledger": (-40, 0)}
+placed = []
+for k, (x, y, cn, latin, kind) in sorted(lab.items(), key=lambda kv: kv[1][1]):
+    vx, vy = x - CEN[0], y - CEN[1]
+    dist = (vx*vx + vy*vy)**0.5 + 1e-6
+    # 锚点: 沿径向外推适度量 (上限 170px), 限在画布内
+    push = min(125.0, max(55.0, dist*0.38))
+    ax = x + vx/dist * push * 0.7; ay = y + vy/dist * push - push*0.35
+    ax = max(140, min(1460, ax)); ay = max(165, min(1035, ay))
+    dx, dy = NUDGE.get(k, (0, 0)); ax += dx; ay += dy
+    if ax < 330 and ay < 210: ay = 215        # 题头保护区
+    for _ in range(8):
+        if not any(abs(px - ax) < 120 and abs(py - ay) < 46 for (px, py) in placed): break
+        ay -= 46
+    placed.append((ax, ay))
+    d.line([x, y, ax, ay + 14], fill=(176, 118, 42), width=1)
+    d.ellipse([x-3, y-3, x+3, y+3], fill=(47, 42, 36))
     c = RED if kind == "polity" else INK
     f1 = F_LAT if kind == "polity" else F_LAT_S
-    center(latin.upper(), x, y - 46, f1, c)
-    center(cn, x, y - 16, F_CN, MUT)
+    center(latin.upper(), ax, ay - 46, f1, c)
+    center(cn, ax, ay - 16, F_CN, MUT)
 d.text((46, 28), "GARDEN TOPOGRAPHY", font=F_TTL, fill=INK)
 d.text((46, 78), "园体地形志 · 等距拓扑 · 十九点二十二楼", font=F_SUB, fill=MUT)
 d.text((46, 108), "ISO-TOPOLOGY · only relations are real", font=F_LAT_S, fill=(140, 130, 110))
