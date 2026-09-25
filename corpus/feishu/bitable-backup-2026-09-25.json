@@ -1,0 +1,708 @@
+{
+ "exported": "2026-09-25T09:0x",
+ "base": "AhFEbOZubarYmislnOtcH74wn2d",
+ "note": "毁账先存档铁律执行; 任务管理=模板演示数据(待清), 存储周报=真账42环, 快速上手=模板",
+ "tables": {
+  "tbl620DIi5eRVnQP": {
+   "name": "✅任务管理(模板演示行)",
+   "n": 10,
+   "records": [
+    {
+     "record_id": "rec0oA6okm",
+     "fields": {
+      "任务情况总结": "1. 任务为完成年度财务报告，执行人为云文档助手。\n2. 任务处于进行中，已收集财务数据并正在分析解读。\n3. 预计下周完成初稿，开始日期、预计完成日期、是否延期及实际完成日期均未填写。",
+      "任务执行人": [
+       {
+        "en_name": "Docs Assistant",
+        "id": "ou_5a6a4d3e993fa487cd9f465072984c44",
+        "name": "云文档助手"
+       }
+      ],
+      "任务描述": "完成年度财务报告",
+      "实际完成日期": 46296,
+      "开始日期": 46284,
+      "是否延期": [
+       {
+        "text": "🚨 已延期",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "已经收集了所有必要的财务数据，目前正在进行数据分析和解读。预计在下周完成初稿。",
+      "进展": "进行中",
+      "重要紧急程度": "重要紧急",
+      "预计完成日期": 46294
+     }
+    },
+    {
+     "record_id": "recHwz6PGh",
+     "fields": {
+      "任务情况总结": "1. 任务已经完成，因特殊原因已延期。\n2. 活动已经确定日期和地点，并完成策划。\n3. 实际完成日期为2023/05/25。",
+      "任务执行人": [
+       {
+        "en_name": "刘大建",
+        "id": "ou_1622878fcd2a781edfe2c1ac75607060",
+        "name": "刘大建"
+       }
+      ],
+      "任务描述": "组织年度员工团建活动",
+      "实际完成日期": 46293,
+      "开始日期": 46286,
+      "是否延期": [
+       {
+        "text": "✅ 正常",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "已经确定了活动日期和地点，并完成了活动内容和流程的策划",
+      "进展": "已完成",
+      "重要紧急程度": "重要紧急",
+      "预计完成日期": 46307
+     }
+    },
+    {
+     "record_id": "recFYZDsHt",
+     "fields": {
+      "任务情况总结": "1. 供应链管理优化任务已识别问题并正在研究解决方案。\n2. 任务预计将于下个月开始执行。\n3. 实际完成日期暂无记录。",
+      "任务执行人": [
+       {
+        "en_name": "Amanda Huang",
+        "id": "ou_dd134aa0d68c84fa6ba5effe01bdbe38",
+        "name": "黄泡泡"
+       }
+      ],
+      "任务描述": "优化供应链管理",
+      "实际完成日期": 46293,
+      "开始日期": 46288,
+      "是否延期": [
+       {
+        "text": "✅ 正常",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "已经识别了供应链中的问题，目前正在研究解决方案。预计在下个月实施改进措施。",
+      "进展": "待开始",
+      "重要紧急程度": "重要不紧急",
+      "预计完成日期": 46294
+     }
+    },
+    {
+     "record_id": "rect4NklCs",
+     "fields": {
+      "任务情况总结": "1. 任务执行人周北北正在执行任务“改善工作环境”，已经开始收集员工的意见和建议。\n2. 预计完成日期为下个月，是否延期显示正常。\n3. 最新进展记录显示，正在制定和实施改善计划，预计下个月改善工作环境。",
+      "任务执行人": [
+       {
+        "en_name": "刘大建",
+        "id": "ou_1622878fcd2a781edfe2c1ac75607060",
+        "name": "刘大建"
+       }
+      ],
+      "任务描述": "改善工作环境",
+      "实际完成日期": 46291,
+      "开始日期": 46287,
+      "是否延期": [
+       {
+        "text": "✅ 正常",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "已经收集了员工的意见和建议，目前正在进行改善计划的制定和实施。预计在下个月改善工作环境。",
+      "进展": "进行中",
+      "重要紧急程度": "重要不紧急",
+      "预计完成日期": 46316
+     }
+    },
+    {
+     "record_id": "rec5CX9BZX",
+     "fields": {
+      "任务情况总结": "1. 刘贝拉正在制定新的销售策略，预计下季度开始实施。\n2. 任务进展正常，没有延期。\n3. 最新进展：已经分析市场和竞争对手，正在制定新的销售策略。",
+      "任务执行人": [
+       {
+        "en_name": "刘贝拉",
+        "id": "ou_2372971040e93935ae5aa7ed63bf9564",
+        "name": "刘贝拉"
+       }
+      ],
+      "任务描述": "制定新的销售策略",
+      "实际完成日期": 46297,
+      "开始日期": 46288,
+      "是否延期": [
+       {
+        "text": "✅ 正常",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "已经分析了市场和竞争对手，目前正在制定新的销售策略。预计在下季度开始实施新策略。",
+      "进展": "进行中",
+      "重要紧急程度": "重要不紧急",
+      "预计完成日期": 46301
+     }
+    },
+    {
+     "record_id": "recKaLJlQS",
+     "fields": {
+      "任务情况总结": "1. 任务执行人黄泡泡已开始进行前期市场调研和产品设计，预计下季度启动新产品开发。\n2. 任务无延期，但因前期准备工作较多，实际完成日期尚未确定。\n3. 最新进展是仍在进行前期的市场调研和产品设计。",
+      "任务执行人": [
+       {
+        "en_name": "Amanda Huang",
+        "id": "ou_dd134aa0d68c84fa6ba5effe01bdbe38",
+        "name": "黄泡泡"
+       }
+      ],
+      "任务描述": "开发新产品",
+      "实际完成日期": 46289,
+      "开始日期": 46286,
+      "是否延期": [
+       {
+        "text": "✅ 正常",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "还在进行前期的市场调研和产品设计，尚未进入到产品开发和测试阶段。预计在下季度发布新产品。",
+      "进展": "待开始",
+      "重要紧急程度": "紧急不重要",
+      "预计完成日期": 46293
+     }
+    },
+    {
+     "record_id": "recFIE3n52",
+     "fields": {
+      "任务情况总结": "1. 刘贝拉正在进行客户满意度调查，预计完成日期已过。\n2. 最新进展是已设计好调查问卷。\n3. 没有开始启动问卷发放。",
+      "任务执行人": [
+       {
+        "en_name": "刘贝拉",
+        "id": "ou_2372971040e93935ae5aa7ed63bf9564",
+        "name": "刘贝拉"
+       }
+      ],
+      "任务描述": "进行客户满意度调查",
+      "实际完成日期": 46295,
+      "开始日期": 46288,
+      "是否延期": [
+       {
+        "text": "🚨 已延期",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "已经设计了调查问卷，但还没有开始启动问卷发放",
+      "进展": "待开始",
+      "重要紧急程度": "紧急不重要",
+      "预计完成日期": 46290
+     }
+    },
+    {
+     "record_id": "rec7bYQoX1",
+     "fields": {
+      "任务情况总结": "1. 任务执行人黄泡泡正在处理其它事情，任务已停滞。2. 任务预计将在预定的日期内完成。3. 是否延期为正常，实际完成日期待定。",
+      "任务执行人": [
+       {
+        "en_name": "Amanda Huang",
+        "id": "ou_dd134aa0d68c84fa6ba5effe01bdbe38",
+        "name": "黄泡泡"
+       }
+      ],
+      "任务描述": "提升员工培训",
+      "实际完成日期": 46296,
+      "开始日期": 46288,
+      "是否延期": [
+       {
+        "text": "🚨 已延期",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "处理其它更高优的事情，暂时没有时间",
+      "进展": "已停滞",
+      "重要紧急程度": "不紧急不重要",
+      "预计完成日期": 46290
+     }
+    },
+    {
+     "record_id": "recbmuguzi",
+     "fields": {
+      "任务情况总结": "1. 网站更新任务由黄泡泡负责，正在进行中。\n2. 新版网站设计已完成，下一步是编程和测试，预计下月初上线。\n3. 任务进度正常，无延期。",
+      "任务执行人": [
+       {
+        "en_name": "Amanda Huang",
+        "id": "ou_dd134aa0d68c84fa6ba5effe01bdbe38",
+        "name": "黄泡泡"
+       }
+      ],
+      "任务描述": "更新公司网站",
+      "实际完成日期": 46295,
+      "开始日期": 46283,
+      "是否延期": [
+       {
+        "text": "✅ 正常",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "已经完成了新版网站的设计，目前正在进行编程和测试。预计在下个月初上线。",
+      "进展": "进行中",
+      "重要紧急程度": "重要紧急",
+      "预计完成日期": 46304
+     }
+    },
+    {
+     "record_id": "reclzUoBLn",
+     "fields": {
+      "任务情况总结": "1. 招聘新员工的任务正在进行中，已经开始发布招聘信息并进行简历筛选和面试。\n2. 由于特殊原因该任务已被延期，新的预计完成日期尚未确定。\n3. 任务执行人周北北将密切关注并更新任务的最新进展。",
+      "任务执行人": [
+       {
+        "en_name": "刘大建",
+        "id": "ou_1622878fcd2a781edfe2c1ac75607060",
+        "name": "刘大建"
+       }
+      ],
+      "任务描述": "招聘新员工",
+      "实际完成日期": 46292,
+      "开始日期": 46288,
+      "是否延期": [
+       {
+        "text": "🚨 已延期",
+        "type": "text"
+       }
+      ],
+      "最新进展记录": "已经发布了招聘信息，目前正在进行简历筛选和面试",
+      "进展": "进行中",
+      "重要紧急程度": "重要紧急",
+      "预计完成日期": 46289
+     }
+    }
+   ]
+  },
+  "tblcLpMGTkygZxCn": {
+   "name": "存储周报(真账)",
+   "n": 42,
+   "records": [
+    {
+     "record_id": "recv1RJ3M2fSbD",
+     "fields": {
+      "周报日期": 1762444800000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv2wEEp9rVe4",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/PlIHdTb6lopjxQxFNJUcQNGjnOe",
+      "周报日期": 1763049600000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv3bAN755H5C",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/VaapdUeCUo8fn9xyZmDcDh4Dnic",
+      "周报日期": 1763654400000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv3QwD1cSxnO",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/JIWKdshbwoivu7xGAlic6dUTnod",
+      "周报日期": 1764259200000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv4KEoKejbM0",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/CvCjdFe28oHTekxC0hWcUesnnZq",
+      "周报日期": 1765123200000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv5pA3KovIqG",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/W0YxdPtS4o5jlzx42J8cUvDnnKc",
+      "周报日期": 1765728000000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv64vImOXJAq",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/ENXgdOt2Co9ogCx5OTucttwrn5d",
+      "周报日期": 1766332800000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv6JrZ4DHOnF",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/SbOxdH4umopv1tx7hclc9z3Anob",
+      "周报日期": 1766937600000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv7onb96DuX0",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/XU5qd7Zuwov5qRxWfkHc6brhnOd",
+      "周报日期": 1767542400000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv83jBFCCYKl",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/Y6lkdQqn8o7yYsxAJx1cFB3SnTc",
+      "周报日期": 1768147200000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recv8IfAH6c7N5",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/DhtqdH9zVoW7sMxKVC1cewhwnqh",
+      "周报日期": 1768752000000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recva25lBgA6HF",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/PCLxd0l6Qoei0cxo0GccMVXrnlb",
+      "周报日期": 1769961600000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvaH17PkJNVO",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/M7MrdykUBoscDsxxruhc8swinWg",
+      "周报日期": 1770566400000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvblWIQx7FJM",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/Syhhd5SUMoUmYTxhJJccoUD3nDb",
+      "周报日期": 1771171200000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvc0StAprDec",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/ZxFEd7PYtozZBBxByNKcGSqbnxc",
+      "周报日期": 1771776000000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvcFOcdjeYn1",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/TSrpdFe3uoFG90xf3UAcl6FEnBc",
+      "周报日期": 1772380800000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvdkK5khHa3q",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/WykXd5FOtopfGxxju0hchkP4nmf",
+      "周报日期": 1772985600000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvdZG9VAduvP",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/TGv0dD0LfoDdi5xuh7XcRfs0nze",
+      "周报日期": 1773590400000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recveECcYomtGj",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/Sy0ndgAkeoyucoxEmTPcaARYnnb",
+      "周报日期": 1774195200000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvfjx0Euu4Tj",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/ZYIcdzNPPoKuPHx8qwncbZUWntf",
+      "周报日期": 1774800000000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvfYsAS8QHoa",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/LRc2dEwRgoXEUjxV9mwcWsvtnIg",
+      "周报日期": 1775404800000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvgDoArKy6xw",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/Hf4xdKi7ko2l25x1u4uc4uugncg",
+      "周报日期": 1776009600000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvhikhVYZhms",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/AM2KdZvwXoiOcGxGxNjcMgrInwx",
+      "周报日期": 1776614400000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvhXfNdV8d9Y",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/V2MhdID66oOWFnxNHBCcl9JFnFc",
+      "周报日期": 1777219200000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recviCcpS9WjZO",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/PZXNd8cF9ojhIlx920LcmIj6npg",
+      "周报日期": 1777824000000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvjh7dZN2Ue9",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/L3jodJHqoo661FxXkG2csanNnBf",
+      "周报日期": 1778428800000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvjW3g6JaCeU",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/SpUXd5gWloNLQHxbZOoc91fznzg",
+      "周报日期": 1779033600000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvkAZLokoFg9",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/Wnrud9A9HoQvu5xENRFcfHcCndh",
+      "周报日期": 1779638400000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvlfZ49AZ6hN",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/ODNMdmD4zogyqBx3X9ecCqHdnHd",
+      "周报日期": 1780243200000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvlUR62uSfUL",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/Y3AhdvdYxo7jyQxeFL2cu7Bxnyf",
+      "周报日期": 1780848000000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvmzQaRJOQiP",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/OFzId5ynLoDuT0x8mVPcxJfJnib",
+      "周报日期": 1781452800000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvneJgu73M2q",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/NQ2sdmW6GotQB8x56rzcqg78nUf",
+      "周报日期": 1782057600000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvnTErVa8yjk",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/XPzGdMt9dos09YxJhbqcX2Yinhf",
+      "周报日期": 1782662400000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvoyzfCPdv2p",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/Rx3WdPC6NoybHdxcdtHcNM3wn6e",
+      "周报日期": 1783267200000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvpdQVpQctE5",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/UFU8dop87opHqpxLHH4csEOentB",
+      "周报日期": 1783872000000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvpSsyQz8HR2",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/B5LydeUaToAL8nxZFcPc7RPYnlf",
+      "周报日期": 1784476800000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvqxlhNTlVm9",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/R6nEdjP89oqKLRx93YtcafiOnZe",
+      "周报日期": 1785081600000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvrch2ATtGbY",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/C0ZndVTZToExfix2L6vc78Knn1c",
+      "周报日期": 1785686400000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvrRcTa86GhF",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/VgJYd2A5eoBAXsxvRDUc3ODanAe",
+      "周报日期": 1786291200000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvsw8nODn7iM",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/LKZkdlY2lodi6XxdbDhcewFfnwh",
+      "周报日期": 1786896000000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvtb44AxZj4F",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/RHKBdigpTojHc4x2ibIccZbQnmf",
+      "周报日期": 1787500800000,
+      "周报状态": "已生成"
+     }
+    },
+    {
+     "record_id": "recvuuVVrLOsop",
+     "fields": {
+      "周报地址": "https://www.feishu.cn/docx/IrQgdZ2kaoWZjUxqLarce0oUnng",
+      "周报日期": 1788710400000,
+      "周报状态": "已生成"
+     }
+    }
+   ]
+  },
+  "tbl6AJR0ntMYfaeV": {
+   "name": "🎉快速上手(模板)",
+   "n": 4,
+   "records": [
+    {
+     "record_id": "recvkkmMk089J0",
+     "fields": {
+      "描述": "从入门到进阶的全量指南，随时解决你的使用疑问与场景难题。",
+      "数字": "4",
+      "文本": "🔍 帮助中心",
+      "超链接": {
+       "link": "https://www.feishu.cn/hc/zh-CN/category/6933474572494716956-%E5%A4%9A%E7%BB%B4%E8%A1%A8%E6%A0%BC?previous_navigation_time=1779282823854",
+       "text": "前往帮助中心 >"
+      },
+      "附件": [
+       {
+        "file_token": "Rb1gbBCOgoHne3xq70WcRaqXnYf",
+        "name": "image.png",
+        "size": 2517469,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=Rb1gbBCOgoHne3xq70WcRaqXnYf",
+        "type": "image/png",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/Rb1gbBCOgoHne3xq70WcRaqXnYf/download"
+       }
+      ]
+     }
+    },
+    {
+     "record_id": "recvkkmMk0GjRX",
+     "fields": {
+      "描述": "一键安装行业标杆级应用，开箱即用，快速复制高效工作流。",
+      "数字": "3",
+      "文本": "🔥 热门业务应用，开箱即用",
+      "超链接": {
+       "link": "https://bytedance.larkoffice.com/base/marketplace?source_type=independent_link",
+       "text": "获取热门应用 >"
+      },
+      "附件": [
+       {
+        "file_token": "Ppvrbu31YoupfVxzQMVcssL5nKb",
+        "name": "image.png",
+        "size": 1471750,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=Ppvrbu31YoupfVxzQMVcssL5nKb",
+        "type": "image/png",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/Ppvrbu31YoupfVxzQMVcssL5nKb/download"
+       }
+      ]
+     }
+    },
+    {
+     "record_id": "recvkkmMk02DlC",
+     "fields": {
+      "描述": "告别零散工具与复杂系统，用一张表打通数据、流程与协作。",
+      "数字": "1",
+      "文本": "🌟 为什么要用多维表格",
+      "超链接": {
+       "link": "https://www.feishu.cn/hc/zh-CN/articles/697278684206-%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E5%A4%9A%E7%BB%B4%E8%A1%A8%E6%A0%BC",
+       "text": "了解更多 >"
+      },
+      "附件": [
+       {
+        "file_token": "Fy7KbCmYXoTnqsxlqoUc1MqZnDg",
+        "name": "飞书多维表格 2025 介绍.mp4",
+        "size": 8383452,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=Fy7KbCmYXoTnqsxlqoUc1MqZnDg",
+        "type": "video/mp4",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/Fy7KbCmYXoTnqsxlqoUc1MqZnDg/download"
+       }
+      ]
+     }
+    },
+    {
+     "record_id": "recvkkmMk0joFW",
+     "fields": {
+      "描述": "海量现成模板随心选，一键开启你的项目、数据或日常管理。",
+      "数字": "2",
+      "文本": "🎨 探索模板库",
+      "超链接": {
+       "link": "https://bytedance.larkoffice.com/base/marketplace/?tab=template&source_type=independent_link",
+       "text": "立即探索 >"
+      },
+      "附件": [
+       {
+        "file_token": "VJxvbaaOOo3WwQxAjegcr24gn3b",
+        "name": "image.png",
+        "size": 1228430,
+        "tmp_url": "https://open.feishu.cn/open-apis/drive/v1/medias/batch_get_tmp_download_url?file_tokens=VJxvbaaOOo3WwQxAjegcr24gn3b",
+        "type": "image/png",
+        "url": "https://open.feishu.cn/open-apis/drive/v1/medias/VJxvbaaOOo3WwQxAjegcr24gn3b/download"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ }
+}
