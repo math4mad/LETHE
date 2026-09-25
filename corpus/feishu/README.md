@@ -7,3 +7,6 @@
 - 桥器: bin/feishu-bitable.sh（tables/fields/recs/add/upd/del/garden/gadd/gupd；token 自缓存）
 - 备份: bitable-backup-2026-09-25.json（sha 25c87f25c0a8）
 - 诊断定案: 91403 病在共享层非应用层——二分法（自持 base 能写 = 权限包完好）
+- **2026-09-25 方案一全装**: @larksuite/cli(官方CLI v1.0.96) + 用户身份登录(Madas, base 全读写 scope) + 28 项 lark-* 技能入 ~/.pi/agent/skills
+  共享表写路打通(用户越闸)，台账 12 行迁至本 base「✅任务管理」；自持 base 降为备份(指向见 env GARDEN_BASE/_BACKUP)
+  日常读写首选: lark-cli base +record-list/+record-upsert --as user ; 桥器 feishu-bitable.sh 保留为租户通道
