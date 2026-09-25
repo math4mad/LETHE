@@ -14,6 +14,7 @@ tok() {
 }
 H() { echo "Authorization: Bearer $(tok)"; }
 API=https://open.feishu.cn/open-apis/bitable/v1/apps/$TOK
+GAPI=https://open.feishu.cn/open-apis/bitable/v1/apps/$GARDEN_BASE
 case "${1:-}" in
   tables) curl -s --max-time 20 "$API/tables" -H "$(H)";;
   fields) curl -s --max-time 20 "$API/tables/$2/fields" -H "$(H)";;
@@ -21,8 +22,8 @@ case "${1:-}" in
   add)    curl -s --max-time 20 -X POST "$API/tables/$2/records" -H "$(H)" -H "Content-Type: application/json" -d "{\"fields\":$3}";;
   upd)    curl -s --max-time 20 -X PUT "$API/tables/$2/records/$3" -H "$(H)" -H "Content-Type: application/json" -d "{\"fields\":$4}";;
   del)    curl -s --max-time 20 -X DELETE "$API/tables/$2/records/$3" -H "$(H)";;
-  garden) curl -s --max-time 20 "$API/tables/$GARDEN_TABLE/records?page_size=50" -H "$(H)";;
-  gadd)   curl -s --max-time 20 -X POST "$API/tables/$GARDEN_TABLE/records" -H "$(H)" -H "Content-Type: application/json" -d "{\"fields\":$2}";;
-  gupd)   curl -s --max-time 20 -X PUT "$API/tables/$GARDEN_TABLE/records/$2" -H "$(H)" -H "Content-Type: application/json" -d "{\"fields\":$3}";;
+  garden) curl -s --max-time 20 "$GAPI/tables/$GARDEN_TABLE/records?page_size=50" -H "$(H)";;
+  gadd)   curl -s --max-time 20 -X POST "$GAPI/tables/$GARDEN_TABLE/records" -H "$(H)" -H "Content-Type: application/json" -d "{\"fields\":$2}";;
+  gupd)   curl -s --max-time 20 -X PUT "$GAPI/tables/$GARDEN_TABLE/records/$2" -H "$(H)" -H "Content-Type: application/json" -d "{\"fields\":$3}";;
   *) echo "用法: tables|fields <tb>|recs <tb> [n]|add/upd/del <tb> …|garden|gadd '<json>'|gupd <rid> '<json>'"; exit 1;;
 esac
