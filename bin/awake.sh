@@ -19,7 +19,8 @@ case "${1:-status}" in
           echo $$ > "$PIDF"
           HOLD=0
           while :; do
-            if pgrep -f "$PAT" >/dev/null 2>&1; then
+            MYPID=$$
+            if [ "$(pgrep -f "$PAT" | grep -vw "$MYPID" | wc -l | tr -d ' ')" != "0" ]; then
               if [ "$HOLD" = 0 ]; then AMP "start new session with options {duration:0, interval:0, displaySleepAllowed:true}"; HOLD=1; echo "[$(date +%H:%M:%S)] 任务在跑 → 点灯"; fi
             else
               if [ "$HOLD" = 1 ]; then AMP 'end session'; HOLD=0; echo "[$(date +%H:%M:%S)] 任务终了 → 收灯"; break;
