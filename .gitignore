@@ -13,3 +13,4 @@ corpus/ladder05/layers/childes/diaries/*.zip
 corpus/ladder05/layers/childes/diaries/*.txt
 corpus/ladder05/layers/childes/diaries/Bowerman/
 corpus/ladder05/layers/childes/diaries/Stern&Stern/
+corpus/ladder05/layers/childes/chat/*.cha

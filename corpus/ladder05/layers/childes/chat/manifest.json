@@ -1,0 +1,1850 @@
+[
+ {
+  "path": "Brown/Adam/020304",
+  "file": "chat/Brown_Adam_020304.cha",
+  "bytes": 203487,
+  "sha256": "54580b8164e56025de0d8f315dabcbecfe608da7963c4bf279f2dcafd66b6c97",
+  "chi_age": "2;03.04"
+ },
+ {
+  "path": "Brown/Adam/020318",
+  "file": "chat/Brown_Adam_020318.cha",
+  "bytes": 247720,
+  "sha256": "865be6bb471000ec537d49ddd7d33f8fe71d12f099879c81ac437fdea436b479",
+  "chi_age": "2;03.18"
+ },
+ {
+  "path": "Brown/Adam/020403",
+  "file": "chat/Brown_Adam_020403.cha",
+  "bytes": 175082,
+  "sha256": "6ab725a69d02f7ba2092a2dabe9c29b8975c0f389fb23fad774873d0fc373a56",
+  "chi_age": "2;04.03"
+ },
+ {
+  "path": "Brown/Adam/020415",
+  "file": "chat/Brown_Adam_020415.cha",
+  "bytes": 146221,
+  "sha256": "dc445017a3204704c3eb9ae51be1582e33a585c88b686657465aa691cfb5e391",
+  "chi_age": "2;04.15"
+ },
+ {
+  "path": "Brown/Adam/020430",
+  "file": "chat/Brown_Adam_020430.cha",
+  "bytes": 173532,
+  "sha256": "e992675b4569d6ba118e30bff99d32b12635735b6dd98f08a9d67c3bad17b75c",
+  "chi_age": "2;04.30"
+ },
+ {
+  "path": "Brown/Adam/020512",
+  "file": "chat/Brown_Adam_020512.cha",
+  "bytes": 153881,
+  "sha256": "d35f532a83ca9638bfd460380dcfb116808e0fa4ccd8cc88d678bcc8539f2d2c",
+  "chi_age": "2;05.12"
+ },
+ {
+  "path": "Brown/Adam/020603",
+  "file": "chat/Brown_Adam_020603.cha",
+  "bytes": 186840,
+  "sha256": "ebd62d4c662d7e149c68024d74b58a8b225ca7d8534467a77d76fc93b73dcfdc",
+  "chi_age": "2;06.03"
+ },
+ {
+  "path": "Brown/Adam/020617",
+  "file": "chat/Brown_Adam_020617.cha",
+  "bytes": 161543,
+  "sha256": "c04da2c48a81c3739b813eaf721c3220e8727ca24efdfcd2fbcbb4cfc1f8076f",
+  "chi_age": "2;06.17"
+ },
+ {
+  "path": "Brown/Adam/020701",
+  "file": "chat/Brown_Adam_020701.cha",
+  "bytes": 191136,
+  "sha256": "93e22ea8d0263d37fa13d05e7d8bf2c00a03b417b6c42e31b5dd287ef0ecc4f5",
+  "chi_age": "2;07.01"
+ },
+ {
+  "path": "Brown/Adam/020714",
+  "file": "chat/Brown_Adam_020714.cha",
+  "bytes": 201325,
+  "sha256": "9c760be5904896cfb384e0fe256bf9c45610e37444f08277a3a348b455c87d3e",
+  "chi_age": "2;07.14"
+ },
+ {
+  "path": "Brown/Adam/020801",
+  "file": "chat/Brown_Adam_020801.cha",
+  "bytes": 191196,
+  "sha256": "99e34f7f9b5a7dfba256deb523b18b9277699e50c52c285fa0210db2a2a097e3",
+  "chi_age": "2;08.01"
+ },
+ {
+  "path": "Brown/Adam/020816",
+  "file": "chat/Brown_Adam_020816.cha",
+  "bytes": 172148,
+  "sha256": "fd9029dc25b3b377ff7e3e6523370506c625d49c814228489f788725946edabe",
+  "chi_age": "2;08.16"
+ },
+ {
+  "path": "Brown/Adam/020904",
+  "file": "chat/Brown_Adam_020904.cha",
+  "bytes": 127998,
+  "sha256": "e056d5f034ab171eca634ec7c95caf5688383381295b7149bba7b38f7ccee259",
+  "chi_age": "2;09.04"
+ },
+ {
+  "path": "Brown/Adam/020918",
+  "file": "chat/Brown_Adam_020918.cha",
+  "bytes": 143975,
+  "sha256": "37348dbda6f49b06bed6fa303ebcad384f8ba3c672c0597b1007d5c2525a0dd5",
+  "chi_age": "2;09.18"
+ },
+ {
+  "path": "Brown/Adam/021002",
+  "file": "chat/Brown_Adam_021002.cha",
+  "bytes": 164362,
+  "sha256": "408e74b3c82b4207a8ce53603741bb4112baf1b0f179fa57b619e9f3dbd00575",
+  "chi_age": "2;10.02"
+ },
+ {
+  "path": "Brown/Adam/021016",
+  "file": "chat/Brown_Adam_021016.cha",
+  "bytes": 147336,
+  "sha256": "208f0a7f7d497cd212edb10fb278854c289876b0a5ade7b5c6bdd5103de8a1e6",
+  "chi_age": "2;10.16"
+ },
+ {
+  "path": "Brown/Adam/021030",
+  "file": "chat/Brown_Adam_021030.cha",
+  "bytes": 217144,
+  "sha256": "4c150bd0e5b0bf4926a8bab3a9915a26501e661c600b007593a46da3c474a3fc",
+  "chi_age": "2;10.30"
+ },
+ {
+  "path": "Brown/Adam/021113",
+  "file": "chat/Brown_Adam_021113.cha",
+  "bytes": 223303,
+  "sha256": "e691b0289b8ba3a00ac5789ab74fa8e9c30e57812d8af3a4df9570e780427ad0",
+  "chi_age": "2;11.13"
+ },
+ {
+  "path": "Brown/Adam/021128",
+  "file": "chat/Brown_Adam_021128.cha",
+  "bytes": 274926,
+  "sha256": "71a25fd0e7cfb0759543c0ab2553aceb3d7ee23b5e2a46ea8a9f84f6184102dc",
+  "chi_age": "2;11.28"
+ },
+ {
+  "path": "Brown/Adam/030011",
+  "file": "chat/Brown_Adam_030011.cha",
+  "bytes": 257732,
+  "sha256": "13cd14a1da8f7e207855cee295c153ae62dd6a3def09febddfcb2d8062e2283b",
+  "chi_age": "3;00.11"
+ },
+ {
+  "path": "Brown/Adam/030025",
+  "file": "chat/Brown_Adam_030025.cha",
+  "bytes": 210176,
+  "sha256": "7f4fa6c67ce3ae35aeeb93e2f7d308188c00d04ab42a16c0789bb0a41fe0ce8f",
+  "chi_age": "3;00.25"
+ },
+ {
+  "path": "Brown/Adam/030109",
+  "file": "chat/Brown_Adam_030109.cha",
+  "bytes": 209121,
+  "sha256": "f625357f1041301edd0872eaa1d292b01a1925bced5e50567891592b67e4f130",
+  "chi_age": "3;01.09"
+ },
+ {
+  "path": "Brown/Adam/030126",
+  "file": "chat/Brown_Adam_030126.cha",
+  "bytes": 248521,
+  "sha256": "e2c6a42fec56f65f10cf20be22849692b542883eb9027746bf88ad6e330243b7",
+  "chi_age": "3;01.26"
+ },
+ {
+  "path": "Brown/Adam/030209",
+  "file": "chat/Brown_Adam_030209.cha",
+  "bytes": 208386,
+  "sha256": "5af28f3e804e21baa64509bde6aa281420420fba53d6abeaffa88fcd1260068e",
+  "chi_age": "3;02.09"
+ },
+ {
+  "path": "Brown/Adam/030221",
+  "file": "chat/Brown_Adam_030221.cha",
+  "bytes": 250302,
+  "sha256": "1b3bb0b7dadeb9712aa37b346c6e62bce4a2b6fe3d18a924507fa71c4b18cecb",
+  "chi_age": "3;02.21"
+ },
+ {
+  "path": "Brown/Adam/030304",
+  "file": "chat/Brown_Adam_030304.cha",
+  "bytes": 237463,
+  "sha256": "60a209f788df678a3d37c44130f3092b83f6b47f4a9f84215d66b299a7282147",
+  "chi_age": "3;03.04"
+ },
+ {
+  "path": "Brown/Adam/030318",
+  "file": "chat/Brown_Adam_030318.cha",
+  "bytes": 256043,
+  "sha256": "985965a60d657662d5c62dfc9539a4b60b1bc90519eb6e8eadfe552ad3a66920",
+  "chi_age": "3;03.18"
+ },
+ {
+  "path": "Brown/Adam/030401",
+  "file": "chat/Brown_Adam_030401.cha",
+  "bytes": 234798,
+  "sha256": "3f070d164e27323649bf55eb770381916b422702c756659181495dc0f0973854",
+  "chi_age": "3;04.01"
+ },
+ {
+  "path": "Brown/Adam/030418",
+  "file": "chat/Brown_Adam_030418.cha",
+  "bytes": 239266,
+  "sha256": "2f19b169512b3f0d5ef3c93b0363e60ff32420f837cb19f3340982f4d6c191f5",
+  "chi_age": "3;04.18"
+ },
+ {
+  "path": "Brown/Adam/030501",
+  "file": "chat/Brown_Adam_030501.cha",
+  "bytes": 249908,
+  "sha256": "e1eb021390156b27e02d8f337ff9cfc569d1e43beafca0a90afb715837876090",
+  "chi_age": "3;05.01"
+ },
+ {
+  "path": "Brown/Adam/030515",
+  "file": "chat/Brown_Adam_030515.cha",
+  "bytes": 205395,
+  "sha256": "f2e5738ac3bfe7f8784a50ff00f302d917e4604ddf8944bdfcc80e80f5373840",
+  "chi_age": "3;05.15"
+ },
+ {
+  "path": "Brown/Adam/030529",
+  "file": "chat/Brown_Adam_030529.cha",
+  "bytes": 234494,
+  "sha256": "f2a5e6a8cca0cbbf6c595623e70c610adc4a812c91e8ae9262691afa27ed0fd5",
+  "chi_age": "3;05.29"
+ },
+ {
+  "path": "Brown/Adam/030609",
+  "file": "chat/Brown_Adam_030609.cha",
+  "bytes": 174738,
+  "sha256": "5e656c08ed8b5ac359b695db8f4113c1f923e332bc5aa8e68cca3e2c88ecf0c0",
+  "chi_age": "3;06.09"
+ },
+ {
+  "path": "Brown/Adam/030707",
+  "file": "chat/Brown_Adam_030707.cha",
+  "bytes": 195304,
+  "sha256": "b07ba0c44a8f37c97efd0a33cd4dcd0382a2075b0706172cafce9468db0e53f9",
+  "chi_age": "3;07.07"
+ },
+ {
+  "path": "Brown/Adam/030801",
+  "file": "chat/Brown_Adam_030801.cha",
+  "bytes": 227613,
+  "sha256": "228756ca6e6c23612652f8390c50e346e442fe3ab40306cc2ae3e300f79130f3",
+  "chi_age": "3;08.01"
+ },
+ {
+  "path": "Brown/Adam/030814",
+  "file": "chat/Brown_Adam_030814.cha",
+  "bytes": 244451,
+  "sha256": "540931eb53945894f0e30ab0f335822f905888e395e55f3fa9acc9d0bb38b04d",
+  "chi_age": "3;08.14"
+ },
+ {
+  "path": "Brown/Adam/030826",
+  "file": "chat/Brown_Adam_030826.cha",
+  "bytes": 250327,
+  "sha256": "56ad85174c8c2d702d47d1e46040dda6c431dce1ff5015be1de07eaf1fafd629",
+  "chi_age": "3;08.26"
+ },
+ {
+  "path": "Brown/Adam/030916",
+  "file": "chat/Brown_Adam_030916.cha",
+  "bytes": 219603,
+  "sha256": "e8003bee69511dcaf17625446bea4074bfea4fe908fb8203b531eb9e0c164587",
+  "chi_age": "3;09.16"
+ },
+ {
+  "path": "Brown/Adam/031015",
+  "file": "chat/Brown_Adam_031015.cha",
+  "bytes": 176968,
+  "sha256": "db2a3d69e71922816220d5fcb45cec2b111c233e834130d686c7b8ba2d0afb45",
+  "chi_age": "3;10.15"
+ },
+ {
+  "path": "Brown/Adam/031101",
+  "file": "chat/Brown_Adam_031101.cha",
+  "bytes": 203089,
+  "sha256": "8c6ea67ddf7c4bbe8c10373cc09cdc872318aa09ba872387f8f30c15337b4b0e",
+  "chi_age": "3;11.01"
+ },
+ {
+  "path": "Brown/Adam/031114",
+  "file": "chat/Brown_Adam_031114.cha",
+  "bytes": 194467,
+  "sha256": "65917899adc74c54b780fe15041abda4c9a5476e1e40a82996076ee3e87296f2",
+  "chi_age": "3;11.14"
+ },
+ {
+  "path": "Brown/Adam/040014",
+  "file": "chat/Brown_Adam_040014.cha",
+  "bytes": 209496,
+  "sha256": "fabb594cc39b4782ed197a6ed1bf2b477aa952c3c0fc67f5065d94e5aadc5d1e",
+  "chi_age": "4;00.14"
+ },
+ {
+  "path": "Brown/Adam/040115",
+  "file": "chat/Brown_Adam_040115.cha",
+  "bytes": 291240,
+  "sha256": "f2798a7ac1b69ac13727f425d3bc13fdd9b9dd993ea5a53d0a4350df402a2472",
+  "chi_age": "4;01.15"
+ },
+ {
+  "path": "Brown/Adam/040217",
+  "file": "chat/Brown_Adam_040217.cha",
+  "bytes": 201585,
+  "sha256": "530aca836da5e001d4b3929ccba2e15b32bd627e9a7b5a3069daa5eb05d69361",
+  "chi_age": "4;02.17"
+ },
+ {
+  "path": "Brown/Adam/040309",
+  "file": "chat/Brown_Adam_040309.cha",
+  "bytes": 216243,
+  "sha256": "869a4e1bd17bd02a8ecb2e8ee782e013e01b778e08dabb0832ec4a2aeca26a13",
+  "chi_age": "4;03.09"
+ },
+ {
+  "path": "Brown/Adam/040401",
+  "file": "chat/Brown_Adam_040401.cha",
+  "bytes": 219765,
+  "sha256": "d199a34768d419277385cb6b69f03bc17733b161d3c05b8ccc7a362bf1ceed69",
+  "chi_age": "4;04.01"
+ },
+ {
+  "path": "Brown/Adam/040413",
+  "file": "chat/Brown_Adam_040413.cha",
+  "bytes": 235260,
+  "sha256": "ad19fd0360ea107b8c42df16d65b50f2fab030f44467753d2827c6b8a22e7a42",
+  "chi_age": "4;04.13"
+ },
+ {
+  "path": "Brown/Adam/040511",
+  "file": "chat/Brown_Adam_040511.cha",
+  "bytes": 207417,
+  "sha256": "9e06ee14e8838c40fe49ad784afe20f7056dcd55aff7a5b64575c44027252aa9",
+  "chi_age": "4;05.11"
+ },
+ {
+  "path": "Brown/Adam/040624",
+  "file": "chat/Brown_Adam_040624.cha",
+  "bytes": 231871,
+  "sha256": "3b5bd472821c5c92aee84c8d96960f57836b5a68624b5f182a5e4f953d70b8c9",
+  "chi_age": "4;06.24"
+ },
+ {
+  "path": "Brown/Adam/040701",
+  "file": "chat/Brown_Adam_040701.cha",
+  "bytes": 222490,
+  "sha256": "c2de47b9d3a43d14b993e9c38be34fd415af71dfc5ea7c043f3ab3a3f0840866",
+  "chi_age": "4;07.01"
+ },
+ {
+  "path": "Brown/Adam/040729",
+  "file": "chat/Brown_Adam_040729.cha",
+  "bytes": 178302,
+  "sha256": "b8703de4663af008d11ab063cb159e2bea8bfb5113d2a009d4d74d791c77cebc",
+  "chi_age": "4;07.29"
+ },
+ {
+  "path": "Brown/Adam/040902",
+  "file": "chat/Brown_Adam_040902.cha",
+  "bytes": 194475,
+  "sha256": "1d0c361063e51d7fcc347bb72f3fe20558104f5da21fa090545758aa819af52f",
+  "chi_age": "4;09.02"
+ },
+ {
+  "path": "Brown/Adam/041002",
+  "file": "chat/Brown_Adam_041002.cha",
+  "bytes": 219820,
+  "sha256": "e8a193cba7f718e5da11d647077555976d872fdd46860c1aba45c12d9fc37899",
+  "chi_age": "4;10.02"
+ },
+ {
+  "path": "Brown/Adam/041023",
+  "file": "chat/Brown_Adam_041023.cha",
+  "bytes": 272844,
+  "sha256": "27e38a905137092a15487c750fd621043bfc767f28659b0cb8861f3485e595c0",
+  "chi_age": "4;10.23"
+ },
+ {
+  "path": "Brown/Adam/050212",
+  "file": "chat/Brown_Adam_050212.cha",
+  "bytes": 290387,
+  "sha256": "43f05706befb84506bad34e3756e58bd4485ca68526eb4542f4da3ad412f9df6",
+  "chi_age": "5;02.12"
+ },
+ {
+  "path": "Brown/Eve/010600a",
+  "file": "chat/Brown_Eve_010600a.cha",
+  "bytes": 189821,
+  "sha256": "810740c3e0767a964f7af4916ccf660f49b1a8ee163d77333c6653ceccc4543b",
+  "chi_age": "1;06.00"
+ },
+ {
+  "path": "Brown/Eve/010600b",
+  "file": "chat/Brown_Eve_010600b.cha",
+  "bytes": 173615,
+  "sha256": "4feacedd33a9df5148caa4d2e74458e2295a3cac8337c1fc4ca5cdb57fd7c4a3",
+  "chi_age": "1;06.00"
+ },
+ {
+  "path": "Brown/Eve/010700a",
+  "file": "chat/Brown_Eve_010700a.cha",
+  "bytes": 81914,
+  "sha256": "67bfe3246126bc34b8700ca83ed763dfdc224157777a0516f98846bd3e03d5be",
+  "chi_age": "1;07.00"
+ },
+ {
+  "path": "Brown/Eve/010700b",
+  "file": "chat/Brown_Eve_010700b.cha",
+  "bytes": 184562,
+  "sha256": "ff431e10a048e47ee1fe10a382d78af648ebe98e8d127de19d179159dea3064a",
+  "chi_age": "1;07.00"
+ },
+ {
+  "path": "Brown/Eve/010800",
+  "file": "chat/Brown_Eve_010800.cha",
+  "bytes": 186770,
+  "sha256": "c4eb0c892f18d2ad2df23e985e8c3fcb62729388aa07063447f476cb7fa58dba",
+  "chi_age": "1;08.00"
+ },
+ {
+  "path": "Brown/Eve/010900a",
+  "file": "chat/Brown_Eve_010900a.cha",
+  "bytes": 142842,
+  "sha256": "ce424f38b9cbe4d2ac7d16259bd25e394137657f16a5b2eb731ef7581ccd0d89",
+  "chi_age": "1;09.00"
+ },
+ {
+  "path": "Brown/Eve/010900b",
+  "file": "chat/Brown_Eve_010900b.cha",
+  "bytes": 176725,
+  "sha256": "b7e8d4bc29902690b335905f297bb1d2a685bee16bf923778de4cdb673c857e2",
+  "chi_age": "1;09.00"
+ },
+ {
+  "path": "Brown/Eve/010900c",
+  "file": "chat/Brown_Eve_010900c.cha",
+  "bytes": 292311,
+  "sha256": "02740973bcd3d9666181713a5256d8b3f7aa0e587ccc8f9a106004b8f634458b",
+  "chi_age": "1;09.00"
+ },
+ {
+  "path": "Brown/Eve/011000a",
+  "file": "chat/Brown_Eve_011000a.cha",
+  "bytes": 149868,
+  "sha256": "6fca2514d5ed17d2a3db829bbb33e5bb44cb8250b59c9b8fce5b3bcb80b8b847",
+  "chi_age": "1;10.00"
+ },
+ {
+  "path": "Brown/Eve/011000b",
+  "file": "chat/Brown_Eve_011000b.cha",
+  "bytes": 152034,
+  "sha256": "400a207296c9ea3f5f0989c373af8ea226d2c4db1989d32e3cdd83fc9fcfa244",
+  "chi_age": "1;10.00"
+ },
+ {
+  "path": "Brown/Eve/011100a",
+  "file": "chat/Brown_Eve_011100a.cha",
+  "bytes": 140457,
+  "sha256": "970186ee4dbc936b5eaed1df99ace6787c183f2e5f4b308fc1fce6c3db095215",
+  "chi_age": "1;11.00"
+ },
+ {
+  "path": "Brown/Eve/011100b",
+  "file": "chat/Brown_Eve_011100b.cha",
+  "bytes": 207436,
+  "sha256": "1542c871e3bf4dec0233b7b92231ad2934df08a67ad5d99f59155706b1fe9454",
+  "chi_age": "1;11.00"
+ },
+ {
+  "path": "Brown/Eve/020000a",
+  "file": "chat/Brown_Eve_020000a.cha",
+  "bytes": 148537,
+  "sha256": "6f70b218665ae264dc035220f979708d08016106f6cb217f21295baf2b1be4e9",
+  "chi_age": "2;00.00"
+ },
+ {
+  "path": "Brown/Eve/020000b",
+  "file": "chat/Brown_Eve_020000b.cha",
+  "bytes": 168897,
+  "sha256": "bad8a23188167934ec785d7ae9e0aba16dcbdc9b722c5d4c8c3f7ca67d3f3b62",
+  "chi_age": "2;00.00"
+ },
+ {
+  "path": "Brown/Eve/020100a",
+  "file": "chat/Brown_Eve_020100a.cha",
+  "bytes": 261846,
+  "sha256": "ba885b8ec12b4697625c2b3d04947553f92a93952ab00762720848cb0bbff163",
+  "chi_age": "2;01.00"
+ },
+ {
+  "path": "Brown/Eve/020100b",
+  "file": "chat/Brown_Eve_020100b.cha",
+  "bytes": 239018,
+  "sha256": "7ea2ff671bdb1353f7580c8c6aef832a6704a9e9f6e1de2b285dad7f5aac3241",
+  "chi_age": "2;01.00"
+ },
+ {
+  "path": "Brown/Eve/020200a",
+  "file": "chat/Brown_Eve_020200a.cha",
+  "bytes": 352663,
+  "sha256": "3875b31134d40e3dc16163f3b756fb7fb9cf024689fcb6fca8ede4c086bf2730",
+  "chi_age": "2;02.00"
+ },
+ {
+  "path": "Brown/Eve/020200b",
+  "file": "chat/Brown_Eve_020200b.cha",
+  "bytes": 269945,
+  "sha256": "101968171c958d8e6eb4a00d0a97cc9944329e96e2188592b94ff6672ebf24f6",
+  "chi_age": "2;02.00"
+ },
+ {
+  "path": "Brown/Eve/020300a",
+  "file": "chat/Brown_Eve_020300a.cha",
+  "bytes": 220915,
+  "sha256": "e5a722cd937971b0ef2bbe9966fb8da80a2ec80366d7c6527f91513a5ad7758b",
+  "chi_age": "2;03.00"
+ },
+ {
+  "path": "Brown/Eve/020300b",
+  "file": "chat/Brown_Eve_020300b.cha",
+  "bytes": 179268,
+  "sha256": "3982be2f790158ab625e162ced7256ef6ce5338b15f0816733ad592d00003e3c",
+  "chi_age": "2;03.00"
+ },
+ {
+  "path": "Brown/Sarah/020305",
+  "file": "chat/Brown_Sarah_020305.cha",
+  "bytes": 27276,
+  "sha256": "2f91bf42ba737ef727536cc2656553c21631d41896cb34aa3e88bf06d8415287",
+  "chi_age": "2;03.05"
+ },
+ {
+  "path": "Brown/Sarah/020307",
+  "file": "chat/Brown_Sarah_020307.cha",
+  "bytes": 62977,
+  "sha256": "74f571e6d0d6131b248b166dca841ede32ec00b8baaa68220de095052d15a83f",
+  "chi_age": "2;03.07"
+ },
+ {
+  "path": "Brown/Sarah/020319",
+  "file": "chat/Brown_Sarah_020319.cha",
+  "bytes": 86506,
+  "sha256": "0cdec0d7411109afb50a0405ef34f5141f315f0a42bfb4969b0638b51fac77b9",
+  "chi_age": "2;03.19"
+ },
+ {
+  "path": "Brown/Sarah/020322",
+  "file": "chat/Brown_Sarah_020322.cha",
+  "bytes": 34537,
+  "sha256": "8e43a5e132a65b5f25abeffa2684afd1e230f6c07b0b09e25eaa7d2aef23b73d",
+  "chi_age": "2;03.22"
+ },
+ {
+  "path": "Brown/Sarah/020326",
+  "file": "chat/Brown_Sarah_020326.cha",
+  "bytes": 61720,
+  "sha256": "c075b3ad1ba9c0e320e1e99eded58f66cc8794a7e01c8d1ae320686c71dcf35a",
+  "chi_age": "2;03.26"
+ },
+ {
+  "path": "Brown/Sarah/020328",
+  "file": "chat/Brown_Sarah_020328.cha",
+  "bytes": 66251,
+  "sha256": "c86b5c930f32098dc2a4fb31aa92ed9bd2f11c8b3280bfc407f530aad89f3764",
+  "chi_age": "2;03.28"
+ },
+ {
+  "path": "Brown/Sarah/020410",
+  "file": "chat/Brown_Sarah_020410.cha",
+  "bytes": 85101,
+  "sha256": "edc3af4e9d672cb8cca4167fbcfcdb01f638abe97a2944efb8451ba1d851db0b",
+  "chi_age": "2;04.10"
+ },
+ {
+  "path": "Brown/Sarah/020412",
+  "file": "chat/Brown_Sarah_020412.cha",
+  "bytes": 73230,
+  "sha256": "3f8ca94e69194902f8cb872ce6f19a0c19abc26e8eb70b8a90b7ae7db9c8f30c",
+  "chi_age": "2;04.12"
+ },
+ {
+  "path": "Brown/Sarah/020417",
+  "file": "chat/Brown_Sarah_020417.cha",
+  "bytes": 69981,
+  "sha256": "24f4573f95d0b1657aff0d1a17081d0172ed45cc63fbb22ab24f99eef1a05b1e",
+  "chi_age": "2;04.17"
+ },
+ {
+  "path": "Brown/Sarah/020419",
+  "file": "chat/Brown_Sarah_020419.cha",
+  "bytes": 86230,
+  "sha256": "50d165243472b6caaf38e1dd58ff147c8bcee36d0c477edcb3c5fbe4c31efb5f",
+  "chi_age": "2;04.19"
+ },
+ {
+  "path": "Brown/Sarah/020426",
+  "file": "chat/Brown_Sarah_020426.cha",
+  "bytes": 59515,
+  "sha256": "fe7e63c50bcf2fe95e8f5b35817da637403b63d9aba16d0f915d7aef92cb9fdc",
+  "chi_age": "2;04.26"
+ },
+ {
+  "path": "Brown/Sarah/020507",
+  "file": "chat/Brown_Sarah_020507.cha",
+  "bytes": 85340,
+  "sha256": "7f53a72d3a558f02a668edfa73293ae98c4f58ccc91c022018c88ffb8319beb9",
+  "chi_age": "2;05.07"
+ },
+ {
+  "path": "Brown/Sarah/020515",
+  "file": "chat/Brown_Sarah_020515.cha",
+  "bytes": 65941,
+  "sha256": "2359633bd8f11622fa95169b1fe412489bfcd994554996e6a61d80da5c9d18f5",
+  "chi_age": "2;05.15"
+ },
+ {
+  "path": "Brown/Sarah/020525",
+  "file": "chat/Brown_Sarah_020525.cha",
+  "bytes": 41839,
+  "sha256": "549ea88e6d0f91732abb48fbca3246ba40a077c7c64a7409659f7f49a207f489",
+  "chi_age": "2;05.25"
+ },
+ {
+  "path": "Brown/Sarah/020530",
+  "file": "chat/Brown_Sarah_020530.cha",
+  "bytes": 52732,
+  "sha256": "87422e28ca708604d5b1c15121a7cd865d31a0b95835002bdf6780518ef5a12e",
+  "chi_age": "2;05.30"
+ },
+ {
+  "path": "Brown/Sarah/020604",
+  "file": "chat/Brown_Sarah_020604.cha",
+  "bytes": 44731,
+  "sha256": "c787db0f44022e4b20bd1b3f40e30cad7c8de3bc98a9b65869192fa8307c98f6",
+  "chi_age": "2;06.04"
+ },
+ {
+  "path": "Brown/Sarah/020613",
+  "file": "chat/Brown_Sarah_020613.cha",
+  "bytes": 107470,
+  "sha256": "9959f6f7a58429465e27134c92441ff278cd694424c1a5cc03feda28bb523148",
+  "chi_age": "2;06.13"
+ },
+ {
+  "path": "Brown/Sarah/020620",
+  "file": "chat/Brown_Sarah_020620.cha",
+  "bytes": 103387,
+  "sha256": "ab045b9879d89d0e237e1421ae5d78da835c17cc2eeb224bfbef084dc1021132",
+  "chi_age": "2;06.20"
+ },
+ {
+  "path": "Brown/Sarah/020630",
+  "file": "chat/Brown_Sarah_020630.cha",
+  "bytes": 26704,
+  "sha256": "efd99efb123f65a86cf919563eb553b5cefc2604c492bc94be8f17dd51b3b55b",
+  "chi_age": "2;06.30"
+ },
+ {
+  "path": "Brown/Sarah/020705",
+  "file": "chat/Brown_Sarah_020705.cha",
+  "bytes": 77816,
+  "sha256": "acf6b4cc3b87c4af8ef7e0667fb7fd056d762428546c4faa0d26e43aa3c62372",
+  "chi_age": "2;07.05"
+ },
+ {
+  "path": "Brown/Sarah/020712",
+  "file": "chat/Brown_Sarah_020712.cha",
+  "bytes": 93415,
+  "sha256": "4211765c8248213567a30a0da0d190c1a242af412fd70c21e60440e0664d2083",
+  "chi_age": "2;07.12"
+ },
+ {
+  "path": "Brown/Sarah/020718",
+  "file": "chat/Brown_Sarah_020718.cha",
+  "bytes": 44622,
+  "sha256": "c182b77fdc4c209a390fcab964916f80b8c67784a2eb2d723528d5e4a4379899",
+  "chi_age": "2;07.18"
+ },
+ {
+  "path": "Brown/Sarah/020728",
+  "file": "chat/Brown_Sarah_020728.cha",
+  "bytes": 75488,
+  "sha256": "11b093150836983efa078f34f07cada17f032991d259e3ccdaf30d08b73397c5",
+  "chi_age": "2;07.28"
+ },
+ {
+  "path": "Brown/Sarah/020802",
+  "file": "chat/Brown_Sarah_020802.cha",
+  "bytes": 67852,
+  "sha256": "b7cad5d83d8962d0f53ec39d0c321217908cd4b2a5db51e895240caf75a840d1",
+  "chi_age": "2;08.02"
+ },
+ {
+  "path": "Brown/Sarah/020825a",
+  "file": "chat/Brown_Sarah_020825a.cha",
+  "bytes": 64696,
+  "sha256": "269ed4963694a07ea8158359451ae6e4016bc445f99188574902e2350c7adbcf",
+  "chi_age": "2;08.25"
+ },
+ {
+  "path": "Brown/Sarah/020825b",
+  "file": "chat/Brown_Sarah_020825b.cha",
+  "bytes": 75972,
+  "sha256": "5841e1eba01251a64c9e96752b8226440c565de0e3b772902a14f1dc87fbb91c",
+  "chi_age": "2;08.25"
+ },
+ {
+  "path": "Brown/Sarah/020900",
+  "file": "chat/Brown_Sarah_020900.cha",
+  "bytes": 73745,
+  "sha256": "1dfd137a3ed988e0487efe165ec6acab78d4a2450940be69ac0ab90abfddb17e",
+  "chi_age": "2;09.00"
+ },
+ {
+  "path": "Brown/Sarah/020906",
+  "file": "chat/Brown_Sarah_020906.cha",
+  "bytes": 82507,
+  "sha256": "112c35fa6f98cf0320e00d6b131d57d3cb3d7fcf640dbe57e4c2bc44a40c5c0d",
+  "chi_age": "2;09.06"
+ },
+ {
+  "path": "Brown/Sarah/020914",
+  "file": "chat/Brown_Sarah_020914.cha",
+  "bytes": 81452,
+  "sha256": "6719ddb1e5411ba329b7963e22373760c70cdd9850e9d4c65d516c98184c2e85",
+  "chi_age": "2;09.14"
+ },
+ {
+  "path": "Brown/Sarah/020920",
+  "file": "chat/Brown_Sarah_020920.cha",
+  "bytes": 217197,
+  "sha256": "ecf9c5a7da6c483449fa657d2de4399d3f91259bd452ff4ce8716296f35df841",
+  "chi_age": "2;09.20"
+ },
+ {
+  "path": "Brown/Sarah/020929",
+  "file": "chat/Brown_Sarah_020929.cha",
+  "bytes": 81895,
+  "sha256": "24a1700789733ab2186bc490271b56efe1a89ac54f537600d637dd29c3abc8db",
+  "chi_age": "2;09.29"
+ },
+ {
+  "path": "Brown/Sarah/021005",
+  "file": "chat/Brown_Sarah_021005.cha",
+  "bytes": 94003,
+  "sha256": "5f5952df5be82a80a4c8c3eba2ce92d0fe98c0e58ddb9bb9b38ae340386fe544",
+  "chi_age": "2;10.05"
+ },
+ {
+  "path": "Brown/Sarah/021011",
+  "file": "chat/Brown_Sarah_021011.cha",
+  "bytes": 49345,
+  "sha256": "91598ca33b08a50db0b2af54e3c4d76b8c2dbf50c73a57075e2f193fb9981676",
+  "chi_age": "2;10.11"
+ },
+ {
+  "path": "Brown/Sarah/021020",
+  "file": "chat/Brown_Sarah_021020.cha",
+  "bytes": 67563,
+  "sha256": "98ea0217b5f47a935a38c7b96291c12d5ca8391669bea214f5c1cc6b6e5cc81f",
+  "chi_age": "2;10.20"
+ },
+ {
+  "path": "Brown/Sarah/021024",
+  "file": "chat/Brown_Sarah_021024.cha",
+  "bytes": 109417,
+  "sha256": "766212f0b15695637139762904f612b658a256002b84eeb0d9913f50aa9dda31",
+  "chi_age": "2;10.24"
+ },
+ {
+  "path": "Brown/Sarah/021102",
+  "file": "chat/Brown_Sarah_021102.cha",
+  "bytes": 76415,
+  "sha256": "b9025fa7fcac3bca2b8073e3ff8254faae64cee7a2a5f687c2ac8a3700808bd9",
+  "chi_age": "2;11.02"
+ },
+ {
+  "path": "Brown/Sarah/021117",
+  "file": "chat/Brown_Sarah_021117.cha",
+  "bytes": 132388,
+  "sha256": "7878b3bc1068af6e854ce17e74be7041b75f7e1e8f129a0621b081256753151d",
+  "chi_age": "2;11.17"
+ },
+ {
+  "path": "Brown/Sarah/021123",
+  "file": "chat/Brown_Sarah_021123.cha",
+  "bytes": 63046,
+  "sha256": "b2cfc57d0fd6397836e37dd2396dcefc11dd9a3ee62e51aa5388f32034a0430c",
+  "chi_age": "2;11.23"
+ },
+ {
+  "path": "Brown/Sarah/021130",
+  "file": "chat/Brown_Sarah_021130.cha",
+  "bytes": 56446,
+  "sha256": "b3c43a888726d81791c26ec1f2bed6d40d5f9304a3cc9e93b16fc21e7ded1865",
+  "chi_age": "2;11.30"
+ },
+ {
+  "path": "Brown/Sarah/030018a",
+  "file": "chat/Brown_Sarah_030018a.cha",
+  "bytes": 74973,
+  "sha256": "2e66544d26f57658c2444413bf2fd2b6a4278298409d83abdf8ea2a2bef389e1",
+  "chi_age": "3;00.18"
+ },
+ {
+  "path": "Brown/Sarah/030018b",
+  "file": "chat/Brown_Sarah_030018b.cha",
+  "bytes": 70763,
+  "sha256": "1e79d2b2c7c11f4c242395c9bdc92c217a018c278d5d89ed7edfd2c90072f02d",
+  "chi_age": "3;00.18"
+ },
+ {
+  "path": "Brown/Sarah/030027",
+  "file": "chat/Brown_Sarah_030027.cha",
+  "bytes": 73297,
+  "sha256": "af048ce2cbad51af588af23804cb987a008ae912ab2df52682ff2ac4990fde66",
+  "chi_age": "3;00.27"
+ },
+ {
+  "path": "Brown/Sarah/030103",
+  "file": "chat/Brown_Sarah_030103.cha",
+  "bytes": 75684,
+  "sha256": "9dc11402a6d9e36d0536233cb2180d6599481375a70ecb8cfa32a75fbd1aa81c",
+  "chi_age": "3;01.03"
+ },
+ {
+  "path": "Brown/Sarah/030110",
+  "file": "chat/Brown_Sarah_030110.cha",
+  "bytes": 90995,
+  "sha256": "0b2ac77c89d02a2c960e51ada7e10fbf1de015809bf30952b91525dc293230a8",
+  "chi_age": "3;01.10"
+ },
+ {
+  "path": "Brown/Sarah/030117",
+  "file": "chat/Brown_Sarah_030117.cha",
+  "bytes": 88258,
+  "sha256": "53988db68b8993b8477e16ee28123cab77477dcdbde3cc480d269e9bf32f55e2",
+  "chi_age": "3;01.17"
+ },
+ {
+  "path": "Brown/Sarah/030124",
+  "file": "chat/Brown_Sarah_030124.cha",
+  "bytes": 85574,
+  "sha256": "132991580c2028e3b0e6fa93f2815b9ac0f012248397990736df1bb40b318fad",
+  "chi_age": "3;01.24"
+ },
+ {
+  "path": "Brown/Sarah/030202",
+  "file": "chat/Brown_Sarah_030202.cha",
+  "bytes": 99130,
+  "sha256": "2b64fbb464206c8bde9c08121835c794206f8692f94fd68283f9b8b0cf53dd5c",
+  "chi_age": "3;02.02"
+ },
+ {
+  "path": "Brown/Sarah/030210",
+  "file": "chat/Brown_Sarah_030210.cha",
+  "bytes": 91371,
+  "sha256": "29209ede9561cec17ee447de8ec1da24f3366bf3105fe2a1743d2ffa7ad43607",
+  "chi_age": "3;02.10"
+ },
+ {
+  "path": "Brown/Sarah/030216",
+  "file": "chat/Brown_Sarah_030216.cha",
+  "bytes": 94303,
+  "sha256": "fbba48efbaf34d3f8304149ce3fecd9648d8bbb0dda7eba6c27ee2660388ae89",
+  "chi_age": "3;02.16"
+ },
+ {
+  "path": "Brown/Sarah/030223",
+  "file": "chat/Brown_Sarah_030223.cha",
+  "bytes": 92353,
+  "sha256": "556f06495fe755e82567efe67d38c5554078608d7fa5d62784b9bde4730d2b03",
+  "chi_age": "3;02.23"
+ },
+ {
+  "path": "Brown/Sarah/030307a",
+  "file": "chat/Brown_Sarah_030307a.cha",
+  "bytes": 89229,
+  "sha256": "d542dcdf422c6bb3be2b4d5b2d1660c1bd9768ae012f391932314343943cc3ff",
+  "chi_age": "3;03.07"
+ },
+ {
+  "path": "Brown/Sarah/030307b",
+  "file": "chat/Brown_Sarah_030307b.cha",
+  "bytes": 88937,
+  "sha256": "34f5d7edb3295aa983881d186e4dcd11ce260a660a28b9fd4c59cb7f0dc715d4",
+  "chi_age": "3;03.07"
+ },
+ {
+  "path": "Brown/Sarah/030313",
+  "file": "chat/Brown_Sarah_030313.cha",
+  "bytes": 99849,
+  "sha256": "49db3f652a3b34f0c13cbc43a0771c805c1ef07fe9281ebf8fadadc160304b5c",
+  "chi_age": "3;03.13"
+ },
+ {
+  "path": "Brown/Sarah/030320",
+  "file": "chat/Brown_Sarah_030320.cha",
+  "bytes": 97131,
+  "sha256": "34b957e9f77f00f9f6d39ffdb49aedee44e2bf74e4da8686b05664a2ae87ea3e",
+  "chi_age": "3;03.20"
+ },
+ {
+  "path": "Brown/Sarah/030328",
+  "file": "chat/Brown_Sarah_030328.cha",
+  "bytes": 130977,
+  "sha256": "aa862be306198deab2b1c43050e675dda4c4cb81b30292a6fe8a9cdf19078d1f",
+  "chi_age": "3;03.28"
+ },
+ {
+  "path": "Brown/Sarah/030401",
+  "file": "chat/Brown_Sarah_030401.cha",
+  "bytes": 101303,
+  "sha256": "3ca9a4857396b226af8bd4c546122485005fbeddc731229e03b63635f93918c7",
+  "chi_age": "3;04.01"
+ },
+ {
+  "path": "Brown/Sarah/030409",
+  "file": "chat/Brown_Sarah_030409.cha",
+  "bytes": 87223,
+  "sha256": "7373ca459dd9850dfd759becf7aa4370097569210e54bb0d0cc002a1ad07e855",
+  "chi_age": "3;04.09"
+ },
+ {
+  "path": "Brown/Sarah/030416",
+  "file": "chat/Brown_Sarah_030416.cha",
+  "bytes": 109958,
+  "sha256": "aad6044efcc8605f813d973dca03e0011832fd174964575e466fa494d6972d4b",
+  "chi_age": "3;04.16"
+ },
+ {
+  "path": "Brown/Sarah/030426",
+  "file": "chat/Brown_Sarah_030426.cha",
+  "bytes": 97307,
+  "sha256": "5053958d25a4495584c3b0e7d4c43b861c6bcf017aabd8ee4e47106633ff2ba0",
+  "chi_age": "3;04.26"
+ },
+ {
+  "path": "Brown/Sarah/030501",
+  "file": "chat/Brown_Sarah_030501.cha",
+  "bytes": 100537,
+  "sha256": "8023c4dd38bc57658e3013567a79a1fb25978d8ab5cbc6c8016e1e81b26e22e4",
+  "chi_age": "3;05.01"
+ },
+ {
+  "path": "Brown/Sarah/030507",
+  "file": "chat/Brown_Sarah_030507.cha",
+  "bytes": 145630,
+  "sha256": "d2ef66aea87eb1b37b70bf29d81be94cac7b2f5a93d604db5958b6b723d1271f",
+  "chi_age": "3;05.07"
+ },
+ {
+  "path": "Brown/Sarah/030513",
+  "file": "chat/Brown_Sarah_030513.cha",
+  "bytes": 145525,
+  "sha256": "5f38ed09c6dea7ebe9a352440c7407a4a81b03c8abc26dc905811f370d6e4b98",
+  "chi_age": "3;05.13"
+ },
+ {
+  "path": "Brown/Sarah/030520",
+  "file": "chat/Brown_Sarah_030520.cha",
+  "bytes": 149356,
+  "sha256": "0e6a5893c2b06b5771beef926461dddf651e2748d9438023e192828f677c3597",
+  "chi_age": "3;05.20"
+ },
+ {
+  "path": "Brown/Sarah/030606",
+  "file": "chat/Brown_Sarah_030606.cha",
+  "bytes": 78552,
+  "sha256": "aecdea48863c2e961ddf75eac459f20815696bc525ec1b25ae25ae1366567dba",
+  "chi_age": "3;06.06"
+ },
+ {
+  "path": "Brown/Sarah/030616",
+  "file": "chat/Brown_Sarah_030616.cha",
+  "bytes": 68024,
+  "sha256": "eb3c566aae22060103d66228aa751c0e2bb5e16d2d44c96b4df6d94280ec941a",
+  "chi_age": "3;06.16"
+ },
+ {
+  "path": "Brown/Sarah/030623",
+  "file": "chat/Brown_Sarah_030623.cha",
+  "bytes": 71532,
+  "sha256": "d790ec26e12496fb187f4ae46391fe8c0dcd580064c2cdc139530ca7f8ed3a7a",
+  "chi_age": "3;06.23"
+ },
+ {
+  "path": "Brown/Sarah/030630",
+  "file": "chat/Brown_Sarah_030630.cha",
+  "bytes": 79258,
+  "sha256": "6cf4564f5e2af59f297fb6a96dfff7d0964d9a6a8d88278b4864ab522527b436",
+  "chi_age": "3;06.30"
+ },
+ {
+  "path": "Brown/Sarah/030709",
+  "file": "chat/Brown_Sarah_030709.cha",
+  "bytes": 78489,
+  "sha256": "8b709f7115da6a8692be25434edba481bbd841dce79e0be9ea0aeff65cc0727e",
+  "chi_age": "3;07.09"
+ },
+ {
+  "path": "Brown/Sarah/030716",
+  "file": "chat/Brown_Sarah_030716.cha",
+  "bytes": 68713,
+  "sha256": "c65ce6efdc657ba5786c5228cd078bca7936ece1a6f09596cffad03e63a493e9",
+  "chi_age": "3;07.16"
+ },
+ {
+  "path": "Brown/Sarah/030723",
+  "file": "chat/Brown_Sarah_030723.cha",
+  "bytes": 78551,
+  "sha256": "8ef4ae728b300e52b9846d18a5113aca96319df61fa0a4c38121ea472665ab41",
+  "chi_age": "3;07.23"
+ },
+ {
+  "path": "Brown/Sarah/030730",
+  "file": "chat/Brown_Sarah_030730.cha",
+  "bytes": 72896,
+  "sha256": "56ab9f7910632e3552bbfaad48b36a1a0ab767f9d0e7f1f20ba73b573f9b165c",
+  "chi_age": "3;07.30"
+ },
+ {
+  "path": "Brown/Sarah/030806",
+  "file": "chat/Brown_Sarah_030806.cha",
+  "bytes": 88831,
+  "sha256": "7e863676a352f403bd385acf74fa9bed715a3d571f246e041f285ad80ea03cf0",
+  "chi_age": "3;08.06"
+ },
+ {
+  "path": "Brown/Sarah/030812",
+  "file": "chat/Brown_Sarah_030812.cha",
+  "bytes": 90830,
+  "sha256": "09c1eff31b8a94f3d2aa0227cf41f8c1a951849a8dd3f5c18a156854500b135b",
+  "chi_age": "3;08.12"
+ },
+ {
+  "path": "Brown/Sarah/030820",
+  "file": "chat/Brown_Sarah_030820.cha",
+  "bytes": 97357,
+  "sha256": "46a44be7c503d7ff5c5141e809f35e9f79f36f1560148d16f82158c99ac10d38",
+  "chi_age": "3;08.20"
+ },
+ {
+  "path": "Brown/Sarah/030827",
+  "file": "chat/Brown_Sarah_030827.cha",
+  "bytes": 98682,
+  "sha256": "5f6c0bab709ed3a4cfce877d118e3ad3ce120b6b156e70226828a8831067ae8d",
+  "chi_age": "3;08.27"
+ },
+ {
+  "path": "Brown/Sarah/030903",
+  "file": "chat/Brown_Sarah_030903.cha",
+  "bytes": 73617,
+  "sha256": "e0a432d41c481f2b1ad5cdf232c7f5dd9f59d6756e4530b476f4b8813c962b0d",
+  "chi_age": "3;09.03"
+ },
+ {
+  "path": "Brown/Sarah/030918",
+  "file": "chat/Brown_Sarah_030918.cha",
+  "bytes": 125047,
+  "sha256": "6dbdf5c9a0578931641428b178cad2aecc017e8457cf4de779cb06a62aa59c48",
+  "chi_age": "3;09.18"
+ },
+ {
+  "path": "Brown/Sarah/030926a",
+  "file": "chat/Brown_Sarah_030926a.cha",
+  "bytes": 88645,
+  "sha256": "75ff6f64e19bdb30e5161fbceb145eeb89f12da8a1869fabf4f96fbd9a8fd487",
+  "chi_age": "3;09.26"
+ },
+ {
+  "path": "Brown/Sarah/030926b",
+  "file": "chat/Brown_Sarah_030926b.cha",
+  "bytes": 73297,
+  "sha256": "fd0d63c0b1072cc2ad950cf2f37957acadb63180d6ee1310ab6d092214c7dae1",
+  "chi_age": "3;09.26"
+ },
+ {
+  "path": "Brown/Sarah/031001",
+  "file": "chat/Brown_Sarah_031001.cha",
+  "bytes": 85765,
+  "sha256": "2292553f34ce77d7a3c2a625209c8603ed172c297eed34d641c69f96ca42baf7",
+  "chi_age": "3;10.01"
+ },
+ {
+  "path": "Brown/Sarah/031009",
+  "file": "chat/Brown_Sarah_031009.cha",
+  "bytes": 95432,
+  "sha256": "57e36fef1cb8b427882b6ecaa41d8700c1aa6c2a7b6914d4da80a05e184ef45b",
+  "chi_age": "3;10.09"
+ },
+ {
+  "path": "Brown/Sarah/031016",
+  "file": "chat/Brown_Sarah_031016.cha",
+  "bytes": 99636,
+  "sha256": "f4497fc07a231fbff087dcd76458a491790ded8511e0d76e46b9954edc37ab04",
+  "chi_age": "3;10.16"
+ },
+ {
+  "path": "Brown/Sarah/031030",
+  "file": "chat/Brown_Sarah_031030.cha",
+  "bytes": 88628,
+  "sha256": "d25c1628afbe20626632710b34cab2f6ed27a5a6c5012faa2e7df74310964708",
+  "chi_age": "3;10.30"
+ },
+ {
+  "path": "Brown/Sarah/031109",
+  "file": "chat/Brown_Sarah_031109.cha",
+  "bytes": 19180,
+  "sha256": "e5f51786eff87fe5a8270fc7ca03922c7085b4cc4ed24f0faf19e9e6192d90fc",
+  "chi_age": "3;11.09"
+ },
+ {
+  "path": "Brown/Sarah/031116",
+  "file": "chat/Brown_Sarah_031116.cha",
+  "bytes": 111265,
+  "sha256": "151a00ccc7531d828858c5a63c45a8d6404322c1848fef61547f37d461e95255",
+  "chi_age": "3;11.16"
+ },
+ {
+  "path": "Brown/Sarah/031129",
+  "file": "chat/Brown_Sarah_031129.cha",
+  "bytes": 91430,
+  "sha256": "1c166306f8a3ad0b6a1a5637bb5a4d296bf21062060d8a8d71982c56f323c774",
+  "chi_age": "3;11.29"
+ },
+ {
+  "path": "Brown/Sarah/040005",
+  "file": "chat/Brown_Sarah_040005.cha",
+  "bytes": 94605,
+  "sha256": "736a385275335c2e02203d0dea851f8ce489bea4c45f6eb6057665c413eda4ca",
+  "chi_age": "4;00.05"
+ },
+ {
+  "path": "Brown/Sarah/040014",
+  "file": "chat/Brown_Sarah_040014.cha",
+  "bytes": 85645,
+  "sha256": "c10284e7f6b835f2cee8d7c469449d0eb3cfc5c04faea009bc987f6548a83c38",
+  "chi_age": "4;00.14"
+ },
+ {
+  "path": "Brown/Sarah/040028",
+  "file": "chat/Brown_Sarah_040028.cha",
+  "bytes": 91561,
+  "sha256": "4c02e8b1a8bc5a3d8ab75795db4af3a89bbd25a2d5c8b2f948079213b3f1cae9",
+  "chi_age": "4;00.28"
+ },
+ {
+  "path": "Brown/Sarah/040104",
+  "file": "chat/Brown_Sarah_040104.cha",
+  "bytes": 102001,
+  "sha256": "573b242ceb8dde79b29b183e3c0ed91110d7947e5d61f11f49967d95f60e031a",
+  "chi_age": "4;01.04"
+ },
+ {
+  "path": "Brown/Sarah/040111",
+  "file": "chat/Brown_Sarah_040111.cha",
+  "bytes": 107491,
+  "sha256": "8062e1e480ffbe1ab7fb0208d8ee6ec389b816dbdbf13054fd031976122e59a0",
+  "chi_age": "4;01.11"
+ },
+ {
+  "path": "Brown/Sarah/040118",
+  "file": "chat/Brown_Sarah_040118.cha",
+  "bytes": 92961,
+  "sha256": "4b2471bdd49c4346938c80647c74e0fb9baade2c4338e50ab686d10f088d3761",
+  "chi_age": "4;01.18"
+ },
+ {
+  "path": "Brown/Sarah/040128",
+  "file": "chat/Brown_Sarah_040128.cha",
+  "bytes": 110338,
+  "sha256": "845853bd4012489106e9f2d85e7c09a69fece44454b7b230fbb394ec0ae287ef",
+  "chi_age": "4;01.28"
+ },
+ {
+  "path": "Brown/Sarah/040201",
+  "file": "chat/Brown_Sarah_040201.cha",
+  "bytes": 102235,
+  "sha256": "de0c1dee5fd29df2976621b15c429f65249ca86573c9c1c56d4756b7d350272e",
+  "chi_age": "4;02.01"
+ },
+ {
+  "path": "Brown/Sarah/040209",
+  "file": "chat/Brown_Sarah_040209.cha",
+  "bytes": 100294,
+  "sha256": "6c02a33e11f5157543b126b6920946dc78fa6b1c5fdc2f76a8e2ddbefa1f00a9",
+  "chi_age": "4;02.09"
+ },
+ {
+  "path": "Brown/Sarah/040216",
+  "file": "chat/Brown_Sarah_040216.cha",
+  "bytes": 122848,
+  "sha256": "c3acc08e32bd8128a3865ddaafd7b7618b8eb8fa2fa8abec005d18b7eab7549c",
+  "chi_age": "4;02.16"
+ },
+ {
+  "path": "Brown/Sarah/040223",
+  "file": "chat/Brown_Sarah_040223.cha",
+  "bytes": 94096,
+  "sha256": "beeb97c1830f5d6477f2c338777e42585157b75c92a84cbe3cb61cc22ca571c6",
+  "chi_age": "4;02.23"
+ },
+ {
+  "path": "Brown/Sarah/040228",
+  "file": "chat/Brown_Sarah_040228.cha",
+  "bytes": 93317,
+  "sha256": "367240b33a751c66616647a7767e25894c400d0aafa70489eabeb75cac007fb0",
+  "chi_age": "4;02.28"
+ },
+ {
+  "path": "Brown/Sarah/040307",
+  "file": "chat/Brown_Sarah_040307.cha",
+  "bytes": 125555,
+  "sha256": "c029f6b797227c5cb34e07d76038f7b16949f918ee0776bc91fe2e76e7806abd",
+  "chi_age": "4;03.07"
+ },
+ {
+  "path": "Brown/Sarah/040313",
+  "file": "chat/Brown_Sarah_040313.cha",
+  "bytes": 107045,
+  "sha256": "07b668880f380f807f4e8b02866cdcbb3e73a5dcef1c8e1f5b575ac682132c48",
+  "chi_age": "4;03.13"
+ },
+ {
+  "path": "Brown/Sarah/040319",
+  "file": "chat/Brown_Sarah_040319.cha",
+  "bytes": 9450,
+  "sha256": "2d6aa8017d0a7710bc9637938d45479850c254cadbdc58ddef6806a2d827f596",
+  "chi_age": "4;03.19"
+ },
+ {
+  "path": "Brown/Sarah/040326",
+  "file": "chat/Brown_Sarah_040326.cha",
+  "bytes": 93371,
+  "sha256": "54de2d326c94d8eba1088f58a06c0c319503c80a7a4fb4fc3747bbae1c145d58",
+  "chi_age": "4;03.26"
+ },
+ {
+  "path": "Brown/Sarah/040401",
+  "file": "chat/Brown_Sarah_040401.cha",
+  "bytes": 89618,
+  "sha256": "9379fda5a56ee9ba5e04326bfd68de56f9ec5ed29a1ab1b54db706bd3f50ccb9",
+  "chi_age": "4;04.01"
+ },
+ {
+  "path": "Brown/Sarah/040411",
+  "file": "chat/Brown_Sarah_040411.cha",
+  "bytes": 90723,
+  "sha256": "947d9455bc5afe35091bad365d810da02fd74f60203c0b36e11ca7dd798e86eb",
+  "chi_age": "4;04.11"
+ },
+ {
+  "path": "Brown/Sarah/040418",
+  "file": "chat/Brown_Sarah_040418.cha",
+  "bytes": 99497,
+  "sha256": "980dbc0796ba20244b63b82464f9250ff3698535a242d5386a945fe8f77dc4f9",
+  "chi_age": "4;04.18"
+ },
+ {
+  "path": "Brown/Sarah/040425",
+  "file": "chat/Brown_Sarah_040425.cha",
+  "bytes": 90826,
+  "sha256": "b466d5a1f3cb7334783ceeed998efcd248998ea35a534d2308ad382ef9ab12b6",
+  "chi_age": "4;04.25"
+ },
+ {
+  "path": "Brown/Sarah/040504",
+  "file": "chat/Brown_Sarah_040504.cha",
+  "bytes": 104460,
+  "sha256": "cd21f559e714ed8248fa091fa651a7ad00c8079d9f3678e461dee23ec2e29058",
+  "chi_age": "4;05.04"
+ },
+ {
+  "path": "Brown/Sarah/040508",
+  "file": "chat/Brown_Sarah_040508.cha",
+  "bytes": 86108,
+  "sha256": "14ce039dfb07184a08c44c53beded1c02c7c6584427cd2d9986f74151dfec170",
+  "chi_age": "4;05.08"
+ },
+ {
+  "path": "Brown/Sarah/040514",
+  "file": "chat/Brown_Sarah_040514.cha",
+  "bytes": 93175,
+  "sha256": "301498513541b699b2493ea5261f6aa20c7ce8f73bde57b1a807bf151223343d",
+  "chi_age": "4;05.14"
+ },
+ {
+  "path": "Brown/Sarah/040522",
+  "file": "chat/Brown_Sarah_040522.cha",
+  "bytes": 98457,
+  "sha256": "21f3b925e67701ea1c1f4185e0976f05fc59a74e64943472ef6c19d8f8cef7b1",
+  "chi_age": "4;05.22"
+ },
+ {
+  "path": "Brown/Sarah/040529",
+  "file": "chat/Brown_Sarah_040529.cha",
+  "bytes": 100479,
+  "sha256": "08121eb42d0c32ce839a6de220fbec64fbfd1d842ead6bd9e6442902cab771b7",
+  "chi_age": "4;05.29"
+ },
+ {
+  "path": "Brown/Sarah/040605",
+  "file": "chat/Brown_Sarah_040605.cha",
+  "bytes": 99952,
+  "sha256": "92ef05b64fc511dce456d4aff8dd46bc4c37c85c5efb98326ac5491b921d6f62",
+  "chi_age": "4;06.05"
+ },
+ {
+  "path": "Brown/Sarah/040610",
+  "file": "chat/Brown_Sarah_040610.cha",
+  "bytes": 88802,
+  "sha256": "971072b1d088c8f0e8446bdb10abec04917389357e5a435b5e8279e72638f5fe",
+  "chi_age": "4;06.10"
+ },
+ {
+  "path": "Brown/Sarah/040617",
+  "file": "chat/Brown_Sarah_040617.cha",
+  "bytes": 80431,
+  "sha256": "5d6e353192ab231561526929169ec656ff4ff680534f76fb6a71a5a06640f5c4",
+  "chi_age": "4;06.17"
+ },
+ {
+  "path": "Brown/Sarah/040624",
+  "file": "chat/Brown_Sarah_040624.cha",
+  "bytes": 108187,
+  "sha256": "582c5f6f98065dfd13dddcfa70938861499c257622744854be84821bd2b2d250",
+  "chi_age": "4;06.24"
+ },
+ {
+  "path": "Brown/Sarah/040700",
+  "file": "chat/Brown_Sarah_040700.cha",
+  "bytes": 106958,
+  "sha256": "bba9ff304002c4693e960c7819206a2d6016d3bb0f2711e4d8a9162cec945695",
+  "chi_age": "4;07.00"
+ },
+ {
+  "path": "Brown/Sarah/040711",
+  "file": "chat/Brown_Sarah_040711.cha",
+  "bytes": 102283,
+  "sha256": "417d965fbf2b43f365656dac6684c93a147c0dfc02fb67af5e74e5890d280c2e",
+  "chi_age": "4;07.11"
+ },
+ {
+  "path": "Brown/Sarah/040717",
+  "file": "chat/Brown_Sarah_040717.cha",
+  "bytes": 86014,
+  "sha256": "0fc03d920e327322c3340742d878d8a5d8e5beaecccc4c11944c774d222807ee",
+  "chi_age": "4;07.17"
+ },
+ {
+  "path": "Brown/Sarah/040724",
+  "file": "chat/Brown_Sarah_040724.cha",
+  "bytes": 113258,
+  "sha256": "343493db63d2fff0160d8ca9267bbf4fc5f8a507b4246142b54aee4550e16da0",
+  "chi_age": "4;07.24"
+ },
+ {
+  "path": "Brown/Sarah/040807",
+  "file": "chat/Brown_Sarah_040807.cha",
+  "bytes": 81434,
+  "sha256": "06d8f3b045e3b6411397e53990d270aab7c70035541a3e611e22f7be6991dfd4",
+  "chi_age": "4;08.07"
+ },
+ {
+  "path": "Brown/Sarah/040813",
+  "file": "chat/Brown_Sarah_040813.cha",
+  "bytes": 93928,
+  "sha256": "06e655614c6c4e8de47b89785cf63521fc668f483d7247def7c8839f6940da9e",
+  "chi_age": "4;08.13"
+ },
+ {
+  "path": "Brown/Sarah/040820",
+  "file": "chat/Brown_Sarah_040820.cha",
+  "bytes": 107781,
+  "sha256": "e0838b4947c3fa84321954ff36269d6dbd3a91c81f49d29890c84411cbcb4a16",
+  "chi_age": "4;08.20"
+ },
+ {
+  "path": "Brown/Sarah/040904",
+  "file": "chat/Brown_Sarah_040904.cha",
+  "bytes": 85759,
+  "sha256": "4516eee3ce6df4f658d681e005164cfb4755fa1d67971cbc98e0b7ef0c891256",
+  "chi_age": "4;09.04"
+ },
+ {
+  "path": "Brown/Sarah/040912",
+  "file": "chat/Brown_Sarah_040912.cha",
+  "bytes": 119837,
+  "sha256": "ef1280ae065f864601df55a4323511aa336c9ce586787bc9a65d91bf42345039",
+  "chi_age": "4;09.12"
+ },
+ {
+  "path": "Brown/Sarah/040919",
+  "file": "chat/Brown_Sarah_040919.cha",
+  "bytes": 94559,
+  "sha256": "05094c50c88a9e73545e85ea97946847c11ceb76bcbbb49a1b338057ec90f619",
+  "chi_age": "4;09.19"
+ },
+ {
+  "path": "Brown/Sarah/040926",
+  "file": "chat/Brown_Sarah_040926.cha",
+  "bytes": 74003,
+  "sha256": "f13dc63bf3698b44d54272b5b227a55743d5258b1b228b45b3e23d0a0a0780af",
+  "chi_age": "4;09.26"
+ },
+ {
+  "path": "Brown/Sarah/041006",
+  "file": "chat/Brown_Sarah_041006.cha",
+  "bytes": 116556,
+  "sha256": "2dbffe5bf0db0c9e7f4f405f33a6f5bfb006f94a433f4387ed4bfdd0f5dc3c96",
+  "chi_age": "4;10.06"
+ },
+ {
+  "path": "Brown/Sarah/041021",
+  "file": "chat/Brown_Sarah_041021.cha",
+  "bytes": 87187,
+  "sha256": "1fc6f476a6355cd81ea7fef8c084b4984b189d77596131f12b7061748419005f",
+  "chi_age": "4;10.21"
+ },
+ {
+  "path": "Brown/Sarah/041027",
+  "file": "chat/Brown_Sarah_041027.cha",
+  "bytes": 85875,
+  "sha256": "4de17863a360326361f7dc9480ac03689f62bbbfb1ea3fc587ed766ecd76c5fc",
+  "chi_age": "4;10.27"
+ },
+ {
+  "path": "Brown/Sarah/041104",
+  "file": "chat/Brown_Sarah_041104.cha",
+  "bytes": 69668,
+  "sha256": "474556f7c388717b2f84698bca0e8452950b551b102daa82e4b38261ee1779e9",
+  "chi_age": "4;11.04"
+ },
+ {
+  "path": "Brown/Sarah/041113",
+  "file": "chat/Brown_Sarah_041113.cha",
+  "bytes": 102491,
+  "sha256": "db6f4811f9d60f4ba087446e5a06ef5b6a7b93e7d650f740ec9261cf93bc5713",
+  "chi_age": "4;11.13"
+ },
+ {
+  "path": "Brown/Sarah/041119",
+  "file": "chat/Brown_Sarah_041119.cha",
+  "bytes": 105308,
+  "sha256": "e34a334316f65369065418eaa5dbcd9fc55e8bcf96bc8c406ebbf2ff5853cc3d",
+  "chi_age": "4;11.19"
+ },
+ {
+  "path": "Brown/Sarah/041126",
+  "file": "chat/Brown_Sarah_041126.cha",
+  "bytes": 106834,
+  "sha256": "04b66a466d35d56347a758480572b4db131acc600a7f421aa509cee3d688a697",
+  "chi_age": "4;11.26"
+ },
+ {
+  "path": "Brown/Sarah/050002",
+  "file": "chat/Brown_Sarah_050002.cha",
+  "bytes": 67174,
+  "sha256": "9a69ba201f51cd1992877442ec82c571d47884a863f634b9095076b841c39ded",
+  "chi_age": "5;00.02"
+ },
+ {
+  "path": "Brown/Sarah/050010",
+  "file": "chat/Brown_Sarah_050010.cha",
+  "bytes": 74314,
+  "sha256": "5a6ca065ba683a6b14d3570ec79e2d9341c31c49ba9774825a1e72efb99a2bfe",
+  "chi_age": "5;00.10"
+ },
+ {
+  "path": "Brown/Sarah/050016",
+  "file": "chat/Brown_Sarah_050016.cha",
+  "bytes": 93792,
+  "sha256": "efdb77fae235897c035ab3a2744158c563cae954d39a28bf0a3034e843ffb746",
+  "chi_age": "5;00.16"
+ },
+ {
+  "path": "Brown/Sarah/050025",
+  "file": "chat/Brown_Sarah_050025.cha",
+  "bytes": 82123,
+  "sha256": "cb325d878f164b64effd0935110b6070246333fbef1ed26fe9788a1833b28af1",
+  "chi_age": "5;00.25"
+ },
+ {
+  "path": "Brown/Sarah/050030",
+  "file": "chat/Brown_Sarah_050030.cha",
+  "bytes": 76396,
+  "sha256": "18d4e184199814060b890880bae0fa9c707a85b73a8e19f53b72bb23692f7817",
+  "chi_age": "5;00.30"
+ },
+ {
+  "path": "Brown/Sarah/050106",
+  "file": "chat/Brown_Sarah_050106.cha",
+  "bytes": 126175,
+  "sha256": "17537b371e0b1cc12505be5ba50cc77b71065b5e130d1d56068246fc06d28e0e",
+  "chi_age": "5;01.06"
+ },
+ {
+  "path": "Bernstein/Children/Alice/010100",
+  "file": "chat/Bernstein_Children_Alice_010100.cha",
+  "bytes": 48883,
+  "sha256": "4da2840bf1d1cebc768c51aebdacd1ac0a98e9a9077be9599653d1315704be00",
+  "chi_age": "1;01.00"
+ },
+ {
+  "path": "Bernstein/Children/Alice/010300",
+  "file": "chat/Bernstein_Children_Alice_010300.cha",
+  "bytes": 95851,
+  "sha256": "d449a54a37e5060770ed1a2f75ad1e13eb65ce254ac1fd4ecf7649a18f9a165f",
+  "chi_age": "1;03.00"
+ },
+ {
+  "path": "Bernstein/Children/Alice/010500",
+  "file": "chat/Bernstein_Children_Alice_010500.cha",
+  "bytes": 70850,
+  "sha256": "bb2ec205a42ea89df6d704ea7d7c0cdf64e26d2f7e74df19d3793b0da87e7f61",
+  "chi_age": "1;05.00"
+ },
+ {
+  "path": "Bernstein/Children/Amelia/010600",
+  "file": "chat/Bernstein_Children_Amelia_010600.cha",
+  "bytes": 70647,
+  "sha256": "9edd4184cc30b728c7d262aef5363b28d4690158bc7af59a0459b101fc253b84",
+  "chi_age": "1;06.00"
+ },
+ {
+  "path": "Bernstein/Children/Amelia/010800",
+  "file": "chat/Bernstein_Children_Amelia_010800.cha",
+  "bytes": 71263,
+  "sha256": "2fed1db163222af96345d02ccc968c25d6066e84ac183a9041fa254af30bef03",
+  "chi_age": "1;08.00"
+ },
+ {
+  "path": "Bernstein/Children/Amelia/011000",
+  "file": "chat/Bernstein_Children_Amelia_011000.cha",
+  "bytes": 89475,
+  "sha256": "4121ab19447947857db681d90035cdddaab627f4b5b539fd61f11e30aa003f69",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Children/Anne/010500",
+  "file": "chat/Bernstein_Children_Anne_010500.cha",
+  "bytes": 42918,
+  "sha256": "f0d7ae8b447750b694b6d6923e8476938c0ff75dab74e57632d182dcf43a5c8e",
+  "chi_age": "1;05."
+ },
+ {
+  "path": "Bernstein/Children/Anne/010800",
+  "file": "chat/Bernstein_Children_Anne_010800.cha",
+  "bytes": 42543,
+  "sha256": "f9eb59f0329a065b711f5980b17dd899aa2512b62eca73d3a20e062e293bb82d",
+  "chi_age": "1;08."
+ },
+ {
+  "path": "Bernstein/Children/Anne/011000",
+  "file": "chat/Bernstein_Children_Anne_011000.cha",
+  "bytes": 53091,
+  "sha256": "9f8f36f36bfbe1497a04422fe94c7876ad9f92a0aadf64a4ee9245d46279f3bb",
+  "chi_age": "1;10."
+ },
+ {
+  "path": "Bernstein/Children/Cindy/010800",
+  "file": "chat/Bernstein_Children_Cindy_010800.cha",
+  "bytes": 74487,
+  "sha256": "27d6afbc5227ab65e5aa987d3202aa2b0320eb4e58e4d7a70baf5f3c95884b36",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Children/Cindy/011000",
+  "file": "chat/Bernstein_Children_Cindy_011000.cha",
+  "bytes": 78549,
+  "sha256": "8430d4668759d37b82cadee742cc0560fa1b7f1075d191ea7f96792586dcd744",
+  "chi_age": "1;10."
+ },
+ {
+  "path": "Bernstein/Children/Cindy/020000",
+  "file": "chat/Bernstein_Children_Cindy_020000.cha",
+  "bytes": 75650,
+  "sha256": "1e5f48697f9d27f5ad457e56bf30e11145c18cf237d18b152f3c2d8bcc9d462d",
+  "chi_age": "2;00."
+ },
+ {
+  "path": "Bernstein/Children/Dale/010500",
+  "file": "chat/Bernstein_Children_Dale_010500.cha",
+  "bytes": 36763,
+  "sha256": "c7db27a505aee3d12de470df4e7f172534873e33a4a050d5240459a576f40747",
+  "chi_age": "1;05."
+ },
+ {
+  "path": "Bernstein/Children/Dale/010700",
+  "file": "chat/Bernstein_Children_Dale_010700.cha",
+  "bytes": 40775,
+  "sha256": "c468bbc7a02c6dcebe23cac0af9908bdd368936858dd2e87047d3730369b07ab",
+  "chi_age": "1;07."
+ },
+ {
+  "path": "Bernstein/Children/Dale/010900",
+  "file": "chat/Bernstein_Children_Dale_010900.cha",
+  "bytes": 62496,
+  "sha256": "10a3b5ebc54d13ced6065a784c9385bf465a48024f2d83b2876fddf97ace329b",
+  "chi_age": "1;09."
+ },
+ {
+  "path": "Bernstein/Children/Gail/010900",
+  "file": "chat/Bernstein_Children_Gail_010900.cha",
+  "bytes": 96593,
+  "sha256": "98cc31c7e731d6e3d662e1c70561acd9667ccff293f804dfd21ca68e484ecb6e",
+  "chi_age": "1;09."
+ },
+ {
+  "path": "Bernstein/Children/Gail/011100",
+  "file": "chat/Bernstein_Children_Gail_011100.cha",
+  "bytes": 26647,
+  "sha256": "472bf2aa008479ed35cb4ef45a1859aedaac836b3114e1eb0c3fe2a937713c03",
+  "chi_age": "1;11."
+ },
+ {
+  "path": "Bernstein/Children/Gail/020100",
+  "file": "chat/Bernstein_Children_Gail_020100.cha",
+  "bytes": 79966,
+  "sha256": "00637019d908558733b610128972ca145e0486420c2a95a354bbab518f1af557",
+  "chi_age": "2;01."
+ },
+ {
+  "path": "Bernstein/Children/Kay/010100",
+  "file": "chat/Bernstein_Children_Kay_010100.cha",
+  "bytes": 65795,
+  "sha256": "dd70752292bfd687bf8df867da4e6a75182a8c46dcca5e72daf470f0bec5a1df",
+  "chi_age": "1;01."
+ },
+ {
+  "path": "Bernstein/Children/Kay/010400",
+  "file": "chat/Bernstein_Children_Kay_010400.cha",
+  "bytes": 68318,
+  "sha256": "fffc1aea3d46212b58f9839b9d20d814a69d8ed498657fe611d5ff5fd8f6e996",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Children/Kay/010600",
+  "file": "chat/Bernstein_Children_Kay_010600.cha",
+  "bytes": 57179,
+  "sha256": "dec11452ad706ed2c18e3ee8a021e121a0a32bb60ecda0ee87924f958dd3ed04",
+  "chi_age": "1;06."
+ },
+ {
+  "path": "Bernstein/Children/Lena/010700",
+  "file": "chat/Bernstein_Children_Lena_010700.cha",
+  "bytes": 41901,
+  "sha256": "a889595e987056c12358e02cfe4fb81dffae49915658e624b039b14714ea169a",
+  "chi_age": "1;07."
+ },
+ {
+  "path": "Bernstein/Children/Lena/011000",
+  "file": "chat/Bernstein_Children_Lena_011000.cha",
+  "bytes": 35997,
+  "sha256": "7a7f2eb3cf56b7bb030edccb400ff9bdc5668970d2c81fcad921321860242390",
+  "chi_age": "1;10."
+ },
+ {
+  "path": "Bernstein/Children/Lena/020000",
+  "file": "chat/Bernstein_Children_Lena_020000.cha",
+  "bytes": 76819,
+  "sha256": "e3e0de5161fdc8bca4c5e3e9599767aaf27a5b2c9f674295c7183f2eb2b5262f",
+  "chi_age": "2;00."
+ },
+ {
+  "path": "Bernstein/Children/Marie/010600",
+  "file": "chat/Bernstein_Children_Marie_010600.cha",
+  "bytes": 54572,
+  "sha256": "30357a166c3e89d32d091a930b130aa3b4fdbe9346e96835ced3c761c62beb92",
+  "chi_age": "1;06."
+ },
+ {
+  "path": "Bernstein/Children/Marie/010800",
+  "file": "chat/Bernstein_Children_Marie_010800.cha",
+  "bytes": 57707,
+  "sha256": "cad27a6b187bcd32f6772f363165c8f26af9d3a40a4e4b7989e39e5c34504409",
+  "chi_age": "1;08."
+ },
+ {
+  "path": "Bernstein/Children/Marie/011000",
+  "file": "chat/Bernstein_Children_Marie_011000.cha",
+  "bytes": 50858,
+  "sha256": "8ecf4e8d10e439fa14e827381fd6d78342470deb6dbc03d7b12e29cae9ebfc8a",
+  "chi_age": "1;10."
+ },
+ {
+  "path": "Bernstein/Interview/Alice/alice1",
+  "file": "chat/Bernstein_Interview_Alice_alice1.cha",
+  "bytes": 23808,
+  "sha256": "af16c95ffc385f5fc846ce5dd1071bbf5dc0edf976dea3be2eba6ca9b3c555cd",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Interview/Alice/alice3",
+  "file": "chat/Bernstein_Interview_Alice_alice3.cha",
+  "bytes": 38990,
+  "sha256": "0efd62154767cf6f26221d86f9e415998ef25988be09e8a9cbb7afcc2d217a61",
+  "chi_age": "1;05."
+ },
+ {
+  "path": "Bernstein/Interview/Amelia/amelia1",
+  "file": "chat/Bernstein_Interview_Amelia_amelia1.cha",
+  "bytes": 33716,
+  "sha256": "3f466e250c55efac115cb6ea9971fe196862ba66cddd24f8033bf02008997e7b",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Interview/Amelia/amelia2",
+  "file": "chat/Bernstein_Interview_Amelia_amelia2.cha",
+  "bytes": 28580,
+  "sha256": "29d9542dc29a33c00e58ffafa8bd7647e3c089baba575c70cd67cccae28a6ec9",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Interview/Amelia/amelia3",
+  "file": "chat/Bernstein_Interview_Amelia_amelia3.cha",
+  "bytes": 44170,
+  "sha256": "d5fc923e8997099254d136121c1d99bf88c42e77101e0183037d2bb53e456a9c",
+  "chi_age": "1;10."
+ },
+ {
+  "path": "Bernstein/Interview/Anne/anne1",
+  "file": "chat/Bernstein_Interview_Anne_anne1.cha",
+  "bytes": 33817,
+  "sha256": "d551ebf37d6786f272319e9515a321b2730f70f9d07e4f8ce572d76c4f7c2b54",
+  "chi_age": "1;05."
+ },
+ {
+  "path": "Bernstein/Interview/Anne/anne2",
+  "file": "chat/Bernstein_Interview_Anne_anne2.cha",
+  "bytes": 46461,
+  "sha256": "70c5cd4d703b99e96096dfb802de58d306d474b4e7931ab794806c584e65e521",
+  "chi_age": "1;08."
+ },
+ {
+  "path": "Bernstein/Interview/Anne/anne3",
+  "file": "chat/Bernstein_Interview_Anne_anne3.cha",
+  "bytes": 51822,
+  "sha256": "c550a91e93b2a1de324ef93624c322456ab4fe705855f0787d8a25a35bf0b654",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Interview/Cindy/cindy1",
+  "file": "chat/Bernstein_Interview_Cindy_cindy1.cha",
+  "bytes": 43995,
+  "sha256": "2ad59b40dcaeb6d83a15f0833236d40c9308d5e0b97add8aba5779f9b5bb51a5",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Interview/Cindy/cindy2",
+  "file": "chat/Bernstein_Interview_Cindy_cindy2.cha",
+  "bytes": 53876,
+  "sha256": "29be671445a2c3fa5252e08e4f956eaf7f00a02826db02714c75987d2d4cc9be",
+  "chi_age": "1;10."
+ },
+ {
+  "path": "Bernstein/Interview/Cindy/cindy3",
+  "file": "chat/Bernstein_Interview_Cindy_cindy3.cha",
+  "bytes": 87775,
+  "sha256": "e3a3cc7a4b6ef0aae4e88c33a09cb80ae66e28dcb9c7026532de9d2bdbc94928",
+  "chi_age": "2;00."
+ },
+ {
+  "path": "Bernstein/Interview/Dale/dale1",
+  "file": "chat/Bernstein_Interview_Dale_dale1.cha",
+  "bytes": 25344,
+  "sha256": "c792ca954d0812a03287104326a4978b567a128becf49e041311283145294254",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Interview/Dale/dale2",
+  "file": "chat/Bernstein_Interview_Dale_dale2.cha",
+  "bytes": 40690,
+  "sha256": "c5c438f48128277e8356ab41e018dc9639f1f51adcccb32714aaf0e0d26b1458",
+  "chi_age": "1;07."
+ },
+ {
+  "path": "Bernstein/Interview/Dale/dale3",
+  "file": "chat/Bernstein_Interview_Dale_dale3.cha",
+  "bytes": 60546,
+  "sha256": "cb759153dd374a4009c8b91c083e446b405497a715fce434add70d5ee496d18b",
+  "chi_age": "1;09."
+ },
+ {
+  "path": "Bernstein/Interview/Gail/gail2",
+  "file": "chat/Bernstein_Interview_Gail_gail2.cha",
+  "bytes": 88705,
+  "sha256": "319ed0abf404653224106e2c3d3dafab13d8d41363c8435c7aebac2d01b99744",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Interview/Gail/gail3",
+  "file": "chat/Bernstein_Interview_Gail_gail3.cha",
+  "bytes": 4963,
+  "sha256": "b0dc1e603937260e9076e523e33aecb43d7c2c72e40ea2487edccab110ca647e",
+  "chi_age": null
+ },
+ {
+  "path": "Bernstein/Interview/Kay/kay2",
+  "file": "chat/Bernstein_Interview_Kay_kay2.cha",
+  "bytes": 42160,
+  "sha256": "46801284d29551312e0cba299e9a813efa5b792ab7b11a36afac27e38a41ddfb",
+  "chi_age": "1;04."
+ },
+ {
+  "path": "Bernstein/Interview/Kay/kay3",
+  "file": "chat/Bernstein_Interview_Kay_kay3.cha",
+  "bytes": 42277,
+  "sha256": "703496cf09f8c1baca6f796dc0efd8e509d23edf03b6fb95cea40eb99d9aea28",
+  "chi_age": "1;06."
+ },
+ {
+  "path": "Bernstein/Interview/Lena/lena2",
+  "file": "chat/Bernstein_Interview_Lena_lena2.cha",
+  "bytes": 40383,
+  "sha256": "f3ff18104aa9906d224b44962e7033b16b93b782fff89d9e3fd959e674e51684",
+  "chi_age": "1;10."
+ },
+ {
+  "path": "Bernstein/Interview/Lena/lena3",
+  "file": "chat/Bernstein_Interview_Lena_lena3.cha",
+  "bytes": 38115,
+  "sha256": "320880964b4d109e6fa6f5f4190c30a2199737b49d69f76298b8d1686596c37c",
+  "chi_age": "2;00."
+ },
+ {
+  "path": "Bernstein/Interview/Marie/marie1",
+  "file": "chat/Bernstein_Interview_Marie_marie1.cha",
+  "bytes": 49285,
+  "sha256": "500f775d5371c28abc877db54c5d96cd6c834dfe635bab0fc6ae808df33a67fc",
+  "chi_age": "1;06."
+ },
+ {
+  "path": "Bernstein/Interview/Marie/marie2",
+  "file": "chat/Bernstein_Interview_Marie_marie2.cha",
+  "bytes": 60019,
+  "sha256": "9bdbe820fbf0f2b56d7326d7b9d199e6f19a2446d8be7a19a8c7a47bddf43257",
+  "chi_age": "1;08."
+ },
+ {
+  "path": "Bernstein/Interview/Marie/marie3",
+  "file": "chat/Bernstein_Interview_Marie_marie3.cha",
+  "bytes": 37379,
+  "sha256": "05bb0795018d5997ed7f340d7730dde7905af5ce22460596b2aa1613da2cb87c",
+  "chi_age": "1;10."
+ }
+]
