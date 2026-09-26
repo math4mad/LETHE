@@ -43,10 +43,10 @@ case "$cmd" in
     | python3 -c "
 import sys, re
 t = sys.stdin.read()
-for blk in re.findall(r'<d:response>(.*?)</d:response>', t, re.S):
-    nm = re.search(r'<d:displayname>([^<]+)<', blk)
-    cl = re.search(r'<d:getcontentlength>(\d+)<', blk)
-    if nm and cl and nm.group(1) != '$MOUNT':
+for blk in re.findall(r'<[dD]:response>(.*?)</[dD]:response>', t, re.S):
+    nm = re.search(r'<[dD]:displayname>([^<]+)<', blk)
+    cl = re.search(r'<[dD]:getcontentlength>(\d+)<', blk)
+    if nm and cl:
         print(f'{int(cl.group(1))/1e6:9.1f}MB  {nm.group(1)}')
 "
     ;;
