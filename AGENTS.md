@@ -31,12 +31,14 @@
 - 毕业条件: 连开两日凭 load 复现 T0, 主人圈点后入业务仓; 未毕则留档不扩散
 
 ### 提醒联动 (the follow protocol) — 园与主人 iPhone 的正式通道
-`bin/remind.sh` 对接 Apple 提醒事项列表「园区·GRAPHIA」(iCloud 同步)，
-并自 09-24 起**双通道镜像 MS To Do**「任务」列表 (借道 Mac 原生 Exchange 同步，零注册零授权；
-镜像缺席静默跳，永不误主道；批复取两侧并集，任一侧 ☑ 即算)。
+`bin/remind.sh` 对接 Apple 提醒事项列表 **Concept-Space** (原「园区·GRAPHIA」, 0925 三屏一统更名;
+iCloud 直达 iPhone)。**一账一道律 (主人 0928 裁定, 治「同题双显即重复」之病)**:
+MS To Do 镜像默认停 —— 需镜像时显式 `MIRROR=1 bin/remind.sh add ...`。
+另: 同名列表可被 Exchange 夺舍 (曾生 Concept-Space@Exchange 鬼影柜双挂),
+故**认账必认 account+名**; add 同题 open 在则拒 (DUP-SKIP)。
 - 挂点: `bin/remind.sh add 标题 备注 ["YYYY-MM-DD HH:MM"]` — 决策点/日程进主人手机
 - 读账: `bin/remind.sh read` — **会话开场或主人问「提醒」必执行一次**; ☑=批复(完成时间即批戳), ◻=待办, 备注正文=回复指令
-- 销账: `bin/remind.sh done 片段` — 实验完成后由 agent 勾结 (两侧都勾, 幂等)
+- 销账: `bin/remind.sh done 片段` — 实验完成后由 agent 勾结 (两侧都勾, 幂等; 镜库已空则自然无效果)
 - 铁律: 日期只走偏移量, 禁 AppleScript 日期字面量 (zh locale 解析灾, 2026-09-18 实测: "19 09 2026"→2025年3月18日)
 - 铁律二: 读卷必走批量取属性 (`get name of (reminders whose ...)`)，逐项引用在 Exchange 在架时会挂死
 
