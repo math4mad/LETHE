@@ -33,6 +33,23 @@ def add(jid, cmd, tries, base, note):
 
 def tick():
     if not JOBS.exists(): print("(队列未启用)"); return
+    import errno
+    lock = Q / ".tick.lock"
+    try:
+        fd = os.open(str(lock), os.O_CREAT | os.O_EXCL | os.O_WRONLY); os.write(fd, str(os.getpid()).encode()); os.close(fd)
+    except OSError as e:
+        if e.errno == errno.EEXIST:
+            try:  # 陈旧锁 (>10min) 破锁而行
+                if time.time() - lock.stat().st_mtime > 600: lock.unlink()
+                else: print("(另一 tick 在跑, 让路)"); return
+            except FileNotFoundError: pass
+        else: raise
+    try: _tick_locked()
+    finally:
+        try: lock.unlink()
+        except FileNotFoundError: pass
+
+def _tick_locked():
     ran = 0
     for f in sorted(JOBS.glob("*.json")):
         j = json.loads(f.read_text())
@@ -50,12 +67,14 @@ def tick():
             (Q / "done").mkdir(exist_ok=True)
             j["done"] = stamp()
             jpath(j["id"], Q / "done").write_text(json.dumps(j, ensure_ascii=False, indent=1))
-            f.unlink()
+            try: f.unlink()
+            except FileNotFoundError: pass
             print(f"☑ {j['id']} · 第{j['attempts']}试成")
         elif j["attempts"] >= j["tries"]:
             j["dead"] = stamp()
             jpath(j["id"], DEAD).write_text(json.dumps(j, ensure_ascii=False, indent=1))
-            f.unlink()
+            try: f.unlink()
+            except FileNotFoundError: pass
             pend = ROOT / ".pending-push"
             line = f"{stamp()} QUEUE-DEAD · {j['id']} · {j['tries']}试皆败 · cmd={j['cmd'][:120]}"
             with open(pend, "a") as pf: pf.write(line + "\n")

@@ -24,11 +24,14 @@
 - **当前状态**：路边摊的概率已上升至 85%，超市概率下降至 15%。
 
 ### 提醒联动 (the follow protocol) — 园与主人 iPhone 的正式通道
-`bin/remind.sh` 对接 Apple 提醒事项列表「园区·GRAPHIA」(iCloud 同步)。
+`bin/remind.sh` 对接 Apple 提醒事项列表「园区·GRAPHIA」(iCloud 同步)，
+并自 09-24 起**双通道镜像 MS To Do**「任务」列表 (借道 Mac 原生 Exchange 同步，零注册零授权；
+镜像缺席静默跳，永不误主道；批复取两侧并集，任一侧 ☑ 即算)。
 - 挂点: `bin/remind.sh add 标题 备注 ["YYYY-MM-DD HH:MM"]` — 决策点/日程进主人手机
 - 读账: `bin/remind.sh read` — **会话开场或主人问「提醒」必执行一次**; ☑=批复(完成时间即批戳), ◻=待办, 备注正文=回复指令
-- 销账: `bin/remind.sh done 片段` — 实验完成后由 agent 勾结
+- 销账: `bin/remind.sh done 片段` — 实验完成后由 agent 勾结 (两侧都勾, 幂等)
 - 铁律: 日期只走偏移量, 禁 AppleScript 日期字面量 (zh locale 解析灾, 2026-09-18 实测: "19 09 2026"→2025年3月18日)
+- 铁律二: 读卷必走批量取属性 (`get name of (reminders whose ...)`)，逐项引用在 Exchange 在架时会挂死
 
 
 ### GitHub 通讯障碍重试律 (owner's ruling, 2026-09-19)
