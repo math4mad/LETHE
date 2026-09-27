@@ -20,3 +20,8 @@
 - **Isaacs = 现成的 2–6 岁英语逐字对话**, 覆盖 L1-L2 命名/分类层 —— 湿臂不等 MacWhinney
   回信也能开工; Brown/Bernstein CHAT 包仍是候信目标 (月龄粒度更细、有 @a;mm 机读标记);
 - Bowerman PDF 为 OCR 弹, 挂账不硬吞。
+
+## 补账 (0927): chat 层溯源
+Brown 214 .cha + Bernstein 50 .cha 已在 `../chat/`（manifest.json 具 sha256+CHI 月龄，公开层拉取同夜 0924）；
+LADDER-2b 之 s3_dialogue(540) 即此库衍生物（derived 条款：引用标 CHILDES + NICHD HD082736，不回传不镜像）。
+**未了**: Bowerman 6.4MB 扫描件 OCR 成文本后方可入湿臂（候具：tesseract 或 Vision）；入车待账。
