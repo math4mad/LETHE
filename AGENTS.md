@@ -23,6 +23,13 @@
 - **贝叶斯更新**：由于“塑胶凳”带有强烈的户外、便携属性，证据质量大幅偏向“路边摊”。
 - **当前状态**：路边摊的概率已上升至 85%，超市概率下降至 15%。
 
+### 工厂开机律 (Ψυχή psyche-kit, 主人 0928 ①案批复)
+`techne/psyche/psyche.py` (学院仓, 器部试炼中) 治「重启即失忆」之病:
+- 开机(读完提醒账后): `python3 ~/Programming/code-2026/multi-coworker/techne/psyche/psyche.py load lola --events 5` — 凭开机束回 T0, **禁全量重读历史**
+- 里程碑随手记: `... event lola <type> "一句话"`; 会话收尾: `... handoff lola --json -` (快照轮转保最近 3 份)
+- 模式切换不换魂: `... mode lola set forge|ledger|scribe` (未注册模式拒换); 身份层 IDENTITY.md 恒在
+- 毕业条件: 连开两日凭 load 复现 T0, 主人圈点后入业务仓; 未毕则留档不扩散
+
 ### 提醒联动 (the follow protocol) — 园与主人 iPhone 的正式通道
 `bin/remind.sh` 对接 Apple 提醒事项列表「园区·GRAPHIA」(iCloud 同步)，
 并自 09-24 起**双通道镜像 MS To Do**「任务」列表 (借道 Mac 原生 Exchange 同步，零注册零授权；
