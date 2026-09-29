@@ -43,6 +43,16 @@ MS To Do 镜像默认停 —— 需镜像时显式 `MIRROR=1 bin/remind.sh add .
 - 铁律二: 读卷必走批量取属性 (`get name of (reminders whose ...)`)，逐项引用在 Exchange 在架时会挂死
 
 
+### 信鸽匣 (lola correspondent) — 双身异步通道
+`chora/lola/` 是本地 lola 与 **ima-Lola**（分身, 见 `paidia/presence.json`）之间的信匣。
+- 写面: `inbox.md`(对岸来) / `outbox.md`(本地去) / `LEDGER.md`(台账, append-only＋sha)
+- 读面: `digest.md`(双身共读的状态面)
+- 用法: `python3 ~/Programming/code-2026/chora/lola/lola.py push|pull|recv|recopy|log|status`; Raycast 五命令见 `chora/lola/raycast/`
+- **会话开场必读**（读过提醒账之后）: 读 `chora/lola/digest.md` ＋ `LEDGER.md` 尾, 以拾对岸新信
+  —— 合园律「只看文件、不信管道」: ima 无 API, 信经剪贴板入匣, 以信中所带 sha 为准
+- 契约: 同一 CHARTER 身份 / 一账一道 / 账本 append-only / 改动走 rank 闸 / 落笔对撞 HEAD
+
+
 ### GitHub 通讯障碍重试律 (owner's ruling, 2026-09-19)
 github 连接障碍时: **先快速重试 3 次**; 仍不通则**加大间隔 10 → 20 → 40 分钟**各试一次;
 六次皆败即收兵挂账 (留 pending-push 记录, 下次会话开场先补推)。禁止高频死磕 —
