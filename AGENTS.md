@@ -26,7 +26,7 @@
 ### 工厂开机律 (Ψυχή psyche-kit, 主人 0928 ①案批复)
 `techne/psyche/psyche.py` (学院仓, 器部试炼中) 治「重启即失忆」之病:
 - 开机(读完提醒账后): `python3 ~/Programming/code-2026/multi-coworker/techne/psyche/psyche.py load lola --events 5` — 凭开机束回 T0, **禁全量重读历史**
-- 里程碑随手记: `... event lola <type> "一句话"`; 会话收尾: `... handoff lola --json -` (快照轮转保最近 3 份)
+- 里程碑随手记: `... event lola <type> "一句话"`; 会话收尾: `... handoff lola --json -` (快照轮转保最近 3 份) **＋ `python3 ~/Programming/code-2026/chora/lola/sync_ima.py digest`（园帐随收尾同步上 ima 笔记，对岸/iPhone 可读）**
 - 模式切换不换魂: `... mode lola set forge|ledger|scribe` (未注册模式拒换); 身份层 IDENTITY.md 恒在
 - 毕业条件: 连开两日凭 load 复现 T0, 主人圈点后入业务仓; 未毕则留档不扩散
 
