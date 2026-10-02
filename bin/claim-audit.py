@@ -36,6 +36,7 @@ def main():
     ap.add_argument("--n", type=int, default=1)
     ap.add_argument("--claims", default="bin/claims.csv")
     ap.add_argument("--base", default="~/Programming/code-2026")
+    ap.add_argument("--log", default="bin/claim-audit.log", help="追加一行抽查率 (默认 <repo>/bin/claim-audit.log; 空串=不记)")
     a = ap.parse_args()
     base = os.path.expanduser(a.base)
     rows = list(csv.DictReader(open(a.claims, encoding="utf-8")))
@@ -55,7 +56,18 @@ def main():
             passn += 1 if ok else 0
             print(f"  [{'PASS' if ok else 'FAIL'}] {kind} · {r.get('claim','')}  →  {src}")
     verdict = "✔ 全过" if (total and passn == total) else "✘ 存疑（回源对不上）"
+    line = f"{datetime.datetime.now():%F %T}\t{passn}/{total}\t{verdict}"
     print(f"抽查率 = {passn}/{total}  {verdict}")
+    log = a.log if a.log != "" else ""
+    if log is None:
+        log = ""
+    if log:
+        lp = log if os.path.isabs(log) else os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), log)
+        try:
+            with open(lp, "a", encoding="utf-8") as f:
+                f.write(line + "\n")
+        except Exception:
+            pass
     return 0 if (total and passn == total) else 1
 
 
