@@ -1,0 +1,8 @@
+id,kind,claim,source_type,source_ref,made_at
+C-001,完成,图书馆入口建议台账已建,file,Concept-Space-Sphere/notes/library-entrance-proposal/outreach.csv,2026-10-02
+C-002,完成,周期之遇页已上站,file,cora-atlas/docs/iterations/2026-10-01-periods-meet.html,2026-10-02
+C-003,完成,专家系统/世界模型之辨碑已立,file,cora-atlas/docs/GLOSSARY.html,2026-10-02
+P-001,通过,术语碑四栏渲染(表头含 非此／不包含),file,cora-atlas/docs/GLOSSARY.html,2026-10-02
+P-002,通过,图书馆回音巡检 launchd 已装,file,/Users/mac/Library/LaunchAgents/com.concept-space.lib-proposal.plist,2026-10-02
+F-001,已修复,site/ 建站残件已清+ignore,git,cora-atlas:a4c06d1,2026-10-02
+F-002,已修复,术语碑改四栏(build-site.sh 表生成器),git,cora-atlas:f2dc04d,2026-10-02
