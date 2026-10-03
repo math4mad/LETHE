@@ -71,7 +71,7 @@ end tell
 OSA
     ;;
 read)
-    ( osascript <<OSA & tp=$!; ( sleep 45; kill $tp 2>/dev/null ) & wait $tp 2>/dev/null || echo "⚠ 主道巡超时, 下次再收" )
+    ( osascript <<OSA & tp=$!; ( sleep 110; kill $tp 2>/dev/null ) & wait $tp 2>/dev/null || echo "⚠ 主道巡超时, 下次再收" )
 tell application "Reminders"
     set out to "── 未决 open · $LIST (iCloud 主道) ──" & linefeed
     tell $MAIN_PTR
@@ -109,7 +109,7 @@ OSA
             set out to out & "◻[MS] " & (item i of NMO) & "  ⟪" & (item i of BDO) & "⟫" & linefeed
         end repeat
         if out is "" then return "(空)"
-        return out' & tp=$!; ( sleep 45; kill $tp 2>/dev/null ) & wait $tp 2>/dev/null ) || echo "· 镜像巡未决, 主道无怗"
+        return out' & tp=$!; ( sleep 110; kill $tp 2>/dev/null ) & wait $tp 2>/dev/null ) || echo "· 镜像巡未决, 主道无怗"
     fi
     ;;
 done)
