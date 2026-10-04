@@ -43,6 +43,17 @@ MS To Do 镜像默认停 —— 需镜像时显式 `MIRROR=1 bin/remind.sh add .
 - 铁律二: 读卷必走批量取属性 (`get name of (reminders whose ...)`)，逐项引用在 Exchange 在架时会挂死
 
 
+### iPhone 直达线 · 三条道 (1004 立, 主人点援)
+园 ⇄ 主人 iPhone 三条并列道, **一账一道**:
+- `bin/remind.sh` — **日程与决策点** → iCloud 提醒事项 (可勾选=批复; 同「提醒联动」节)
+- `bin/bark.sh`  — **「agent 正在等你」的即时一响** → Bark/APNs 直推 (只出不进, 可 ttl 自焚)
+- `bin/ping.sh`  — **iMessage 道, 唯一能回信**: `send "正文"` 发 / `new` 拾主人新回复 / `read [N]` 看最近来讯 / `status` 体检
+- **会话开场必读（读过提醒账与信鸽匣之后）**: `bin/ping.sh new` —— 拾主人自 iPhone 回的字
+  - 前置: 宿主 app (Pi Agent Desktop) 须有「**完全磁盘访问**」, 且开权限后重启过宿主 app (否则 `chat.db` 报 authorization denied)
+  - 收件人取 `~/.zshrc` 的 `PING_TO` (与 `BARK_KEY` 同规矩: **不进仓**)
+  - **铁律**: 「发给自己」的会话会产生**回声副本** (is_from_me=0 同文)。判回声须用「同文 **且严格早于** 发出件」—— 仅看 `reply_to_guid` 指向发出件是不够的, 会**吞掉主人的真回信** (主人自手机发出的消息先以发出件同步回本机, 与来讯**同刻**)
+  - 判读法成文: 全局 skill `diagnose-imessage-delivery`
+
 ### 信鸽匣 (lola correspondent) — 双身异步通道
 `chora/lola/` 是本地 lola 与 **ima-Lola**（分身, 见 `paidia/presence.json`）之间的信匣。
 - 写面: `inbox.md`(对岸来) / `outbox.md`(本地去) / `LEDGER.md`(台账, append-only＋sha)
