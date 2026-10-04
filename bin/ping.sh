@@ -75,6 +75,19 @@ APPLESCRIPT
     where c.chat_identifier like '%'||'$to'||'%' and m.is_from_me=1
     order by m.date desc limit 1;")"
 
+  # 等回声落库再推进水位线, 免得回声日后冒充来讯
+  local waited=0
+  while (( waited < 12 )); do
+    local n
+    n="$(sq "select count(*) from message m
+              join chat_message_join j on j.message_id=m.ROWID
+              join chat c on c.ROWID=j.chat_id
+             where c.chat_identifier like '%'||'$to'||'%' and m.is_from_me=0
+               and m.date > (strftime('%s','now') - 978307200 - 30) * 1000000000;") "
+    (( n > 0 )) && break
+    sleep 1; waited=$((waited+1))
+  done
+
   IFS=$'\t' read -r sent dlv err dat echo_n <<<"$row"
   echo "[ping]   sent=$sent  delivered=$dlv  error=$err  投递时刻=$dat  回声=$echo_n"
   if [[ "$dlv" == "1" ]]; then
@@ -122,10 +135,14 @@ _show() { # $1 = extra SQL predicate
     join chat_message_join j on j.message_id=m.ROWID
     join chat c on c.ROWID=j.chat_id
     where c.chat_identifier like '%'||'$to'||'%' and m.is_from_me=0
-      -- 滤掉「发给自己」的回声副本: 回声的 reply_to_guid 指向我自己的发出件
+      -- 滤掉「发给自己」的回声副本。回声的形状: reply_to_guid 指向发出件, 同文, 且**早于**该发出件
+      -- (退回环到得比本机写入发出记录更早)。主人真回信时, iCloud 同步来的发出件与来讯**同刻**,
+      -- 不满足严格早于, 故不会被误滤 —— 这是区分「自言自语」与「主人回了一个字」的关键。
       and (m.reply_to_guid is null
            or not exists (select 1 from message o
-                           where o.guid = m.reply_to_guid and o.is_from_me = 1))
+                           where o.guid = m.reply_to_guid and o.is_from_me = 1
+                             and coalesce(o.text,'') = coalesce(m.text,'')
+                             and m.date < o.date))
       $1
     order by m.date desc limit $n;")"
   if [[ -z "$out" ]]; then echo "[ping] (无来讯)"; return 0; fi
@@ -158,15 +175,19 @@ cmd_status() {
                where c.chat_identifier like '%'||'$to'||'%' and m.is_from_me=1) || ' 条 / 真来讯 ' ||
              (select count(*) from message m join chat_message_join j on j.message_id=m.ROWID join chat c on c.ROWID=j.chat_id
                where c.chat_identifier like '%'||'$to'||'%' and m.is_from_me=0
-                 and (m.reply_to_guid is null or not exists (select 1 from message o where o.guid=m.reply_to_guid and o.is_from_me=1))) || ' 条' ||
+                 and (m.reply_to_guid is null
+                      or not exists (select 1 from message o where o.guid=m.reply_to_guid and o.is_from_me=1
+                                       and coalesce(o.text,'')=coalesce(m.text,'') and m.date < o.date))) || ' 条' ||
              ' (回声副本 ' ||
              (select count(*) from message m join chat_message_join j on j.message_id=m.ROWID join chat c on c.ROWID=j.chat_id
                where c.chat_identifier like '%'||'$to'||'%' and m.is_from_me=0
-                 and exists (select 1 from message o where o.guid=m.reply_to_guid and o.is_from_me=1)) || ' 条, 已滤)';"
+                 and exists (select 1 from message o where o.guid=m.reply_to_guid and o.is_from_me=1
+                              and coalesce(o.text,'')=coalesce(m.text,'') and m.date < o.date)) || ' 条, 已滤)';"
   sq "select '  最近投递: ' || coalesce(nullif(datetime(m.date_delivered/1000000000+978307200,'unixepoch','localtime'),'2001-01-01 08:00:00'),'(无回执)') ||
              '  delivered=' || m.is_delivered || ' error=' || m.error
       from message m join chat_message_join j on j.message_id=m.ROWID join chat c on c.ROWID=j.chat_id
-      where c.chat_identifier like '%'||'$to'||'%' and m.is_from_me=1 order by m.date desc limit 1;"
+      where c.chat_identifier like '%'||'$to'||'%' and m.is_from_me=1 and m.date_delivered > 0
+      order by m.date desc limit 1;"
 }
 
 case "${1:-}" in
