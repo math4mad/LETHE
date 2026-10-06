@@ -1,0 +1,78 @@
+{
+  "beta": 3.0,
+  "alphas": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "stream": [
+    "A",
+    "B",
+    "C",
+    "C1",
+    "C2",
+    "D",
+    "D1",
+    "E",
+    "C1",
+    "C1"
+  ],
+  "results": [
+    {
+      "alpha": 0.1,
+      "n_nodes": 8,
+      "root_breadth": 2,
+      "depth": 4,
+      "internal_weight_sum": {
+        "存在": 1.0,
+        "A": 1.0,
+        "C": 1.0,
+        "C1": 1.0,
+        "B": 1.0
+      },
+      "leaf_prior_sum": 1.0
+    },
+    {
+      "alpha": 1.0,
+      "n_nodes": 8,
+      "root_breadth": 3,
+      "depth": 4,
+      "internal_weight_sum": {
+        "存在": 1.0,
+        "A": 1.0,
+        "C": 1.0,
+        "C1": 1.0,
+        "B": 1.0
+      },
+      "leaf_prior_sum": 1.0
+    },
+    {
+      "alpha": 10.0,
+      "n_nodes": 8,
+      "root_breadth": 4,
+      "depth": 3,
+      "internal_weight_sum": {
+        "存在": 1.0,
+        "C": 1.0,
+        "C1": 1.0
+      },
+      "leaf_prior_sum": 1.0
+    },
+    {
+      "alpha": 100.0,
+      "n_nodes": 11,
+      "root_breadth": 10,
+      "depth": 1,
+      "internal_weight_sum": {
+        "存在": 1.0
+      },
+      "leaf_prior_sum": 1.0
+    }
+  ],
+  "criteria": {
+    "H-n1": true,
+    "H-n2": true,
+    "H-n3": true
+  }
+}
