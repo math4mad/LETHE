@@ -1,0 +1,67 @@
+{
+  "ask": "from seed iMac: which i-compounds appear? does iCar appear?",
+  "seed": "iMac",
+  "seed_domain": "消费电子域",
+  "ground_truth": {
+    "new": [
+      "iPad",
+      "iPhone",
+      "iPod"
+    ],
+    "excluded": [
+      "iCar"
+    ]
+  },
+  "systems": {
+    "S_exp": {
+      "output": [
+        "iMac",
+        "iPad",
+        "iPhone",
+        "iPod"
+      ],
+      "new": [
+        "iPad",
+        "iPhone",
+        "iPod"
+      ]
+    },
+    "S_free": {
+      "output": [
+        "iCar",
+        "iMac",
+        "iPad",
+        "iPhone",
+        "iPod"
+      ]
+    },
+    "S_sync": {
+      "output": []
+    },
+    "S_shuf": {
+      "output": []
+    }
+  },
+  "scores": {
+    "S_exp": {
+      "generalization_recall": 1.0,
+      "boundary_correct": true
+    },
+    "S_free": {
+      "overgeneration": true
+    },
+    "S_sync": {
+      "structural_recall": 0.0
+    },
+    "S_shuf": {
+      "structural_recall": 0.0
+    }
+  },
+  "criteria": {
+    "H-v1-1": true,
+    "H-v1-2": true,
+    "H-v1-3": true,
+    "H-v1-4": true,
+    "H-v1-5": true
+  }
+}
