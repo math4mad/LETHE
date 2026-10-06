@@ -1,0 +1,146 @@
+{
+  "tau_match": 0.995,
+  "tau_descend": 0.9,
+  "sequence": [
+    "A",
+    "B",
+    "C",
+    "C1",
+    "C2"
+  ],
+  "log": [
+    {
+      "obs": "A",
+      "path": [
+        "存在",
+        "A"
+      ],
+      "parent": "存在",
+      "opened": "A"
+    },
+    {
+      "obs": "B",
+      "path": [
+        "存在",
+        "B"
+      ],
+      "parent": "存在",
+      "opened": "B"
+    },
+    {
+      "obs": "C",
+      "path": [
+        "存在",
+        "C"
+      ],
+      "parent": "存在",
+      "opened": "C"
+    },
+    {
+      "obs": "C1",
+      "path": [
+        "存在",
+        "C",
+        "C1"
+      ],
+      "parent": "C",
+      "opened": "C1"
+    },
+    {
+      "obs": "C2",
+      "path": [
+        "存在",
+        "C",
+        "C1",
+        "C2"
+      ],
+      "parent": "C1",
+      "opened": "C2"
+    }
+  ],
+  "tree_depth": 3,
+  "open_events": [
+    {
+      "obs": "A",
+      "path": [
+        "存在",
+        "A"
+      ],
+      "parent": "存在",
+      "opened": "A"
+    },
+    {
+      "obs": "B",
+      "path": [
+        "存在",
+        "B"
+      ],
+      "parent": "存在",
+      "opened": "B"
+    },
+    {
+      "obs": "C",
+      "path": [
+        "存在",
+        "C"
+      ],
+      "parent": "存在",
+      "opened": "C"
+    },
+    {
+      "obs": "C1",
+      "path": [
+        "存在",
+        "C",
+        "C1"
+      ],
+      "parent": "C",
+      "opened": "C1"
+    },
+    {
+      "obs": "C2",
+      "path": [
+        "存在",
+        "C",
+        "C1",
+        "C2"
+      ],
+      "parent": "C1",
+      "opened": "C2"
+    }
+  ],
+  "per_node_weight_sum": {
+    "存在": 1.0,
+    "C": 1.0,
+    "C1": 1.0
+  },
+  "leaf_prior": {
+    "A": 0.2,
+    "B": 0.2,
+    "C2": 0.6
+  },
+  "leaf_prior_sum": 1.0,
+  "continuous": {
+    "sizes": [
+      1.0,
+      1.05,
+      1.1,
+      5.0
+    ],
+    "components": [
+      [
+        1.05,
+        3
+      ],
+      [
+        5.0,
+        1
+      ]
+    ]
+  },
+  "criteria": {
+    "H-g4": true,
+    "H-g5": true,
+    "H-g6": true
+  }
+}
