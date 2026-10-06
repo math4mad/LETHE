@@ -1,0 +1,161 @@
+{
+  "ask": "Q(C): what changed from stage A to stage B?",
+  "ground_truth": {
+    "struct_nodes": [
+      "圆",
+      "富士苹果",
+      "甜",
+      "红"
+    ],
+    "struct_edges": [
+      [
+        "富士苹果",
+        "圆"
+      ],
+      [
+        "富士苹果",
+        "甜"
+      ],
+      [
+        "富士苹果",
+        "红"
+      ],
+      [
+        "果域",
+        "富士苹果"
+      ]
+    ],
+    "outdeg_delta": {
+      "果域": [
+        1,
+        2
+      ]
+    },
+    "weight": {
+      "苹果": [
+        0.5,
+        0.375
+      ]
+    },
+    "split": {
+      "果域.苹果": [
+        1.0,
+        0.75
+      ]
+    }
+  },
+  "systems": {
+    "S_exp": {
+      "struct_events": [
+        [
+          "+edge",
+          "富士苹果",
+          "圆"
+        ],
+        [
+          "+edge",
+          "富士苹果",
+          "甜"
+        ],
+        [
+          "+edge",
+          "富士苹果",
+          "红"
+        ],
+        [
+          "+edge",
+          "果域",
+          "富士苹果"
+        ],
+        [
+          "+node",
+          "圆"
+        ],
+        [
+          "+node",
+          "富士苹果"
+        ],
+        [
+          "+node",
+          "甜"
+        ],
+        [
+          "+node",
+          "红"
+        ]
+      ],
+      "weight": {
+        "苹果": [
+          0.5,
+          0.375
+        ]
+      },
+      "outdeg": {
+        "富士苹果": [
+          0,
+          3
+        ],
+        "地景域": [
+          2,
+          2
+        ],
+        "存在": [
+          2,
+          2
+        ],
+        "果域": [
+          1,
+          2
+        ]
+      }
+    },
+    "S_sync": {
+      "struct_events": [],
+      "weight": {
+        "苹果": [
+          0.3333333333333333,
+          1.0
+        ],
+        "富士山": [
+          0.3333333333333333,
+          0.0
+        ],
+        "富士市": [
+          0.3333333333333333,
+          0.0
+        ]
+      },
+      "alias_new_as": "苹果"
+    },
+    "S_shuf": {
+      "struct_events": [],
+      "no_change": true
+    }
+  },
+  "scores": {
+    "S_exp": {
+      "structural_recall": 1.0,
+      "weight_drift_recovered": true,
+      "false_new": 0,
+      "no_change_reported": false
+    },
+    "S_sync": {
+      "structural_recall": 0.0,
+      "weight_drift_recovered": true,
+      "false_new": 0,
+      "no_change_reported": false
+    },
+    "S_shuf": {
+      "structural_recall": 0.0,
+      "weight_drift_recovered": false,
+      "false_new": 0,
+      "no_change_reported": true
+    }
+  },
+  "criteria": {
+    "H-t1": true,
+    "H-t2": true,
+    "H-t3": true,
+    "H-t4": true
+  }
+}
