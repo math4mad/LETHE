@@ -1,0 +1,94 @@
+{
+  "alpha": 1.0,
+  "bag": [
+    "A",
+    "B",
+    "C",
+    "C1",
+    "C1",
+    "C1",
+    "C2",
+    "D",
+    "D1",
+    "E"
+  ],
+  "rows": {
+    "original": {
+      "signature": {
+        "n_nodes": 8,
+        "root_breadth": 3,
+        "depth": 4,
+        "leaf_sum": 1.0
+      },
+      "co_membership_dist_vs_original": 0
+    },
+    "reversed": {
+      "signature": {
+        "n_nodes": 8,
+        "root_breadth": 2,
+        "depth": 5,
+        "leaf_sum": 1.0
+      },
+      "co_membership_dist_vs_original": 18
+    },
+    "grouped": {
+      "signature": {
+        "n_nodes": 8,
+        "root_breadth": 3,
+        "depth": 4,
+        "leaf_sum": 1.0
+      },
+      "co_membership_dist_vs_original": 0
+    },
+    "shuffle0": {
+      "signature": {
+        "n_nodes": 8,
+        "root_breadth": 2,
+        "depth": 4,
+        "leaf_sum": 1.0
+      },
+      "co_membership_dist_vs_original": 18
+    },
+    "shuffle1": {
+      "signature": {
+        "n_nodes": 8,
+        "root_breadth": 3,
+        "depth": 5,
+        "leaf_sum": 1.0
+      },
+      "co_membership_dist_vs_original": 20
+    },
+    "shuffle2": {
+      "signature": {
+        "n_nodes": 8,
+        "root_breadth": 3,
+        "depth": 3,
+        "leaf_sum": 1.0
+      },
+      "co_membership_dist_vs_original": 8
+    },
+    "shuffle3": {
+      "signature": {
+        "n_nodes": 8,
+        "root_breadth": 3,
+        "depth": 5,
+        "leaf_sum": 1.0
+      },
+      "co_membership_dist_vs_original": 20
+    },
+    "shuffle4": {
+      "signature": {
+        "n_nodes": 8,
+        "root_breadth": 2,
+        "depth": 5,
+        "leaf_sum": 1.0
+      },
+      "co_membership_dist_vs_original": 18
+    }
+  },
+  "criteria": {
+    "H-o1": true,
+    "H-o2": true,
+    "H-o3": true
+  }
+}
