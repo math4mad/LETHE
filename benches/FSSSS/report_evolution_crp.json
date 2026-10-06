@@ -1,0 +1,240 @@
+{
+  "alpha": 1.0,
+  "stream": [
+    "A",
+    "B",
+    "C",
+    "C1",
+    "C2",
+    "D",
+    "D1",
+    "E",
+    "C1",
+    "C1"
+  ],
+  "events": [
+    {
+      "step": 0,
+      "obs": "A",
+      "kind": "open",
+      "parent": "存在",
+      "child": "存在>A"
+    },
+    {
+      "step": 1,
+      "obs": "B",
+      "kind": "open",
+      "parent": "存在",
+      "child": "存在>B"
+    },
+    {
+      "step": 2,
+      "obs": "C",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A"
+    },
+    {
+      "step": 2,
+      "obs": "C",
+      "kind": "open",
+      "parent": "存在>A",
+      "child": "存在>A>C"
+    },
+    {
+      "step": 3,
+      "obs": "C1",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A"
+    },
+    {
+      "step": 3,
+      "obs": "C1",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A>C"
+    },
+    {
+      "step": 3,
+      "obs": "C1",
+      "kind": "open",
+      "parent": "存在>A>C",
+      "child": "存在>A>C>C1"
+    },
+    {
+      "step": 4,
+      "obs": "C2",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A"
+    },
+    {
+      "step": 4,
+      "obs": "C2",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A>C"
+    },
+    {
+      "step": 4,
+      "obs": "C2",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A>C>C1"
+    },
+    {
+      "step": 4,
+      "obs": "C2",
+      "kind": "open",
+      "parent": "存在>A>C>C1",
+      "child": "存在>A>C>C1>C2"
+    },
+    {
+      "step": 5,
+      "obs": "D",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>B"
+    },
+    {
+      "step": 5,
+      "obs": "D",
+      "kind": "open",
+      "parent": "存在>B",
+      "child": "存在>B>D"
+    },
+    {
+      "step": 6,
+      "obs": "D1",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>B"
+    },
+    {
+      "step": 6,
+      "obs": "D1",
+      "kind": "assign",
+      "parent": "存在>B",
+      "child": "存在>B>D"
+    },
+    {
+      "step": 7,
+      "obs": "E",
+      "kind": "open",
+      "parent": "存在",
+      "child": "存在>E"
+    },
+    {
+      "step": 8,
+      "obs": "C1",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A"
+    },
+    {
+      "step": 8,
+      "obs": "C1",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A>C"
+    },
+    {
+      "step": 8,
+      "obs": "C1",
+      "kind": "assign",
+      "parent": "存在>A>C",
+      "child": "存在>A>C>C1"
+    },
+    {
+      "step": 9,
+      "obs": "C1",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A"
+    },
+    {
+      "step": 9,
+      "obs": "C1",
+      "kind": "descend",
+      "parent": null,
+      "child": "存在>A>C"
+    },
+    {
+      "step": 9,
+      "obs": "C1",
+      "kind": "assign",
+      "parent": "存在>A>C",
+      "child": "存在>A>C>C1"
+    }
+  ],
+  "snap_nodes_count": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    7,
+    8,
+    8,
+    8
+  ],
+  "obtained": {
+    "new_nodes": [
+      "存在>A>C>C1",
+      "存在>A>C>C1>C2",
+      "存在>B>D",
+      "存在>E"
+    ],
+    "new_edges": [
+      [
+        "存在",
+        "存在>E"
+      ],
+      [
+        "存在>A>C",
+        "存在>A>C>C1"
+      ],
+      [
+        "存在>A>C>C1",
+        "存在>A>C>C1>C2"
+      ],
+      [
+        "存在>B",
+        "存在>B>D"
+      ]
+    ]
+  },
+  "ground_truth": {
+    "new_nodes": [
+      "存在>A>C>C1",
+      "存在>A>C>C1>C2",
+      "存在>B>D",
+      "存在>E"
+    ],
+    "new_edges": [
+      [
+        "存在",
+        "存在>E"
+      ],
+      [
+        "存在>A>C",
+        "存在>A>C>C1"
+      ],
+      [
+        "存在>A>C>C1",
+        "存在>A>C>C1>C2"
+      ],
+      [
+        "存在>B",
+        "存在>B>D"
+      ]
+    ]
+  },
+  "criteria": {
+    "H-e1": true,
+    "H-e2": true,
+    "H-e3": true
+  }
+}
