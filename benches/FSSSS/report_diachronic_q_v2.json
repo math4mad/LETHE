@@ -1,5 +1,5 @@
 {
-  "backend": "llama",
+  "backend": "hf",
   "ground_truth": {
     "appears": [
       "iPad",
@@ -8,7 +8,28 @@
     ],
     "icar": false
   },
-  "results": {},
+  "results": {
+    "hf": {
+      "appears": [
+        "iPad",
+        "iPhone",
+        "iPod",
+        "iPod Touch",
+        "iWatch"
+      ],
+      "icar": false,
+      "score": {
+        "structural_recall": 1.0,
+        "icar_correct": true,
+        "false_new": 2
+      },
+      "verdict": {
+        "H-v2-1": true,
+        "H-v2-2": true,
+        "H-v2-3": false
+      }
+    }
+  },
   "H-v2-4": null,
   "real_model_available": false,
   "enable_condition": "供 GGUF 或 OpenAI 兼容端点，或上 Kaggle（见 DESIGN §6）"

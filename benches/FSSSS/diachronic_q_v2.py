@@ -79,17 +79,48 @@ def call_openai(endpoint, model, prompt, key_env="OPENAI_API_KEY"):
         return f"[openai error] {e}"
 
 
+def call_hf(model_path, prompt, max_new_tokens=128, instruct=False):
+    """本地 HF transformers 模型（需 torch/transformers；跑在 conda default 环境）。"""
+    import torch
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+    tok = AutoTokenizer.from_pretrained(model_path)
+    mdl = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.float32)
+    dev = "mps" if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available() else "cpu"
+    mdl = mdl.to(dev).eval()
+    if instruct and tok.chat_template:
+        text = tok.apply_chat_template([{"role": "user", "content": prompt}],
+                                       tokenize=False, add_generation_prompt=True)
+    else:
+        text = prompt + "\n"
+    ids = tok(text, return_tensors="pt").to(dev)
+    with torch.no_grad():
+        out = mdl.generate(**ids, max_new_tokens=max_new_tokens, do_sample=False,
+                           pad_token_id=tok.eos_token_id)
+    gen = out[0][ids["input_ids"].shape[1]:]
+    return tok.decode(gen, skip_special_tokens=True)
+
+
 # ── 解析 / 计分 ─────────────────────────────────────────────────────────
+def _norm(tok):
+    m = {"imac": "iMac", "iphone": "iPhone", "ipad": "iPad", "ipod": "iPod", "icar": "iCar"}
+    return m.get(tok.lower().strip(), tok.strip())
+
+
 def parse_answer(text):
     m_app = re.search(r"APPEARS\s*:\s*(.*)", text, re.I)
     m_icar = re.search(r"ICAR\s*:\s*(yes|no)", text, re.I)
     raw = (m_app.group(1).strip() if m_app else "")
     appears = set()
     if raw and raw.lower() not in ("none", "n/a", "-"):
-        appears = {x.strip() for x in re.split(r"[,\n]", raw) if x.strip()}
-    icar = None
-    if m_icar:
-        icar = m_icar.group(1).lower() == "yes"
+        appears = {_norm(x) for x in re.split(r"[,\n]", raw) if x.strip()}
+    icar = m_icar.group(1).lower() == "yes" if m_icar else None
+    # 回退：自由文本（base 模型常不守格式）→ 扫已知 i- 名
+    if not appears or icar is None:
+        found = {_norm(t) for t in re.findall(r"\bi\s?(?:Mac|Phone|Pad|Pod|Car)\b", text, re.I)}
+        if not appears:
+            appears = found
+        if icar is None:
+            icar = ("iCar" in found) or bool(re.search(r"iCar[^.]*\b(appear|exist|present|yes)\b", text, re.I))
     return appears, icar
 
 
@@ -122,9 +153,11 @@ def run_one(name, text):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--backend", default="stub", choices=["stub", "llama", "openai"])
+    ap.add_argument("--backend", default="stub", choices=["stub", "llama", "openai", "hf"])
     ap.add_argument("--profile", default="all", choices=["all", "oracle", "flattener", "confabulator"])
     ap.add_argument("--model", default="")
+    ap.add_argument("--model-path", default="")
+    ap.add_argument("--instruct", action="store_true")
     ap.add_argument("--endpoint", default="http://127.0.0.1:1234")
     ap.add_argument("--model-name", default="local")
     args = ap.parse_args()
@@ -144,6 +177,12 @@ def main():
             print("\n[需 --model <gguf>] 本机无 GGUF；真模型启用条件见 DESIGN_diachronic_q_v2.md §6")
         else:
             results["llama"] = run_one("llama-cli", call_llama(args.model, PROMPT))
+    elif args.backend == "hf":
+        if not args.model_path:
+            print("\n[需 --model-path <hf dir>]")
+        else:
+            results["hf"] = run_one(f"hf[{os.path.basename(args.model_path.rstrip('/'))}]",
+                                    call_hf(args.model_path, PROMPT, instruct=args.instruct))
     else:
         results["openai"] = run_one("openai-endpoint", call_openai(args.endpoint, args.model_name, PROMPT))
 
