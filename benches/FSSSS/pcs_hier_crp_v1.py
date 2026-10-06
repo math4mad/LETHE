@@ -110,14 +110,17 @@ def weights(node):
     return {} if tot == 0 else {c.name: c.n / tot for c in node.children}
 
 
-def leaves(root, acc=1.0, out=None):
+def leaves(root, acc=1.0, out=None, path=None):
     if out is None:
         out = {}
+    if path is None:
+        path = root.name
     if not root.children:
-        out[root.name] = acc
+        out[path] = acc
         return out
+    w = weights(root)
     for c in root.children:
-        leaves(c, acc * weights(root)[c.name], out)
+        leaves(c, acc * w[c.name], out, path + ">" + c.name)
     return out
 
 
