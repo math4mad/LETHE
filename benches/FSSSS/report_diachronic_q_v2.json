@@ -1,0 +1,15 @@
+{
+  "backend": "llama",
+  "ground_truth": {
+    "appears": [
+      "iPad",
+      "iPhone",
+      "iPod"
+    ],
+    "icar": false
+  },
+  "results": {},
+  "H-v2-4": null,
+  "real_model_available": false,
+  "enable_condition": "供 GGUF 或 OpenAI 兼容端点，或上 Kaggle（见 DESIGN §6）"
+}
