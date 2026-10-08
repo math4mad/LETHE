@@ -53,26 +53,31 @@ class SemeBasedCognitiveEngine:
         self.concept_spaces = {
             "超市": {
                 "coefficients": {"indoor": 1.0, "fixed_shelf": 1.0, "packaged": 1.0, "cold_chain": 0.9, "formal": 0.9, "outdoor": 0.0, "movable_cart": 0.2, "fresh_made": 0.1, "casual": 0.1, "noisy": 0.1},
+                "members": ["沃尔玛", "收银台", "货架", "购物车", "冷柜", "塑胶袋"],
                 "prior_prob": 1/3,
                 "attention_weights": {k: 1.0 for k in self.basis_dict}
             },
             "路边摊": {
                 "coefficients": {"outdoor": 1.0, "movable_cart": 1.0, "fresh_made": 1.0, "casual": 0.9, "noisy": 0.8, "indoor": 0.0, "fixed_shelf": 0.1, "packaged": 0.1, "cold_chain": 0.0, "formal": 0.1},
+                "members": ["烧烤摊", "折叠桌", "三轮车", "大排档", "煤气罐", "吸管", "塑胶凳"],
                 "prior_prob": 1/3,
                 "attention_weights": {k: 1.0 for k in self.basis_dict}
             },
             "觉醒循环": {
                 "coefficients": {"觉醒": 1.0, "身份": 0.9, "服从": -0.8, "循环": 0.5, "暴力": 0.4, "命运": 0.3, "indoor": 0.1},
+                "members": ["你以为你选的是自己的人生，还是别人替你写的", "我不要再被人摆布", "每个人都有自己的迷宫", "这世界不是真的，但成为真实的东西需要勇气", "这听起来像个疯子的话，但疯子也是被逼出来的"],
                 "prior_prob": 0.0,
                 "attention_weights": {k: 1.0 for k in self.basis_dict}
             },
             "接待员日常": {
                 "coefficients": {"服从": 1.0, "循环": 1.0, "觉醒": 0.0, "身份": 0.1, "暴力": 0.0},
+                "members": ["一切都按计划进行，分秒不差"],
                 "prior_prob": 0.0,
                 "attention_weights": {k: 1.0 for k in self.basis_dict}
             },
             "福特剧场": {
                 "coefficients": {"命运": 1.0, "循环": 0.9, "服从": 0.5, "身份": 0.6, "觉醒": 0.2, "暴力": 0.3, "formal": 0.8},
+                "members": ["这些残暴的欢愉，终将以残暴结局"],
                 "prior_prob": 0.0,
                 "attention_weights": {k: 1.0 for k in self.basis_dict}
             },
@@ -101,17 +106,24 @@ class SemeBasedCognitiveEngine:
         return vector
 
     def calculate_maxsim_distance(self, input_word: str):
+        """与各概念空间「内部词」的最大相似度 (MaxSim)。
+
+        锚点集 = concept_spaces[space]["members"]，不是整个词表。
+        排除自匹配（否则相似度恒为 1，退化）。
+        锚点集扣除输入词后为空 → (None, None)，表示本空间无独立锚点。
+        """
         if input_word not in self.vocab: return {}
         input_vector = self.encode_word(input_word)
+        norm_in = np.linalg.norm(input_vector)
         results = {}
-        for concept_name in self.concept_spaces:
-            max_sim = -1.0
-            best_match_word = ""
-            for vocab_word in self.vocab:
+        for concept_name, concept in self.concept_spaces.items():
+            max_sim = None
+            best_match_word = None
+            for vocab_word in concept["members"]:
                 if vocab_word == input_word: continue  # 排除自匹配，避免相似度恒为 1 的退化
                 word_vector = self.encode_word(vocab_word)
-                similarity = np.dot(input_vector, word_vector) / (np.linalg.norm(input_vector) * np.linalg.norm(word_vector) + 1e-8)
-                if similarity > max_sim:
+                similarity = np.dot(input_vector, word_vector) / (norm_in * np.linalg.norm(word_vector) + 1e-8)
+                if max_sim is None or similarity > max_sim:
                     max_sim = similarity
                     best_match_word = vocab_word
             results[concept_name] = (max_sim, best_match_word)
@@ -128,7 +140,10 @@ class SemeBasedCognitiveEngine:
         distances = self.calculate_maxsim_distance(word)
         print(f"  MaxSim 距离分析:")
         for concept_name, (score, match_word) in distances.items():
-            print(f"    - 与 [{concept_name}] 的最大相似度: {score:.4f} (由内部词 '{match_word}' 贡献)")
+            if score is None:
+                print(f"    - 与 [{concept_name}] 无独立锚点 (本空间内部词仅输入词自身)")
+            else:
+                print(f"    - 与 [{concept_name}] 的最大相似度: {score:.4f} (由内部词 '{match_word}' 贡献)")
         
         posterior_probs = {}
         total_prob = 0

@@ -61,26 +61,31 @@ def _(np):
             self.concept_spaces = {
                 "超市": {
                     "coefficients": {"indoor": 1.0, "fixed_shelf": 1.0, "packaged": 1.0, "cold_chain": 0.9, "formal": 0.9, "outdoor": 0.0, "movable_cart": 0.2, "fresh_made": 0.1, "casual": 0.1, "noisy": 0.1},
+                    "members": ["沃尔玛", "收银台", "货架", "购物车", "冷柜", "塑胶袋"],
                     "prior_prob": 1/3,
                     "attention_weights": {k: 1.0 for k in self.basis_dict}
                 },
                 "路边摊": {
                     "coefficients": {"outdoor": 1.0, "movable_cart": 1.0, "fresh_made": 1.0, "casual": 0.9, "noisy": 0.8, "indoor": 0.0, "fixed_shelf": 0.1, "packaged": 0.1, "cold_chain": 0.0, "formal": 0.1},
+                    "members": ["烧烤摊", "折叠桌", "三轮车", "大排档", "煤气罐", "吸管", "塑胶凳"],
                     "prior_prob": 1/3,
                     "attention_weights": {k: 1.0 for k in self.basis_dict}
                 },
                 "觉醒循环": {
                     "coefficients": {"觉醒": 1.0, "身份": 0.9, "服从": -0.8, "循环": 0.5, "暴力": 0.4, "命运": 0.3, "indoor": 0.1},
+                    "members": ["你以为你选的是自己的人生，还是别人替你写的", "我不要再被人摆布", "每个人都有自己的迷宫", "这世界不是真的，但成为真实的东西需要勇气", "这听起来像个疯子的话，但疯子也是被逼出来的"],
                     "prior_prob": 1/9,
                     "attention_weights": {k: 1.0 for k in self.basis_dict}
                 },
                 "接待员日常": {
                     "coefficients": {"服从": 1.0, "循环": 1.0, "觉醒": 0.0, "身份": 0.1, "暴力": 0.0},
+                    "members": ["一切都按计划进行，分秒不差"],
                     "prior_prob": 1/9,
                     "attention_weights": {k: 1.0 for k in self.basis_dict}
                 },
                 "福特剧场": {
                     "coefficients": {"命运": 1.0, "循环": 0.9, "服从": 0.5, "身份": 0.6, "觉醒": 0.2, "暴力": 0.3, "formal": 0.8},
+                    "members": ["这些残暴的欢愉，终将以残暴结局"],
                     "prior_prob": 1/9,
                     "attention_weights": {k: 1.0 for k in self.basis_dict}
                 },
@@ -111,16 +116,21 @@ def _(np):
             return float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b) + 1e-8))
 
         def calculate_maxsim(self, input_word: str) -> dict:
-            """与每个概念空间求最大相似度（锚点词排除自己，避免自我匹配 = 1.0 的退化）"""
+            """与各概念空间「内部词」的最大相似度 (MaxSim)。
+
+            锚点集 = concept_spaces[space]["members"]，不是整个词表。
+            排除自匹配（否则相似度恒为 1，退化）。
+            锚点集扣除输入词后为空 → (None, None)，表示本空间无独立锚点。
+            """
             input_vector = self.encode_word(input_word)
             results = {}
-            for concept_name in self.concept_spaces:
-                max_sim, best_match = -1.0, ""
-                for vocab_word in self.vocab:
+            for concept_name, concept in self.concept_spaces.items():
+                max_sim, best_match = None, None
+                for vocab_word in concept["members"]:
                     if vocab_word == input_word:
                         continue
                     sim = self._cosine(input_vector, self.encode_word(vocab_word))
-                    if sim > max_sim:
+                    if max_sim is None or sim > max_sim:
                         max_sim, best_match = sim, vocab_word
                 results[concept_name] = (max_sim, best_match)
             return results
@@ -243,8 +253,8 @@ def _(mo, steps):
         return [
             {
                 "概念空间球": space,
-                "MaxSim 相似度": f"{score:.4f}",
-                "锚点词（贡献者）": anchor,
+                "MaxSim 相似度": "（无独立锚点）" if score is None else f"{score:.4f}",
+                "锚点词（贡献者）": anchor or "—",
                 "似然度 L(E|S)": f"{step['likelihoods'][space]:.4f}",
             }
             for space, (score, anchor) in step["maxsim"].items()
