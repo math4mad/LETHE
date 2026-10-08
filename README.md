@@ -9,6 +9,7 @@
 |---|---|---|
 | 🎲 经典终端引擎 | `./run_engine.sh 塑胶凳` | 命令行版认知引擎（MaxSim + 贝叶斯输出） |
 | 🎹 Marimo 认知控制台 | `./run_marimo.sh`（编辑）/ `./run_marimo.sh --run`（App） | 交互式笔记本，园区标准表格与图表 |
+| 🧪 义素探针 · Zero 版 | `./run_zsim.sh 塑胶凳` | 独立第二实现（Zero 整数定点），差分验证台 + 回归门禁 —— 详见 `zsim/README.md` |
 | 🌐 园区网站 | `./serve_site.sh` → http://localhost:8000 | 园区大门（含纯 JS 版互动观察台，与 Python 引擎数据同源） |
 | 📜 出生证 | `website/certificate.html` → `birth-certificate.pdf` | bench I · CRADLE 摇篮：蓝图 Chora/Cora（主人与通义千问对话所生），tectonic 亲手编译，四件入城均有收据 |
 | 🪨 成因综述（第二篇） | `website/strata.html` → `temporal_concept_space.pdf` | bench I · CRADLE：主人 × 多家 LLM 复盘综述（时域概念空间·四成因层），逐字入城打条，LETHE 亲手排明体正体字版 |
@@ -50,7 +51,9 @@ letters/                     # 致邻邦的信（001 → CHORA，002 → Cora）
 benches/CRADLE/              # bench I 摇篮：已就位 — 蓝图、入城字节（均带收据）、出生证 PDF、第二篇综述（tex+PDF）
 benches/FOUNDRY/             # bench II：义素铸造厂 — 环仍虚线，入册夹具已冷备
 benches/MIRROR/              # 预留 bench III：空间→词生成镜厅（虚线环）
-run_engine.sh / run_marimo.sh / serve_site.sh
+zsim/                        # Zero 整数定点第二实现（图即程序 zero.graph，人读投影 src/main.0）
+zsim/compare.py              # 差分比对台：Python 浮点 ↔ Zero 定点，不一致即非零退出
+run_engine.sh / run_marimo.sh / run_zsim.sh / serve_site.sh
 ```
 
 ## 依赖
@@ -58,5 +61,15 @@ run_engine.sh / run_marimo.sh / serve_site.sh
 ```bash
 pip install numpy marimo matplotlib
 ```
+
+`zsim/`（Zero 第二实现）另需 `zero` 编译器（**非** Python 依赖，零运行时依赖）：
+
+```bash
+curl -fsSL https://zerolang.ai/install.sh | bash   # 默认落 ~/.zero/bin
+export PATH="$HOME/.zero/bin:$PATH"
+```
+
+验证于 `zero 0.3.4 (build 5b3a90a)`。`run_zsim.sh` 会自动在 `$ZERO` /
+`.bin/zero` / 邻域沙盒 / `$PATH` 中寻找编译器。
 
 *『这些残暴的欢愉，终将以残暴结局。』*

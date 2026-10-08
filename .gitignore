@@ -15,3 +15,6 @@ corpus/ladder05/layers/childes/diaries/Bowerman/
 corpus/ladder05/layers/childes/diaries/Stern&Stern/
 corpus/ladder05/layers/childes/chat/*.cha
 corpus/ladder05/layers/childes/curriculum*/
+
+# Zero 编译器缓存（zsim/ 之下另有同名 ignore）
+.zero/
