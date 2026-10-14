@@ -1,0 +1,83 @@
+{
+ "minted": "2026-10-13",
+ "experiment": "E-TDV-2 residual tangent (de-artifact)",
+ "parent": "E-TDV",
+ "corpus": {
+  "deck": "D5_baby",
+  "n": 50,
+  "stages": [
+   "0-3月",
+   "3-6月",
+   "6-12月",
+   "1-2岁",
+   "2-3岁"
+  ]
+ },
+ "knobs": {
+  "seed_fixed": 13,
+  "shuffle_seeds": [
+   14,
+   15,
+   16
+  ],
+  "alpha_grid": [
+   -2.0,
+   -1.0,
+   -0.5,
+   0.0,
+   0.5,
+   1.0,
+   2.0
+  ],
+  "orth_target": "v̂_shuf(3seeds平均)",
+  "component": "PCA主轴 on 残差",
+  "sign": "规约到与阶正相关"
+ },
+ "artifact": {
+  "cos_vtemporal_vshuf": 0.9942976832389832,
+  "orth_gain_rho": {
+   "rho_res": 0.5144957554275266,
+   "rho_full_pca_none_orth": 0.6330747771546326,
+   "rho_vhat_ref": 0.4184565477477216,
+   "rho_pca_pc1_ref": 0.621314874173432,
+   "rho_res_shuf_ctrl": 0.3224173400679166
+  },
+  "orth_note": "PDF: 正交化让探针从 mean偏移族的0.418→残差, 目标是与PCA-PC1的0.621同量级再超"
+ },
+ "K1_residual_probe": {
+  "rho_residual_tangent": 0.5144957554275266,
+  "rho_plain_diff_pca": 0.6330747771546326,
+  "rho_vhat_ref_E-TDV": 0.4184565477477216,
+  "rho_pca_pc1_ref": 0.621314874173432,
+  "rho_residual_shuf_ctrl": 0.3224173400679166,
+  "gain_vs_vhat": 0.09603920767980495,
+  "verdict": "部分增益但未达0.55门槛",
+  "pass": false
+ },
+ "K2_timemachine": {
+  "alpha_grid": [
+   -2.0,
+   -1.0,
+   -0.5,
+   0.0,
+   0.5,
+   1.0,
+   2.0
+  ],
+  "mean_predicted_rank": [
+   1.96,
+   1.9,
+   1.9,
+   1.9,
+   1.9,
+   1.9,
+   1.9
+  ],
+  "true_mean_rank": 2.0,
+  "monotone": false,
+  "span": -0.06000000000000005,
+  "verdict": "拨不动",
+  "pass": false
+ },
+ "elapsed_s": 7.63447117805481
+}

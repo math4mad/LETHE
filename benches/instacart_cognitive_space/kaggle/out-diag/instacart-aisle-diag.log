@@ -1,0 +1,37 @@
+[{"stream_name":"stderr","time":3.478387091,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":3.4798061049999998,"data":"  File \"/kaggle/src/script.py\", line 13, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":3.47983304,"data":"    diag_aisles()\n"}
+,{"stream_name":"stderr","time":3.479838633,"data":"    ~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":3.479843172,"data":"  File \"/kaggle/src/script.py\", line 6, in diag_aisles\n"}
+,{"stream_name":"stderr","time":3.479848519,"data":"    aisles = pd.read_csv(base_path + 'aisles.csv')\n"}
+,{"stream_name":"stderr","time":3.479853582,"data":"  File \"/usr/local/lib/python3.13/dist-packages/pandas/io/parsers/readers.py\", line 1026, in read_csv\n"}
+,{"stream_name":"stderr","time":3.479858788,"data":"    return _read(filepath_or_buffer, kwds)\n"}
+,{"stream_name":"stderr","time":3.479863929,"data":"  File \"/usr/local/lib/python3.13/dist-packages/pandas/io/parsers/readers.py\", line 620, in _read\n"}
+,{"stream_name":"stderr","time":3.479869447,"data":"    parser = TextFileReader(filepath_or_buffer, **kwds)\n"}
+,{"stream_name":"stderr","time":3.479874442,"data":"  File \"/usr/local/lib/python3.13/dist-packages/pandas/io/parsers/readers.py\", line 1620, in __init__\n"}
+,{"stream_name":"stderr","time":3.479879855,"data":"    self._engine = self._make_engine(f, self.engine)\n"}
+,{"stream_name":"stderr","time":3.479884599,"data":"                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":3.47988922,"data":"  File \"/usr/local/lib/python3.13/dist-packages/pandas/io/parsers/readers.py\", line 1880, in _make_engine\n"}
+,{"stream_name":"stderr","time":3.479894609,"data":"    self.handles = get_handle(\n"}
+,{"stream_name":"stderr","time":3.4799002740000002,"data":"                   ~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":3.479904865,"data":"        f,\n"}
+,{"stream_name":"stderr","time":3.479909806,"data":"        ^^\n"}
+,{"stream_name":"stderr","time":3.479914273,"data":"    ...\u003c6 lines\u003e...\n"}
+,{"stream_name":"stderr","time":3.479918992,"data":"        storage_options=self.options.get(\"storage_options\", None),\n"}
+,{"stream_name":"stderr","time":3.479923842,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":3.479928577,"data":"    )\n"}
+,{"stream_name":"stderr","time":3.479933817,"data":"    ^\n"}
+,{"stream_name":"stderr","time":3.4799386930000002,"data":"  File \"/usr/local/lib/python3.13/dist-packages/pandas/io/common.py\", line 873, in get_handle\n"}
+,{"stream_name":"stderr","time":3.479944717,"data":"    handle = open(\n"}
+,{"stream_name":"stderr","time":3.479949757,"data":"        handle,\n"}
+,{"stream_name":"stderr","time":3.4799546599999998,"data":"    ...\u003c3 lines\u003e...\n"}
+,{"stream_name":"stderr","time":3.479959519,"data":"        newline=\"\",\n"}
+,{"stream_name":"stderr","time":3.4799646859999998,"data":"    )\n"}
+,{"stream_name":"stderr","time":3.479969495,"data":"FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/input/instacart-market-basket-analysis/aisles.csv'\n"}
+,{"stream_name":"stderr","time":6.841089113,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":6.841131564,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":7.345470375,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":7.345501906,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9.646014638,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":11.22697403,"data":"[NbConvertApp] Writing 274454 bytes to __results__.html\n"}
+]

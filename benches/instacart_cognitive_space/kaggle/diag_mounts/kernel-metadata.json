@@ -1,0 +1,1 @@
+{"id": "math4amd/instacart-diag-mounts", "title": "Instacart Diag Mounts", "code_file": "diag_mounts.py", "language": "python", "kernel_type": "script", "is_private": true, "enable_gpu": false, "enable_internet": false, "dataset_sources": [], "competition_sources": [], "kernel_sources": [], "model_sources": ["qwen-lm/qwen2.5/transformers/0.5b-instruct/1"]}

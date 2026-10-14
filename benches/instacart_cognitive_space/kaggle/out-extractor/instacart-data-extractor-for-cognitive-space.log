@@ -1,0 +1,11 @@
+[{"stream_name":"stderr","time":0.960103606,"data":"  File \"/kaggle/src/script.py\", line 48\n"}
+,{"stream_name":"stderr","time":0.960160361,"data":"    elif any(a in all_aisles for aT in [\"Paper Products\", \"Household\", \"Frozen\"]) for a in all_aisles: # simplified\n"}
+,{"stream_name":"stderr","time":0.960168448,"data":"                                                                                  ^^^\n"}
+,{"stream_name":"stderr","time":0.960173935,"data":"SyntaxError: invalid syntax\n"}
+,{"stream_name":"stderr","time":4.2717020869999995,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4.271742723,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4.82028396,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4.820315513,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":7.113301848,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":8.664334751,"data":"[NbConvertApp] Writing 285215 bytes to __results__.html\n"}
+]

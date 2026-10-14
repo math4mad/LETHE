@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-10-13">
+
+<title>训练级 C42：有序 vs 打乱语料各训 LoRA</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="report_c42_files/libs/clipboard/clipboard.min.js"></script>
+<script src="report_c42_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="report_c42_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="report_c42_files/libs/quarto-html/popper.min.js"></script>
+<script src="report_c42_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="report_c42_files/libs/quarto-html/anchor.min.js"></script>
+<link href="report_c42_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="report_c42_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="report_c42_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="report_c42_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="report_c42_files/libs/bootstrap/bootstrap-917079515d91bccb85b543faf8aa8bb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#背景" id="toc-背景" class="nav-link active" data-scroll-target="#背景"><span class="header-section-number">1</span> 背景</a></li>
+  <li><a href="#园线与判据先冻" id="toc-园线与判据先冻" class="nav-link" data-scroll-target="#园线与判据先冻"><span class="header-section-number">2</span> 园线与判据（先冻）</a></li>
+  <li><a href="#读数" id="toc-读数" class="nav-link" data-scroll-target="#读数"><span class="header-section-number">3</span> 读数</a></li>
+  <li><a href="#判词" id="toc-判词" class="nav-link" data-scroll-target="#判词"><span class="header-section-number">4</span> 判词</a></li>
+  <li><a href="#诚实账" id="toc-诚实账" class="nav-link" data-scroll-target="#诚实账"><span class="header-section-number">5</span> 诚实账</a></li>
+  <li><a href="#复现" id="toc-复现" class="nav-link" data-scroll-target="#复现"><span class="header-section-number">6</span> 复现</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">训练级 C42：有序 vs 打乱语料各训 LoRA</h1>
+<p class="subtitle lead">射击 3 · dag06 非交换律的训练级形态（三矩阵夹角）</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 13, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="背景" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 背景</h1>
+<p>编码级证据（<code>report_stage.html</code>）只证明「同一袋卡、不同喂序 ⇒ 表征不同」， 量级是末层 ρ 的 +0.14。dag06 正律的完整形态要求<strong>训练级</strong>证据： 有序语料与打乱语料各训一个 LoRA，两个适配器的权重增量（ΔW）是否不同？ 若训练也非交换，则「序即结构」从表征层推进到<strong>权重层</strong>。</p>
+<p>量法沿用 exp12c 园线（<code>chora/experiments/exp12c-curriculum/</code>）： 两两 ΔW 夹角（度），臂间夹角与 seed 散布对账。</p>
+</section>
+<section id="园线与判据先冻" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> 园线与判据（先冻）</h1>
+<p>园线（exp12c）：<strong>r=16 / α=32 / 6 ep / lr=1e-4 / Adam β2=0.95</strong> （β2 转写自 exp12c 记录 “b2a4”，如实标注）； 目标模块：注意力四矩阵 <code>q/k/v/o_proj</code>；任务：卡片流因果 LM；流切块 128 token 非重叠。</p>
+<p>臂：</p>
+<ul>
+<li><strong>ord</strong>：D5_baby 50 卡按年龄阶序（seed 13）</li>
+<li><strong>shuf ×3</strong>：同 50 卡打乱（seeds 14/15/16）</li>
+</ul>
+<p>判据（跑前登记）：</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>判</th>
+<th>条件</th>
+<th>解读</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>K-1</td>
+<td>ord~shuf ΔW 夹角 &lt; 3°</td>
+<td>时序课程序在 LoRA 尺度不可感</td>
+</tr>
+<tr class="even">
+<td>K-2</td>
+<td>3°–10°</td>
+<td>序效应真实但弱</td>
+</tr>
+<tr class="odd">
+<td>K-3</td>
+<td>&gt; 10°</td>
+<td>强效应</td>
+</tr>
+<tr class="even">
+<td>K-4</td>
+<td>臂间夹角 ≤ shuf 间散布</td>
+<td>一律归零</td>
+</tr>
+<tr class="odd">
+<td>K-5</td>
+<td>ord 臂训后探针末层 ρ ≥ shuf 臂均值 + 0.05</td>
+<td>训练把时序轴刻进权重</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="读数" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 读数</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs_c42/fig_c42_angles.png" class="img-fluid figure-img"></p>
+<figcaption>ΔW 夹角</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs_c42/fig_c42_rho.png" class="img-fluid figure-img"></p>
+<figcaption>训后探针</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs_c42/fig_c42_loss.png" class="img-fluid figure-img"></p>
+<figcaption>训练曲线</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>量</th>
+<th>ord~shuf</th>
+<th>shuf~shuf 散布</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ΔW 夹角</td>
+<td>88.61° / 88.47° / 88.53°（均值 <strong>88.54°</strong>）</td>
+<td>88.37° / 88.37° / 88.33°（均值 <strong>88.36°</strong>）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>训练曲线</strong>：ord [3.907→2.817] vs shuf [3.921→2.817]——几乎重合。</li>
+<li><strong>训后探针</strong>：ord 臂末层 ρ=+0.62，shuf 臂末层 ρ=+0.62，差 <strong>−0.002</strong>（K5 不过）； 逐层峰值 ord 在层 23（+0.66）、shuf 在层 24（+0.62）——与基座 C0 读数（+0.62）相同。</li>
+</ul>
+</section>
+<section id="判词" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 判词</h1>
+<ol type="1">
+<li><strong>实质裁决：K-4 归零</strong>。臂间夹角（88.54°）与 seed 散布（88.36°）同量级，差 0.18°—— 时序课程序在 LoRA 权重尺度<strong>不可辨</strong>。</li>
+<li><strong>判据实现教训（如实记）</strong>：脚本字面裁决落到 K-3（&gt;10° 强效应），但这是误判—— LoRA 的 ΔW 因随机初始化天然近正交（~88.5° 是<strong>所有臂对</strong>的基线，shuf~shuf 亦然）， 绝对阈值在近正交基线下失效。exp12c 的 K-1（&lt;3°）预设「无效课程 ⇒ ΔW 相似」， 该预设对 LoRA 不成立；量法应改为「<strong>臂间夹角 − 散布</strong>」的差值检验。</li>
+<li><strong>K5 不过</strong>：6 ep 训练没有把时序轴刻进权重——训后时序轴强度与基座相同（ρ=0.62）。</li>
+<li>总结论：「序即结构」目前只在<strong>编码级</strong>成立（末层 +0.14，<code>report_stage.html</code>）； 训练级（6 ep LoRA、50 卡小语料）不成立——序效应没有沉到权重。 「归零」是「此预算下不可辨」，不是「序效应不存在」的证明。</li>
+</ol>
+</section>
+<section id="诚实账" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 诚实账</h1>
+<ul>
+<li>单模型（0.5B）、单 deck（D5_baby）、训练步数极少（每臂 6 ep × ~6 块）——过拟合风险高，读数是指示性的。</li>
+<li>β2=0.95 为转写值；若 exp12c 原值不同，角度量级会变，方向性结论应复核。</li>
+<li>ΔW 夹角对 LoRA 的 A/B 初始化对称性敏感——三臂同基座同分布初始化，臂间可比；实测 ~88.5° 基线说明<strong>绝对夹角不可用</strong>，应用相对对账（臂间 vs 散布）。</li>
+<li>预算极小（6 ep × ~6 块 ≈ 36 步）：「归零」是「此预算下不可辨」，非存在性否定。改进方向：更多 epoch、更大语料、或改用「ΔW 在固定方向上的投影」而非夹角。</li>
+</ul>
+</section>
+<section id="复现" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 复现</h1>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> benches/transformer_vis</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">/opt/miniconda3/envs/default/bin/python</span> train_c42.py corpus_baby.json   <span class="co"># → figs_c42/ + metrics_c42.json</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render report_c42.qmd <span class="at">--to</span> html</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,7325 @@
+{
+ "deck": "D5_friends_s1234",
+ "minted": "2026-10-13",
+ "note": "Friends S01-S04 六主角台词语料: 每季每角色 50 条, 跨集系统抽样。来源 fangj.github.io/friends。检验假设: Rachel 的角色特色是否在 S03/S04 才凝聚 (主人观感)。",
+ "roles": [
+  "Rachel",
+  "Chandler",
+  "Ross",
+  "Monica",
+  "Joey",
+  "Phoebe"
+ ],
+ "seasons": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "sampling": {
+  "seed": 13,
+  "per_role": 50,
+  "min_words": 2,
+  "max_words": 35
+ },
+ "stats": {
+  "S01:Rachel": {
+   "pool": 683,
+   "picked": 50
+  },
+  "S01:Chandler": {
+   "pool": 724,
+   "picked": 50
+  },
+  "S01:Ross": {
+   "pool": 781,
+   "picked": 50
+  },
+  "S01:Monica": {
+   "pool": 723,
+   "picked": 50
+  },
+  "S01:Joey": {
+   "pool": 547,
+   "picked": 50
+  },
+  "S01:Phoebe": {
+   "pool": 538,
+   "picked": 50
+  },
+  "S02:Rachel": {
+   "pool": 512,
+   "picked": 50
+  },
+  "S02:Chandler": {
+   "pool": 568,
+   "picked": 50
+  },
+  "S02:Ross": {
+   "pool": 677,
+   "picked": 50
+  },
+  "S02:Monica": {
+   "pool": 565,
+   "picked": 50
+  },
+  "S02:Joey": {
+   "pool": 523,
+   "picked": 50
+  },
+  "S02:Phoebe": {
+   "pool": 461,
+   "picked": 50
+  },
+  "S03:Rachel": {
+   "pool": 707,
+   "picked": 50
+  },
+  "S03:Chandler": {
+   "pool": 697,
+   "picked": 50
+  },
+  "S03:Ross": {
+   "pool": 834,
+   "picked": 50
+  },
+  "S03:Monica": {
+   "pool": 693,
+   "picked": 50
+  },
+  "S03:Joey": {
+   "pool": 634,
+   "picked": 50
+  },
+  "S03:Phoebe": {
+   "pool": 626,
+   "picked": 50
+  },
+  "S04:Rachel": {
+   "pool": 692,
+   "picked": 50
+  },
+  "S04:Chandler": {
+   "pool": 728,
+   "picked": 50
+  },
+  "S04:Ross": {
+   "pool": 636,
+   "picked": 50
+  },
+  "S04:Monica": {
+   "pool": 597,
+   "picked": 50
+  },
+  "S04:Joey": {
+   "pool": 642,
+   "picked": 50
+  },
+  "S04:Phoebe": {
+   "pool": 527,
+   "picked": 50
+  }
+ },
+ "items": [
+  {
+   "name": "Rachel",
+   "desc": "Oh God Monica hi! Thank God! I just went to your building and you weren't there and then this guy with a big hammer said you might be here and you are, you are!",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hello, Paul.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Um... my... father.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "I'm just serving it.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "The lights, please..",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Why are- why are you so tanned?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "This Alan again? How's it goin'?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Uh, Joey..",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, God, ask them what they want.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hello? Who are we spying on?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Does anybody want anything else?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, not myself, but I know other people that have. Ok, you caught me. I'm a laundry virgin.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "I could not have done this without you.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Who is being loud?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "There, well, see? Barry wouldn't even kiss me on a miniature golf course.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Here, kitty-kitty. Here kitty-kitty. Where did you go, little kitty-kitty-kitty? Here kitty-kitty-kitty-kitty...",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Um... yeah. Well, I mean, when I first met you, y'know, I thought maybe, possibly, you might be...",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Wow, Monica, you look just like your grandmother. How old was she there?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh my god.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, you should have.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Rome. Jerk missed his flight.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Goodbye, baby.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "\"Ooo,\" what?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, but he was my pig man...how did I not see this?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "You have no respect for anybody's privacy!",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hey, listen, Ronni, how long would you say Chandler's been in the shower?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "How did we end up with these jerks? We're good people!",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh! That's why. I'm sorry!",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh! I see. And I've sort of been maintaining my amateur status so that I can waitress in the Olympics.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "So, is this just gonna be you and Carol?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, how&#146;d she take it?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hey, look, you guys, I'm going for anything here, OK? I cannot be a waitress anymore, I mean it. I'm sick of the lousy tips, I'm sick of being called 'Excuse me...'",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Settle what?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hmm. Kinda stepped on my point there, Mon.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Excuse me. It's about the job .",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Full house.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "I don't know. We were watching TV, and then he pooped in Monica's shoe-",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "I know, I know, I'm sorry-",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Alright. Well then how about I call your supervisor, and I tell her that you shot my friend in the ass with a dart?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, what about Mindy?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Right, I'll see you guys later...",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Uh, we are here to break up with you.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Let's just say my Curious George doll is no longer curious.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, somebody will.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "What are you playing with?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Where are you going?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Yeah, well, it's an important day. I wanna look nice. Um, has uh Dr. Franzblau been by?",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, let me see! Oh, God, is he just the sweetest thing? You must just want to kiss him all over!",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "I-I-I don't know.",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Monica, nothing has even happened yet, and you're already so...",
+   "stage": 0,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "All right Joey, be nice. So does he have a hump? A hump and a hairpiece?",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yes, and we're very excited about it.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "'Look, Gippetto, I'm a real live boy.'",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Now, Monica, you know that's not how you look for an engagement ring in a lasagne...",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Relax your hand!",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I personally could have a gallon of Alan.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, aren't we Mr. \"The glass is half empty.\"",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Listen, it's kind of an emergency. Well, I guess you know that, or we'd be in the predicament room.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Not a one.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Bullwinkle socks. That's so sweet.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I'm free! I'm free!",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "It was unbelievable. I-I've never met anyone like her. She's had the most amazing life! She was in the Israeli army...",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Where's Joey? His mom's on the phone.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Lose the other guys.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yeah, about 300 guys I went to high school with. Yeah, thanks.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Dehydrated Japanese noodles under fluorescent lights... does it get better than this?",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "No, nono, don't- don't worry about it. Believe me, apparently other people have made the same mistake.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "So how's it going there in Financial Services?",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "We just finished this magnificent Thanksgiving dinner. I have--and I remember this part vividly--a mouthful of pumpkin pie, and this is the moment my parents choose to tell me they're getting divorced.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, that monkey's got a Ross on its ass!",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I happen to know a Fun Bob.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Alright, somebody kiss me. Somebody kiss me, it's midnight! Somebody kiss me!",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Myyy mother, ladies and gentlemen.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Because it's complicated, it's complex- Hey, you kissed my mom!",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ah, it's just a weekend, big deal!",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "More coffee over here, please!",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "One more game?",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well I'm not showing you my 'tat.'",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Sorry, my my thing was in there with me.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, it's Janice.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ok, well, this was very special.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, listen. If this is about those prank memos, I had nothing to do with them. Really. Nothing at all. Really. Nothing.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Who are you going out with?",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "This is unbelievable. It&#146;s been like a half an hour. If this was a cartoon, you&#146;d be looking like a ham right about now.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Uh, Yes. Yes. I&#146;ve just been going over your data here, and little thing, you&#146;ve been post-dating your Friday numbers.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I&#146;m just trying to find the right moment, you know?",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, you don&#146;t know. Helen, could you make sure we put through the paperwork on Miss Bookbinder&#146;s raise?",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "There just don't happen to be any women in our games.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Y'know, I've had dates like this.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Um, we're kind of having an emergency and we-we were looking for something...",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I have my reasons.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hell is filled with people like you.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, that's what we said about Joey...",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Y'know, you'd think I would've.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "When we were?",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Okay, I don't sound like that. That is so not true.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Petrie, right, right. Okay, some people gonna be working this weekend.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "No, no, no.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Men are here.",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, no-no-no-no-no....",
+   "stage": 1,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "I just feel like someone reached down my throat, grabbed my small intestine, pulled it out of my mouth and tied it around my neck...",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, sure.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Split it?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Well... you never know. How's, um.. how's the family?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Me either...",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Well, wait a minute, wha- why is she in the title?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Can I use.. either thumb?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "If only he were a woman.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Funny, my birthday was seven months ago.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Look, I don't wanna make any trouble, okay, but I'm in a lot of pain here, alright? My face is dented .",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Multiple orgasms!",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Well, that's because you're such a sweet, gentle, uh...Do you, uh, do you...Oh, hey, uh you must need detergent.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "He could never get a woman like that in a million years.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Yeah, I mean... I think when it's your shot, y'know, you-you know it's your shot. Did it... feel like your shot..?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "What? Why not?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "No, I mean tonight, in the building. Suddenly. Into our lives.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "OK, guys, guys? I have the definitive one. Mwwwooooo-hah-hah...",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Nono, she's gone.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, I hope they're not ruined.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "No, they're not.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Do you uh, do you talk about me?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "I don't even wanna know about the dark cheese.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, so I'm gonna be the only one standing there alone when the ball drops?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Anyone want me to appraise anything?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, I think we're getting into a weird area here...",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Ah, the forbidden love of a man and his door.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, tell me, tell me, is everything, uhh....?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Hi Pheebs!",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Come here. Listen, you deserve so much better than him...you know, I mean, you, you, you should be with a guy who knows what he has when he has you.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey, I married a lesbian to make you look good!",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Are you sure? Great. Carol? Wanna come over and join us?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Er.... um.....",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Look, you'll get there. You're an amazing chef.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Err, right.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "I&#146;m gonna be a father.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "No. No, uh, Phoebs? You can't&#151;you can't do...",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Well, that just leaves the big Green poker machine, who owes fifteen...",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "I thought, uh... it was a fifty cent limit.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "That's right, you're gonna spend tomorrow at Aunt Rachel's, aren't you.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "My uncle Marcel.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "You had to be a bitch in high school, you couldn't've been fat.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "No! No no, it is nothing like me and Carol!",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "No, no. The vet says unless he's in a place where he has regular access to some... monkey lovin,' he's just gonna get vicious. I've just gotta get him into a zoo.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Why, why, why would you dream that?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, yeah.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "What is that?",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "15 more seconds, 14, 13, 12...",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "Every day is Lesbian Lover Day.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "No, this is pretty much it.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "I know.",
+   "stage": 2,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "There's nothing to tell! He's just some guy I work with!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Okay, look, this is probably for the best, y'know? Independence. Taking control of your life. The whole, 'hat' thing.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "What?..... What, you wanna spell it out with noodles?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Big time!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Rachel! That was a library card!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "You didn't.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Chandler, you're an only child, right? You don't have any of this.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "I know. I just wish that once, I'd bring a guy home that they actually liked.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Okay.. Well, I'm going out with a guy my friends all really like.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "I understand.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "I swear I've seen birds do this on Wild Kingdom .",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh God.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Excuse me?!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "You've never met Bob, have you?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "We ripped that couple apart, and kept the pieces for ourselves.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "That is so unfair!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Hey, waitwait, aren't you the guy that plays the butt in the new Al Pacino movie?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "About what?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "I know.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "That is a wonder. So tell me something, Mom. If you had to do it all over again, I mean, if she was here right now, would you tell her?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Phoebe, you're gonna be with your grandma?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "What, Phoebe, did you whip the potatoes? Ross needs lumps!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "No, it doesn't, does it? But you wanted lumps, Ross? Well, here you go, buddy, ya got one.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Ross! He's playing with my spatulas again!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Phoebe, what are you doing?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "'A Woman Undone, by Rachel Karen Green'.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Aunt Syl, stop yelling! All I'm saying is that if you had told me vegetarian lasagna, I would have made vegetarian lasagna. Well, the meat's only every third layer, maybe you could scrape.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Don't stare. Now she just finished throwing his clothes off the balcony, now there's just a lot of gesturing and arm-waving, , Ok, that is either, \"How could you?\" or, \"Enormous breasts!\" Here he comes!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Hate that guy!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "I don't know. Maybe we're some kinda magnets.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "They're nice guys.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Hello? Oh, hi Wendy! Yeah, eight o'clock. What did we say? Ten dollars an hour?... OK, great. All right, I'll see you then. Bye.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh, well... um, that's all there are of these. But in about eight and a half minutes, we'll be serving some delicious onion tartlets.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Congratulations, I think you&#146;ve found the world&#146;s thinnest argument.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "I used to wet my bed.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Dammit, dammit, dammit!",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "OK, we done with the chit-chat? Are we ready to play some serious poker?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Barry who you almost...?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Pheebs, you remember how we talked about saying things quietly to yourself first?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Gosh, doesn't it seem like a million years ago?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Uh huh.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "That's me.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Great. It's gym class all over again.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Noooo! I'm lying. I am so drunk.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Just...please tell him.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Uh, ah. Unless you wanna stay over? I mean, I'm going to, so...",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Ha,ha, ha, oh my life is just so amusing. Could we drop it now?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Why won't I be married when I'm 40?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Man's got a point.",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Monica",
+   "desc": "Rachel, what're you gonna say to him?",
+   "stage": 3,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "C'mon, you're going out with the guy! There's gotta be something wrong with him!",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "What, like there's a rule or something?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "You got screwed.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "You should both know, that he's a dead man. Oh, Chandler?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": ".....Well, this is still ruined, right?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Y'okay, Phoebe?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "What's going on?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "The hell with hockey, let's all do that!",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, ah- the kid has it.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "You know, you and Bob, and me and my girlfriend, uh, uh, Monica.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, but it's not gonna last. She's too much for me in bed. Sexually.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "The Estelle Leonard Talent Agency. Wow, an agency left me its card! Maybe they wanna sign me!",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Here. I need to borrow some moisturizer.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Y'know, I've done nothing but crappy plays for six years. And I finally get my shot, and I blow it!",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Because you waited too long to make your move, and now you're in the friend zone .",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "OK, you've got to promise that you'll never, ever tell Ross that I told you.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "No, it's the pre-game. I'm gonna watch it at the reception.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, at Macy's. You were the Obsession girl, right? I was the Aramis guy. Aramis? Aramis?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, Monica, I got a question. I don't see any tater tots.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "The bigger half.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Sandy! Hi! C'mon in! ...You brought your kids.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Uhhhh.... I'll just pee in the street.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "How about 'cause if you don't, his mother might.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Shh. He did it. He told her off, and not just about the kiss, about everything.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Need a new table.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Or an uncle...",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Uh, it's 2:30 in the morning!",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "What's the matter with Rog?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Then you gotta come clean with Ma! This is not right!",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Ma, I don't mean to be disrespectful, but... what the hell are you talking about?! I mean, what about you?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, you're gonna go up to her and say, \"Here's your egg back, I'm returning your egg.\"",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Uh, we might be leaving now.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Mmmm. Good.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "You want to see her again, right?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "All right, Ross!",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "She is so hot!",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "You meant sex, right?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Alright now listen, you guys, we talked about it, and if you don't want to play, we completely understand.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "The Unbearable Likeness of Being !",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Uh, aren't we kind of in the middle of something here?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, hold up, I'll walk out with you. Now, Rach, when she taught you to kiss, you were at camp, and.. were you wearing any kinda little uniform, or- That's fine, yeah...",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "How could someone get a hold of your credit card number?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Did you call the cops?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "I don't know. What are you wearing?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "So, tell me. Was it like you and Chandler, and then you and me, or you and me and Chandler?",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, yeah.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "You know what the Celtics problem is? They let the players run the team.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Well... I'm helping out down at the N.Y.U. Med School with some... research.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "Listen, buddy, we're just looking out for you.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Joey",
+   "desc": "He's right, cause if you're just gonna, like, break his heart, that's the kind of thing that can wait.",
+   "stage": 4,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Wait, does he eat chalk?",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Love is sweet as summer showers, love is a wondrous work of art, but your love oh your love, your love...is like a giant pigeon...crapping on my heart. La-la-la-la-la- Thank you. La-la-la-la...ohhh!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, it's beautiful.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Or, or, y'know, um, 'I think we should see other people' means 'Ha, ha, I already am'.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hey, Lizzie.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I know! I know, I opened it up and there it was, just floating in there, like this tiny little hitch-hiker!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay, okay. If I were omnipotent for a day, I would want, um, world peace, no more hunger, good things for the rain-forest...And bigger boobs!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, well... 'cause.... you just... I don't like this question.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "There he is! There he is!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Eww, I don't wanna do that.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "What a neat idea. All your clothes match. I'm gonna do this.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ree! Ree! Ree! Ree! Ree!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, he didn't tell me.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You betcha!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "What'd I say?",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ooh, ooh! Why don't we invite her?",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ooh, you guys have to make a wish.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "David's like, y'know, Scientist Guy. He's very methodical.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No, no, he hasn't been around.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Getting so good at that!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Where? Ooh, come to Momma.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I know.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Going to the hospital tonight?",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You're welcome.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Nothing, I'm sorry, I'm just, I'm out of sorts.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, I don't make them a lot because I don't think it's fair to the other cookies",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "...like a...",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Isn't he great?",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Uh-huh. Okay. Okay, don't you think, maybe, though, it's just that he's so perceptive that it freaks you out?",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "'Cause he was creepy, and mean, and a little frightening... alright, still, it's nice to have a date on Valentine's Day!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "See, there you go, the cleansing works!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ooh! Brian's Song !",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Smoked a joint? You know, lit a bone? Weed? Hemp? Ganja?",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Rift&#146;s. Yeah, I know.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Good choice.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah. Okay.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You know... You're gonna be really, really hard to get over.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ha. Ha, ha.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah. Um... I'm out.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hugh! Hugh Grant!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Something just brushed up against my right leg!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "That man across the street just kicked that pigeon! Oh!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh! The yuk! Ross, he's doing it again!",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay. Good-bye, little monkey guy. Alright, I wrote you this poem. Okay, but don't eat it 'till you get on the plane.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh. Uh, I'm on.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I thought you knew that.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, then you should come tonight. You know, just hang out with them. Let them see what a great guy you still are.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, look, twins. Hi, guys. Oh, cute, cute.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, look, he's closing his eyes again.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, hey, y'know what? Tell them that bone story.",
+   "stage": 5,
+   "season": 1
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh my god. Oh my god. Excuse me. Move! Move! Emergency! Excuse me!",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Then, no.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ok, Paulo, why don't you just go get dressed, and then you be on your way, ok, bye-bye.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "I don't know, I don't know.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Good, Pheebs. What'd you buy?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "You were with Julie?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, you're not totally paranoid.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ok, so let's talk money.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "I am. Let me just get my coat.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hi, hi can I help you?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "No, no no no, don't need to know the details.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Great, people having sex, that's just what I need to see.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Uh, OK, I mean uh, what, how are you gonna handle it. I mean, are, are ya gonna, are ya gonna talk about it before hand, are you just gonna pounce?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, you know what, we haven't even looked yet.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ok, we never shoulda talked about this.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "What's up?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, but Pheebs.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Horrible and degrading list of reasons not to be with me?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "I'll call the super.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Did I miss it? Did I miss it?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Yeah, well just be glad he's not playing a smaller instrument.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh! What's new in sex?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "And she's not crazy?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "What what what what?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Jean-Claude she said yes, I'll see you tonight. Thank you.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "You want me to just call him up and tell him that you're seeing him instead? That's what you want?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh yeah.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hey. I've got something that's gonna make you happy. Guess what Gunther found?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hey you.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well it's not, honey I'm sorry, I guess I'm just nervous. I mean, it's you, ya know, it's us. I mean, we're crossing that line, sort of a big thing.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "What's this.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "OK, that's dead right?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Yes, but you can not tell Ross 'cause I want to surprise him.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Phoebe, how would you do this to me? This was all your idea.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "OK, here we go. Honey, I'm sorry, they were all out of apple pie, someone just got the last piece.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Would you guys stop.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh honey, are you jealous of Paolo? Oh, c'mon, I'm so much happier with you than I ever was with him.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "So, he's on the show, he knows what happens.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Yeah you like totally let him wash his feet in the pool of your inner power.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Wow, he must like you the best.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Yeah well, Ross just made plans for the whole century.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Yes it is.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Did, did he just, did he, did he just say, he said bye. He said bye. You said, you said bye to me. You said bye to me.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Are you kidding me?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "She'll be a much better friend when the market closes.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Now I love you even more.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "You want me to see a therapist?",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "And there's a peach cobbler warming in the oven so the plate's gonna be hot but that shouldn't be a problem for you.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Because I promised Mindy I would.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Okay, now that is the third time someone has said something like that to me today.",
+   "stage": 0,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "No way!",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "No, no, I'm just looking for a man to draw on me with chalk.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Come on, Monica, things could be worse. You could get caught between the moon and New York City. I know it's crazy, but it's true.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "What do you care? You're an actor. This is your day job. This isn't supposed to mean anything to you.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Actually, I think this apartment sullies the good name of crap",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "You'll see, you guys are all gonna go off and get married, and I'm gonna end up alone. Will you promise me something? When you're married, will you invite me over for holidays?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Of course I am. I reject anyone who's crazy enough to actually go out with me, and then I bitch about the fact that there aren't any great women out there.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "If I'm goin' down, I'm takin' everybody with me.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "I got the time to get to know Julie.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ok, while Ross is on the phone, everybody owes me 62 bucks for his birthday.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "I don't know. I just had this weird sense. You know, but that's me. I'm weird and sensitive. Tissue?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "So, the ebola virus. That's gotta suck, huh?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "So, uh, how was he?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Can I uh see something?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ok, but can you tell him that, because he thinks he's too pink.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "All right, call it in the air.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "What's in the bag?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yeah, and someday when you're ready, you'll make it past the hedges.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "That's great. All right, I gotta get to work, I got a big dinosaur bone to inspect.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "I shouldn't even bother coming up with a line, right?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh no no no, she's a total wack job. Yeah, she thinks that Joey is actually Dr. Drake Remore.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yes, back then I, uh, used humor as a defense mechanism. Thank God I don't do that anymore.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ahh, I believe my exact words were, 'Flaign,en - sten'. I mean I didn't know what to say, how do you know if you wanna do it on an elevator?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, you want me to uh, clench anything, or-... Susie? Susie.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Alright, one of you give me your underpants.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, I'm guessing he wants to do a little dance. . . ya know, make a little love. . . well pretty much get down tonight.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well this one's for you.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "I'll cancel the sodas.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well don't you see how gross that is? I mean that's like you using my toothbrush. You used my toothbrush?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Woah, woah, woah. I don't need a roommate either, OK? I can afford to live here by myself. Ya know, I may have to bring in somebody once a week to lick the silverware.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, no, I've never been lower or wetter. I'll be fine. I'll just turn your, uh, bedroom into a game room or somethin', you know, put the foosball table in there.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Listen, I'm, I'm sorry I didn't make it over there today.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, uh, why don't you ask him yourself. Joey, this is my new roommate Eddie.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Alright, so what's it about?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "We don't need to remedy that.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "This is nuts. This is crazy. She came over for like two minutes, dropped off a fish tank, and left, end of story.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Listen Eddie, um, I've been thinking about our current living situation and uh, why are you smiling?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ahhhh-gaaaahhh. Eddie what're you still doin' here?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Do you remember talking to me yesterday?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ok, that's Eric.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Uh, yeah, I just got my pick-up sticks back from the shop. Bring your nerves of steel.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "What just happened?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": ":Well the package says you have to uh, constantly keep it moving. Stir and drink, stir and drink, never let it settle.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, hey, those guys are takin our stuff!",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "So, basically just a Chinese guy.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Joey, a woman just stuck her tounge down my throat, I'm not even listening to you.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, look Joey, I'm just saying if you need something to hold you over, I can get you a job right here as an entry level processor.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, I'm sure you'll teach her a lesson when she steps off the dock onto nothing. Hey Mr. Douglas.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, what did your agent say?",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Chandler",
+   "desc": "It means we're holding hands.",
+   "stage": 1,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "It was, it was great. Oh, what happened?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Thank you.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "How's the hair?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "So, uh, Jules tells me you guys are going shopping tomorrow?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Gimme the bottle. Gimme the towel.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Ok, Pheebs. See how I'm making these little toys move? Opposable thumbs. Without evolution, how do you explain opposable thumbs?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "So, uh, does it do anything, you know, special?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I just, I wanted to thank you for our uh, our little talk before.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "You ever figure out what that thing's for?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Well, pretty incredible according to the message she left you on my machine. Hey, Chandler, why is this woman leaving a message for you on my machine?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Hootie and the--oh my. I, I can catch them on the radio.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Excellent, that was excellent.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Ugh. It's definitely getting worse.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I'm gonna get a new band-aid. Hey, how 'bout the time I cut the legs off your Malibu Ken?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "OK. Oh, oh, oh.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "No, no it's not interesting. OK, it's very, very not interesting. In fact it's actually 100 percent completely opposite of interesting.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Good, so everybody's here. Everybody's good. So, were you gonna play something, Phoebe?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey, someone order a coat?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I am, uh, I am...",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I got some, uh, hers and hers towels for Susan and Carol. And, uh, I got this blouse for mom.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "OK, tip the man.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh c'mon. Maybe you're just, uhhh... paying your dues.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "OK, well, um, have a nice evening.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Good for you.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "That is so good! Do it again!",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Look, do you love her? And you don't have to be too emphatic about this.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Well, ya know, someone should have called me.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "But you already told me everything.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey Joey I have to cancel racketball for tonight, that was Marcel's trainer. He's gonna let me have him for a couple of hours.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "No no, no no, it's not flashy, not for a Goodfella.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey guys.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "OK, you guys, ya know, I think we've seen enough, let's turn it off.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "OK, my hands were no where near your butt.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Come on, tell me.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "What. Oh no, you just rolled over the juice box.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Mom, there are so many people in my life. Some of them are seeing people and some of them aren't. Is that crystal?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Calm down, I'm blow drying.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I know.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Ohh... OK.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "So were you in Nam?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Open it, open in.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Yeah. And you should hold out for something bigger. I can't tell you how much respect I have for you not going to that stupid cab driver audition.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh look, did, did you just see that? Did you see? He just waved, he just waved, he's never waved before, you've never waved before. Yes he has. Very good.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Ok, what the hell happened back there?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Well, this was fun. Uh, we should really do it again sometime, wha'dya say? Ok. Alright so I've got him.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "You're joking, right? You guys just walked through the door.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Well because I have to work on Monday, I have a big presentation.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Hi. Uh, I have been in the bathroom. Stay clear of the salmon mousse.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Ok, dinner's on.",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "What's she look like?",
+   "stage": 2,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "I'm telling you, she went to the airport, and she's gonna go for it with Ross!",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Rachel, how did this happen?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh my God!",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Phoebe, listen. You were with me, and we were shopping all day.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "That is not true!",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Ok, Mr. Heckles, we'll try to keep it down.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Did you know I was allergic to shellfish?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Of course I wouldn't approve, I mean, you were totally in love with this guy who, hello, was gay. I mean, what the hell were you thinking?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "All I say is, she better get the job.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "All right, what's goin' on?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "You know, the guys are probably having a great time.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "It's work.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh my god.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Remember it? What do you think this is, a freckle?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Honey, uh, this is a picture of the frame guy posing in front of a bright blue screen with a collie.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Here, let me try.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "They want me to do it, which is really cool, seeing as I've never catered before, and I really need the money, and this isn't a problem for you, is it?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "All right, look, nobody's smoking pot around all this food.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Ok, which one of us do you think is gonna be the first one to get married?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Jean-Claude Van Damme. I didn't know he was in this movie, he is so hot.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "You sold me out.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "What're you gonna do?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh-oh, no no don't worry, I'm gonna wash it.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "So, what's this.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Shoot, I think I got mayonaise on you.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Really Phoebs? Because, you know, you'd have to be an actual waitress. This can't be like your 'I can be a bear cub' thing.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "I am not.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Alright, but I'm very excited about this OK, so you gotta promise you won't get all big-brothery and judgmental.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh, I'm gonna kill those guys.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh, this is so hard.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Al-alright, l-look you guys, this is the best relationship I've been in. . .",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Joey, promise me something.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Did she leave a number?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "OK, what're we gonna do about this?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "So what're you gonna do?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh, yay. Ok about that two.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Fine, go have sex.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Aaahhhhhhh! Aaahhhh!",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Are you sure this time?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "You know what, I think it's cute, you trying to be more like Richard.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh, why does this bother me so much? I mean I don't wanna be one of those people who tells their boyfriend they wanna spend 24 hours a day with them.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "How can I not do it? I have $127 in the bank.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Hey, I've come to terms with it, you have to too.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Dr. Greene. Oh my God it's Rachel's dad. What're you doing here?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Ok, the first person's most embarassing memory is, 'Monica, your party sucks.' Very funny.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Give it to me.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "You look fabulous honey, you really do.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "What's up?",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Bye sweetie, I love you.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "Not a basset, a bassinet.",
+   "stage": 3,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Um, this?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "How're you doing?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "I gotta get one, too.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, it's not the first time I lost a girl to a cowboy spraying cologne. Bijan for men? Bijan for men?!",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "These new kids, they never last. Sooner or later, they all...stop lastin'. Listen, uh, what do you say I buy you that cup of coffee now?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Have you been here all night?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "You want his yearbook?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "I got time.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "What are these, like famous chickens?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "And we don't work hard?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "No, seriously.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Or clowns. Oh, oh wait. That one's definitely Ben. Remember, he had that cute little mole by his mouth.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Woah, woah, woah, you have a date?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "This man is my God.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "He broke up with Julie. Well, go hug her, for god's sakes.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "I can't believe it's Christmas already. Ya know, I mean, one day your eatin' turkey, the next thing ya know, your lords are a-leapin' and you geese are a-layin'.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Sure is.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "No, but with this new car smell, you'll think you do.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Monica, have you ever been with him when he wasn't drinking?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "I've never slept with someone for a part.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "No, I'm on right after this guy shoots himself.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "I'm sorry, it's the pigs. they're reluctant to get in the blankets!",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "OK, we'll just leave, and when we pass her on the stairs, she won't know it's me 'cause we've never met.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey I-",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "OK, alright, the people who threw the water.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, unless you hook up with a bunch of pigeons.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Alright, alright. Woah, someone's flossing.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Isn't it? And it's engraved too, check it out.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Huh? Days of our Lives picked up my option.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Naa, she's lyin'.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, is today the day you're gonna tell them about you two?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Well then maybe I will.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Woah. Why do you get to keep the table?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Huh? So whaddya think? Casa de Joey. Huh? I decorated it myself.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Well OK then. Was that the oven timer?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Morning. I just uh, came by to pick up my mail. Where's the mail?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Ooh, I look good.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Chandler gave me word of the day toilet paper. I'm gonna get some coffee.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "It's my VISA bill. Envelope one of two. That can't be good.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Well don't just say.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, not my parrot.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Ya know, one of these times you're gonna really be naked and we're not gonna come over.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "We're the guys.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Olive loaf and ham spread, no mayo.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "How come those?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "I didn't think anyone'd buy that, ok.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, is that when you wrote salt water taffy man?",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "What a phony.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "Ahh. What the hell are you doing to me man.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Joey",
+   "desc": "You see this, this is a friend.",
+   "stage": 4,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh my god. This is huge. This is bigger than huge. This is like, all right, what's bigger than huge?",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ok, you're gonna have to not touch my ass.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh my God!",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ok, I just wanna be really sure this time. Andie McDowell's the girl from Four Weddings and a Funeral , right?",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Um, we went shopping for um, for, fur.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You guys, um I know that this really doesn't have anything to do with me, but um I love you guys too. Oh, I really needed that.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, I just don't buy it.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "He's even kind of cute.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You're there!",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Um, I'm gonna go meet Duncan, he's skating tonight at the Garden, he's in the Capades.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "And um, and there's actually a, a woman?",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Let's see!",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, it's like a skit.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Lather, rinse, repeat, and lather, rinse, repeat, and lather, rinse, repeat, as needed.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ok, do you know A minor?",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "It's not even that. I used to do my songs because it made me happy, but now it's like, it's just all about the money.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "That's too much. Sorry.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "It's not a blue screen... it's just, maybe it was just really clear that day. OK, I have to talk to my grandmother.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "OK, that makes no sense. Why would the villagers worship a pharmacist?",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Alright, here, you have to hold this.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, yeah, no it's OK 'cause, I mean, I know he's there, so, that's enough for now.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I know who it is you remind me of. Evelyn Dermer. 'Course, that's before she got the lousy face lift. Now she looks like Soupy Sales.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I'm sorry, there's laughing in my head.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, me, too, technically.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No, uh-uh, I'm just, I'm nervous. So, you know what, maybe if I just, if I picture them all in their underwear.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "OK, hi again.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Sometimes men love women,",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "OK, now I'm gonna kick some ass.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, some guy she met at the movies.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hey, Mon, what is this?",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "So. You two are totally into each other.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Um, I'm getting a lily for my Mom. 'Cause her name's Lily.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "OK, hey, HEY. Is your boyfriend the boss of you?",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "OK, well then what is this?",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "OK. I just met this producer of this like, teeny record company, who said that I have a very fresh, offbeat sound and she wants to do a demo of Smelly Cat .",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Now OK, I haven't seen it yet so, if you don't like it, well, so what, none of you ever made a video. OK.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Smelly cat, smell-ly cat, what are they feeding you? Everybody.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ok, ok, ok. Ooh, hey 'new doc on the block, Days of Our Lives' Joey Tribbiani.' Ooh, cool picture.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh yes. Oh and, the part about how they're always like drinking from out pool of inner power, but God forbid we should take a sip.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, ok, murder, cancer, soccer teams eating each other in the Andes.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "And they were serving franks which is his first name minus the s at the end. And there was a rotisserie with spinning chicken.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ok, I talked to the vet, people are so nice upstate. Anyway, he said that the little fella's gonna be ok and I can pick him up tomorrow.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Alright, I'm, I'm gonna go. I'm sorry about the dog, everything. I'm sorry.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hey nice boobs.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Great, I'm seeing water rings again.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh ok, Ryan, that guy I went out with, who's in the Navy.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, or you know, you could just wish that I didn't have them now.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Give it.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, come on, who cares what that guy thinks. What does Warren Beatty know about kissing Ooh.",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Phoebe",
+   "desc": "So how's your date with your cyberchick going. Ooh, hey, what is all that .",
+   "stage": 5,
+   "season": 2
+  },
+  {
+   "name": "Rachel",
+   "desc": "Nooo Way! The most romantic song ever is The Way We Were .",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "...if you tell me, I might do it.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Pretty much.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, hon-ey. I'm just trying to look nice for your big night.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "I'm not mad.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "I didn't know there were docks.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, what happened to your jam plan?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Men are unbelievable.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hey Pheebs.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "All right let me see. Uma Thurman, Winona Ryder, Elizabeth Hurely, Michelle Pfieffer, and Dorothy Hammel?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "I&#146;m serious, I really, I think I need just to have some...meaningless, sex y'know, with the next guy that I see.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Thank you.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "All right, look, here&#146;s the bottom line Ross, this is fixable, if we act fast, okay. So, I&#146;ll invite him to brunch tomorrow and you can make nice.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Here you go Pheebs. Who else wants one of my special homemade brownies?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "We need a hat..",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "I did!! I watched! I watched! I watched Monica bang his head against that thing!",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Over here!",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Thank you! Break!",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, I&#146;m also sending out.... good thoughts.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "I got the job!",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Do you want my pickle?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh yeah, what&#146;s it about?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, I did!",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh honey, this is his office too. I told you we're Joanna's two assistants.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Honey, that's very sweet, it just seems to me though, that if two people love each other and trust each other, like we do, there's no reason to be jealous.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "I will wake you up in a way that&#146;s proved very popular in the past.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "All right, okay, Laurie proposes to Jo, and she says no, even though she&#146;s still in love with him, and then he ends up marring Amy.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Funny book?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "No-no-no, no, honey please, I&#146;ve got, I&#146;ve just have so much to deal with.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "I was gonna give you a chance to apologise to me.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, yeah, I&#146;m not, I&#146;m not hungry.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "No, we kinda broke up instead.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Y'know what, I want you to leave! Get outta here!",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "You&#146;d be okay if you knew that Mark had kissed me, and been naked with me, and made love to me?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Closer than here?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Chandler, what are you doing? There is a trash can right there.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, I&#146;m sorry, were you speaking to me or sleeping with someone else?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Monica, last Saturday night, what happened on Walker: Texas Ranger ?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Wow! Umm....",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Y'know what?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, nothing, he&#146;s just goofy like that, I actually, hardly notice it anymore.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "You can&#146;t just say, &#145;Nice to meet you, good night?&#146;",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "So who&#146;s idea was it to put everybody in the diner on skates?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, I will go to the hospital tomorrow, it&#146;ll still be broken then.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Sure, I&#146;ll just sit next to the trans-sexual from purchasing.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Okay. Oh wait, wait-wait, you&#146;re not gonna come with me?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "What&#146;s Flimby&#146;s?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "What time is it?",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ahh... Chandler's on the couch!!",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh! That&#146;s fine.",
+   "stage": 0,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yeah, like there's any way I could ever do that.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, I'm crazy about her now. I think this could be the real thing. Capital 'R'! Capital 'T'! Don't worry, those are the right letters.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "You still can't stand her can you?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Honey, you did call him back. 'Cause, it's, it's really old.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "What are you, what are you gonna show me my clothes?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "But, I never left the room!",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "You're pretending the pillow's a girl right?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Is anybody else scared?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, not me. But that's what's happened, and, ah, and, and there's more. We should take a trip.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "No. Not anymore.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "All right, Janice, likes him. In fact she likes him so much she put him on her freebie list.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "So, you gotta play the odds, pick somebody who&#146;s gonna be in the country like all the time.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yeah, y'know what I got a better idea. How-how &#145;bout it blocks none of mine door and a lot of yours?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, Mon.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, it sounds kinda stupid... Who&#146;s she?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "If I was a superhero who could fly and be invisible, that would be the best.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "All right I&#146;ll have one.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "All right!",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ohhh. Don&#146;t go.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "And then Tineals.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well now you have two. Hey, I am good at math.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Guys! Guys! Come on! It&#146;s Thanksgiving, it&#146;s not important who wins or loses. The important thing is, the Dutch girl picked me! Me! Not you! Holland loves Chandler! Thank you, Amsterdam! Good night!!",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Does this mean we&#146;re gonna have to start paying for coffee?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Sure, everybody loves a kidder.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, I&#146;m taking my ex-girlfriend of my speed dialer.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, that&#146;s the part where you tell him that I moved to France. When actually I&#146;ll be in Cuba.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "This is so bad. If-if you&#146;re not Mary-Angela, then-then who is?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, so can you make it on Friday?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, why don't you send her a musical bug, op, no you already did that. All right look, you're going to have to go there yourself now, okay, make a few surprise visits.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Okay Ross, why don&#146;t you come with me?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "We can&#146;t tell him, you can&#146;t go up to a guy you barely know and talk about his.... stuff.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "You&#146;re not, what do you, what do you got a bionic foot?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh yes! Just had me a little nubbin-ectomy. Yep! Two nipples, no waiting.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yeah. Yeah, I mean what, what would we do?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, before we answer that, I think we should address the more important question. How dumb are you?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Because that would be crazy?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Look, I&#146;m telling you this is just like my parents divorce, which is when I started smoking in the first place.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Damn! The tailpipe&#146;s not hot enough to light this!",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh come on man! At least let me finish this last one.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "This guy invented Moss 865! Every office in the world uses that program!",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Is there any chance you didn&#146;t see that?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "I think somebody has a crush on somebody.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "And is this in case the house sneezes?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "That&#146;s just a lot of big talk, y'know.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Okay. It&#146;s a chicken.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "If they can&#146;t find a home for her, they kill her! And I&#146;m not gonna let that happen to little Yasmine!",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yeah, and I don&#146;t have any cologne.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Why don&#146;t you use ours across the hall, &#145;cause she&#133;has&#133;problems.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "So, what do you thing the good news is?",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, that&#146;s not true, he-he smacked you once.",
+   "stage": 1,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "I have to say Tupolo Honey by Van Morrison.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Look, that was supposed to be like a private, personal thing between us.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Why aren't you guys dressed?",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "I.....got.....dressed. Really, really quickly. Okay, okay. There we go, there we go.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "No, no, no just do it. Go in there and pick something out so we can go.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay. Honey?",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "It's an empty apartment.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, it's not the ideal way...",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey, I don't know what to tell you guys that's the doll he chose.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "And!! Isabella Rosselini.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Um, yeah.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "My marriage, I think my marriage is um, is kinda over.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Hi Gunther.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "The carbon, it&#146;s messy, I mean it gets on your fingers and causes, the, the ah, night blindness.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "And his first name.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "You? You! Want to watch Ben? Yes! That&#146;d be great, no, I just wanted to ask Monica, because I know how empty her life is.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Um, Monica and I aren&#146;t supposed to play football.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "One-Mississippi, two-Mississippi, switch! Switch! Switch!!",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, where in the hell did you get that?!",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "No! You let go!",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Yeah, Sarah, anything.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Check this out. Five hundred and seventeen boxes!",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "That word was swans.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "So, he&#146;s just a nice guy. You really think this Mark doesn&#146;t want anything in exchange for helping him?",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Am I! Am I! Am I out of my mind! Am I losing my senses!! This dreamy guy is taking my girlfriend out for a meal.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Ah Joey, I don't think you get to pick the cities.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Yeah well if, if, if Mark said that, than Mark's an idiot.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "No thanks. I&#146;m 29.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Joey&#146;s asking if you&#146;ve just ruined the first book he&#146;s ever loved that didn&#146;t star Jack Nicholson?",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "What should I wear, now I&#146;m all nervous.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Yeah, but I got cous-cous!",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh I&#146;m, I&#146;m making this too hard. Okay, what do you want me to do.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Is this about Mark?",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "What?! Look, we&#146;re trying to rebuild a relationship here, right. How am I supposed to do that here, without being totally honest with each other?",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "We met at Phoebe&#146;s birthday party, I&#146;m, I&#146;m Ross Geller.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Look, I didn&#146;t think there was a relationship to jeopardise. I thought we were broken up.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, okay. This morning you said there was nothing so big that we couldn&#146;t work past it together...",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "I guess it all started when Rachel got this new job.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "We were on a break!",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Here you go.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Well, maybe the crazy fog has lifted and she realises that life without me.... a-sucks.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, I have to do something. I mean, I have, I have to stop it!",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "This is the coolest house ever!!",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "No you&#146;re not.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Sure, okay.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, it was, nah, well....",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh! Well then this is awkward. So what do you uh&#133;",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, it&#146;s coffee.",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "Th-th-that's all it is, a third nipple. Y'know? Just your run-of-the-mill third nipple. Y'know? You can take it off. Just slice that baby right off!",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Ross",
+   "desc": "What happened?",
+   "stage": 2,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "God, look what I found in the drain.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Do you think breaking up with him was a huge mistake?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Ooh, Phoebe, you look great!",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Michelle! Of course, it was Michelle! Did it sound like Michelle?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Joey, this is for you. It's blackberry curin.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "To the bank.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "What is it with you people! I mean, the minute you start to feel something, you have to run away?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "The big hat, the pearls, the little pick handbag.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "That&#146;s a little more than I wanted to see.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "And who laminated it?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh look, the pool table&#146;s free. Rack &#145;em up. I&#146;ll be back in just a minute. Get ready for me to whip your butt.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Whoa! Are you okay?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "I love you, too.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "What&#146;s the part?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Here. Ben, do you wanna play the airplane game, do you wanna show Rachel? Come here. We&#146;re gonna do something fun. Okay. Weee!! Weee!!",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Besides, it takes the focus off the hat.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Okay, Rachel, you wanna put the marshmellows in concentric circles.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Phoebe, I thought you said you know what you&#146;re doing?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Y'know what? I&#146;ll think you&#146;ll play.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "All right then.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Let go!",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "I have like five times, but the guy is so charming, that I go up there to yell and then I end up apologizing to him.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Isn&#146;t that great?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "I don&#146;t remember. Do you wanna take a walk?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Have I read it? No, are you enjoying it?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "You don't even know me...",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh, um, around 8:02. We ah, talked for a little while, and then um, we went out for an innocent burger.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Sounds smart and healthy to me. So um, just out of curiosity, um, do you currently have any other racquetball buddies?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Look at you. All jealous.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Phoebe why don&#146;t you just call her? You obviously want to.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Wow! You might just get the first Nobel prize in rubbing. So what country is this guy from?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Yeah, well kinda cute, like really kinda cute, or kinda cute like your friend Spackel Back Larry?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh, there&#146;s banana on it.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "That&#146;s right.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "We&#146;re sorry honey.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "So the going for help went well?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "So, um, how-how did you guys meet?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "What the hell is this?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Hello, people who do not live here.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Yes!! Yes! Yeah, yeah, yeah!",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh my.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "What?! Oh.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "I&#146;m quitting!! Woo-hoo! I&#146;m okay!! I&#146;m all right!!",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Okay, I gotta go.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Here you go. You can wear this.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Did you like learn about her family?",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh it&#146;s umm, good! It's umm, it&#146;s good, just here watering the plants.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Ooh, nice.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Yeah, but without the costumes.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "I mean I-I thought you were nuts at first, but you-you did it. And now you can just look back at this thing with no regrets.",
+   "stage": 3,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "I'm tellin' ya that girl totally winked at me.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Fortune! This guy is so stupid. It's Count Rushmore!!",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Does it have to be a whole day?",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, Ross, want some cider?",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Me too. In fact, I think I might be a little too comfortable.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Look at me! I'm Chandler! Could I be wearing any more clothes? Maybe if I wasn't going commando...",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Aww. Ohh!",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "So you're really doing this, huh?",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "You guys, can we please not watch this all right.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, you know about that?!",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "It's okay, these things happen.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "No. Y'know how we&#146;re always saying we need a place for the mail.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Nothing. It&#146;s just old and dingy, that&#146;s all.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Maybe, my ruler&#146;s wrong.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Well, ah, I&#146;m an actor. I&#146;m fairly neat. I ah, I got my own TV. Oh, and don&#146;t worry I&#146;m totally okay with the gay thing.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "No, no, no, don&#146;t get up, I got a cooler right here.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "You want me to lie to Chandler?",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh-ho-kay, I&#146;m talking to the king.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "No, no, you can&#146;t, you can&#146;t, okay, you can&#146;t, you can&#146;t buy her pearls, you just can&#146;t, you can&#146;t, you can&#146;t.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Well, now we got a reason.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Come on man! You never want to do anything since you and Janice broke up.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, yeah, that. All right, means that much to ya, I&#146;ll let you have her.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Wait a minute! Wait a minute! She obviously didn&#146;t understand the question.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey! Hey!!",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Ten , ten.., nine , nine, nine...., eight, eight, eight... Okay, Blast off!",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Really? That&#146;s great! You and my sister, sittin&#146; in a tree.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "It is me! It's a musical version of Tale of Two Cities . So I think I'm gonna sing New York, New York , and ah, oh I left My Heart in San Francisco .",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Whoa, I'm not done.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "All right, you got it.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "All right I&#146;ll talk in code. Remember when the kid sees those two blanks in the hallway?",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Phew, close one.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, are you just going down there to gawk at that hot girl with the belly button ring again?",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, tell that to my Uncle Lenny.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Y'know what, I don&#146;t think we should listen to this anymore.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Anyway! Her and Ross just started yelling at each other.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Uh, Pheebs we kinda need you to drive us all up there in your grandmother&#146;s cab, but y'know what, I&#146;ll stay.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Okay, done.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Look, the point is, there&#146;s a lot of women out there you haven&#146;t even had sex with yet!",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh mommie, oh daddie, I am a big old baddie! Oh mommie, oh daddie, I am a big old baddie!",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Well, why don&#146;t you tell me what you&#146;re supposed to be! Huh? Because I sure as hell can&#146;t figure it out! I talk to you and nothin&#146;. You look at me, and it&#146;s nothin&#146;. Nothing.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah! Oh my God! Is this what it&#146;s like to be you?",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "That guy&#146;s like a cartoon. What do you see in him anyway?",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "No-no, things ah, finally happened with Kate.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "It&#146;s cute, huh?",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Ohhh. Ahh! What are you doing?! I thought you were gonna take her back to the store today.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "The green bottle next to the shaving cream.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Uh, de-clawing cats. Hey, tell ya what. Let me walk you home. We&#146;ll stop by every news stand and burn every copy of their Times and the Post.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Two brothers, one died!",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "No, it's too wrinkly to be a mole.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "Look at this! A millionaire's checkbook.",
+   "stage": 4,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "See, I-I think that one that Elton John wrote for, um, that guy on Who's The Boss .",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "All right. No, no, no, not a Richard thing, just put down the glass. And get out!",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Monica, Monica, you know what gets out hummus.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I'll get it, okay. Hi, Monica and Rachel's. Yeah, just a second, can I ask who's calling. Oh, ew, it's Michelle! Ew! She, she must have that Caller Id thing. You should get that.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, thanks a lot. Do you want to get a cup of coffee?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, no, no, no, no. You know what, he's not into that stuff anymore. He quit for me.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "That is unfair. I'll call her and tell her it was totally my fault.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yes! They called and you didn't get it! Okay, I mean you didn't get it, I'm sorry, I'm sorry.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, you caught me. I am so busted.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Feburary 16th.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I don&#146;t have time for this.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Whatever, it&#146;s the perfect end to the perfect weekend anyways.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You didn&#146;t leave lipstick marks on the phone.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "It&#146;s not in the apartment? Oh no. I can&#146;t believe this is happening again.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Aw, God Ross. Oh.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Eh, Monica it, it feels so weird, y'know, Chandler&#146;s your friend... Oh! Oh my God! Aw, all right take this bed, you can make other friends.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, it&#146;s the compulsively neat one by the window, okay.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, yeah, first there was my aunt Mary, and then there was umm, John, my mailman, and then my, my cowboy friend &#145;Albino Bob&#146;.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I&#146;m telling you he&#146;s dead. What we are about to have here is a dead fat guy on a stick.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Go! Go! Go!",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Have fun. Oh wait, no, don&#146;t! I forgot I am totally against that now.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "This is the worst Christmas ever.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Why, what happened?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, can you dance at all?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You&#146;ve have lipstick right here . That&#146;s okay, it&#146;s mine, we just kissed.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No, I can spot you from here.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay. No. But thanks.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay, well if I was in this for the money, I&#146;d be a millionaire by now, y'know. You just got to get out of that jingle head sweetie.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "What is this?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "That would be great. Thank you.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "God. Do think it really doesn&#146;t hurt? &#145;Cause how can they do that?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, I knew something had to be wrong, because my fingernails did not grow at all yesterday.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, and nobody slept with that Xerox girl.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No, the &#145;No Smoking&#146; sign. There&#146;s no smoking in my Grandmother&#146;s cab.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay. We are at a rest stop on Route 27. Okay. There is no Route 27. Okay, either 93 or 76?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Maybe we can like go to a movie or something.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, isn&#146;t it fantastic?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hi! Oh, Alice, hi! Thanks. I&#146;m so glad you could come, &#145;cause I&#146;ve got a real umm, Home Ec emergency.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hey, Frank. Look, okay, I know that you think I did like this totally evil thing, but I so didn&#146;t. There&#146;s someone here who can explain this better than I can.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "It isn&#146;t?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I brought a bunch of stuff for the house, so check it out. Ha-ha.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hey, does anybody want to join me in the aroma room?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay, well they are a huge responsibility, especially at this age. They require constant care. They-they need just the right food, and lot&#146;s and lot&#146;s of love.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I can&#146;t!!",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, I&#133;",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Does a dog's lips move when he reads? Okay, no they don't.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No! But it's the nicest kitchen, the refrigerator told me to have a great day.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, yeah, because I have to break up with someone, and&#133; Okay so Jason is sensitive, but now so&#146;s Vince Plus, Vince has the body y'know? So&#133; It&#146;s really just about the math.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay, you can totally say no, but umm, would it be okay with you if I set Ross up on a date?",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, y'know what, there are other fish in the sea.",
+   "stage": 5,
+   "season": 3
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, you&#146;re welcome a million.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Does it?",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, oh, and hey-hey-hey, those little spelling tips will come in handy when you&#146;re at home on Saturday nights playing Scrabble with Monica!!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "I mean why, of all people would you want to go out with Chip?!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "All right!!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "My boss, Joanna? Wow, that must&#146;ve been awkward.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "You give me back my Walkman!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "I ah&#133; Oh! I&#146;ll squeeze you fresh orange juice every morning!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "I&#146;m sorry. I didn&#146;t&#151;I don&#146;t come in here a lot.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "You just did a little dancy thing.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Y'know what else is really great about him, oh, what is the word for the adult that doesn't have dinosaur toys in their bedroom?",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Huh. Well, then you'd better keep it away from Ross's hair. So this is pretty rare. How did you get that?",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "All right, look. Why don't you just return the book, let Joey give her the clock pen, and you give her something worse than that. Like... a regular pen.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Because you do.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Here it is! I love it. I wear it all the time.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ohh! That&#146;s great!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Say more things like that.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, God. Oh, God. Oh God.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Op, I like credit cards!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Cute guys in little shorts? Sure.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "I know! I know, it&#146;s such a huge, life-altering thing.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Space cowboy!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Will you stop calling it your apartment!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Why? Honey, what is the big deal?",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh! Well, as a single woman, who is available, I think you look great!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ohh! Right! Right, sorry, I&#146;ll be right back!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh thank you! Thank you, thank you, thank you! Emily?",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "I don&#146;t care! All right, y&#146;know what I&#146;m just upset that I&#146;m getting nowhere with Joshua that&#151;y&#146;know what still, you do not meet someone and go flitting off to Vermont!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "No, happy for you!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "No. But I was showing him some cufflinks and I felt his pulse.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, that&#146;s because of a lot of&#133;",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ohh, God! Look at him, he&#146;s so cute. I wanna go over there, grab him, and kiss him! How can I kiss him and not letting him know that I like him?",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Gimme an &#145;M!&#146;",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ohh, here you are. I was looking for you before. Joshua&#146;s gone so you and Emily are free to go.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Okay. Every time.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, we were walking down the street and we saw that van that you guys used for catering and we realised&#133;",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Okay. So, can I serve you a little of&#151;What? What? What?",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, yeah. And uh, the best part though, when the uh, waiter spilled water down my back, I jumped up, and my boob popped out.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ohh, well you got &#145;em.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Let us keep the apartment and&#133;",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh yeah? Fine.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "&#145;Cause I am really happy about us. I think we are, I think we are so on the right track! Y&#146;know? I mean, I think we are working, I think we are clicking. Y&#146;know?",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Y&#146;know, I gotta tell ya, this really does put in a better mood.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "I could not have done this without you.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Okay! All right! How was she?",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh.... my God.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Y'know I can&#146;t believe I even thought about getting back together again! We are so over!!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "No we&#133;",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "And y&#146;know what else, oh my God, are they gonna love you.",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, I can not believe you didn&#146;t tell me!",
+   "stage": 0,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hi there.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "I&#146;ll give you a thousand dollars to talk to us.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "You want it?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "What happened?!!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, come on! It&#146;s not like this is an everyday occurrence for me! I mean usually I&#146;m pretty much just in there by myself.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Look, this isn&#146;t funny! You get back here right now!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "I&#146;m gonna say this for the last time. Would you please just&#133;",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Why don&#146;t you just give him to somebody else?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "To pay for the gym.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "So ah, Joey tells me you two met in acting class.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Okay. You were right. I'm in love with Joey's girlfriend.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ross and the most beautiful girl in the world .",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "A pen .",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey! Happy birthday.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, I&#146;m upset&#151;for you. I mean, having sex with an endless line of beautiful women must be very unfulfilling for you.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Uhh, that was Joey. He&#146;s running a little late, he says he&#146;s sorry.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Wait the uh, the kiss or the situation?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Could be Casey.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yes, but I-I uh, don&#146;t have too.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "They couldn&#146;t be worse. I spent eight hours calling him last night, just trying to get him to talk to me.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey! I&#146;m sorry! That&#151; where are you going?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, you guys! Hey, Ross, quick question for ya. Are you ready to party?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "All right!!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh and Ross was like what? A lion tamer?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "See, I&#146;m not bad at this fixing up thing, huh?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, man. I&#146;m sorry, I&#146;m so-so sorry.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Stop that now!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "I majored in lightning rounds. All right, we&#146;re gonna destroy you.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Would you all stop yelling in our apartment! You are ruining moving day for us!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh come on, it was so obvious! There was no chemistry between you two!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "That&#146;s not backing me up! Look, you said with the off-stage and the heat, and the onstage and the oy heat.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Y&#146;know, I knew something like this was going to happen.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Where I don&#146;t want to have a relationship ever! I just want to have sex with strippers and my friends!!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "No! No! Not, Paris.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "American Express ?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Why are you in here if Joshua is all the way over there?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "And no one touches the air around the TV!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "A place where no one will ever get out alive?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, y&#146;know what, if you&#146;re gonna do that, if you&#146;re gonna name him Joey, you should name him Chandler. Oh, come on! Chandler&#146;s funny, sophisticated, and he&#146;s very loveable, once you get to know him.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "It&#146;s Clint! Clint !",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yes, Gunther, can I get two cups of chino, please?",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Look, the only way I will even consider this is if they offer a lot more than just season seats.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh yeah, that&#146;s very nice. Plus, y&#146;know they were free and they&#146;re too small.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, okay, thanks.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yes he did.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "We&#146;re going to Everest! Okay, it would be nice to leave an ass print on Everest!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "I KNEW IT!!!!",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "He just said, \"No strippers.\"",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, come on, it&#146;s not your fault.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Chandler",
+   "desc": "I think it&#146;s great. It&#146;s great. Y&#146;know, they&#146;re thinking of changing the name of this place.",
+   "stage": 1,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "I know.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh. Oh-oh.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "What happened? Joey?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Monica, you&#146;re so lucky! He&#146;s like the most popular guy in school!!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "So Pheebs, how long is your mom gonna be with us?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "I don&#146;t know what to say.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "One more time, \"Hey, don&#146;t you want a washboard stomach and rock hard pecs?\"",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Come on, Pheebs lay off him.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Are you serious?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Well, I do! Why don't we go back to my place, light a couple of candles, break open a box of Cinnamon Fruit Toasties, uh...",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh my god! I'm so sorry, Cheryl. I must have freaked out.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "See but, Pheebs that-that is the exact opposite intent of my music. Y&#146;know my music is-is meant to inspire, and if it bothers you this much, then I&#133; I won&#146;t play anymore.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "So listen ah, I picked Monica for secret Santa, but I&#146;m already getting her something for Chanukah, I was wondering if you wanna switch.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Wow! I&#146;m honored! And y&#146;know what I&#146;m gonna do as my first act as your best friend?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "I don&#146;t know what to say, I&#146;m sorry. Though, you&#146;re not supposed to take these. It&#146;s like a million years old, we, we actually, we had people looking for that.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "What happened?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "And so what if I like to go home, throw on some Kenny G, and take a bath!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey, what are you doing shopping at eight in the morning?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "It&#146;s heads. Gentlemen, pick your category.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "All right, we have a tie. Luckily, I have prepared for such an event. The Lightning Round!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "30 seconds on the clock. 5 questions wins the game. The lightning round begins&#133;now! What is Joey&#146;s favorite food?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "They&#146;re not a couple!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Cookies and porn, you&#146;re the best mom ever!!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Ohh, Geller&#146;s got one hooked! Ohh! Looks like a big one! Yeah, ohh! Ohh! It&#146;s the classic struggle between man and&#151; Someone knocked over a lamp.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey! You were so right!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, just hold on a second. I&#146;m watching this rugby thing on ESPN . I don&#146;t know what the big deal is. I&#146;m man enough to play this sport.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey, could you do me a favour? Could you just grab me a bottle of water?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, I kinda was, wasn&#146;t I?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Yes, we have something we have to get to.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Thanks. What photo album was it?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Wait uh, listen. I-I, I have to tell you something. Umm, I&#146;ve been thinking, I&#146;m just gonna come out and say it. Okay? I-I-I ah, I-I think I love you.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "I made fun of his accent.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh come on! That&#146;s-that&#146;s&#133; true.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Am I ?!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Huh? I know, I know. Who am I? David Bowe?",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Nothing! There&#146;s nothing to do! I mean, she lives there, I live here. I mean, she-she&#146;d have to uh, move here. She should move here!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Get married.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Yeah&#151;oh! Hey listen umm, Emily found this wedding dress in London&#133;",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "I gotta get to work.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Come here.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "See, I see.... big passion in your future.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, it&#146;s not, it&#146;s not.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Yeah, I really do. Yeah, but what am I gonna do, I mean we-we both agreed that it was gonna be a two-week thing, y&#146;know no commitment.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "I've no idea, could be. Listen, I'm sorry I had to work tonight.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey guys!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey listen man, about the stripper&#133;",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, well, we&#146;ll call the company that sent her!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Yeah, cheerie-o!",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "Sweetie, you gotta relax. Everything&#146;s gonna be great, okay? Come on. Come on.",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Ross",
+   "desc": "No, wait! Emily! No, wait, stop! Emily, please&#151;",
+   "stage": 2,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Shoot! We&#146;re out of soda.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Pass the cheese, please.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "I know!! Chip? Hi! It&#146;s Monica. &#145;Kay. &#145;Kay. Okay. Okay, good-bye. Oh my God, we just had the best conversation!!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Huh? What&#146;d ya say Joe? I&#146;ll be right there.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh my God! What happened?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": ": Yeah, I thought it was cute.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "You bet that I&#146;d screw up?! So all that stuff about hiring me because I was good was&#133;",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Why are you talking about volcanoes all of the sudden?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "What a minute, what did he say?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "All right, then show me some manly moves.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Hi, Josh.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Ross, cough drops, please?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "No. I hate this part.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "And I'm a wuss. And we should be partners.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Okay. Umm, Phoebe, you suck too.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh, y&#146;know what, I can&#146;t, it really kills.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh. So you made her walk the plank? Aye, matie?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Here, let me show you. Okay, the towels are hanging next to the sink, and umm, you can use the fancy soap.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "I know!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh! Do you need me to go with you?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Can you believe it? I finally get to run my own kitchen!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Okay. I&#146;m guessing that if you don&#146;t want to deliver, you probably don&#146;t want to pick stuff up either.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Didn&#146;t your dad used to call you Pumpkin?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Joey, we had a deal. That-that&#146;s why you&#146;re here! I&#146;ve got to fire you!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "What kind of changes?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "I knew that! Rachel! Use you&#146;re head!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Come on!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Hey, Rach, can you give me a hand with this box?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "If you have the big apartment you have to deal with people coming over all the time. That fridge has got to be stocked, okay, that&#146;s your department now.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "People are supposed to wanna hang out here!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Hey, Joey, I don&#146;t think that you should leave Chandler alone. I mean it&#146;s only been two days since he broke up with Kathy. Maybe you can go fishing next week?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Yeah. Run ten blocks, that&#146;ll help the smell.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "A couple of days.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "They really were pretty, weren&#146;t they?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "He asked you out?!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "What is it hon?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Well at least, I&#146;m going to mute it.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "How did it go with Frank and Alice?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "When Rachel was with Paulo, what did you do?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Y&#146;know what? It really creeps me out choosing other people&#146;s sex clothes.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Hey, guys, what-what should I wear to a Knicks game?",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Okay. Four.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "I can&#146;t believe you&#146;re getting married!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Does she use the cups? Yes! I believe she does. Does she use the plates? Yes! I believe she does.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Okay, throw it straight this time.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "No-no, Rachel, don&#146;t get it! He can&#146;t see us!",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "I can't believe you did that.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Because she&#146;s not gonna get to keep the babies.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "Some moms do that.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Monica",
+   "desc": "It&#146;s nice.",
+   "stage": 3,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Okay, so we went to the beach, because Phoebe found out about this lady who knew her mom and dad, and I don&#146;t really know what happened with that.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "If you want some privacy you can use my hole.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, the ad alone cost 300 bucks!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh yeah? If I can&#146;t, I&#146;ll knock five bucks off the price off the unit.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah-well-yeah! Yeah-oh-yeah. Come on in.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Well, it&#146;s good thing you got out when you did, before she blew up like that Vesuvius.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Well he made Rachel cry!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Aww, man, now we won&#146;t be bank buddies!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "I don&#146;t know how to lead.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey guys. Listen uh, you wanna get some dinner with me and Kathy tonight?",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "We've only been going out for a couple of weeks, do you think I gotta get her something?",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "What kind of smell?",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, he did, look... look, it's right there on the counter! Ha-ho-ho!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, it&#146;s me. Listen Casey and I were on our way back and had a little car trouble.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh-no-no-no, you are! You do this, you give me the great advice, and hey listen, I was thinking about what you said yesterday about focusing on one woman, I&#146;m gonna do that.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "No-no-no, no it&#146;s uh, it&#146;s okay.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Back when you and Rachel were together, if Chandler had kissed her, would you hear him out?",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Ewwwww!! Ew! Ew! Ew!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, we&#146;re gonna be fine! Get out!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "I have an audition, but I&#146;ll definitely hook up with you later. Where are you gonna be around noon?",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "I can&#146;t hear a word you&#146;re saying, my ears are ringing so bad.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, what are you gonna do? You&#146;re gonna fire me?",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Yep! Looks like it&#146;s gonna be a leeeeean Christmas at the Dragon house this year.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "The Irish gig guy?!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh wow! You can tell this soon.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "No-no, stay right there. Gettin&#146; closer.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Absolutely! And if it doesn&#146;t, can I get the extra ticket?",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Look, there&#146;s nothing I can do for him right now, he&#146;s still in his sweat pants, that&#146;s still Phase One. Y'know? I&#146;ll be back for Phase Two, I would never miss Phase Two.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "No-no, it&#146;s uh, it&#146;s Heston.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, all right.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Thanks for telling me!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Is it the shampoo? It&#146;s guava.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "There was a seen in Footloose ...",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Okay, time to take off the bra.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, so no one touches the remote. And no one touches the TV!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "I think you&#146;re right.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "So I guess it&#146;s Joey then!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh my God! Those are almost right on the floor!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah, the Knicks rule all!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, want a beer? WHOA!!!!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Ohhh, yeah!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, they gave it to me at the sleep clinic, and it&#146;s gonna help me not to snore.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Don&#146;t answer that.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Come on Ross! Look, I-I don&#146;t have any brothers; I&#146;ll never get to be a best man!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh-whoa, what party?",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh yeah-yeah. And I got the duck totally trained. Watch this. Stare at the wall. Hardly move. Be white.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, yeah, well I already did that! They said they&#146;re gonna look into it right after they solved all the murders.",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Now, don&#146;t argue with me&#133;",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "All right! Westminster Abbey! Hands down, best Abbey I&#146;ve ever seen. Hey! Okay. What do you think of the Abbey, Chandler?",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Well, I was trying to figure out how to get to Buckingham Palace, right? So, I&#146;m in my map and-and&#133; Hey!",
+   "stage": 4,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I-I mean I, well I think I can figure it out. I guess y'know I was born, and everyone started lying their asses off!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, I&#146;m ready to get the hell out of here! Oh. Are you? Are you?!! Ohh! That&#146;s so great!! Ooh, not for Bonnie. But for you, yay! Ohh.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay, bye.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh my God, you guys are selling the entertainment center?",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah? Hi!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "That&#146;s weird.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, they love your casserole.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I don&#146;t what your talking about.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh yeah, oh and I know, but this isn&#146;t what it looks like, &#145;cause Rick is my ahh, husband.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, I think it's great that the medical community is finally trying to help sick hamsters.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "But, I need your germs! I want my cold back! I miss my sexy voice.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "It's gotta be better than that book. Oo! Like a crossbow!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, all right. Oh! Look what we almost took!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah. Oh! It'll be like I have a wife in the fifties!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh no, I&#146;m not playing tonight.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh my God, he&#146;s lost it. He&#146;s totally lost it.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hi! Yeah, I&#146;m calling on behalf of Monica Geller&#146;s eye, and is um, is Richard Burke in today. He&#146;s out of town, but does she want to see the on-call doctor?",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, she sees him! Oh, they&#146;re hugging!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Wow! Okay, dude alert! And who is this guy?",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You&#146;re the cook! With out you it&#146;s just me driving up to people&#146;s houses with empty trays and asking for money!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No, answer his.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No! No, the robots just work for them.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, they&#146;re just gonna umm, look to see if my endometria layer is thick.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, freaked. &#145;Cause it turns out that the odds are really sucky. And! This is Frank and Alice&#146;s like only shot. Like, they are literally putting all of their eggs in my basket.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, it&#146;s just that maternity clothes are so expensive.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, I don&#146;t need it.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I&#146;ve never done that.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Don&#146;t you just love the way they talk?!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I&#146;m sorry.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "And do you know what girls are really good at?",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, why are you doing this anyway?",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "God! Ooh! What is that smell? It&#146;s coming from the bathroom. Ooh!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, totally!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Why don&#146;t take care of this one, and should I get pregnant again, I&#146;ll hold onto your card, okay?",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You can&#146;t give up on your dream.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, that is better.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, I definitely. I don&#146;t like the name Ross.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, she turned you into this-this-this untrusting, crazy, jealous, sycophant. All right, so I don&#146;t know what sycophant means, but the rest is right.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Nuh-uh! They&#146;re maternity pants. They even came with a list of baby names. See, these names are good, and these names are bad. Ohh.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "All right, Joey, same question.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, the Olympics.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, at least you didn&#146;t rent yours from a store called, \"It&#146;s Not Too Late.\"",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "What did he say?",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I&#146;m so jealous you&#146;re all going! I can&#146;t believe I never knew that you can&#146;t fly in your third trimester!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hey!! Get your ass back here, Tribbiani!!",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, I thought I had one a couple of minutes ago, and now I know that was definitely one.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Got cha again, you guys are so easy.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh. Oh.",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, because we thought you knew!! It&#146;s so obvious! God, that would be like telling Monica, \"Hey, you like things clean.\"",
+   "stage": 5,
+   "season": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "So you&#146;re not homesick yet?",
+   "stage": 5,
+   "season": 4
+  }
+ ]
+}

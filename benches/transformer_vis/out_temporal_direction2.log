@@ -1,0 +1,29 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 5893.59it/s]
+编码 C0/C1/C2 …
+编码完成 7s
+/Users/mac/Programming/code-2026/Concept-Space-Sphere/benches/transformer_vis/temporal_direction2.py:140: UserWarning: *c* argument looks like a single numeric RGB or RGBA sequence, which should be avoided as value-mapping will have precedence in case its length matches with *x* & *y*.  Please use the *color* keyword-argument or provide a 2D array with a single row if you intend to specify the same RGB or RGBA value for all points.
+  ax.scatter(scores_res[msk], np.zeros(msk.sum()) + np.random.default_rng(s).normal(0, 0.02, msk.sum()),
+{
+ "K1'": {
+  "rho_res": 0.5144957554275266,
+  "rho_plain_pca": 0.6330747771546326,
+  "rho_vhat_ref": 0.4184565477477216,
+  "rho_pca_ref": 0.621314874173432,
+  "shuf_ctrl": 0.3224173400679166
+ },
+ "K2'": {
+  "curve": [
+   1.96,
+   1.9,
+   1.9,
+   1.9,
+   1.9,
+   1.9,
+   1.9
+  ],
+  "mono": false,
+  "span": -0.06
+ },
+ "elapsed_s": 8
+}
+DONE — metrics_temporal_direction2.json + figs_tdv2/

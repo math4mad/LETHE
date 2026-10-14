@@ -1,0 +1,13 @@
+{
+ "id": "math4amd/instacart-cognitive-space-7b",
+ "title": "Instacart Cognitive Space - 7b",
+ "code_file": "run.py",
+ "language": "python",
+ "kernel_type": "script",
+ "is_private": true,
+ "enable_gpu": true,
+ "enable_internet": true,
+ "model_sources": [
+  "qwen-lm/qwen2.5/transformers/7b-instruct/1"
+ ]
+}

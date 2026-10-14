@@ -1,0 +1,8 @@
+{
+  "id": "instacart-extractor",
+  "title": "Instacart Data Extractor for Cognitive Space",
+  "enable_gpu": false,
+  "enable_internet": false,
+  "language": "python",
+  "source": "run.py"
+}

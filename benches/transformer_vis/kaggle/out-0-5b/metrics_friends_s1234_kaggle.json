@@ -1,0 +1,246 @@
+{
+ "minted": "2026-10-13",
+ "arm": "0.5b-selftest",
+ "platform": "kaggle",
+ "question": "Does Rachel's distinctiveness only coalesce in S03/S04 (owner's impression)?",
+ "hypotheses": {
+  "H-S1": "Rachel within-role similarity S03/S04 > S01 (cohesion rises)",
+  "H-S2": "Rachel-to-others centroid distance S03/S04 > S01 (separation rises)",
+  "H-S3": "control: the other five roles move the same way across seasons (otherwise = season drift, not Rachel-specific)"
+ },
+ "model": {
+  "mount": "/kaggle/input/models/qwen-lm/qwen2.5/transformers/0.5b-instruct/1",
+  "quant": "none",
+  "arch": "Qwen2ForCausalLM",
+  "layers": 24,
+  "hidden": 896,
+  "heads": 14,
+  "device": "cuda"
+ },
+ "corpus": {
+  "deck": "D5_friends_s1234",
+  "n": 1200,
+  "roles": [
+   "Rachel",
+   "Chandler",
+   "Ross",
+   "Monica",
+   "Joey",
+   "Phoebe"
+  ],
+  "seasons": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "per_role_per_season": 50,
+  "S02": "fangj site S02 is single-block-per-episode format; parser handles it"
+ },
+ "knobs": {
+  "seed": 13,
+  "tsne_perplexity": 15,
+  "probe_folds": 5,
+  "flow_max_tokens": 1500
+ },
+ "season_metrics": {
+  "1": {
+   "within_last": {
+    "Rachel": 0.8937282562255859,
+    "Chandler": 0.9013289213180542,
+    "Ross": 0.8597333431243896,
+    "Monica": 0.8887874484062195,
+    "Joey": 0.8964993357658386,
+    "Phoebe": 0.8952301740646362
+   },
+   "ratio_last": {
+    "Rachel": 1.0033643245697021,
+    "Chandler": 1.0091570615768433,
+    "Ross": 0.9807233810424805,
+    "Monica": 0.9998236298561096,
+    "Joey": 1.005234718322754,
+    "Phoebe": 1.005541205406189
+   },
+   "probe_acc_max": 0.22999999999999998,
+   "probe_acc_max_layer": 8,
+   "rachel_centroid_dist_last": 0.0025832175742834806,
+   "attn_entropy_last": {
+    "Rachel": 0.9934489470720291,
+    "Chandler": 1.0582203102111816,
+    "Ross": 1.02778762280941,
+    "Monica": 1.0497949075698854,
+    "Joey": 1.0997710829973222,
+    "Phoebe": 1.008810316324234
+   }
+  },
+  "2": {
+   "within_last": {
+    "Rachel": 0.9067768454551697,
+    "Chandler": 0.92270427942276,
+    "Ross": 0.9122524857521057,
+    "Monica": 0.9053739905357361,
+    "Joey": 0.8989180326461792,
+    "Phoebe": 0.9144887924194336
+   },
+   "ratio_last": {
+    "Rachel": 0.9979486465454102,
+    "Chandler": 1.0092154741287231,
+    "Ross": 1.0015398263931274,
+    "Monica": 0.9968799352645874,
+    "Joey": 0.992760956287384,
+    "Phoebe": 1.003158450126648
+   },
+   "probe_acc_max": 0.22333333333333333,
+   "probe_acc_max_layer": 1,
+   "rachel_centroid_dist_last": 0.002019548323005438,
+   "attn_entropy_last": {
+    "Rachel": 1.0347159200906753,
+    "Chandler": 1.2540047496557236,
+    "Ross": 1.093479090332985,
+    "Monica": 1.033850668668747,
+    "Joey": 0.9845605093240738,
+    "Phoebe": 1.2103588551282882
+   }
+  },
+  "3": {
+   "within_last": {
+    "Rachel": 0.8634421825408936,
+    "Chandler": 0.9027973413467407,
+    "Ross": 0.8845802545547485,
+    "Monica": 0.8696183562278748,
+    "Joey": 0.8925197124481201,
+    "Phoebe": 0.866786003112793
+   },
+   "ratio_last": {
+    "Rachel": 0.9892635941505432,
+    "Chandler": 1.0163694620132446,
+    "Ross": 1.0032001733779907,
+    "Monica": 0.9929082989692688,
+    "Joey": 1.0094788074493408,
+    "Phoebe": 0.9911770820617676
+   },
+   "probe_acc_max": 0.22666666666666666,
+   "probe_acc_max_layer": 9,
+   "rachel_centroid_dist_last": 0.0034081339836120605,
+   "attn_entropy_last": {
+    "Rachel": 1.0590084272623062,
+    "Chandler": 1.1996287596225739,
+    "Ross": 1.0752232545614242,
+    "Monica": 1.040127249956131,
+    "Joey": 1.195449289083481,
+    "Phoebe": 1.3010373663902284
+   }
+  },
+  "4": {
+   "within_last": {
+    "Rachel": 0.8643175959587097,
+    "Chandler": 0.8626986145973206,
+    "Ross": 0.8772405385971069,
+    "Monica": 0.8711495399475098,
+    "Joey": 0.8864845037460327,
+    "Phoebe": 0.8981549143791199
+   },
+   "ratio_last": {
+    "Rachel": 0.9914410710334778,
+    "Chandler": 0.9903644323348999,
+    "Ross": 0.9996821880340576,
+    "Monica": 0.996401846408844,
+    "Joey": 1.0069000720977783,
+    "Phoebe": 1.0147926807403564
+   },
+   "probe_acc_max": 0.22333333333333333,
+   "probe_acc_max_layer": 18,
+   "rachel_centroid_dist_last": 0.0025465607177466154,
+   "attn_entropy_last": {
+    "Rachel": 1.1771475809812546,
+    "Chandler": 1.0855227345228196,
+    "Ross": 1.1641245889663696,
+    "Monica": 1.0505091392993926,
+    "Joey": 1.2151997089385986,
+    "Phoebe": 1.1865292131900786
+   }
+  }
+ },
+ "rachel_timeline": {
+  "seasons": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "rachel_within_last": [
+   0.8937282562255859,
+   0.9067768454551697,
+   0.8634421825408936,
+   0.8643175959587097
+  ],
+  "others_within_mean": [
+   0.8883158445358277,
+   0.910747516155243,
+   0.8832603335380554,
+   0.879145622253418
+  ],
+  "rachel_centroid_dist": [
+   0.0025832175742834806,
+   0.002019548323005438,
+   0.0034081339836120605,
+   0.0025465607177466154
+  ],
+  "others_centroid_dist_mean": [
+   0.9974169969558716,
+   0.9979803442955018,
+   0.9965918302536011,
+   0.9974534273147583
+  ],
+  "probe_lead_vs_rest": [
+   0.76,
+   0.7633333333333334,
+   0.7733333333333332,
+   0.7899999999999999
+  ]
+ },
+ "flow_stats": {
+  "episode": "S04 opening (from E01)",
+  "n_sentences": 86,
+  "n_tokens": 1471,
+  "adj_same_role_sim": 0.9134388267993927,
+  "adj_diff_role_sim": 0.9076508536730727,
+  "n_adj_same": 12,
+  "n_adj_diff": 73,
+  "attn_entropy_per_layer": [
+   2.834047794342041,
+   3.5940463542938232,
+   2.962520122528076,
+   2.241208076477051,
+   2.757960796356201,
+   2.8054840564727783,
+   2.8459856510162354,
+   1.5195739269256592,
+   2.0249316692352295,
+   1.9107860326766968,
+   2.893368721008301,
+   1.9845691919326782,
+   3.0008111000061035,
+   2.4387736320495605,
+   2.55712628364563,
+   2.729487657546997,
+   1.727626085281372,
+   2.3800737857818604,
+   1.853710412979126,
+   2.077115297317505,
+   2.571988582611084,
+   2.278735637664795,
+   4.816703796386719,
+   4.211757659912109
+  ],
+  "speaker_counts": {
+   "Rachel": 19,
+   "Chandler": 9,
+   "Ross": 22,
+   "Monica": 10,
+   "Joey": 13,
+   "Phoebe": 13
+  }
+ },
+ "elapsed_s": 708.1962685585022
+}

@@ -1,0 +1,43 @@
+[{"stream_name":"stdout","time":54.009160194,"data":"Initializing Instacart Cognitive Space Engine...\n"}
+,{"stream_name":"stdout","time":54.017350787,"data":"Loading model: /kaggle/input/models/qwen-lm/qwen2.5/transformers/7b-instruct/1 (quant=4bit)\n"}
+,{"stream_name":"stderr","time":56.872414077,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":56.873349915,"data":"  File \"/kaggle/src/script.py\", line 206, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":56.873377449,"data":"    run_experiment()\n"}
+,{"stream_name":"stderr","time":56.873382037,"data":"    ~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":56.87338578,"data":"  File \"/kaggle/src/script.py\", line 83, in run_experiment\n"}
+,{"stream_name":"stderr","time":56.873390067,"data":"    model = AutoModelForCausalLM.from_pretrained(model_id, **model_kwargs)\n"}
+,{"stream_name":"stderr","time":56.873393873,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/auto/auto_factory.py\", line 402, in from_pretrained\n"}
+,{"stream_name":"stderr","time":56.873398395,"data":"    return model_class.from_pretrained(\n"}
+,{"stream_name":"stderr","time":56.873401839,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":56.873405097,"data":"        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs\n"}
+,{"stream_name":"stderr","time":56.873408553,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":56.87341206,"data":"    )\n"}
+,{"stream_name":"stderr","time":56.873415267,"data":"    ^\n"}
+,{"stream_name":"stderr","time":56.87341837,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py\", line 4270, in from_pretrained\n"}
+,{"stream_name":"stderr","time":56.873423985,"data":"    hf_quantizer, config, device_map = get_hf_quantizer(\n"}
+,{"stream_name":"stderr","time":56.873427442,"data":"                                       ~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":56.873434652,"data":"        config, quantization_config, device_map, weights_only, user_agent\n"}
+,{"stream_name":"stderr","time":56.873437184,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":56.87343938,"data":"    )\n"}
+,{"stream_name":"stderr","time":56.87344146,"data":"    ^\n"}
+,{"stream_name":"stderr","time":56.873443624,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/quantizers/auto.py\", line 358, in get_hf_quantizer\n"}
+,{"stream_name":"stderr","time":56.873446145,"data":"    hf_quantizer.validate_environment(\n"}
+,{"stream_name":"stderr","time":56.873448422,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":56.873450582,"data":"        device_map=device_map,\n"}
+,{"stream_name":"stderr","time":56.873452959,"data":"        ^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":56.873455207,"data":"        weights_only=weights_only,\n"}
+,{"stream_name":"stderr","time":56.873457312,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":56.873459429,"data":"    )\n"}
+,{"stream_name":"stderr","time":56.873461545,"data":"    ^\n"}
+,{"stream_name":"stderr","time":56.873463643,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/quantizers/quantizer_bnb_4bit.py\", line 62, in validate_environment\n"}
+,{"stream_name":"stderr","time":56.873466017,"data":"    raise ImportError(\n"}
+,{"stream_name":"stderr","time":56.873468153,"data":"        f\"Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes\u003e={BITSANDBYTES_MIN_VERSION}`\"\n"}
+,{"stream_name":"stderr","time":56.873480967,"data":"    )\n"}
+,{"stream_name":"stderr","time":56.873483689,"data":"ImportError: Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes\u003e=0.46.1`\n"}
+,{"stream_name":"stderr","time":66.956348766,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":66.956397526,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":67.313402402,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":67.313443588,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":68.151855882,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":69.522271231,"data":"[NbConvertApp] Writing 385325 bytes to __results__.html\n"}
+]

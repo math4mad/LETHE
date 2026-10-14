@@ -1,0 +1,1547 @@
+{
+ "deck": "D5_friends",
+ "minted": "2026-10-13",
+ "note": "Friends S01 六主角台词语料: 每角色 50 条, 跨集系统抽样。来源 fangj.github.io/friends (说话人标注正本), 与 PDF 版互证。台词为英文原文, 不含角色名声称——角色归属靠语料标签。实验问题: Rachel/Chandler 是否为台词语料里的注意力尖峰(吸引子对照)。",
+ "roles": [
+  "Rachel",
+  "Chandler",
+  "Ross",
+  "Monica",
+  "Joey",
+  "Phoebe"
+ ],
+ "sampling": {
+  "seed": 13,
+  "per_role": 50,
+  "min_words": 2,
+  "max_words": 35
+ },
+ "stats": {
+  "Rachel": {
+   "pool_after_filter": 658,
+   "picked": 50
+  },
+  "Chandler": {
+   "pool_after_filter": 674,
+   "picked": 50
+  },
+  "Ross": {
+   "pool_after_filter": 739,
+   "picked": 50
+  },
+  "Monica": {
+   "pool_after_filter": 701,
+   "picked": 50
+  },
+  "Joey": {
+   "pool_after_filter": 525,
+   "picked": 50
+  },
+  "Phoebe": {
+   "pool_after_filter": 508,
+   "picked": 50
+  }
+ },
+ "items": [
+  {
+   "name": "Rachel",
+   "desc": "Oh God Monica hi! Thank God! I just went to your building and you weren't there and then this guy with a big hammer said you might be here and you are, you are!",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hello, Paul.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Uh, credit card.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Would anybody like more coffee?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "You're twins?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "I'm- uh- I'm okay... You look great!",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Good for me!",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Chandler? It's Alan, he wants to speak to you.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "So c'mon, you guys, tell me all the dirt!",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "I'm so sorry, you guys. I didn't mean to bring you down.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, okay. Will you take my place?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Hi, uh, nothing. That horrible woman just took my machine.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, I guess. Except everything looks like jammies now.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "What is it?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Wow, you guys, this is big.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh Ross, you're so great.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh... Italy, I think.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "So, um, did she...",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ok, ok, that's fine. Fine. Hey, I'm sorry about that spill before. Only $98.50 to go.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "I can't, I gotta go.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, he is precious! Where did you get him?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "I can't kiss anyone.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Central Perk is proud to present Miss Phoebe Buffay.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, sure...just a sec, though, 'cause Paolo's on his way over.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "No, no, trust, me, it's, it's, it's much better that I know. Uh, I just liked it better before it was better...",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Okaaay. Any of you guys want anything else?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "I thought it was Chandler!",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Burning's good. Yeah, I got stuff to burn.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "No. But don't worry, I'm sure they're still there.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh... that's too bad. Bye bye.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "I use my breasts to get other people's attention.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "But you could teach us.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Guys! Guess what, guess what, guess what, guess what!",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "I'm not telling.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "How many you want?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Mindy, my maid of. Oh!",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Okay, he's a, he's a black capuchian monkey with a white face... ...with, with Russian dressing and, and pickles on the side. Okay. Thanks.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, y'know what? That was a complete misunderstanding!",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Right,.. well,.. we never actually got to that... Oh, it was just so nice to see him again, y'know? It was comfortable, it was familiar... it was just nice!",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, do I?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Ohhhh!! ...What? What?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Well, the first time didn't really count... I mean, y'know, 's'Barry.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, it's so late for 'Shall we'...",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh God, oh. Great, Monica, y'know what, you could've called, I have been up here, I've been worried...",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Could tonight be the Night?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Let's dry 'em again.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Yeah, why?",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Oh, no, no, no. Presents first. Food later.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "I don't know. Maybe I'll know when I see him.",
+   "stage": 0
+  },
+  {
+   "name": "Rachel",
+   "desc": "Monica, nothing has even happened yet, and you're already so...",
+   "stage": 0
+  },
+  {
+   "name": "Chandler",
+   "desc": "All right Joey, be nice. So does he have a hump? A hump and a hairpiece?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I'm sorry, I didn't catch your name. Paul, was it?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hi, Paul, is it?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ew, ew, ew, ew ew ew ew ew!",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, that was really good!",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Okay, so this time I won't quit!",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "...That's it. I'm getting cigarettes.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yes, Bunny?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "No, you kidding? The guy's a freak..",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, you may wanna rethink the dirty underwear. This is basically the first time she's gonna see your underwear&#151;you want it to be dirty?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, yeah, that hug looked pretty brutal.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "There's a beautiful woman at eight, nine, ten o'clock!",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "We talked 'til like two. It was this perfect evening... more or less.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, that would be Monica. Hey, listen, I wanna borrow a coupla things, Aurora spent the night, I really wanna make her breakfast.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Lose the other guys.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yeah, about 300 guys I went to high school with. Yeah, thanks.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yes. Yes, thanks for letting me use your phone... and for saving my life.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I just have to know, okay. Is it my hair?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, no-",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yes, every single one of them.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "For an emergency just like this.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I'm not saying it was a good idea, I'm saying I snapped!",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Kill me. Kill me now.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Shhh, busy beaming with pride.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "You knew about this?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "You kissed my best Ross! ...Or something to that effect.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Ok, so it's just because it was my table, I have to buy a new one?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "So what are you gonna do?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Rachel, wait, wait.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Oh, good. Rog is here.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Sorry, my my thing was in there with me.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "...And what did you bring?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "That's right, each. Oh, and a uh Rob Roy. I've always wanted to know...",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I did, but...",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Well, I have an appointment to see Dr. Robert Pillman, career counselor a-gogo. I added the \"a-gogo.\"",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Yes indeedy! With a beautiful view of...",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "There just don't happen to be any women in our games.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Hey, that's... that's 'joincidence' with a 'C'!",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Rachel lost Marcel.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "No, interestingly enough her leaf blower picked up.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I'm not gonna talk to her, she obviously got my message and is choosing not to call me. Now I'm needy and snubbed. God, I miss just being needy.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "What are you doing here?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "I don't get it, I mean, you just got him. How can he be an adult already?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "You're okay there?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Bye bye.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Work people? Nobody told me.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Here we go, here we go.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Rachel, what is the deal with you and doctors, anyway? Was, like, your father a doctor?",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "Crazy bitch.",
+   "stage": 1
+  },
+  {
+   "name": "Chandler",
+   "desc": "No it's not. It's small. It's tiny. It's petite. It's wee.",
+   "stage": 1
+  },
+  {
+   "name": "Ross",
+   "desc": "I just feel like someone reached down my throat, grabbed my small intestine, pulled it out of my mouth and tied it around my neck...",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "So Rachel, what're you, uh... what're you up to tonight?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Mmm. Oh, no-",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "You look great. I, uh... I hate that.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Anyway.. um.. So, you- uh- you nervous about Barry tomorrow?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Still, you- you say Minnie, you hear Mouse. Um, how about, um.. how about Julia?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "You are, you're welling up.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "He was unbelievable. He was like that-that-that Bugs Bunny cartoon where Bugs is playing all the positions, right, but instead of Bugs it was first base-Alan, second base-Alan, third base-...",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "So how'd it go?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Peach pit. That night we, uh- we had-",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Fun? Where was the fun? Tell me specifically, which part was the fun part? Where's my puck?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Me. Was that not clear? Hey, why don't, um, why don't I just join you both, here?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Nothing, nothing. Lee-lo, the laundry's done.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Alright. There's a theory, put forth by Richard Leakey-",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "That's my sister.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I will, I will. See, I'm waiting for the right moment. What? What, now?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Blah blah blah, blah blah blah... blah blaaaaaah....",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Nono, me neither. Although, uh, y'know, back in college, Susan Sallidor did.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I thought it was gonna be a closed casket.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "What, we-uh- we don't have shoes here, or...?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Nono, that would be me again. I'm, uh, just trying something.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "The uh, the baby that hasn't been born yet? Wouldn't that mean you're... crazy?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Hey, hey, you're my baby, and I can't wait to meet you. When you come out I'll buy you a bagel, and then we'll go to the zoo .",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Okay, look, he's not gonna hurt them, right?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "When did Rigatoni get back from Rome?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Uh.. uh.. Well, Joey and I had discussed getting in an early morning racquetball game. But, um, apparently, somebody overslept.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, uh, Phoebe just started a...",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Well, see? So, maybe it wasn't such a bad idea, y'know, me kissing your mom, uh? Huh? But.. we don't have to go down that road.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Wait&#151;oh&#151;hey&#151;huh, oh great now he knows, and I don't know!",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "See, Rach, uh, see, I don't think that swearing off guys altogether is the answer. I really don't. I think that what you need is to develop a more sophisticated screening process.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I dunno, there's just something about...",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Are you sure? Great. Carol? Wanna come over and join us?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "OK.... um, a weird thing happened to me on the train this morning...",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "...run it all over your body until you're... trembling with... with...",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, guys, you should've seen him. 'Read 'em and weep.'",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I'm gonna pay for that tonight.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Let's not talk about losing. Just deal the...",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Whoah, uh, what happened to, uh, 'Forget relationships! I'm done with men!' The whole, uh, penis embargo?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I- I- I ca- I can't believe this. I mean, all I asked you to do was keep him in the apartment.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Marcel? Marcel? Okay, where is he? Where is he? Marcel? Marcel?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "What? What? What?!",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I think when someone steals your credit card, they've kind of already thrown caution to the wind.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "No-no, he's, he's very docile.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Oh, oh. Oh, oh. Oh this is it. Oh my god it's baby time. Baby time.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Are you're hands still wet?",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "I don't know, but when I spoke to her, she said she had already passed the mucus plug.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "What? Whoa, whoa whoa whoa, what do you mean, back to Jordie? We never landed on Jordie. We just passed by it during the whole Jessy, Cody, Dylan fiasco.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Ok, got the vent open.",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "And here's little Ben nodding off...",
+   "stage": 2
+  },
+  {
+   "name": "Ross",
+   "desc": "Ni-chou chi-ma!",
+   "stage": 2
+  },
+  {
+   "name": "Monica",
+   "desc": "There's nothing to tell! He's just some guy I work with!",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Okay, look, this is probably for the best, y'know? Independence. Taking control of your life. The whole, 'hat' thing.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "What?..... What, you wanna spell it out with noodles?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Well, it's like that. With feelings.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "You can, I know you can!",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "That's because as far as my parents are concerned, Ross can do no wrong. Y'see, he's the Prince. Apparently they had some big ceremony before I was born.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "So, Ross, what's going on with you? Any stories? No news, no little anecdotes to share with the folks?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "No. Not after what happened with Steve.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "..I dunno, a little too Alan?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "-but that wouldn't be fair to me, it wouldn't be fair to Alan- It wouldn't be fair to you!",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Well, if you want, you can stay with Rachel and me tonight.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "No, you were right. I don't have a plan.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Yeah. I think you have to draw him out. And then- when you do- he's a preppy animal.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Forget it. Not after your cousin who could belch the alphabet.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Hello! Were we at the same table? It's like... cocktails in Appalachia.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "What? So you guys don't mind going out with someone else who's going out with someone else?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Alright, alright, alright...",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "I have no idea what you just said.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "I did.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "That's probably what they'll say.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Let's see, 1939... yeah, 24, 25?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "No, here's your mail.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "No I don't.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Does anybody wanna split this with me?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "That thing is not coming in here.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "I wish all guys could be like him.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "You just asked me.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "And Monica knows...",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "You guys are always hanging out in my apartment! Come on, I'll only use my left hand, huh? Come on, wussies! All right, ok, I gotta go. I'm going, and I'm gone.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "So you talked to your dad, huh.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Ohhh, Chandler, sorry! Hey, Janice.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh, I love my life, I love my life!",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Ten dollars an hour.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "No, give me the...",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Hey, guys.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "You're kidding! Where? Where?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Sorry, Rach.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Wait. He pooped in my shoe? Which one?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Be that as it may, d'you think you could just help us out here on that monkey thing? Y'know, just for old times' sake? Go Bobcats?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "How'd it go?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Why don't you just call her?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Oh really? Okay, let's compare, shall we.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Yeah. It's Dutch.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Helloooo? Yeah. Oh my God. Thanks.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Is it like for dinosaur emergencies. 'Help, come quick, they're still extinct.'",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Are you a virgin?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Aren't you gonna...",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Ok, hypothetically, why won't I be married when I'm 40?",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Man's got a point.",
+   "stage": 3
+  },
+  {
+   "name": "Monica",
+   "desc": "Rachel, what're you gonna say to him?",
+   "stage": 3
+  },
+  {
+   "name": "Joey",
+   "desc": "C'mon, you're going out with the guy! There's gotta be something wrong with him!",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "What, like there's a rule or something?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "You got screwed.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "I will not take this abuse.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Alright, when'd'ya have it on last?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Y'miss it?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, \"you do, do you\"?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey! Here's the birthday boy! Ross, check it out: hockey tickets, Rangers-Penguins, tonight at the Garden, and we're taking you.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "With Carol? Oh.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "You don't say.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "I suddenly had the feeling that I was falling. But I'm not.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Yeah. I'm thinking, if we put our heads together, between the two of us, we can break them up.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "\"Just when I thought I was out, they pull me back in!\"",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Well, I'm- I'm showering.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "What's up man?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Are you going to do it?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Sorry, that was wax.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Ooh, look-look-look-look-look! I got Monica naked!",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Listen, uh, you wanna go get a drink or something?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "That tone will not make me go any faster.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Ah, I'm gonna be one of his helpers. It's just such a slap in the face, y'know?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, kids...",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "In Bizarro World!! You broke the code!",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Uhhhh.... he's not even wearing a jockstrap!",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "No, no. He said \"When are you gonna grow up and start being a mom?\"",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "That's the rule.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Hey, Chandler, that table place closes at 7, come on.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Uh, it's 2:30 in the morning!",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "What's the matter with Rog?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Well, either you break it off with Ronni",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "So then how could you I mean, how could you?!",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "You're in!",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "We can't do that.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "So.... back to your place...you thinking, maybe... huh-huh?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Alright, now you say something.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "So, er... how did it go with Celia?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "About what?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Ahhh, I fold like a cheap hooker who got hit in the stomach by a fat guy with sores on his face. Oh, I'm out.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "How could you lose him?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Man, we gotta do something about that guy. This morning, I caught him looking into our apartment. It creeps me out! I feel like I can't do stuff!",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Can I use your phone? Yeah, the number for a Sidney Marks, please.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Joe Stalin. Y'know, that's pretty good.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "He- he- he got in, he- he got in to San Diego.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "How young is young Ethan? Young?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "They're here already?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh yeah? And who do you like?",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "It is.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "Oh, just, y'know.... science.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "We want you to be happy. And I may only have a couple beers in me, but... I love you, man.",
+   "stage": 4
+  },
+  {
+   "name": "Joey",
+   "desc": "He's right, cause if you're just gonna, like, break his heart, that's the kind of thing that can wait.",
+   "stage": 4
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Wait, does he eat chalk?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Love is sweet as summer showers, love is a wondrous work of art, but your love oh your love, your love...is like a giant pigeon...crapping on my heart. La-la-la-la-la- Thank you. La-la-la-la...ohhh!",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Monica- Hi! Um, Monica, you're scaring me. I mean, you're like, you're like all chaotic and twirly. And not-not in a good way.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hi guys!",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, no! I- I can't drink this now!",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No. 'Cause you need that. No, it's okay, thanks.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "There it is!",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You are just like Jack.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Definitely not his mother.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, I know, he's sweet, but it's just not fun anymore, you know? I don't know if it's me, or his hunger strike, or, I don't know.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh my god. How many of those have you had?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "The exclamation point in the title scares me. Y'know, it's not just Freud , it's Freud!",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Can I borrow the phone? I want to call my apartment and check on my grandma. What's my number?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, poor little Tooty is scared to death. We should find his owner.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, look look look. The last candle's about to burn out. 10, 9, 8, 7... ... negative 46, negative 47, negative 48....",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay, don't worry, I'm just checking to see if the muscle's in spasm...huh.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No, we were just laughing. You know, how laughter can be infectious.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Ooh, you guys have to make a wish.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "David's like, y'know, Scientist Guy. He's very methodical.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No, no, he hasn't been around.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Okay, um, stay.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Do you think they have yesterday's daily news?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, but did you see the dents in his knuckles? That means he's artistic.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "No. No! No! ...So, um, do you think he's doing any better than he was this morning?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Well, we both have.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, Paolo, hi, what are you doing here?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "She is gonna hate me.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I'm so sorry! No I'm sorry! No I'm sorry! No I'm sorry!",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, ok bye-bye.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "It's Phoebe.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Intense and creepy.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah. So, we can do it tomorrow night, you guys. It's Valentine's Day. It's perfect.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oooh! I have something you can do! I have this new massage client... Steve? Anyway, he's opening up a restaurant and he's looking for a head chef.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, is this the bug lady?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You guys wanna try and catch a late movie or something?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "If it was, would you stop hanging out with her?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "About how good your cards were.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Hey you guys, look, the one-eyed jack follows me wherever I go. Right, OK, serious poker.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "That's a bird !",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, is that who the monkey's named after?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "How can people do that?... Oh, you guys, look! Ugly Naked Guy got gravity boots!",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "How many beeps?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "I'm totally getting it!",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Just for some short-term-work. You know, until I get back some of my massage clients.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "This is so fun. All right, what do we do now?",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Yeah, yeah. They even do you.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "You were great. But they still made fun of you.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Don't make me do this again, I don't like my voice like this.",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, look, he's got Ross's haircut!",
+   "stage": 5
+  },
+  {
+   "name": "Phoebe",
+   "desc": "Oh, hey, y'know what? Tell them that bone story.",
+   "stage": 5
+  }
+ ]
+}

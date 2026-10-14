@@ -1,0 +1,103 @@
+[{"stream_name":"stdout","time":30.755199502,"data":"Initializing Instacart Cognitive Space Engine...\n"}
+,{"stream_name":"stdout","time":30.764257908,"data":"Loading model: /kaggle/input/models/qwen-lm/qwen2.5/transformers/0.5b-instruct/1 (quant=none)\n"}
+,{"stream_name":"stderr","time":30.768489073,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":30.769240273,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 438, in cached_files\n"}
+,{"stream_name":"stderr","time":30.769257371,"data":"    hf_hub_download(\n"}
+,{"stream_name":"stderr","time":30.76926185,"data":"    ~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":30.769265798,"data":"        path_or_repo_id,\n"}
+,{"stream_name":"stderr","time":30.769269783,"data":"        ^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.76927391,"data":"    ...\u003c10 lines\u003e...\n"}
+,{"stream_name":"stderr","time":30.769278387,"data":"        tqdm_class=tqdm_class,\n"}
+,{"stream_name":"stderr","time":30.769282835,"data":"        ^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.769286734,"data":"    )\n"}
+,{"stream_name":"stderr","time":30.76929104,"data":"    ^\n"}
+,{"stream_name":"stderr","time":30.769295392,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py\", line 84, in _inner_fn\n"}
+,{"stream_name":"stderr","time":30.769299699,"data":"    validate_repo_id(arg_value)\n"}
+,{"stream_name":"stderr","time":30.76930363,"data":"    ~~~~~~~~~~~~~~~~^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.769307707,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py\", line 132, in validate_repo_id\n"}
+,{"stream_name":"stderr","time":30.769312293,"data":"    raise HFValidationError(\n"}
+,{"stream_name":"stderr","time":30.769316297,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":30.769320292,"data":"    )\n"}
+,{"stream_name":"stderr","time":30.769324207,"data":"huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/kaggle/input/models/qwen-lm/qwen2.5/transformers/0.5b-instruct/1'. Use `repo_type` argument if needed.\n"}
+,{"stream_name":"stderr","time":30.769332587,"data":"\n"}
+,{"stream_name":"stderr","time":30.769336427,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":30.769340498,"data":"\n"}
+,{"stream_name":"stderr","time":30.76934431,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":30.770344748,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/auto/tokenization_auto.py\", line 773, in from_pretrained\n"}
+,{"stream_name":"stderr","time":30.770360336,"data":"    config = AutoConfig.from_pretrained(\n"}
+,{"stream_name":"stderr","time":30.770364992,"data":"        pretrained_model_name_or_path, trust_remote_code=trust_remote_code, **kwargs\n"}
+,{"stream_name":"stderr","time":30.770369137,"data":"    )\n"}
+,{"stream_name":"stderr","time":30.770373019,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/auto/configuration_auto.py\", line 388, in from_pretrained\n"}
+,{"stream_name":"stderr","time":30.770377189,"data":"    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)\n"}
+,{"stream_name":"stderr","time":30.770381274000002,"data":"                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.770385287,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 747, in get_config_dict\n"}
+,{"stream_name":"stderr","time":30.770401622,"data":"    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)\n"}
+,{"stream_name":"stderr","time":30.770413695,"data":"                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.77041778,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 802, in _get_config_dict\n"}
+,{"stream_name":"stderr","time":30.770422097,"data":"    resolved_config_file = cached_file(\n"}
+,{"stream_name":"stderr","time":30.770425902,"data":"        pretrained_model_name_or_path,\n"}
+,{"stream_name":"stderr","time":30.770429713,"data":"    ...\u003c9 lines\u003e...\n"}
+,{"stream_name":"stderr","time":30.77043381,"data":"        _commit_hash=commit_hash,\n"}
+,{"stream_name":"stderr","time":30.770437571,"data":"    )\n"}
+,{"stream_name":"stderr","time":30.770441249,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 294, in cached_file\n"}
+,{"stream_name":"stderr","time":30.770445303,"data":"    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)\n"}
+,{"stream_name":"stderr","time":30.770449361,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 496, in cached_files\n"}
+,{"stream_name":"stderr","time":30.770453623,"data":"    raise OSError(f\"{e}\") from e\n"}
+,{"stream_name":"stderr","time":30.770457749,"data":"OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/kaggle/input/models/qwen-lm/qwen2.5/transformers/0.5b-instruct/1'. Use `repo_type` argument if needed.\n"}
+,{"stream_name":"stderr","time":30.770462226,"data":"\n"}
+,{"stream_name":"stderr","time":30.770465811,"data":"During handling of the above exception, another exception occurred:\n"}
+,{"stream_name":"stderr","time":30.770469845,"data":"\n"}
+,{"stream_name":"stderr","time":30.770473494,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":30.77103138,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 438, in cached_files\n"}
+,{"stream_name":"stderr","time":30.771046905,"data":"    hf_hub_download(\n"}
+,{"stream_name":"stderr","time":30.771052321,"data":"    ~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":30.771056209,"data":"        path_or_repo_id,\n"}
+,{"stream_name":"stderr","time":30.771060015,"data":"        ^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.771063653,"data":"    ...\u003c10 lines\u003e...\n"}
+,{"stream_name":"stderr","time":30.771068105,"data":"        tqdm_class=tqdm_class,\n"}
+,{"stream_name":"stderr","time":30.771071845,"data":"        ^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.771075618,"data":"    )\n"}
+,{"stream_name":"stderr","time":30.771079262,"data":"    ^\n"}
+,{"stream_name":"stderr","time":30.771097972,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py\", line 84, in _inner_fn\n"}
+,{"stream_name":"stderr","time":30.771102206,"data":"    validate_repo_id(arg_value)\n"}
+,{"stream_name":"stderr","time":30.771106144,"data":"    ~~~~~~~~~~~~~~~~^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.771109881,"data":"  File \"/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_validators.py\", line 132, in validate_repo_id\n"}
+,{"stream_name":"stderr","time":30.771113982,"data":"    raise HFValidationError(\n"}
+,{"stream_name":"stderr","time":30.771117642,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":30.771127784,"data":"    )\n"}
+,{"stream_name":"stderr","time":30.771131809,"data":"huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/kaggle/input/models/qwen-lm/qwen2.5/transformers/0.5b-instruct/1'. Use `repo_type` argument if needed.\n"}
+,{"stream_name":"stderr","time":30.771136277,"data":"\n"}
+,{"stream_name":"stderr","time":30.771139785,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":30.771143742,"data":"\n"}
+,{"stream_name":"stderr","time":30.771147462,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":30.772050937,"data":"  File \"/kaggle/src/script.py\", line 211, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":30.772066403,"data":"    run_experiment()\n"}
+,{"stream_name":"stderr","time":30.772071332,"data":"    ~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":30.772074881,"data":"  File \"/kaggle/src/script.py\", line 79, in run_experiment\n"}
+,{"stream_name":"stderr","time":30.772078718,"data":"    tokenizer = AutoTokenizer.from_pretrained(model_id)\n"}
+,{"stream_name":"stderr","time":30.772082158,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/auto/tokenization_auto.py\", line 777, in from_pretrained\n"}
+,{"stream_name":"stderr","time":30.772086134,"data":"    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)\n"}
+,{"stream_name":"stderr","time":30.77208968,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 706, in from_pretrained\n"}
+,{"stream_name":"stderr","time":30.772093606,"data":"    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)\n"}
+,{"stream_name":"stderr","time":30.772097221,"data":"                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.772100752,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 747, in get_config_dict\n"}
+,{"stream_name":"stderr","time":30.772104543,"data":"    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)\n"}
+,{"stream_name":"stderr","time":30.772108227,"data":"                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":30.772112148,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/configuration_utils.py\", line 802, in _get_config_dict\n"}
+,{"stream_name":"stderr","time":30.772115994,"data":"    resolved_config_file = cached_file(\n"}
+,{"stream_name":"stderr","time":30.772119871,"data":"        pretrained_model_name_or_path,\n"}
+,{"stream_name":"stderr","time":30.772123261,"data":"    ...\u003c9 lines\u003e...\n"}
+,{"stream_name":"stderr","time":30.772126958,"data":"        _commit_hash=commit_hash,\n"}
+,{"stream_name":"stderr","time":30.772130475,"data":"    )\n"}
+,{"stream_name":"stderr","time":30.772133937,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 294, in cached_file\n"}
+,{"stream_name":"stderr","time":30.772137791,"data":"    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)\n"}
+,{"stream_name":"stderr","time":30.772141668,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/utils/hub.py\", line 496, in cached_files\n"}
+,{"stream_name":"stderr","time":30.772145388,"data":"    raise OSError(f\"{e}\") from e\n"}
+,{"stream_name":"stderr","time":30.772149598,"data":"OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/kaggle/input/models/qwen-lm/qwen2.5/transformers/0.5b-instruct/1'. Use `repo_type` argument if needed.\n"}
+,{"stream_name":"stderr","time":35.922970435,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":35.922998366,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":36.166902238,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":36.166929266,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":36.920826779,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":37.936805574,"data":"[NbConvertApp] Writing 385794 bytes to __results__.html\n"}
+]
