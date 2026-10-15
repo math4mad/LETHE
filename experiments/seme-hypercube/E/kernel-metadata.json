@@ -1,0 +1,13 @@
+{
+  "id": "math4amd/seme-hypercube-night-flight-e-alpha-scan",
+  "title": "Seme Hypercube Night Flight E Alpha Scan",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}
