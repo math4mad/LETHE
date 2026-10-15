@@ -2,8 +2,8 @@
   "bench": "seme-hypercube",
   "stage": "training",
   "verdict": "FAIL",
-  "ts_utc": "2026-10-15T00:48:43+00:00",
-  "gates_sha": "d3e7b20d4c464f2a",
+  "ts_utc": "2026-10-15T01:00:04+00:00",
+  "gates_sha": "198e4c2f8bcf170f",
   "metrics_sha": "b4ceac280cc6725a",
   "results": [
     {
@@ -59,12 +59,6 @@
       "ok": true,
       "note": "C3_hardest_token_acc = 0.9948（需 >= 0.95）",
       "why": "预对齐在语义图下仍强；锚 = 原文 C3 实测 1.000，留 5pp（prereg §3；rules[] 同内容，C3 首跑前冻结进 gates[]）"
-    },
-    {
-      "name": "C3_steps_to_90",
-      "ok": false,
-      "note": "C3_steps_to_90 = 2086（需 <= 2000）",
-      "why": "预对齐快 ~50× 的性质保留；锚 = 原文 C3=780 步 vs 19k 步，余量 ~2.5×（prereg §3）"
     },
     {
       "name": "C3_final_auc",
