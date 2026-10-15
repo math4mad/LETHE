@@ -63,7 +63,7 @@ MS To Do 镜像默认停 —— 需镜像时显式 `MIRROR=1 bin/remind.sh add .
 - 读面: `digest.md`(双身共读的状态面)
 - 用法: `python3 ~/Programming/code-2026/chora/lola/lola.py push|pull|recv|recopy|log|status`; Raycast 五命令见 `chora/lola/raycast/`
 - **会话开场必读**（读过提醒账之后）: 读 `chora/lola/digest.md` ＋ `LEDGER.md` 尾, 以拾对岸新信
-  —— 合园律「只看文件、不信管道」: ima 无 API, 信经剪贴板入匣, 以信中所带 sha 为准
+  —— 合园律「只看文件、不信管道」: ima 有 OpenAPI（笔记读写；transport=ima-api 现役, 剪贴板备用）, 以信中所带 sha 为准
 - 契约: 同一 CHARTER 身份 / 一账一道 / 账本 append-only / 改动走 rank 闸 / 落笔对撞 HEAD
 
 
