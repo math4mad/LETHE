@@ -91,6 +91,32 @@
   "C3_dw_perm_ctrl_hop_level_cluster_acc": 0.3411458333333333,
   "C3_hardest_token_acc": 0.9947916666666666,
   "C3_final_auc": 0.33203125,
+  "D0_hardest_token_acc_final": 0.16666666666666666,
+  "D0_hardest_token_acc_best": 0.25,
+  "D0_arm_cluster_acc": 0.33203125,
+  "D0_hop_level_cluster_acc": 0.9973958333333334,
+  "D0_alignment_delta": 0.5015360290805498,
+  "D0_alignment_per_hop": [
+    0.8164838751157125,
+    0.4545198082923889,
+    0.32946200172106427,
+    0.4056784311930339
+  ],
+  "D0_hop1_alignment": 0.8164838751157125,
+  "D0_hop2to6_alignment": 0.39655341373549563,
+  "D0_stable_rank": 20.848240160314525,
+  "D0_eigenspace_gap": 0.3589670361381852,
+  "D0_principal_angle_mean_deg": 0.00334213639564737,
+  "D0_pe_norm_final": 0.5898497303326925,
+  "D0_traversal_full_acc": 0.041666666666666664,
+  "D0_traversal_per_hop": [
+    0.16666666666666666,
+    0.3544973544973545,
+    0.8518518518518517,
+    1.0
+  ],
+  "D0_hardest_token_acc": 0.25,
+  "D0_final_auc": 0.33203125,
   "C3_accel_ratio_min": 19.175455417066157,
   "_provenance": {
     "aggregator": "make_training_metrics.py",
@@ -114,6 +140,11 @@
         "source": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/C3/C3_summary.json",
         "sha256": "3b0669753944d835dccbe574dc663ad621146fbb3e34cde5a5295196865e45e0",
         "per_seed_detail": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/C3/C3_seeds.json"
+      },
+      "D0": {
+        "source": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/D0/D0_summary.json",
+        "sha256": "6120d8cf390bc347e0810f380d63f1cfe0d07dfd15e31fd59b0d1cdd59b4ebe2",
+        "per_seed_detail": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/D0/D0_seeds.json"
       }
     },
     "口径说明": "hardest_token_acc = best-checkpoint 值（原仓库 cell 38 语义）；final_auc = arm_cluster_acc 于训练终态模型（原仓库为 best ckpt 上评估，ckpt 未回收，口径差诚实标注）"

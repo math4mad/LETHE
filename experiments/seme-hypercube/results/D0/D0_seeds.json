@@ -1,0 +1,98 @@
+{
+  "42": {
+    "hardest_token_acc_final": 0.15625,
+    "hardest_token_acc_best": 0.28125,
+    "steps_to_50": null,
+    "steps_to_90": null,
+    "arm_cluster_acc": 0.33203125,
+    "hop_level_cluster_acc": 0.99609375,
+    "alignment_delta": 0.49362700432538986,
+    "alignment_per_hop": [
+      0.8095071911811829,
+      0.44390204548835754,
+      0.322780042886734,
+      0.39831873774528503
+    ],
+    "hop1_alignment": 0.8095071911811829,
+    "hop2to6_alignment": 0.3883336087067922,
+    "stable_rank": 20.888873856989687,
+    "eigenspace_gap": 0.3648458783038599,
+    "principal_angle_mean_deg": 0.0033466648591985023,
+    "pe_norm_final": 0.6127881407737732,
+    "traversal_full_acc": 0.0625,
+    "traversal_per_hop": [
+      0.15625,
+      0.4126984126984127,
+      0.8333333333333334,
+      1.0
+    ],
+    "condition": "D0",
+    "seed": 42,
+    "wall_sec": 344.8928060531616,
+    "train_steps": 40000
+  },
+  "43": {
+    "hardest_token_acc_final": 0.125,
+    "hardest_token_acc_best": 0.21875,
+    "steps_to_50": null,
+    "steps_to_90": null,
+    "arm_cluster_acc": 0.33203125,
+    "hop_level_cluster_acc": 0.99609375,
+    "alignment_delta": 0.5061971172690392,
+    "alignment_per_hop": [
+      0.8220824003219604,
+      0.4614516496658325,
+      0.33447638154029846,
+      0.4067780375480652
+    ],
+    "hop1_alignment": 0.8220824003219604,
+    "hop2to6_alignment": 0.40090202291806537,
+    "stable_rank": 20.89031479528555,
+    "eigenspace_gap": 0.350392700621693,
+    "principal_angle_mean_deg": 0.0033200092797199036,
+    "pe_norm_final": 0.5681166648864746,
+    "traversal_full_acc": 0.015625,
+    "traversal_per_hop": [
+      0.125,
+      0.2857142857142857,
+      0.8333333333333334,
+      1.0
+    ],
+    "condition": "D0",
+    "seed": 43,
+    "wall_sec": 347.2253534793854,
+    "train_steps": 40000
+  },
+  "44": {
+    "hardest_token_acc_final": 0.21875,
+    "hardest_token_acc_best": 0.25,
+    "steps_to_50": null,
+    "steps_to_90": null,
+    "arm_cluster_acc": 0.33203125,
+    "hop_level_cluster_acc": 1.0,
+    "alignment_delta": 0.5047839656472206,
+    "alignment_per_hop": [
+      0.8178620338439941,
+      0.4582057297229767,
+      0.3311295807361603,
+      0.41193851828575134
+    ],
+    "hop1_alignment": 0.8178620338439941,
+    "hop2to6_alignment": 0.40042460958162945,
+    "stable_rank": 20.765531828668337,
+    "eigenspace_gap": 0.36166252948900274,
+    "principal_angle_mean_deg": 0.0033597350480237043,
+    "pe_norm_final": 0.5886443853378296,
+    "traversal_full_acc": 0.046875,
+    "traversal_per_hop": [
+      0.21875,
+      0.36507936507936506,
+      0.8888888888888888,
+      1.0
+    ],
+    "condition": "D0",
+    "seed": 44,
+    "wall_sec": 348.4029998779297,
+    "train_steps": 40000
+  }
+}

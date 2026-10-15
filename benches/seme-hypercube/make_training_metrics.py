@@ -24,7 +24,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 RESULTS = (HERE.parent.parent / "experiments"
            / "seme-hypercube" / "results")
-ARMS = ["B0", "C1", "C2", "C3"]
+ARMS = ["B0", "C1", "C2", "C3", "D0"]
 
 
 def sha256(p: Path) -> str:

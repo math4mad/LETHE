@@ -98,6 +98,6 @@ enable_internet=true）。双臂完赛 elapsed 1258.8s。
 ## 后续
 
 - C2/C3 第二飞已回收（2026-10-15，见上）。
-- **D0 界面实验臂已立臂待发射**（2026-10-15 立臂，prereg §6 冻结）：方向性格式 `[EDGE] prev curr [SEP] next [EOS]`，判据 Δhardest = D0 − C1（≥0.50 接口瓶颈普遍成立 / <0.05 证伪）。与原文 1.8b 一处有意差异：三元组只取训练路径（保持与 C1 同等的未见组合泛化需求，见 prereg §6 审阅者注）。
+- **D0 界面实验第三飞已回收（2026-10-15，判败＝科学证伪）**：方向性格式 `[EDGE] prev curr [SEP] next [EOS]`，3 seeds × 40k 步，航程 739s（kernel `math4amd/seme-hypercube-night-flight-d0-directional` v1，回收 `results/D0/`）。**hardest_token_acc = 0.2500（best-ckpt）vs C1 0.5833 → Δ = −0.333 < 0.05 证伪线触发**：「接口瓶颈」主张在语义图下不成立——方向性格式较对称格式劣化 57%，40k 步 3/3 seeds 未达 50% 线。部分结构学习仍在：hop-1 对齐 0.8165（≈C1 .823）、hop 2–6 0.3966（>C1 .342，未达 .40 推翻线）、teacher-forcing 遍历逐跳 [.17, .35, .85, 1.0]——根端几何已组织、叶端组合预测失败。与原文 1.8b（0→1.0）之张力：语义图上的瓶颈不在界面（对称格式信号已充分）；path 三元组仅占 3.0%（37,984 游走三元组 vs 1,120 路径三元组，均匀采样稀释路径结构信号）。判据/判读正本见 `benches/seme-hypercube/prereg.md` §5「D0 判读」+ §6。
 - **Proust-Squid 次飞修复清单已冻**（2026-10-15，`Proust-Squid-Land/results/REPORT.md`「次飞修复清单」节）：EVAL_EVERY 250→50（steps_to_0.5 分辨率 8.3%→1.7%）、GEO_THRESHOLD 5.0→3.0、scale 对照修为同范数随机嵌入（首飞 scale_ctrl 与 α=1 完全等价之病灶）、多种子 [0]→[42,43,44]；C2/C3 Hamming 重跑项已由夜航第二飞完成销账。
 - **E 臂 α 七档插值扫描已预注册**（2026-10-15，prereg §7）：`emb(α) = α·DW + (1−α)·rnd_s`（α = i/6 七档；DW 与 C3 逐 seed 同源 → α=1 ≡ C3 恒等端点；rnd_s 为行范数匹配到 DW 尺度的 N(0,1) 随机——尺度钉在 DW 轴上，α 纯控结构比例）。判据三选一（单调增 / 倒 U 存在 α* / 单调减，§4 已冻）；门限 E0..E6 各档 hardest ≥ 0.40（§7 冻结，构建入 gates.json 时入册）。承科学追问「什么注入量最优」（Proust-Squid 倒 U 形 α=0.5 峰值 .886 vs 夜航 C3 全注入 hardest .995：两图定义是调节变量，Hamming 图须独立验证）。
