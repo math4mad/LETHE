@@ -1,0 +1,51 @@
+{
+  "bench": "FSSSS",
+  "verdict": "PASS",
+  "ts_utc": "2026-10-14T10:38:05+00:00",
+  "gates_sha": "f627fa3ab66527f8",
+  "metrics_sha": "b2333e65b5fe9916",
+  "results": [
+    {
+      "name": "bridge_rank_agreement",
+      "ok": true,
+      "note": "bridge_rank_agreement = 0.875（需 >= 0.75）",
+      "why": "排序同构主张；实测 7/8=0.875，下限放行 2/8 分歧"
+    },
+    {
+      "name": "bridge_anchor_selfconsistency",
+      "ok": true,
+      "note": "bridge_anchor_selfconsistency = 1（需 >= 0.9）",
+      "why": "锚点自洽；实测 10/10=1.0，允许 1 锚点漂移"
+    },
+    {
+      "name": "pcs_norm_rel_err",
+      "ok": true,
+      "note": "pcs_norm_rel_err = 0.003061（需 <= 0.01）",
+      "why": "归一化自检（MC vs 解析 size）；实测 0.0031，>0.01 = 那步除法实现有 bug"
+    },
+    {
+      "name": "pcs_single_step_agreement",
+      "ok": true,
+      "note": "pcs_single_step_agreement = 1（需 >= 0.75）",
+      "why": "PCS 后验 argmax vs 园引擎；实测 8/8=1.0，<0.5 即两机器不同构"
+    },
+    {
+      "name": "pcs_sequential_agreement",
+      "ok": true,
+      "note": "pcs_sequential_agreement = 1（需 >= 0.75）",
+      "why": "序贯证据累积终态 argmax 一致（PCS vs 园）"
+    },
+    {
+      "name": "pcs_posterior_spread_mean",
+      "ok": true,
+      "note": "pcs_posterior_spread_mean = 0.9521（需 >= 0.05）",
+      "why": "非退化门限：序贯后验跨 5 空间极差均值；<0.05 = 平报同值（1008 病）"
+    },
+    {
+      "name": "pcs_model_selection_margin_nats",
+      "ok": true,
+      "note": "pcs_model_selection_margin_nats = 20.57（需 >= 5.0）",
+      "why": "留出(test)边际似然判别力 = 最优-最差 c 证据差；实测 20.6 nats，5 nats = 无差异带下限"
+    }
+  ]
+}

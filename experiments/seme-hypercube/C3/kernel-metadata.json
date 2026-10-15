@@ -1,0 +1,13 @@
+{
+  "id": "math4amd/seme-hypercube-night-flight-c3-deepwalk-prealign",
+  "title": "Seme Hypercube Night Flight C3 Deepwalk Prealign",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

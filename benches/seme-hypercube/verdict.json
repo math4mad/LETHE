@@ -1,0 +1,58 @@
+{
+  "bench": "seme-hypercube",
+  "stage": "device",
+  "verdict": "PASS",
+  "ts_utc": "2026-10-15T00:48:43+00:00",
+  "gates_sha": "d3e7b20d4c464f2a",
+  "metrics_sha": "e3b05d105408d618",
+  "results": [
+    {
+      "name": "n_nodes",
+      "ok": true,
+      "note": "n_nodes = 256（需 >= 256 <= 256）",
+      "why": "超立方体节点数 = V^D = 4^4（精确不变量）"
+    },
+    {
+      "name": "n_edges",
+      "ok": true,
+      "note": "n_edges = 1536（需 >= 1536 <= 1536）",
+      "why": "超立方体边数 = D·V^D·(V-1)/2 = 4·256·3/2 = 1536（Hamming 图 H(4,4) 精确不变量）"
+    },
+    {
+      "name": "node_degree_mean",
+      "ok": true,
+      "note": "node_degree_mean = 12（需 >= 12 <= 12）",
+      "why": "每个节点度 = D·(V-1) = 12（V 进制超立方体正则图）"
+    },
+    {
+      "name": "node_degree_min",
+      "ok": true,
+      "note": "node_degree_min = 12（需 >= 12 <= 12）",
+      "why": "同上的逐点检查（防构造偏斜）"
+    },
+    {
+      "name": "hamming1_edge_fraction",
+      "ok": true,
+      "note": "hamming1_edge_fraction = 1（需 >= 1 <= 1）",
+      "why": "所有边汉明距离恰为 1（边=只差一个义素的定义）"
+    },
+    {
+      "name": "train_test_overlap",
+      "ok": true,
+      "note": "train_test_overlap = 0（需 >= 0 <= 0）",
+      "why": "训练/测试划分不相交（未见组合必须真未见）"
+    },
+    {
+      "name": "coverage",
+      "ok": true,
+      "note": "coverage = 1（需 >= 1 <= 1）",
+      "why": "train ∪ test = 全体节点（划分完备）"
+    },
+    {
+      "name": "test_block_size",
+      "ok": true,
+      "note": "test_block_size = 64（需 >= 64 <= 64）",
+      "why": "测试块 = 第 test_dim 维 == test_value 的整块 = V^(D-1) = 4^3（整维隔离）"
+    }
+  ]
+}

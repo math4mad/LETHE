@@ -1,0 +1,13 @@
+{
+  "bench": "FSSSS",
+  "comment": "门限正本：数值只在这里说一处。所有下限均落在已提交 report 实测值之下（留余量），非拍脑袋。",
+  "gates": [
+    {"name": "bridge_rank_agreement", "min": 0.75, "why": "排序同构主张；实测 7/8=0.875，下限放行 2/8 分歧"},
+    {"name": "bridge_anchor_selfconsistency", "min": 0.9, "why": "锚点自洽；实测 10/10=1.0，允许 1 锚点漂移"},
+    {"name": "pcs_norm_rel_err", "max": 0.01, "why": "归一化自检（MC vs 解析 size）；实测 0.0031，>0.01 = 那步除法实现有 bug"},
+    {"name": "pcs_single_step_agreement", "min": 0.75, "why": "PCS 后验 argmax vs 园引擎；实测 8/8=1.0，<0.5 即两机器不同构"},
+    {"name": "pcs_sequential_agreement", "min": 0.75, "why": "序贯证据累积终态 argmax 一致（PCS vs 园）"},
+    {"name": "pcs_posterior_spread_mean", "min": 0.05, "why": "非退化门限：序贯后验跨 5 空间极差均值；<0.05 = 平报同值（1008 病）"},
+    {"name": "pcs_model_selection_margin_nats", "min": 5.0, "why": "留出(test)边际似然判别力 = 最优-最差 c 证据差；实测 20.6 nats，5 nats = 无差异带下限"}
+  ]
+}

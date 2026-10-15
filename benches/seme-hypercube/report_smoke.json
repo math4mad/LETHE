@@ -1,0 +1,60 @@
+{
+  "schema": "seme-hypercube-smoke/1",
+  "note": "冒烟：步数截短至 3000（正式夜航跑满）。退出码只判管线通断，门限判读在 gates.json。",
+  "selftest_pass": true,
+  "conditions": {
+    "B0": {
+      "condition": "B0",
+      "n_paths": 128,
+      "vocab_size": 519,
+      "n_train_leaves": 96,
+      "n_test_leaves": 32,
+      "hardest_token_acc_final": 1.0,
+      "hardest_token_acc_best": 1.0,
+      "steps_to_50": 954,
+      "steps_to_90": 1816,
+      "arm_cluster_acc": 1.0,
+      "alignment_delta_mean": 0.3933357484638691,
+      "alignment_per_hop": [
+        0.8575446605682373,
+        0.24419203400611877,
+        0.19501976668834686,
+        0.27658653259277344
+      ],
+      "stable_rank": 29.791394321403388,
+      "eigenspace_gap": 0.8273975488160856,
+      "principal_angle_mean_deg": 48.88540537558899,
+      "pe_norm_final": 0.45747166872024536,
+      "wall_sec": 47.985283851623535,
+      "train_steps": 3000,
+      "seed": 42
+    },
+    "C1": {
+      "condition": "C1",
+      "n_paths": 255,
+      "vocab_size": 262,
+      "n_train_leaves": 191,
+      "n_test_leaves": 64,
+      "hardest_token_acc_final": 0.375,
+      "hardest_token_acc_best": 0.390625,
+      "steps_to_50": null,
+      "steps_to_90": null,
+      "arm_cluster_acc": 0.33203125,
+      "alignment_delta_mean": 0.49242859333753586,
+      "alignment_per_hop": [
+        0.8272117376327515,
+        0.45812931656837463,
+        0.3211970925331116,
+        0.36317622661590576
+      ],
+      "stable_rank": 16.491851293078664,
+      "eigenspace_gap": 0.5811957102668426,
+      "principal_angle_mean_deg": 24.717144672204032,
+      "pe_norm_final": 0.35452184081077576,
+      "wall_sec": 47.195794105529785,
+      "train_steps": 3000,
+      "seed": 42,
+      "hop_level_cluster_acc": 0.859375
+    }
+  }
+}

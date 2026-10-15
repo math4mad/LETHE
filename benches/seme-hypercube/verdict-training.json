@@ -1,0 +1,82 @@
+{
+  "bench": "seme-hypercube",
+  "stage": "training",
+  "verdict": "FAIL",
+  "ts_utc": "2026-10-15T00:48:43+00:00",
+  "gates_sha": "d3e7b20d4c464f2a",
+  "metrics_sha": "b4ceac280cc6725a",
+  "results": [
+    {
+      "name": "B0_hardest_token_acc",
+      "ok": true,
+      "note": "B0_hardest_token_acc = 0.9844（需 >= 0.95）",
+      "why": "基线复效；锚 = 原文 stage1 实测 1.000，留 5pp"
+    },
+    {
+      "name": "B0_final_auc",
+      "ok": true,
+      "note": "B0_final_auc = 0.9985（需 >= 0.9）",
+      "why": "基线判别可分；锚 = 原文 stage1 实测 ≈0.99"
+    },
+    {
+      "name": "B0_hop1_alignment",
+      "ok": true,
+      "note": "B0_hop1_alignment = 0.8628（需 >= 0.7）",
+      "why": "基线浅层组织复现；锚 = 原文实测 0.883，留 ~20%"
+    },
+    {
+      "name": "B0_hop2to6_alignment",
+      "ok": true,
+      "note": "B0_hop2to6_alignment = 0.158（需 <= 0.3）",
+      "why": "「几何是浅的」复现；锚 = 原文实测 0.10–0.18，上限放宽"
+    },
+    {
+      "name": "C1_hardest_token_acc",
+      "ok": true,
+      "note": "C1_hardest_token_acc = 0.5833（需 >= 0.4）",
+      "why": "义素图上可学；锚 = 原 stage1 门限 acc≥0.40"
+    },
+    {
+      "name": "C1_final_auc",
+      "ok": false,
+      "note": "C1_final_auc = 0.332（需 >= 0.8）",
+      "why": "判别可分；锚 = 原 stage1 门限 auc≥0.80"
+    },
+    {
+      "name": "C1_alignment_delta",
+      "ok": true,
+      "note": "C1_alignment_delta = 0.4619（需 >= 0.05）",
+      "why": "几何对齐信号存在；锚 = 原 stage1 门限 align≥0.05"
+    },
+    {
+      "name": "C1_hop1_alignment",
+      "ok": true,
+      "note": "C1_hop1_alignment = 0.8231（需 >= 0.7）",
+      "why": "浅层组织成立；锚 = 原文实测 0.883，留 ~20%"
+    },
+    {
+      "name": "C3_hardest_token_acc",
+      "ok": true,
+      "note": "C3_hardest_token_acc = 0.9948（需 >= 0.95）",
+      "why": "预对齐在语义图下仍强；锚 = 原文 C3 实测 1.000，留 5pp（prereg §3；rules[] 同内容，C3 首跑前冻结进 gates[]）"
+    },
+    {
+      "name": "C3_steps_to_90",
+      "ok": false,
+      "note": "C3_steps_to_90 = 2086（需 <= 2000）",
+      "why": "预对齐快 ~50× 的性质保留；锚 = 原文 C3=780 步 vs 19k 步，余量 ~2.5×（prereg §3）"
+    },
+    {
+      "name": "C3_final_auc",
+      "ok": false,
+      "note": "C3_final_auc = 0.332（需 >= 0.9）",
+      "why": "预对齐判别可分；锚 = 原 stage3 门限 auc≥0.90（prereg §3）"
+    },
+    {
+      "name": "C3_accel_ratio_min",
+      "ok": true,
+      "note": "C3_accel_ratio_min = 19.18（需 >= 10）",
+      "why": "门限形式变更（2026-10-15 主人裁定）：绝对步数门限改为相对加速比 C1_steps/C3_steps ≥ 10×（对图规模不敏感）；C1 未达 90% 时以训练步数上界作分子 → 下界。本轮 C3 按旧绝对门限已判未过（余量说明见 prereg §5 审阅者注），按新形式重判 ≥ 19.2× 过"
+    }
+  ]
+}

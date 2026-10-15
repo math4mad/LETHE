@@ -1,0 +1,18 @@
+{
+  "bench": "FSSSS",
+  "source_reports": [
+    "report_c_bridge.json",
+    "report_pcs_prototype.json"
+  ],
+  "bridge_rank_agreement": 0.875,
+  "bridge_anchor_selfconsistency": 1.0,
+  "pcs_norm_rel_err": 0.0030610544820199696,
+  "pcs_single_step_agreement": 1.0,
+  "pcs_sequential_agreement": 1.0,
+  "pcs_posterior_spread_mean": 0.9521274869871333,
+  "pcs_model_selection_margin_nats": 20.5728110609343,
+  "pcs_model_selection_total_margin_nats": 117.63501357891201,
+  "pcs_best_c": 12.0,
+  "pcs_best_c_criterion": "argmax of c_scan[*].test (held-out)",
+  "pcs_log_evidence_at_c8": -81.45817004670315
+}

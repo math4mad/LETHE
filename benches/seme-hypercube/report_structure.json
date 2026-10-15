@@ -1,0 +1,14 @@
+{
+  "bench": "seme-hypercube",
+  "apparatus": "seme_graph.py build_seme_hypercube(D=4, V=4, test_dim=3, test_value=3)",
+  "invariants": {
+    "n_nodes": 256,
+    "n_edges": 1536,
+    "node_degree_mean": 12.0,
+    "node_degree_min": 12,
+    "hamming1_edge_fraction": 1.0,
+    "train_test_overlap": 0,
+    "coverage": 1.0,
+    "test_block_size": 64
+  }
+}

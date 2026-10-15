@@ -1,0 +1,37 @@
+[{"stream_name":"stdout","time":3.16233921,"data":"Found existing installation: torchao 0.10.0\n"}
+,{"stream_name":"stdout","time":3.254030759,"data":"Uninstalling torchao-0.10.0:\n"}
+,{"stream_name":"stdout","time":3.650488637,"data":"  Successfully uninstalled torchao-0.10.0\n"}
+,{"stream_name":"stdout","time":3.72126334,"data":"[vendor] materialized 10 files -\u003e /kaggle/working/vendor_runtime\n"}
+,{"stream_name":"stdout","time":12.470345023,"data":"[C2] device=cuda n_paths=255 vocab=262 max_seq_len=12\n"}
+,{"stream_name":"stdout","time":12.998939781,"data":"[C2] embedding FROZEN: 67072 params requires_grad=False\n"}
+,{"stream_name":"stdout","time":344.037591546,"data":"\n"}
+,{"stream_name":"stdout","time":344.037641429,"data":"[C2-seed42] Early stop at step 20000: no improvement for 16000 steps. Best = 0.3125 at 4000.\n"}
+,{"stream_name":"stdout","time":344.037648103,"data":"\n"}
+,{"stream_name":"stdout","time":344.037652335,"data":"[C2-seed42] Done. Best hardest_token_acc = 0.3125 at step 4000.\n"}
+,{"stream_name":"stdout","time":344.400919303,"data":"REPORT_LINE:eyJoYXJkZXN0X3Rva2VuX2FjY19maW5hbCI6IDAuMjAzMTI1LCAiaGFyZGVzdF90b2tlbl9hY2NfYmVzdCI6IDAuMzEyNSwgInN0ZXBzX3RvXzUwIjogbnVsbCwgInN0ZXBzX3RvXzkwIjogbnVsbCwgImFybV9jbHVzdGVyX2FjYyI6IDAuMzMyMDMxMjUsICJob3BfbGV2ZWxfY2x1c3Rlcl9hY2MiOiAwLjcxODc1LCAiYWxpZ25tZW50X2RlbHRhIjogMC4zNjA3NzQ1NjU0ODgxMDAwNSwgImFsaWdubWVudF9wZXJfaG9wIjogWzAuNzQ4NjM4MDMzODY2ODgyMywgMC4zNDE5MjUzNTI4MTE4MTMzNSwgMC4xODgzNzMzODY4NTk4OTM4LCAwLjE2NDE2MTQ4ODQxMzgxMDczXSwgImhvcDFfYWxpZ25tZW50IjogMC43NDg2MzgwMzM4NjY4ODIzLCAiaG9wMnRvNl9hbGlnbm1lbnQiOiAwLjIzMTQ4Njc0MjY5NTE3MjY0LCAic3RhYmxlX3JhbmsiOiA2NC4xODU4NTI3MDc0Mjk4MywgImVpZ2Vuc3BhY2VfZ2FwIjogMC43NTQ3NjgzNjk0Mzg2ODU0LCAicHJpbmNpcGFsX2FuZ2xlX21lYW5fZGVnIjogMC4wMDMxODM3MDg4NjQwMzE0NjksICJwZV9ub3JtX2ZpbmFsIjogMC4zNDk3NTcwMTU3MDUxMDg2NCwgImNvbmRpdGlvbiI6ICJDMiIsICJzZWVkIjogNDIsICJ3YWxsX3NlYyI6IDMzMS4wMzkxNzc2NTYxNzM3LCAidHJhaW5fc3RlcHMiOiA0MDAwMH0=\n"}
+,{"stream_name":"stdout","time":344.402534474,"data":"RSS-MARK C2 seed 42 done, wall=331s: 1241 MB\n"}
+,{"stream_name":"stdout","time":344.588288563,"data":"[C2] embedding FROZEN: 67072 params requires_grad=False\n"}
+,{"stream_name":"stdout","time":670.692329478,"data":"\n"}
+,{"stream_name":"stdout","time":670.692396856,"data":"[C2-seed43] Early stop at step 20000: no improvement for 12500 steps. Best = 0.3281 at 7500.\n"}
+,{"stream_name":"stdout","time":670.692401497,"data":"\n"}
+,{"stream_name":"stdout","time":670.6924045,"data":"[C2-seed43] Done. Best hardest_token_acc = 0.3281 at step 7500.\n"}
+,{"stream_name":"stdout","time":671.076063705,"data":"REPORT_LINE:eyJoYXJkZXN0X3Rva2VuX2FjY19maW5hbCI6IDAuMTcxODc1LCAiaGFyZGVzdF90b2tlbl9hY2NfYmVzdCI6IDAuMzI4MTI1LCAic3RlcHNfdG9fNTAiOiBudWxsLCAic3RlcHNfdG9fOTAiOiBudWxsLCAiYXJtX2NsdXN0ZXJfYWNjIjogMC4zMzIwMzEyNSwgImhvcF9sZXZlbF9jbHVzdGVyX2FjYyI6IDAuNzUzOTA2MjUsICJhbGlnbm1lbnRfZGVsdGEiOiAwLjM3Mjk2NjE1MTY4NDUyMjYzLCAiYWxpZ25tZW50X3Blcl9ob3AiOiBbMC43ODA5MTUzNzk1MjQyMzEsIDAuMzYxNDQ2NzM4MjQzMTAzLCAwLjE5ODU0MzQyOTM3NDY5NDgyLCAwLjE1MDk1OTA1OTU5NjA2MTddLCAiaG9wMV9hbGlnbm1lbnQiOiAwLjc4MDkxNTM3OTUyNDIzMSwgImhvcDJ0bzZfYWxpZ25tZW50IjogMC4yMzY5ODMwNzU3Mzc5NTMxOSwgInN0YWJsZV9yYW5rIjogNjYuMjY5MTM0ODQxOTQ1OTEsICJlaWdlbnNwYWNlX2dhcCI6IDAuNzUwNzMxMTgzNDAxMjg3MSwgInByaW5jaXBhbF9hbmdsZV9tZWFuX2RlZyI6IDAuMDAzMjAxMjk2MDYxOTg2MTc5LCAicGVfbm9ybV9maW5hbCI6IDAuMzUxNTE1NzEwMzUzODUxMywgImNvbmRpdGlvbiI6ICJDMiIsICJzZWVkIjogNDMsICJ3YWxsX3NlYyI6IDMyNi4xMDQ0OTc0MzI3MDg3NCwgInRyYWluX3N0ZXBzIjogNDAwMDB9\n"}
+,{"stream_name":"stdout","time":671.076153051,"data":"RSS-MARK C2 seed 43 done, wall=326s: 1263 MB\n"}
+,{"stream_name":"stdout","time":671.284651977,"data":"[C2] embedding FROZEN: 67072 params requires_grad=False\n"}
+,{"stream_name":"stdout","time":995.627307521,"data":"\n"}
+,{"stream_name":"stdout","time":995.627352889,"data":"[C2-seed44] Early stop at step 20000: no improvement for 4500 steps. Best = 0.2812 at 15500.\n"}
+,{"stream_name":"stdout","time":995.627385452,"data":"\n"}
+,{"stream_name":"stdout","time":995.627390337,"data":"[C2-seed44] Done. Best hardest_token_acc = 0.2812 at step 15500.\n"}
+,{"stream_name":"stdout","time":996.046793019,"data":"REPORT_LINE:eyJoYXJkZXN0X3Rva2VuX2FjY19maW5hbCI6IDAuMjM0Mzc1LCAiaGFyZGVzdF90b2tlbl9hY2NfYmVzdCI6IDAuMjgxMjUsICJzdGVwc190b181MCI6IG51bGwsICJzdGVwc190b185MCI6IG51bGwsICJhcm1fY2x1c3Rlcl9hY2MiOiAwLjMzMjAzMTI1LCAiaG9wX2xldmVsX2NsdXN0ZXJfYWNjIjogMC43NSwgImFsaWdubWVudF9kZWx0YSI6IDAuMzcwOTc0OTY5MTE4ODMzNTQsICJhbGlnbm1lbnRfcGVyX2hvcCI6IFswLjc3NzE3MTY3MTM5MDUzMzQsIDAuMzQ0MDU5MDIwMjgwODM4LCAwLjIwNzIxMDAzNDEzMjAwMzc4LCAwLjE1NTQ1OTE1MDY3MTk1ODkyXSwgImhvcDFfYWxpZ25tZW50IjogMC43NzcxNzE2NzEzOTA1MzM0LCAiaG9wMnRvNl9hbGlnbm1lbnQiOiAwLjIzNTU3NjA2ODM2MTYwMDI1LCAic3RhYmxlX3JhbmsiOiA2NC41NDY1NTc5NDA3NzQ3NSwgImVpZ2Vuc3BhY2VfZ2FwIjogMC43NTU1NDg0NTA2NjIyNTkxLCAicHJpbmNpcGFsX2FuZ2xlX21lYW5fZGVnIjogMC4wMDMxNzI1NTYyMTMyOTA2MjM0LCAicGVfbm9ybV9maW5hbCI6IDAuMzQ5NzE4NzQ5NTIzMTYyODQsICJjb25kaXRpb24iOiAiQzIiLCAic2VlZCI6IDQ0LCAid2FsbF9zZWMiOiAzMjQuMzQzMTY0MjA1NTUxMTUsICJ0cmFpbl9zdGVwcyI6IDQwMDAwfQ==\n"}
+,{"stream_name":"stdout","time":996.046829029,"data":"RSS-MARK C2 seed 44 done, wall=324s: 1263 MB\n"}
+,{"stream_name":"stdout","time":996.046835364,"data":"REPORT_LINE:eyJzdW1tYXJ5IjogdHJ1ZSwgImNvbmRpdGlvbiI6ICJDMiIsICJtZXRyaWNzX2ZsYXQiOiB7ImJlbmNoIjogInNlbWUtaHlwZXJjdWJlIiwgImNvbmRpdGlvbiI6ICJDMiIsICJDMl9oYXJkZXN0X3Rva2VuX2FjY19maW5hbCI6IDAuMjAzMTI1LCAiQzJfaGFyZGVzdF90b2tlbl9hY2NfYmVzdCI6IDAuMzA3MjkxNjY2NjY2NjY2NywgIkMyX2FybV9jbHVzdGVyX2FjYyI6IDAuMzMyMDMxMjUsICJDMl9ob3BfbGV2ZWxfY2x1c3Rlcl9hY2MiOiAwLjc0MDg4NTQxNjY2NjY2NjYsICJDMl9hbGlnbm1lbnRfZGVsdGEiOiAwLjM2ODIzODU2MjA5NzE1MjA2LCAiQzJfYWxpZ25tZW50X3Blcl9ob3AiOiBbMC43Njg5MDgzNjE1OTM4ODIyLCAwLjM0OTE0MzcwMzc3ODU4NDgsIDAuMTk4MDQyMjgzNDU1NTMwOCwgMC4xNTY4NTk4OTk1NjA2MTA0NF0sICJDMl9ob3AxX2FsaWdubWVudCI6IDAuNzY4OTA4MzYxNTkzODgyMiwgIkMyX2hvcDJ0bzZfYWxpZ25tZW50IjogMC4yMzQ2ODE5NjIyNjQ5MDg3LCAiQzJfc3RhYmxlX3JhbmsiOiA2NS4wMDA1MTUxNjMzODM1LCAiQzJfZWlnZW5zcGFjZV9nYXAiOiAwLjc1MzY4MjY2NzgzNDA3NzIsICJDMl9wcmluY2lwYWxfYW5nbGVfbWVhbl9kZWciOiAwLjAwMzE4NTg1MzcxMzEwMjc1NjcsICJDMl9wZV9ub3JtX2ZpbmFsIjogMC4zNTAzMzA0OTE4NjA3MDc2LCAiQzJfaGFyZGVzdF90b2tlbl9hY2MiOiAwLjMwNzI5MTY2NjY2NjY2NjcsICJDMl9maW5hbF9hdWMiOiAwLjMzMjAzMTI1fX0=\n"}
+,{"stream_name":"stdout","time":996.046842682,"data":"RSS-MARK all seeds done: 1263 MB\n"}
+,{"stream_name":"stdout","time":996.071209559,"data":"RSS-MARK ckpts cleaned: 1263 MB\n"}
+,{"stream_name":"stdout","time":996.071257009,"data":"NIGHT-DONE\n"}
+,{"stream_name":"stderr","time":1002.073600638,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1002.073640918,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1002.371317999,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1002.371350394,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1003.135864722,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1004.176337048,"data":"[NbConvertApp] Writing 404805 bytes to __results__.html\n"}
+]

@@ -1,0 +1,10 @@
+{
+  "bench": "TEMPLATE-example",
+  "comment": "可读投影示例：一份全过的 metrics.json（数值借自 llm-geometry-analysis Stage 1 实测）。",
+  "primary_acc": 0.812,
+  "secondary_auc": 0.993,
+  "alignment_delta": 0.883,
+  "stable_rank": 39.6,
+  "assoc_control_acc": 0.31,
+  "maxsim_by_space": {"超市": 0.2522, "路边摊": 0.7374, "觉醒循环": 0.0}
+}

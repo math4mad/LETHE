@@ -1,0 +1,121 @@
+{
+  "bench": "seme-hypercube",
+  "stage": "training",
+  "B0_hardest_token_acc_final": 0.9765625,
+  "B0_hardest_token_acc_best": 0.984375,
+  "B0_steps_to_50": 12646.0,
+  "B0_steps_to_90": 22535.666666666668,
+  "B0_arm_cluster_acc": 0.9984809027777777,
+  "B0_alignment_delta": 0.2754682474729094,
+  "B0_alignment_per_hop": [
+    0.8627896904945374,
+    0.10408413410186768,
+    0.12601284186045328,
+    0.12572328497966131,
+    0.17660633226235709,
+    0.25759313503901166
+  ],
+  "B0_hop1_alignment": 0.8627896904945374,
+  "B0_hop2to6_alignment": 0.15800394564867018,
+  "B0_stable_rank": 34.669737252559614,
+  "B0_eigenspace_gap": 0.9712242016741355,
+  "B0_principal_angle_mean_deg": 71.12632981420624,
+  "B0_pe_norm_final": 0.7493703564008077,
+  "B0_hardest_token_acc": 0.984375,
+  "B0_final_auc": 0.9984809027777777,
+  "C1_hardest_token_acc_final": 0.3177083333333333,
+  "C1_hardest_token_acc_best": 0.5833333333333334,
+  "C1_steps_to_50": 5047.333333333333,
+  "C1_arm_cluster_acc": 0.33203125,
+  "C1_hop_level_cluster_acc": 0.99609375,
+  "C1_alignment_delta": 0.4619040936231613,
+  "C1_alignment_per_hop": [
+    0.8230595787366232,
+    0.4213408629099528,
+    0.275204062461853,
+    0.3280118703842163
+  ],
+  "C1_hop1_alignment": 0.8230595787366232,
+  "C1_hop2to6_alignment": 0.34151893191867405,
+  "C1_stable_rank": 27.8143978148497,
+  "C1_eigenspace_gap": 0.5031818999688041,
+  "C1_principal_angle_mean_deg": 0.003308558828785792,
+  "C1_pe_norm_final": 0.4798932870229085,
+  "C1_hardest_token_acc": 0.5833333333333334,
+  "C1_final_auc": 0.33203125,
+  "C2_hardest_token_acc_final": 0.203125,
+  "C2_hardest_token_acc_best": 0.3072916666666667,
+  "C2_arm_cluster_acc": 0.33203125,
+  "C2_hop_level_cluster_acc": 0.7408854166666666,
+  "C2_alignment_delta": 0.36823856209715206,
+  "C2_alignment_per_hop": [
+    0.7689083615938822,
+    0.3491437037785848,
+    0.1980422834555308,
+    0.15685989956061044
+  ],
+  "C2_hop1_alignment": 0.7689083615938822,
+  "C2_hop2to6_alignment": 0.2346819622649087,
+  "C2_stable_rank": 65.0005151633835,
+  "C2_eigenspace_gap": 0.7536826678340772,
+  "C2_principal_angle_mean_deg": 0.0031858537131027567,
+  "C2_pe_norm_final": 0.3503304918607076,
+  "C2_hardest_token_acc": 0.3072916666666667,
+  "C2_final_auc": 0.33203125,
+  "C3_hardest_token_acc_final": 0.75,
+  "C3_hardest_token_acc_best": 0.9947916666666666,
+  "C3_steps_to_50": 520.0,
+  "C3_steps_to_90": 2086.0,
+  "C3_arm_cluster_acc": 0.33203125,
+  "C3_hop_level_cluster_acc": 0.90625,
+  "C3_alignment_delta": 0.6888031562169393,
+  "C3_alignment_per_hop": [
+    0.7818594177563986,
+    0.5983683069547018,
+    0.5918886065483093,
+    0.7830962936083475
+  ],
+  "C3_hop1_alignment": 0.7818594177563986,
+  "C3_hop2to6_alignment": 0.6577844023704529,
+  "C3_stable_rank": 7.666128289486758,
+  "C3_eigenspace_gap": 0.030017819381033917,
+  "C3_principal_angle_mean_deg": 0.0032253122885604075,
+  "C3_pe_norm_final": 0.5141543944676717,
+  "C3_dw_pre_train_hop1_alignment": 0.648476779460907,
+  "C3_dw_pre_train_hop2to6_alignment": 0.625840445359548,
+  "C3_dw_pre_train_arm_cluster_acc": 0.33203125,
+  "C3_dw_pre_train_hop_level_cluster_acc": 0.8815104166666666,
+  "C3_dw_perm_ctrl_hop1_alignment": 0.7617494265238444,
+  "C3_dw_perm_ctrl_hop2to6_alignment": 0.20677993446588516,
+  "C3_dw_perm_ctrl_arm_cluster_acc": 0.11154513888888888,
+  "C3_dw_perm_ctrl_hop_level_cluster_acc": 0.3411458333333333,
+  "C3_hardest_token_acc": 0.9947916666666666,
+  "C3_final_auc": 0.33203125,
+  "C3_accel_ratio_min": 19.175455417066157,
+  "_provenance": {
+    "aggregator": "make_training_metrics.py",
+    "arms": {
+      "B0": {
+        "source": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/B0/B0_summary.json",
+        "sha256": "28f620357ac14ab48ba7d64b24f701f8a74019e9b3fbe2f07602d58c8eba0580",
+        "per_seed_detail": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/B0/B0_seeds.json"
+      },
+      "C1": {
+        "source": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/C1/C1_summary.json",
+        "sha256": "626caa117746f131c2337d91a33f296f97e76e3e4aec91b47c1298408cfd033a",
+        "per_seed_detail": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/C1/C1_seeds.json"
+      },
+      "C2": {
+        "source": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/C2/C2_summary.json",
+        "sha256": "41bd07d94b978d2d54249f00bf938809f12088e47f0f6e68dac7c99f06f94a86",
+        "per_seed_detail": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/C2/C2_seeds.json"
+      },
+      "C3": {
+        "source": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/C3/C3_summary.json",
+        "sha256": "3b0669753944d835dccbe574dc663ad621146fbb3e34cde5a5295196865e45e0",
+        "per_seed_detail": "/Users/mac/Programming/code-2026/Concept-Space-Sphere/experiments/seme-hypercube/results/C3/C3_seeds.json"
+      }
+    },
+    "口径说明": "hardest_token_acc = best-checkpoint 值（原仓库 cell 38 语义）；final_auc = arm_cluster_acc 于训练终态模型（原仓库为 best ckpt 上评估，ckpt 未回收，口径差诚实标注）"
+  }
+}

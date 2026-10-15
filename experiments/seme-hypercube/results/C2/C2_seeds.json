@@ -1,0 +1,77 @@
+{
+  "42": {
+    "hardest_token_acc_final": 0.203125,
+    "hardest_token_acc_best": 0.3125,
+    "steps_to_50": null,
+    "steps_to_90": null,
+    "arm_cluster_acc": 0.33203125,
+    "hop_level_cluster_acc": 0.71875,
+    "alignment_delta": 0.36077456548810005,
+    "alignment_per_hop": [
+      0.7486380338668823,
+      0.34192535281181335,
+      0.1883733868598938,
+      0.16416148841381073
+    ],
+    "hop1_alignment": 0.7486380338668823,
+    "hop2to6_alignment": 0.23148674269517264,
+    "stable_rank": 64.18585270742983,
+    "eigenspace_gap": 0.7547683694386854,
+    "principal_angle_mean_deg": 0.003183708864031469,
+    "pe_norm_final": 0.34975701570510864,
+    "condition": "C2",
+    "seed": 42,
+    "wall_sec": 331.0391776561737,
+    "train_steps": 40000
+  },
+  "43": {
+    "hardest_token_acc_final": 0.171875,
+    "hardest_token_acc_best": 0.328125,
+    "steps_to_50": null,
+    "steps_to_90": null,
+    "arm_cluster_acc": 0.33203125,
+    "hop_level_cluster_acc": 0.75390625,
+    "alignment_delta": 0.37296615168452263,
+    "alignment_per_hop": [
+      0.780915379524231,
+      0.361446738243103,
+      0.19854342937469482,
+      0.1509590595960617
+    ],
+    "hop1_alignment": 0.780915379524231,
+    "hop2to6_alignment": 0.23698307573795319,
+    "stable_rank": 66.26913484194591,
+    "eigenspace_gap": 0.7507311834012871,
+    "principal_angle_mean_deg": 0.003201296061986179,
+    "pe_norm_final": 0.3515157103538513,
+    "condition": "C2",
+    "seed": 43,
+    "wall_sec": 326.10449743270874,
+    "train_steps": 40000
+  },
+  "44": {
+    "hardest_token_acc_final": 0.234375,
+    "hardest_token_acc_best": 0.28125,
+    "steps_to_50": null,
+    "steps_to_90": null,
+    "arm_cluster_acc": 0.33203125,
+    "hop_level_cluster_acc": 0.75,
+    "alignment_delta": 0.37097496911883354,
+    "alignment_per_hop": [
+      0.7771716713905334,
+      0.344059020280838,
+      0.20721003413200378,
+      0.15545915067195892
+    ],
+    "hop1_alignment": 0.7771716713905334,
+    "hop2to6_alignment": 0.23557606836160025,
+    "stable_rank": 64.54655794077475,
+    "eigenspace_gap": 0.7555484506622591,
+    "principal_angle_mean_deg": 0.0031725562132906234,
+    "pe_norm_final": 0.34971874952316284,
+    "condition": "C2",
+    "seed": 44,
+    "wall_sec": 324.34316420555115,
+    "train_steps": 40000
+  }
+}

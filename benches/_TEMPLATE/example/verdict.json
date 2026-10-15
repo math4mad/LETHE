@@ -1,0 +1,45 @@
+{
+  "bench": "TEMPLATE-example",
+  "verdict": "PASS",
+  "ts_utc": "2026-10-14T10:32:06+00:00",
+  "gates_sha": "6d4370888d5a545b",
+  "metrics_sha": "4237c2b1dfff58fc",
+  "results": [
+    {
+      "name": "primary_acc",
+      "ok": true,
+      "note": "primary_acc = 0.812（需 >= 0.4）",
+      "why": "主信号下限（对标他们 stage1_local_core 0.40）"
+    },
+    {
+      "name": "secondary_auc",
+      "ok": true,
+      "note": "secondary_auc = 0.993（需 >= 0.8）",
+      "why": "几何聚类下限（对标 0.80）"
+    },
+    {
+      "name": "alignment_delta",
+      "ok": true,
+      "note": "alignment_delta = 0.883（需 >= 0.05）",
+      "why": "方向一致性下限（随机基 ≈ 0）"
+    },
+    {
+      "name": "maxsim_by_space",
+      "ok": true,
+      "note": "maxsim_by_space 极差 0.7374 在 [0.05, +∞]",
+      "why": "非退化门限：各空间 MaxSim 极差 < 0.05 = 恒报同值（1008 病）"
+    },
+    {
+      "name": "stable_rank",
+      "ok": true,
+      "note": "stable_rank = 39.6（需 >= 2.0）",
+      "why": "成员矩阵有效秩下限；他们实测 C2 坍到 ~2.5D 仍能解题，故下限宜保守"
+    },
+    {
+      "name": "assoc_control_acc",
+      "ok": true,
+      "note": "assoc_control_acc=0.31 比 primary_acc=0.812 低 5020bp（需 ≥50bp）",
+      "why": "对照条件须比主条件弱 ≥50bp（stage2 expect_drop_vs_stage1 之推广）"
+    }
+  ]
+}

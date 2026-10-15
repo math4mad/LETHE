@@ -1,0 +1,33 @@
+{
+  "bench": "seme-hypercube",
+  "condition": "C3",
+  "C3_hardest_token_acc_final": 0.75,
+  "C3_hardest_token_acc_best": 0.9947916666666666,
+  "C3_steps_to_50": 520.0,
+  "C3_steps_to_90": 2086.0,
+  "C3_arm_cluster_acc": 0.33203125,
+  "C3_hop_level_cluster_acc": 0.90625,
+  "C3_alignment_delta": 0.6888031562169393,
+  "C3_alignment_per_hop": [
+    0.7818594177563986,
+    0.5983683069547018,
+    0.5918886065483093,
+    0.7830962936083475
+  ],
+  "C3_hop1_alignment": 0.7818594177563986,
+  "C3_hop2to6_alignment": 0.6577844023704529,
+  "C3_stable_rank": 7.666128289486758,
+  "C3_eigenspace_gap": 0.030017819381033917,
+  "C3_principal_angle_mean_deg": 0.0032253122885604075,
+  "C3_pe_norm_final": 0.5141543944676717,
+  "C3_dw_pre_train_hop1_alignment": 0.648476779460907,
+  "C3_dw_pre_train_hop2to6_alignment": 0.625840445359548,
+  "C3_dw_pre_train_arm_cluster_acc": 0.33203125,
+  "C3_dw_pre_train_hop_level_cluster_acc": 0.8815104166666666,
+  "C3_dw_perm_ctrl_hop1_alignment": 0.7617494265238444,
+  "C3_dw_perm_ctrl_hop2to6_alignment": 0.20677993446588516,
+  "C3_dw_perm_ctrl_arm_cluster_acc": 0.11154513888888888,
+  "C3_dw_perm_ctrl_hop_level_cluster_acc": 0.3411458333333333,
+  "C3_hardest_token_acc": 0.9947916666666666,
+  "C3_final_auc": 0.33203125
+}

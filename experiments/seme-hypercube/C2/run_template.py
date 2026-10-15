@@ -1,0 +1,278 @@
+#!/usr/bin/env python3
+"""义素超立方体夜航臂 —— CONDITION=C2（义素超立方体 + 随机冻结嵌入）。
+
+预注册：benches/seme-hypercube/prereg.md（§2 条件矩阵 / §3 门限锚点）。
+统一设置：stage1_local_core 形制（8 层 d256，lr=2e-4，wd=0.01，
+batch=8，grad_accum=4，40k 步，max_seq_len=12）；B0 与 C1 同架构、
+同训练循环、同诊断（src/metrics.py 原样复用）。
+
+疫苗二代（0919 矩阵全灭真死因）：先卸 torchao。
+舱内结构法：每训完即 json.dump 落 /kaggle/working 并
+print REPORT_LINE(b64)；汇总只读已落盘数据（不排在训练循环之后
+依赖——中途挂也不丢已完成种子）。
+"""
+import subprocess
+import sys
+subprocess.run([sys.executable, "-m", "pip", "uninstall", "-y", "torchao"],
+               check=False)
+
+import os
+os.environ.setdefault("TQDM_DISABLE", "1")
+
+import base64
+import hashlib
+import json
+import time
+from pathlib import Path
+
+WORK = Path(os.environ.get("NIGHT_WORK", "/kaggle/working"))
+HERE = Path(__file__).resolve().parent
+
+# ---- vendor 内嵌加载（build_arm.py 注入 _VENDOR；本机开发时
+# _VENDOR 为空，直接用旁边的 vendor/ 目录） ----
+_VENDOR = {}  # BUILD_INJECT_VENDOR
+
+
+def _materialize_vendor() -> Path:
+    if not _VENDOR:
+        return HERE / "vendor"
+    vdir = WORK / "vendor_runtime"
+    if not all((vdir / rel).exists() for rel in _VENDOR):
+        vdir.mkdir(parents=True, exist_ok=True)
+        for rel, (b64, sha) in _VENDOR.items():
+            raw = base64.b64decode(b64)
+            assert hashlib.sha256(raw).hexdigest() == sha, \
+                f"vendor sha mismatch: {rel}"
+            target = vdir / rel
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(raw)
+        print(f"[vendor] materialized {len(_VENDOR)} files -> {vdir}",
+              flush=True)
+    return vdir
+
+
+sys.path.insert(0, str(_materialize_vendor()))
+sys.path.insert(0, str(HERE))
+
+import numpy as np
+import torch
+
+from src.config import StageConfig
+from src.graph import (build_path_star_graph,
+                       build_vocab as build_star_vocab,
+                       build_train_test_leaves)
+from src.data import build_dataset
+from src.model import PathStarTransformer
+from src.train import train
+from src.metrics import (steps_to_pct, eval_alignment_delta,
+                         eval_embedding_auc, compute_stable_rank,
+                         compute_eigenspace_gap, compute_principal_angles)
+import seme_adapter as sa
+from seme_graph import build_seme_hypercube
+
+CONDITION = "C2"  # B0 臂本行为 "B0"；C1/C3 为另两臂
+# 正式数值即预注册 §2 统一设置（stage1_local_core 形制）；
+# 环境变量覆盖仅供本机短验，Kaggle 夜航不设覆盖。
+SEEDS = [int(s) for s in os.environ.get("SEEDS", "42,43,44").split(",")]
+TRAIN_STEPS = int(os.environ.get("TRAIN_STEPS", "40000"))
+EVAL_EVERY = int(os.environ.get("EVAL_EVERY", "500"))
+CKPT_EVERY = int(os.environ.get("CKPT_EVERY", "5000"))
+MAX_SEQ_LEN = 12
+
+
+def rss_mark(tag):
+    try:
+        import resource
+        rss_mb = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024
+        print(f"RSS-MARK {tag}: {rss_mb:.0f} MB", flush=True)
+    except Exception:
+        print(f"RSS-MARK {tag}: unavailable", flush=True)
+
+
+def report_line(payload):
+    b64 = base64.b64encode(
+        json.dumps(payload, ensure_ascii=False).encode()).decode()
+    print(f"REPORT_LINE:{b64}", flush=True)
+
+
+def build_condition(seed):
+    """按 CONDITION 构图 / 词表 / 训练-测试划分（测试块整维隔离）。"""
+    if CONDITION == "B0":
+        graph = build_path_star_graph(512, 6)
+        vocab = build_star_vocab(512, 6)
+        train_leaves, test_leaves = build_train_test_leaves(
+            graph, 0.75, seed=seed)
+        return graph, vocab, train_leaves, test_leaves, None, None
+    seme_graph = build_seme_hypercube(n_semes=4, n_values=4)
+    # 默认 test_dim=3, test_value=3：第 3 维 == 3 的整块 64 节点
+    # 从未出现在任何训练路径中间（典范测地线最后才改该维）。
+    orig_graph = sa.to_orig_graph(seme_graph)
+    names = sa.seme_node_names(seme_graph)
+    vocab = sa.build_vocab(orig_graph, names)
+    test_leaves = [names[i] for i in range(seme_graph["n_nodes"])
+                   if seme_graph["node_semes"][i][3] == 3]
+    test_set = set(test_leaves)
+    train_leaves = [n for n in names[1:] if n not in test_set]
+    return orig_graph, vocab, train_leaves, test_leaves, seme_graph, names
+
+
+def measure(model, log, graph, vocab, device, seme_graph, names):
+    """全套度量：泛化（hardest/auc 走 test 叶，训练循环内算）
+    + 嵌入几何（B0 用原实现；C1 用超立方体感知版 *_h，
+    已在 B0 基线上 selftest 对表）。"""
+    per_hop = sa.alignment_delta_per_hop(model, vocab, graph)
+    if CONDITION == "B0":
+        arm_cluster = eval_embedding_auc(model, vocab, graph, device)
+        stable_rank = compute_stable_rank(model, graph, vocab)["stable_rank"]
+        eigenspace_gap = compute_eigenspace_gap(model, graph, vocab)["gap"]
+        principal_angle = compute_principal_angles(
+            model, graph, vocab)["mean_angle_deg"]
+        alignment_delta = eval_alignment_delta(model, vocab, graph)
+        hop_level = None
+    else:
+        arm_cluster = sa.arm_cluster_acc_h(model, graph, vocab, device)
+        stable_rank = sa.stable_rank_h(
+            model, names, graph, vocab)["stable_rank"]
+        eigenspace_gap = sa.eigenspace_gap_h(
+            model, names, graph, vocab)["gap"]
+        principal_angle = sa.principal_angles_h(
+            model, names, graph, vocab)["mean_angle_deg"]
+        alignment_delta = float(np.mean(per_hop))
+        hop_level = sa.hop_level_cluster_acc(model, graph, vocab, seme_graph)
+    return {
+        "hardest_token_acc_final": log[-1]["hardest_token_acc"],
+        "hardest_token_acc_best": max(e["hardest_token_acc"] for e in log),
+        "steps_to_50": steps_to_pct(log, 0.5),
+        "steps_to_90": steps_to_pct(log, 0.9),
+        "arm_cluster_acc": arm_cluster,
+        "hop_level_cluster_acc": hop_level,
+        "alignment_delta": alignment_delta,
+        "alignment_per_hop": per_hop,
+        "hop1_alignment": per_hop[0],
+        "hop2to6_alignment": float(np.mean(per_hop[1:])),
+        "stable_rank": stable_rank,
+        "eigenspace_gap": eigenspace_gap,
+        "principal_angle_mean_deg": principal_angle,
+        "pe_norm_final": log[-1]["pe_norm"],
+    }
+
+
+def summarize(results):
+    """3 seeds 汇总：标量取均值/min/max；列表逐元素。"""
+    out = {}
+    keys = results[str(SEEDS[0])].keys()
+    for k in keys:
+        if k in ("condition", "seed", "wall_sec", "train_steps"):
+            continue
+        vals = [r[k] for r in results.values()]
+        if vals[0] is None:
+            out[k] = None
+            continue
+        if isinstance(vals[0], (list, tuple)):
+            arr = np.array(vals, dtype=float)
+            out[k] = {"mean": arr.mean(axis=0).tolist(),
+                      "min": arr.min(axis=0).tolist(),
+                      "max": arr.max(axis=0).tolist()}
+        else:
+            arr = np.array(vals, dtype=float)
+            out[k] = {"mean": float(arr.mean()),
+                      "min": float(arr.min()),
+                      "max": float(arr.max())}
+    return out
+
+
+def metrics_flat(summary):
+    """夜航汇总 metrics.json：扁平键 <COND>_<指标>
+    （check_gates.py --stage training 的判读输入）。
+    门限别名按原仓库口径（notebooks/02 cell 38：加载
+    best ckpt 后评估）：hardest 门限 = best-checkpoint 值
+    （best ckpt 按 hardest_token_acc 选取）；final_auc =
+    arm_cluster_acc（本仓在训练终态模型上评估，原仓库在
+    best ckpt 上评估——ckpt 按回收纪律已清，口径差诚实
+    标注于聚合器 _provenance，不作事后追测）。"""
+    flat = {"bench": "seme-hypercube", "condition": CONDITION}
+    for k, v in summary.items():
+        if v is None:
+            continue
+        flat[f"{CONDITION}_{k}"] = v["mean"] if isinstance(v, dict) else v
+    flat[f"{CONDITION}_hardest_token_acc"] = flat.get(
+        f"{CONDITION}_hardest_token_acc_best")
+    flat[f"{CONDITION}_final_auc"] = flat.get(
+        f"{CONDITION}_arm_cluster_acc")
+    return flat
+
+
+def main():
+    WORK.mkdir(parents=True, exist_ok=True)
+    graph, vocab, _, _, seme_graph, names = build_condition(SEEDS[0])
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"[{CONDITION}] device={device} n_paths={len(graph['paths'])} "
+          f"vocab={vocab['vocab_size']} max_seq_len={MAX_SEQ_LEN}",
+          flush=True)
+
+    results = {}
+    for seed in SEEDS:
+        _, _, tr_leaves, te_leaves, _, _ = build_condition(seed)
+        cfg = StageConfig(
+            stage_name=f"{CONDITION}-seed{seed}",
+            n_layer=8, d_model=256, n_head=8,
+            graph_degree=len(graph["paths"]),
+            path_length=max(len(p) for p in graph["paths"]) - 1,
+            train_leaf_fraction=len(tr_leaves)
+                / (len(tr_leaves) + len(te_leaves)),
+            train_steps=TRAIN_STEPS, batch_size=8, grad_accum_steps=4,
+            learning_rate=2e-4, weight_decay=0.01,
+            edge_path_mix_ratio=1.0,
+            notes=f"night flight seme-hypercube {CONDITION}",
+        )
+        dataset = build_dataset(graph, vocab, tr_leaves, te_leaves,
+                                MAX_SEQ_LEN, vocab["pad_id"])
+        model = PathStarTransformer(vocab["vocab_size"], cfg.d_model,
+                                    cfg.n_head, cfg.n_layer, MAX_SEQ_LEN)
+        model = model.to(device)  # 原仓库约定：调用者搬设备
+        # C2（随机冻结）：嵌入层随机初始化后冻结（requires_grad=False）。
+        # 权重共享使输出层随之冻结——本臂测「无嵌入学习」时
+        # 注意力结构能否解题（消融对照，prereg §2 条件矩阵）。
+        model.emb.weight.requires_grad_(False)
+        print(f"[C2] embedding FROZEN: {model.emb.weight.numel()} params "
+              f"requires_grad={model.emb.weight.requires_grad}",
+              flush=True)
+        art = WORK / f"{CONDITION}-seed{seed}"
+        art.mkdir(parents=True, exist_ok=True)
+        t0 = time.time()
+        model, log = train(model, cfg, vocab, graph, dataset, te_leaves,
+                           device, art, seed=seed, eval_every=EVAL_EVERY,
+                           ckpt_every=CKPT_EVERY)
+        wall = time.time() - t0
+        m = measure(model, log, graph, vocab, device, seme_graph, names)
+        m.update({"condition": CONDITION, "seed": seed,
+                  "wall_sec": wall, "train_steps": TRAIN_STEPS})
+        results[str(seed)] = m
+        # 舱内结构法：每训完即落盘 + REPORT_LINE
+        (WORK / f"{CONDITION}_seeds.json").write_text(
+            json.dumps(results, indent=2, ensure_ascii=False))
+        report_line(m)
+        rss_mark(f"{CONDITION} seed {seed} done, wall={wall:.0f}s")
+
+    summary = summarize(results)
+    (WORK / f"{CONDITION}_summary.json").write_text(
+        json.dumps(summary, indent=2, ensure_ascii=False))
+    flat = metrics_flat(summary)
+    (WORK / "metrics.json").write_text(
+        json.dumps(flat, indent=2, ensure_ascii=False))
+    report_line({"summary": True, "condition": CONDITION,
+                 "metrics_flat": flat})
+    rss_mark("all seeds done")
+    # 回收只需小文件（log + 汇总）：清 ckpt，防 output 包过大
+    # 传输断连（1014 实测：28MB 包反复 IncompleteRead）。
+    # ckpt 非判读依据——度量全在 REPORT_LINE / metrics.json。
+    for seed in SEEDS:
+        art_dir = WORK / f"{CONDITION}-seed{seed}"
+        for f in art_dir.glob("*.pt"):
+            f.unlink()
+    rss_mark("ckpts cleaned")
+    print("NIGHT-DONE", flush=True)
+
+
+if __name__ == "__main__":
+    main()

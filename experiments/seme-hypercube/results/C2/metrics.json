@@ -1,0 +1,23 @@
+{
+  "bench": "seme-hypercube",
+  "condition": "C2",
+  "C2_hardest_token_acc_final": 0.203125,
+  "C2_hardest_token_acc_best": 0.3072916666666667,
+  "C2_arm_cluster_acc": 0.33203125,
+  "C2_hop_level_cluster_acc": 0.7408854166666666,
+  "C2_alignment_delta": 0.36823856209715206,
+  "C2_alignment_per_hop": [
+    0.7689083615938822,
+    0.3491437037785848,
+    0.1980422834555308,
+    0.15685989956061044
+  ],
+  "C2_hop1_alignment": 0.7689083615938822,
+  "C2_hop2to6_alignment": 0.2346819622649087,
+  "C2_stable_rank": 65.0005151633835,
+  "C2_eigenspace_gap": 0.7536826678340772,
+  "C2_principal_angle_mean_deg": 0.0031858537131027567,
+  "C2_pe_norm_final": 0.3503304918607076,
+  "C2_hardest_token_acc": 0.3072916666666667,
+  "C2_final_auc": 0.33203125
+}

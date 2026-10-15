@@ -1,0 +1,42 @@
+{
+  "bench": "seme-hypercube",
+  "comment": "门限正本。当前批 = 装置不变量（确定性，今可跑）。训练期门限（hardest_token_acc 等）按 prereg.md §3 在训练接入后、首跑前冻结进本文件第二批 —— 该两批流程已在 prereg 冻稿，非事后补编。",
+  "gates": [
+    {"name": "n_nodes", "min": 256, "max": 256, "why": "超立方体节点数 = V^D = 4^4（精确不变量）"},
+    {"name": "n_edges", "min": 1536, "max": 1536, "why": "超立方体边数 = D·V^D·(V-1)/2 = 4·256·3/2 = 1536（Hamming 图 H(4,4) 精确不变量）"},
+    {"name": "node_degree_mean", "min": 12, "max": 12, "why": "每个节点度 = D·(V-1) = 12（V 进制超立方体正则图）"},
+    {"name": "node_degree_min", "min": 12, "max": 12, "why": "同上的逐点检查（防构造偏斜）"},
+    {"name": "hamming1_edge_fraction", "min": 1, "max": 1, "why": "所有边汉明距离恰为 1（边=只差一个义素的定义）"},
+    {"name": "train_test_overlap", "min": 0, "max": 0, "why": "训练/测试划分不相交（未见组合必须真未见）"},
+    {"name": "coverage", "min": 1, "max": 1, "why": "train ∪ test = 全体节点（划分完备）"},
+    {"name": "test_block_size", "min": 64, "max": 64, "why": "测试块 = 第 test_dim 维 == test_value 的整块 = V^(D-1) = 4^3（整维隔离）"}
+  ],
+  "training_gates": {
+    "frozen_at": "2026-10-14",
+    "note": "第二批（训练期门限）——按 prereg.md §3 冻结于训练接入后、首跑前。锚点 = 原仓库 src/config.py 之 SUCCESS_GATES 与论文实测值，留余量。键名 = 夜航汇总 metrics.json 的扁平键（<条件>_<指标>）。C1_hop2to6_alignment 指 hop 2..D 均值（超立方体 D=4 即 hop 2..4）。B0_hardest_token_acc 门限的来历：prereg §2 定位 B0 为「基线（复现）」，原文 stage1 实测 acc=1.000，复现失败即装置失效，故设 ≥0.95（留 5pp）。",
+    "gates": [
+      {"name": "B0_hardest_token_acc", "min": 0.95, "why": "基线复效；锚 = 原文 stage1 实测 1.000，留 5pp"},
+      {"name": "B0_final_auc", "min": 0.90, "why": "基线判别可分；锚 = 原文 stage1 实测 ≈0.99"},
+      {"name": "B0_hop1_alignment", "min": 0.70, "why": "基线浅层组织复现；锚 = 原文实测 0.883，留 ~20%"},
+      {"name": "B0_hop2to6_alignment", "max": 0.30, "why": "「几何是浅的」复现；锚 = 原文实测 0.10–0.18，上限放宽"},
+      {"name": "C1_hardest_token_acc", "min": 0.40, "why": "义素图上可学；锚 = 原 stage1 门限 acc≥0.40"},
+      {"name": "C1_final_auc", "min": 0.80, "why": "判别可分；锚 = 原 stage1 门限 auc≥0.80"},
+      {"name": "C1_alignment_delta", "min": 0.05, "why": "几何对齐信号存在；锚 = 原 stage1 门限 align≥0.05"},
+      {"name": "C1_hop1_alignment", "min": 0.70, "why": "浅层组织成立；锚 = 原文实测 0.883，留 ~20%"},
+      {"name": "C3_hardest_token_acc", "min": 0.95, "why": "预对齐在语义图下仍强；锚 = 原文 C3 实测 1.000，留 5pp（prereg §3；rules[] 同内容，C3 首跑前冻结进 gates[]）"},
+      {"name": "C3_steps_to_90", "max": 2000, "why": "预对齐快 ~50× 的性质保留；锚 = 原文 C3=780 步 vs 19k 步，余量 ~2.5×（prereg §3）"},
+      {"name": "C3_final_auc", "min": 0.90, "why": "预对齐判别可分；锚 = 原 stage3 门限 auc≥0.90（prereg §3）"},
+      {"name": "C3_accel_ratio_min", "min": 10, "why": "门限形式变更（2026-10-15 主人裁定）：绝对步数门限改为相对加速比 C1_steps/C3_steps ≥ 10×（对图规模不敏感）；C1 未达 90% 时以训练步数上界作分子 → 下界。本轮 C3 按旧绝对门限已判未过（余量说明见 prereg §5 审阅者注），按新形式重判 ≥ 19.2× 过"}
+    ],
+    "rules": [
+      {"rule": "C1_hop2to6_alignment >= 0.40", "interpretation": "推翻「几何是浅的」：语义组合结构让深层也组织起来（本实验核心可证伪预言）", "anchor": "prereg §3"},
+      {"rule": "C3_hardest_token_acc >= 0.95", "interpretation": "预对齐在语义图下仍强", "anchor": "原文 C3 实测 1.000，留 5pp（C3 臂第二飞）"},
+      {"rule": "C3_steps_to_90 <= 2000", "interpretation": "预对齐快 ~50× 的性质保留", "anchor": "原文 C3=780 步 vs 19k 步，余量 ~2.5×（C3 臂第二飞）"},
+      {"rule": "C3_final_auc >= 0.90", "interpretation": "预对齐判别可分", "anchor": "原 stage3 门限 auc≥0.90（C3 臂第二飞）"},
+      {"rule": "interface_acc_gain >= 0.5", "interpretation": "界面瓶颈普遍成立", "anchor": "原文实测 0→1.0（界面实验单列）"},
+      {"rule": "|C1 - B0| <= 5bp（acc/auc）", "interpretation": "无差异带：平手 = 无信号，不作结论，查实现", "anchor": "prereg §3"},
+      {"rule": "|hop 对齐(C1) - hop 对齐(B0)| <= 0.05", "interpretation": "无差异带", "anchor": "prereg §3"},
+      {"rule": "stable_rank / eigenspace_gap", "interpretation": "仅记录，不作判据", "anchor": "原文 C2 坍至 ~2.5D 仍能解题 → 退化≠无能"}
+    ]
+  }
+}

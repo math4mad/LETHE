@@ -36,3 +36,17 @@ cd external/ConceptualSpaces-1.3.2-py3 && patch -p1 < ../../../benches/FSSSS/pat
 Bechberger 手里已有归一化常数 `size` 却从不除；**补上除法，模糊集即概率密度**。
 这正是本园的补白处：**概率概念空间（PCS）**。
 详见 `notes/DRAFT-概率概念空间-Bechberger缺口诊断-1004.md`。
+
+## 三样交付律（2026-10-14 接入，模板 `benches/_TEMPLATE`）
+
+- **正本声明**：门限正本 `gates.json`；实测正本 `report_*.json`（重跑需 venv132 +
+  `external/ConceptualSpaces-1.3.2-py3`，见上「运行」）；解释框架正本 `prereg.md`
+  （事后补注册，下轮起真预注册）；度量定义正本 `metrics-spec.md`。
+  `metrics.json` 与 `verdict.json` 为**派生面**，可重生成。
+- **一条 verify 命令**（退出码即判据，0 = 门限全过）：
+  ```bash
+  python3 make_metrics.py && python3 ../_TEMPLATE/check_gates.py --bench .
+  ```
+- **一份可读投影**：本 README + `prereg.md` + `metrics-spec.md` + `verdict.json`。
+- **最近判词**：2026-10-14 **PASS 7/7**（退出码 0）；
+  gates@f627fa3ab66527f8 × metrics@b2333e65b5fe9916（见 `verdict.json`）。
