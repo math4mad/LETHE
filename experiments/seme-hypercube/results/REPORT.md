@@ -8,6 +8,7 @@
 | C1 义素超立方体 | `math4amd/seme-hypercube-night-flight-c1-seme-hypercube` | v4 | 同上 |
 | C2 义素+随机冻结 | `math4amd/seme-hypercube-night-flight-c2-random-frozen` | v1 | 同上；嵌入层 `requires_grad=False`（权重共享输出层随之冻结），测「无嵌入学习」时注意力结构能否解题 |
 | C3 义素+DeepWalk 预对齐 | `math4amd/seme-hypercube-night-flight-c3-deepwalk-prealign` | v1 | 同上；舱内 `pip install gensim`（enable_internet）；DeepWalk 在 Hamming 边集（`to_orig_graph`）上初始化嵌入（walk_length 10 / walks_per_node 40 / window 5 / seed=训练种子） |
+| D0 界面实验（方向性格式） | `math4amd/seme-hypercube-night-flight-d0-directional` | v1 | 同 C1；唯数据集换为方向性格式三元组 `[EDGE] prev curr [SEP] next [EOS]`（`vendor/directional.py`，prereg §6）：游走三元组 36,864（全边集 × 前驱语境）+ 训练路径双向三元组 1,120；训练期评估与 best-ckpt 口径同 C1；专有度量 traversal_full_acc / traversal_per_hop（teacher forcing 叶→原点） |
 
 版本史：B0 v1–2 / C1 v1 `ModuleNotFoundError: No module named 'src'`
 （Kaggle kernels push 不携带子目录）→ vendor 以 b64+sha256 自校验
@@ -32,7 +33,7 @@ enable_internet=true）。双臂完赛 elapsed 1258.8s。
 
 正本落位：本目录 `results/{B0,C1,C2,C3}/`（C2/C3 于 2026-10-15 回收，`kaggle kernels output` EXIT=0，四验同 B0/C1；C2/C3 之 `metrics.json` + kernel.log 于同日复取补齐，seeds/summary 与首回收视 sha 一致 —— aad70bd0d230686b / 41bd07d94b978d2d / 518815d5b2d09d21 / 3b0669753944d835）。
 
-## 训练期门限判读（C1 首跑 7/8；C2/C3 第二飞后合计 9/12，退出码 1 —— 含 2026-10-15 主人裁定之 C3_accel_ratio_min = 19.18× ✓）
+## 训练期门限判读（C1 首跑 7/8；C2/C3 第二飞后合计 9/11，退出码 1 —— 绝对步数门限已按 2026-10-15 主人裁定替换为相对加速比 C3_accel_ratio_min = 19.18× ✓）
 
 `python3 ../_TEMPLATE/check_gates.py --stage training --metrics metrics_training.json`
 （gates@39619c19210c5869 × metrics@9a6a03d49076e504；C2 无门限，为消融对照）：
@@ -97,10 +98,6 @@ enable_internet=true）。双臂完赛 elapsed 1258.8s。
 ## 后续
 
 - C2/C3 第二飞已回收（2026-10-15，见上）。
-- 界面实验（不改权重只改格式）待立臂。
-- Proust-Squid 次飞修复清单（EVAL_EVERY ≤ 50 / GEO_THRESHOLD
-  收紧 / scale 对照修正 / 多种子）见 `Proust-Squid-Land/results/REPORT.md`。
-- 科学追问：C3 推翻「几何是浅的」后 —— **什么注入量最优**？
-  （Proust-Squid 倒 U 形 α=0.5 峰值 0.886 vs 夜航 C3 全注入
-  hardest 0.995：两图结论相反，图定义是调节变量；候选下一问：
-  Hamming 图上 α 插值扫描。）
+- **D0 界面实验臂已立臂待发射**（2026-10-15 立臂，prereg §6 冻结）：方向性格式 `[EDGE] prev curr [SEP] next [EOS]`，判据 Δhardest = D0 − C1（≥0.50 接口瓶颈普遍成立 / <0.05 证伪）。与原文 1.8b 一处有意差异：三元组只取训练路径（保持与 C1 同等的未见组合泛化需求，见 prereg §6 审阅者注）。
+- **Proust-Squid 次飞修复清单已冻**（2026-10-15，`Proust-Squid-Land/results/REPORT.md`「次飞修复清单」节）：EVAL_EVERY 250→50（steps_to_0.5 分辨率 8.3%→1.7%）、GEO_THRESHOLD 5.0→3.0、scale 对照修为同范数随机嵌入（首飞 scale_ctrl 与 α=1 完全等价之病灶）、多种子 [0]→[42,43,44]；C2/C3 Hamming 重跑项已由夜航第二飞完成销账。
+- **E 臂 α 七档插值扫描已预注册**（2026-10-15，prereg §7）：`emb(α) = α·DW + (1−α)·rnd_s`（α = i/6 七档；DW 与 C3 逐 seed 同源 → α=1 ≡ C3 恒等端点；rnd_s 为行范数匹配到 DW 尺度的 N(0,1) 随机——尺度钉在 DW 轴上，α 纯控结构比例）。判据三选一（单调增 / 倒 U 存在 α* / 单调减，§4 已冻）；门限 E0..E6 各档 hardest ≥ 0.40（§7 冻结，构建入 gates.json 时入册）。承科学追问「什么注入量最优」（Proust-Squid 倒 U 形 α=0.5 峰值 .886 vs 夜航 C3 全注入 hardest .995：两图定义是调节变量，Hamming 图须独立验证）。

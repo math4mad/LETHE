@@ -20,7 +20,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ARM = (HERE / sys.argv[1]).resolve() if len(sys.argv) > 1 else HERE
 
-VENDOR_FILES = [
+BASE_VENDOR_FILES = [
     "src/__init__.py",
     "src/config.py",
     "src/data.py",
@@ -32,6 +32,17 @@ VENDOR_FILES = [
     "seme_graph.py",
     "seme_adapter.py",
 ]
+
+# 臂自有模块（如 D0 的 directional.py）：vendor/ 根下
+# 除基础清单外的 .py 自动追加（build_arm 扩展，
+# 界面实验臂引入新模块所需）。
+extra = sorted(
+    p.relative_to(ARM / "vendor").as_posix()
+    for p in (ARM / "vendor").glob("*.py")
+    if p.relative_to(ARM / "vendor").as_posix()
+    not in BASE_VENDOR_FILES
+)
+VENDOR_FILES = BASE_VENDOR_FILES + extra
 
 vendor = {}
 for rel in VENDOR_FILES:

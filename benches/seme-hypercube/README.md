@@ -103,6 +103,27 @@ IncompleteRead；ckpt 非判读依据，度量全在 REPORT_LINE /
 - DeepWalk 探针原始数据（`dw_*` / `dw_perm_ctrl_*`）在
   `experiments/seme-hypercube/results/C3/C3_summary.json`。
 
+### 第三飞（2026-10-15 立臂待发射）
+
+- **D0 界面实验臂**（prereg §6 冻结）：方向性格式
+  `[EDGE] prev curr [SEP] next [EOS]`（预测位 logits[3]），
+  界面为唯一变量；判据 Δhardest = D0 − C1（≥0.50 接口
+  瓶颈普遍成立 / 0.05–0.50 部分 / <0.05 证伪）。第 12
+  判据 `D0_hardest_token_acc ≥ 0.40` 已入 gates.json（首跑
+  前冻结）；回收后按 12 判据重判。
+- **E 臂 α 七档插值扫描**（prereg §7 冻结）：
+  `emb(α) = α·DW + (1−α)·rnd_s`（α = i/6 七档；α=1 ≡ C3
+  恒等端点；rnd_s 行范数匹配 DW 尺度，α 纯控结构比例）。
+  判据（§4 已冻）：hardest(α) 曲线单调增 / 倒 U（存在
+  α*）/ 单调减 三选一；门限 E0..E6 各档 hardest ≥ 0.40
+  （§7 冻结，构建入 gates.json 时入册）。承科学追问
+  「什么注入量最优」（Proust-Squid 倒 U 形 vs 夜航全注入
+  近满分：两图定义是调节变量，Hamming 图须独立验证）。
+- Proust-Squid 次飞修复清单已冻（`Proust-Squid-Land/
+  results/REPORT.md`「次飞修复清单」节：EVAL_EVERY 250→50、
+  GEO_THRESHOLD 5.0→3.0、scale 对照修为同范数随机嵌入、
+  多种子 [42,43,44]）。
+
 ## 训练阶段（已接入原仓库，冒烟通过；正式对照已完成）
 
 接原仓库（本机克隆 `~/Documents/GitHub/llm-geometry-analysis`，
@@ -156,15 +177,21 @@ venv `~/Programming/code-2026/llm-venv`，torch CPU）：
   `verdict-training.json`）：
   - 第一批（装置不变量）**PASS 8/8**（退出码 0）；
     gates@d3e7b20d4c464f2a × metrics@e3b05d105408d618（见 `verdict.json`）。
-  - 第二批（训练期门限，含 C2/C3 第二飞）**9/12 过**（退出码 1；
-    `verdict-training.json`，gates@d3e7b20d4c464f2a × metrics@b4ceac280cc6725a）：
+  - 第二批（训练期门限，含 C2/C3 第二飞）**9/11 过**（退出码 1；
+    `verdict-training.json`，gates@198e4c2f × metrics@b4ceac280cc6725a
+    —— 2026-10-15 主人裁定已落实为门限形式替换：绝对步数门限
+    C3_steps_to_90 ≤ 2000 由相对加速比 C3_accel_ratio_min ≥ 10 取代）。
+    **D0 界面门限（D0_hardest_token_acc ≥ 0.40）按 prereg §6 于
+    D0 首跑前增补入册（第 12 判据）**：D0 首跑回收、指标并入
+    metrics_training.json 后按 12 判据重判（当前 9/11 判读对应
+    gates@198e4c2f 快照，D0 数据未到不计）：
     - ✗ C1_final_auc = 0.332 < 0.80、C3_final_auc = 0.332 < 0.90 ——
       门限所测「臂身份可分性」在 255 臂语义图上被结构钉死
       （训练前即 0.332，训练后不变），不构成能力判据，属适用性局限
       （prereg §5）；语义图自然的几何量是按跳数聚类（C1 0.996 / C3 0.906）。
-    - ✗ C3_steps_to_90 = 2086 > 2000 —— 门限余量偏紧（夜航 255 臂图 vs
-      原文 512 臂图）；同一事实按 2026-10-15 主人裁定的相对形式重判：
-      C3_accel_ratio_min = 19.18 ≥ 10 **✓ 过**（加速 ≥19×，原文约 24×）。
+    - ✓ C3_accel_ratio_min = 19.18 ≥ 10 —— 加速 ≥19×（原文约 24×）；
+      旧绝对门限实测 2086 > 2000（门限余量偏紧：夜航 255 臂图 vs 原文
+      512 臂图），按裁定以相对形式重判过（prereg §5 审阅者注）。
   - 装置 verify 复跑：`python3 seme_graph.py && python3 make_metrics.py
     && python3 ../_TEMPLATE/check_gates.py --bench .`
   - 训练期判读复跑：`python3 make_training_metrics.py &&
