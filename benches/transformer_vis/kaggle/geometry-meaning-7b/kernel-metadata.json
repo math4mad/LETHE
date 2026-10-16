@@ -1,6 +1,6 @@
 {
  "id": "math4amd/geometry-meaning-7b",
- "title": "Geometry of Meaning 7B (G1-G3 at scale)",
+ "title": "geometry-meaning-7b",
  "code_file": "run.py",
  "language": "python",
  "kernel_type": "script",

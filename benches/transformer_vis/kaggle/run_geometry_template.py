@@ -23,7 +23,7 @@ Geometry of Meaning — Kaggle 夜航臂 (#__ARM_TAG__#)
   [3] 逐层: pos (同概念 4 变体两两余弦) / neg (rng(42) 采 20 概念各取变体 0)
           / margin / cka (= cosine(v0,v1)^2, 与本地同口径)
   [4] 末 3 层裁决: G-1 (pos>0.75 且 >neg) / G-3 (cka>0.85); G-2 UMAP 出图+辅助读数
-  [5] 图: cosine+margin 曲线 / 热力图 / UMAP / CKA 曲线 (对齐本地 figs_geometry)
+  [5] 图: cosine+margin 曲线 / 热力图 / UMAP / CKA 曲线 (对齐本地 figs_geometry); figs 全包 try/except（单图失败不杀进程）
 
 产物: /kaggle/working/figs_geometry_kaggle/*.png + metrics_geometry_kaggle.json
 """
@@ -60,7 +60,9 @@ MOUNT = "#__MOUNT__#"   # Kaggle 模型挂载
 QUANT = "#__QUANT__#"   # "4bit" (bnb, compute fp16)
 if QUANT == "4bit":  # Kaggle 镜像不预装 bitsandbytes (friends 7b 臂 10-13 实测)
     # 注: 本臂 metadata enable_internet=true (仅为此安装; PREREG 记此偏离)
-    _osx.system("python -m pip install -q -U 'bitsandbytes>=0.46.1'")  # bnb 疫苗
+    # 钉 0.50.2 —— friends-seasonal-7b 臂 10-13 实测通版; >=0.46.1 的 -U 在
+    # 10-15 首射 ERROR (版本漂移疑为死因: 新版 bnb 与镜像 torch/CUDA 不匹配)
+    _osx.system("python -m pip install -q 'bitsandbytes==0.50.2'")  # bnb 疫苗(钉版)
     _osx.system("python -m pip show bitsandbytes | grep -i version")    # 版本留痕
 # ---------------------------------------------------------------------------
 
@@ -215,6 +217,7 @@ def main():
         v["G3_pass"] = bool(v["G3_cka"] > G3_THRESHOLD)
         results[strat] = {"pos": per_pos, "neg": per_neg, "margin": per_margin,
                           "cka": per_cka, "verdict": v}
+        PARTIAL.setdefault("verdicts", {})[strat] = v  # 分策略存, 防覆盖
         print(f"{strat}: pos={v['last3_pos_mean']:.3f} neg={v['last3_neg_mean']:.3f} "
               f"margin={v['last3_margin']:.3f} cka={v['G3_cka']:.3f} "
               f"G1={'PASS' if v['G1_pass'] else 'FAIL'} G3={'PASS' if v['G3_pass'] else 'FAIL'}",
@@ -222,11 +225,11 @@ def main():
         fl("geometry", strategy=strat, **v)
 
     # ── [4] G-2 辅助读数: 末层 UMAP 同概念簇内距 vs 异概念距 ──────
+    # 注: UMAP 回迁（v4/v5 TSNE 在 Kaggle 镜像 segfault; UMAP 在 v2 figs 成功）
     import umap
     g2 = {}
     for strat, reps in [("last_token", lt), ("mean_pool", mp)]:
-        emb = umap.UMAP(n_components=2, random_state=SEED,
-                        n_neighbors=UMAP_NEIGHBORS, min_dist=0.1).fit_transform(reps[:, -1, :])
+        emb = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=UMAP_NEIGHBORS).fit_transform(reps[:, -1, :])
         intra = []
         for cid in concept_ids:
             idx = concept_groups[cid]
@@ -252,7 +255,18 @@ def main():
         fl("g2_aux", strategy=strat, **g2[strat])
 
     # ── [5] 图 (对齐本地 figs_geometry 四件) ────────────────────────
-    LAYERS_VIZ = [layer_indices[0], layer_indices[n_ext // 2], layer_indices[-1]]
+    LAYERS_VIZ_POS = [0, n_ext // 2, n_ext - 1]            # 采样轴位置 (reps 轴 1)
+    LAYERS_VIZ = [layer_indices[p] for p in LAYERS_VIZ_POS]  # 绝对层号 (标题用)
+    # ── figs 全部包 try/except（单图失败不杀进程；日志即幸存者）───
+    def _save_fig(fig, name):
+        try:
+            fig.savefig(os.path.join(FIGS, name))
+            plt.close(fig)
+            fl("fig", name=name)
+        except Exception as e:
+            print(f"FIG_FAIL {name}: {e}", flush=True)
+            plt.close(fig)
+
     for strat, reps in [("last_token", lt), ("mean_pool", mp), ("entity", ent)]:
         fig, axes = plt.subplots(1, 2, figsize=(14, 5), dpi=150)
         ax = axes[0]
@@ -275,9 +289,7 @@ def main():
         ax.set_title(f"{strat}: Geometric Margin")
         ax.set_ylim(min(-0.1, min(results[strat]["margin"]) - 0.05),
                     max(0.8, max(results[strat]["margin"]) + 0.05))
-        fig.tight_layout()
-        fig.savefig(os.path.join(FIGS, f"fig_{strat}_cosine_margin.png"))
-        plt.close(fig)
+        _save_fig(fig, f"fig_{strat}_cosine_margin.png")
 
     for strat, reps in [("last_token", lt), ("mean_pool", mp), ("entity", ent)]:
         fig, axes = plt.subplots(1, 3, figsize=(18, 5.5), dpi=150)
@@ -285,8 +297,8 @@ def main():
         for cid in concept_ids[:10]:
             sub_indices.extend(concept_groups[cid])
             sub_labels.extend([cid] * 4)
-        for ax_idx, layer in enumerate(LAYERS_VIZ):
-            sim_matrix = cosine_matrix(reps[sub_indices, layer, :])
+        for ax_idx, (pos, layer) in enumerate(zip(LAYERS_VIZ_POS, LAYERS_VIZ)):
+            sim_matrix = cosine_matrix(reps[sub_indices, pos, :])
             ax = axes[ax_idx]
             im = ax.imshow(sim_matrix, cmap="RdYlGn", vmin=-0.5, vmax=1.0, aspect="auto")
             ax.set_title(f"Layer {layer} ({'embedding' if layer == 0 else 'last' if layer == layer_indices[-1] else 'mid'})")
@@ -298,16 +310,18 @@ def main():
             plt.colorbar(im, ax=ax, fraction=0.046)
         fig.suptitle(f"{strat}: Cosine Similarity Heatmap (10 concepts x 4 variants)", fontsize=13)
         fig.tight_layout()
-        fig.savefig(os.path.join(FIGS, f"fig_{strat}_heatmap.png"))
-        plt.close(fig)
+        _save_fig(fig, f"fig_{strat}_heatmap.png")
 
     colors = plt.cm.tab20(np.linspace(0, 1, len(concept_ids)))
     for strat, reps in [("last_token", lt), ("mean_pool", mp)]:
         fig, axes = plt.subplots(1, 3, figsize=(18, 5.5), dpi=150)
-        for ax_idx, layer in enumerate(LAYERS_VIZ):
-            emb = umap.UMAP(n_components=2, random_state=SEED,
-                            n_neighbors=UMAP_NEIGHBORS, min_dist=0.1).fit_transform(
-                                reps[:, layer, :])
+        for ax_idx, (pos, layer) in enumerate(zip(LAYERS_VIZ_POS, LAYERS_VIZ)):
+            try:
+                emb = umap.UMAP(n_components=2, random_state=SEED, n_neighbors=UMAP_NEIGHBORS).fit_transform(
+                                    reps[:, pos, :])
+            except Exception as e:
+                print(f"UMAP_FAIL {strat} layer={layer}: {e}", flush=True)
+                continue
             ax = axes[ax_idx]
             for ci, cid in enumerate(concept_ids):
                 indices = concept_groups[cid]
@@ -322,8 +336,7 @@ def main():
             ax.set_ylabel("Dim 2")
         fig.suptitle(f"{strat}: UMAP Projection (same-concept linked)", fontsize=13)
         fig.tight_layout()
-        fig.savefig(os.path.join(FIGS, f"fig_{strat}_umap.png"))
-        plt.close(fig)
+        _save_fig(fig, f"fig_{strat}_umap.png")
 
     fig, ax = plt.subplots(figsize=(8, 5), dpi=150)
     for strat in ["last_token", "mean_pool", "entity"]:
@@ -335,8 +348,7 @@ def main():
     ax.set_title("CKA Alignment per Layer (same concept, diff variants)")
     ax.legend(frameon=False, fontsize=9)
     fig.tight_layout()
-    fig.savefig(os.path.join(FIGS, "fig_cka_per_layer.png"))
-    plt.close(fig)
+    _save_fig(fig, "fig_cka_per_layer.png")
     fl("figs_done", n_figs=len(os.listdir(FIGS)))
 
     # ── 判据汇总 + 落盘 ──────────────────────────────────────────────
@@ -387,5 +399,16 @@ if __name__ == "__main__":
     try:
         main()
     except Exception:
-        print("GEOM_ERROR::" + traceback.format_exc(), flush=True)
+        tb = traceback.format_exc()
+        print("GEOM_ERROR::" + tb, flush=True)
+        # 错误落盘: output 可拉 (日志即幸存者协议——哨兵不仅 print)
+        try:
+            PARTIAL["stage"] = "ERROR"
+            PARTIAL["error_tail"] = tb[-2000:]
+            with open(OUT_METRICS, "w") as f:
+                json.dump(PARTIAL, f, ensure_ascii=False, indent=1)
+            with open(os.path.join(HERE, "geom_error.txt"), "w") as f:
+                f.write(tb)
+        except Exception:
+            pass
         raise
