@@ -49,7 +49,10 @@
       {"rule": "stable_rank / eigenspace_gap", "interpretation": "仅记录，不作判据", "anchor": "原文 C2 坍至 ~2.5D 仍能解题 → 退化≠无能"},
       {"rule": "3-seed mean hardest(α) 曲线三选一：单调增 / 倒 U（存在 α*）/ 单调降", "interpretation": "E 臂主判据（结构比例与能力的函数形态；三态互斥，判读见 prereg §5）", "anchor": "prereg §4/§7（2026-10-15 冻结，E 臂首跑前）"},
       {"rule": "E6_hardest ≈ C3_hardest（α=1 恒等端点复效）", "interpretation": "机制验证：E6 与 C3 同源 DW 同种子，应复效 C3≈0.995；偏差大 → 实现 bug，先查装置", "anchor": "prereg §7"},
-      {"rule": "init_probe(α) 形态 vs hardest(α) 形态", "interpretation": "协变量：hardest 倒 U 而 init_probe 单调 → 训练动态（而非初始几何）是主因；仅记录", "anchor": "prereg §7 审阅者注 3"}
+      {"rule": "init_probe(α) 形态 vs hardest(α) 形态", "interpretation": "协变量：hardest 倒 U 而 init_probe 单调 → 训练动态（而非初始几何）是主因；仅记录", "anchor": "prereg §7 审阅者注 3"},
+      {"rule": "C4 hardest_token_acc >= 0.95", "interpretation": "第四格三态之一：结构本身足以承担能力（学习非必要，C3 结论推广）", "anchor": "prereg §4 第四格判据三态（2026-10-15 冻结，C4 臂构建入册）"},
+      {"rule": "C4 hardest_token_acc ≈ C2（<= 0.35）", "interpretation": "第四格三态之二：学习仍必要，结构只是先验", "anchor": "prereg §4 第四格判据三态（2026-10-15 冻结，C4 臂构建入册）"},
+      {"rule": "C4 hardest_token_acc 介于 C2/C3 之间（0.35 < hardest < 0.95）", "interpretation": "第四格三态之三：结构与学习各贡献部分", "anchor": "prereg §4 第四格判据三态（2026-10-15 冻结，C4 臂构建入册）"}
     ]
   }
 }

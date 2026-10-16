@@ -24,7 +24,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 RESULTS = (HERE.parent.parent / "experiments"
            / "seme-hypercube" / "results")
-ARMS = ["B0", "C1", "C2", "C3", "D0",
+ARMS = ["B0", "C1", "C2", "C3", "D0", "C4",
         "E0", "E1", "E2", "E3", "E4", "E5", "E6"]
 
 
@@ -38,7 +38,11 @@ def main() -> None:
     for arm in ARMS:
         summary_p = RESULTS / arm / f"{arm}_summary.json"
         if not summary_p.exists():
-            raise SystemExit(f"make_training_metrics: 缺正本 {summary_p}")
+            # 臂可分批在飞（如 C4 未飞/E0..E6 逐步落地）：
+            # 缺正本时跳过并告警，不硬失败 —— 门限裁判另行
+            # 对已落盘臂判读，未飞臂自然缺键按不过计（保守）。
+            print(f"  (skip) {arm}: 缺正本 {summary_p}（未飞/未落地）")
+            continue
         summary = json.loads(summary_p.read_text())
         for k, v in summary.items():
             if v is None:
@@ -76,7 +80,10 @@ def main() -> None:
     out.write_text(json.dumps(flat, indent=2, ensure_ascii=False))
     print(f"wrote {out}")
     for arm in ARMS:
-        print(f"  {arm}: hardest(best)={flat[f'{arm}_hardest_token_acc']:.4f} "
+        key = f"{arm}_hardest_token_acc"
+        if key not in flat:
+            continue  # 跳过未落地臂（见上 skip 告警）
+        print(f"  {arm}: hardest(best)={flat[key]:.4f} "
               f"final_auc={flat[f'{arm}_final_auc']:.4f} "
               f"hop1={flat[f'{arm}_hop1_alignment']:.4f} "
               f"hop2to6={flat[f'{arm}_hop2to6_alignment']:.4f}")

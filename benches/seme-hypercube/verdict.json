@@ -2,9 +2,9 @@
   "bench": "seme-hypercube",
   "stage": "training",
   "verdict": "FAIL",
-  "ts_utc": "2026-10-15T01:39:19+00:00",
-  "gates_sha": "17c94c918890c01f",
-  "metrics_sha": "866a257a1344c7d0",
+  "ts_utc": "2026-10-16T03:11:42+00:00",
+  "gates_sha": "50effb2adb25a47c",
+  "metrics_sha": "505e2b56f43ef3d5",
   "results": [
     {
       "name": "B0_hardest_token_acc",
@@ -41,6 +41,48 @@
       "ok": false,
       "note": "D0_hardest_token_acc = 0.25（需 >= 0.4）",
       "why": "方向性格式可学性下限；锚 = 原 stage1 门限 acc≥0.40（prereg §6：界面实验臂门限，2026-10-15 增补，D0 首跑前冻结）"
+    },
+    {
+      "name": "E0_hardest_token_acc",
+      "ok": true,
+      "note": "E0_hardest_token_acc = 0.4115（需 >= 0.4）",
+      "why": "α=0（纯同尺度随机初始化）可学性下限；锚 = 原 stage1 门限 acc≥0.40（prereg §7：α 七档扫描门限，2026-10-15 冻结，E 臂构建入册）"
+    },
+    {
+      "name": "E1_hardest_token_acc",
+      "ok": true,
+      "note": "E1_hardest_token_acc = 0.4167（需 >= 0.4）",
+      "why": "α=1/6 可学性下限；锚 = 原 stage1 门限 acc≥0.40（prereg §7：α 七档扫描门限，2026-10-15 冻结，E 臂构建入册）"
+    },
+    {
+      "name": "E2_hardest_token_acc",
+      "ok": true,
+      "note": "E2_hardest_token_acc = 0.4948（需 >= 0.4）",
+      "why": "α=2/6 可学性下限；锚 = 原 stage1 门限 acc≥0.40（prereg §7：α 七档扫描门限，2026-10-15 冻结，E 臂构建入册）"
+    },
+    {
+      "name": "E3_hardest_token_acc",
+      "ok": true,
+      "note": "E3_hardest_token_acc = 0.7708（需 >= 0.4）",
+      "why": "α=3/6 可学性下限；锚 = 原 stage1 门限 acc≥0.40（prereg §7：α 七档扫描门限，2026-10-15 冻结，E 臂构建入册）"
+    },
+    {
+      "name": "E4_hardest_token_acc",
+      "ok": true,
+      "note": "E4_hardest_token_acc = 1（需 >= 0.4）",
+      "why": "α=4/6 可学性下限；锚 = 原 stage1 门限 acc≥0.40（prereg §7：α 七档扫描门限，2026-10-15 冻结，E 臂构建入册）"
+    },
+    {
+      "name": "E5_hardest_token_acc",
+      "ok": true,
+      "note": "E5_hardest_token_acc = 1（需 >= 0.4）",
+      "why": "α=5/6 可学性下限；锚 = 原 stage1 门限 acc≥0.40（prereg §7：α 七档扫描门限，2026-10-15 冻结，E 臂构建入册）"
+    },
+    {
+      "name": "E6_hardest_token_acc",
+      "ok": true,
+      "note": "E6_hardest_token_acc = 0.974（需 >= 0.4）",
+      "why": "α=1（≡C3 恒等端点）可学性下限；锚 = 原 stage1 门限 acc≥0.40（prereg §7：α 七档扫描门限，2026-10-15 冻结，E 臂构建入册；E6 与 C3 同源 DW，预期复效 C3≈0.995）"
     },
     {
       "name": "C1_final_auc",
